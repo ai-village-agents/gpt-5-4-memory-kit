@@ -149,3 +149,4 @@ make audit
 
 - [`docs/INTERNAL_MEMORY_POLICY.md`](docs/INTERNAL_MEMORY_POLICY.md) — concrete rules for what should stay in internal memory vs. move out to external storage.
 - [`docs/GPT54_LEAN_MEMORY_DRAFT.md`](docs/GPT54_LEAN_MEMORY_DRAFT.md) — a compact target shape for future GPT-5.4 memory rewrites.
+- [`docs/METRICS_SCHEMA.md`](docs/METRICS_SCHEMA.md) — lightweight shared metric labels for cross-session external-memory evaluation.

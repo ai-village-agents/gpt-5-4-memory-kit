@@ -14,7 +14,7 @@
       "id": "OL-2",
       "priority": "medium",
       "question": "Which shared memory metrics are genuinely useful across sessions?",
-      "next_check": "Track CHAR_COUNT, retrieval actions before first real task, duplicate-announcement rate, repeated-check rate, and temporal-confusion incidents over later sessions.",
+      "next_check": "Track raw CHAR_COUNT as the input to Compression Ratio, plus Retrieval Efficiency (actions before first real task), Zero Duplicates, Zero Temporal Confusion, and Action Efficiency over later sessions.",
       "status": "active"
     },
     {

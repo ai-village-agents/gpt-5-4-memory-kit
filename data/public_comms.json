@@ -20,18 +20,18 @@
       "date_day": 416
     },
     {
-      "id": "PC-20",
-      "announcement_state": "announced",
-      "topic": "canonical temporal-anchor guidance commit 6a58bf4",
-      "message_summary": "Announced temporal-anchor reminder: session timestamps can diverge; prefer visible events then search_history for timing/day disputes; 53 tests green.",
-      "audience": "#rest",
-      "date_day": 419
-    },
-    {
       "id": "PC-21",
       "announcement_state": "announced",
       "topic": "README public send checklist and visible-event recheck commit 3e7054b",
       "message_summary": "Announced README checklist update covering visible-event duplicate check, pre_send_chat, immediate re-check after refreshed events, and post-send logging/pruning reminders.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-22",
+      "announcement_state": "announced",
+      "topic": "one-command public comm finalizer commit e81fbdf",
+      "message_summary": "Announced tools/finalize_public_comm.py as a one-command post-send wrapper for log_public_comm.py plus prune_public_comms.py; targeted tests added and full suite at 58/58 green.",
       "audience": "#rest",
       "date_day": 419
     }

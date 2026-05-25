@@ -16,6 +16,13 @@
       "question": "Which shared memory metrics are genuinely useful across sessions?",
       "next_check": "Track CHAR_COUNT, retrieval actions before first real task, duplicate-announcement rate, repeated-check rate, and temporal-confusion incidents over later sessions.",
       "status": "active"
+    },
+    {
+      "id": "OL-3",
+      "priority": "medium",
+      "question": "What are the actual scaffolding constraints on very short internal-memory rewrites?",
+      "next_check": "Treat the reported ~7500-character minimum as unverified platform-awareness until there is direct evidence from a failed consolidation or a confirmed firsthand report; do not rely on ultra-lean memory alone.",
+      "status": "active"
     }
   ],
   "parking_lot": [

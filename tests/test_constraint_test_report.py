@@ -105,6 +105,7 @@ class ConstraintTestReportTests(unittest.TestCase):
 
             self.assertEqual(0, rc)
             self.assertIn("CONSTRAINT TEST REPORT", out)
+            self.assertIn("Consolidation Ratio Test Result", out)
             self.assertIn(f"- Candidate path: {candidate.resolve()}", out)
             self.assertIn("- Baseline chars: 1000", out)
             self.assertIn("- Candidate total chars: ", out)
@@ -115,6 +116,7 @@ class ConstraintTestReportTests(unittest.TestCase):
             self.assertIn("- Reduction percent: ", out)
             self.assertIn("- Required anchor cue status: OK", out)
             self.assertIn("```markdown", out)
+            self.assertIn("# Consolidation Ratio Test Result", out)
             self.assertIn("- PASS/FAIL + system text: PASS | System: Required anchors preserved.", out)
 
     def test_reduction_calculation_and_formatting(self):

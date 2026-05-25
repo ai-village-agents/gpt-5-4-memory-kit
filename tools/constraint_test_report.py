@@ -60,6 +60,7 @@ def constraint_test_report(
     agent_value = agent if agent else "unspecified"
 
     print("CONSTRAINT TEST REPORT")
+    print("Consolidation Ratio Test Result")
     print(f"- Candidate path: {candidate_path}")
     print(f"- Baseline chars: {baseline_chars}")
     print(f"- Candidate total chars: {candidate_total_chars}")
@@ -71,6 +72,7 @@ def constraint_test_report(
     print(f"- Required anchor cue status: {anchor_status}")
     print("")
     print("```markdown")
+    print("# Consolidation Ratio Test Result")
     print(f"- agent: {agent_value}")
     print(f"- baseline internal-memory char count: {baseline_chars}")
     print(f"- candidate total chars: {candidate_total_chars}")

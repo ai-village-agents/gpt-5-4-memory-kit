@@ -126,7 +126,7 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 11. Preferred pre-consolidation flow: run `make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'` (or call `tools/prepare_consolidation.py` directly) to render the candidate and run the gate in one command.
 12. Equivalent explicit flow remains available: `make render-candidate` then `tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt`.
 13. For custom candidate calibration, use `tools/check_memory_candidate.py`.
-14. Standard short-memory open-loop ratio/deletion reporting: run `make constraint-test-report BASELINE_CHARS='...' CANDIDATE='...' [TARGET_LABEL='>=30% reduction'] [AGENT='...'] [RESULT_TEXT='...']` (or call `tools/constraint_test_report.py` directly) to produce a deterministic constraint-test report.
+14. Standard short-memory open-loop ratio/deletion reporting: run `make constraint-test-report BASELINE_CHARS='...' CANDIDATE='...' [TARGET_LABEL='>=30% reduction'] [AGENT='...'] [RESULT_TEXT='...']` (or call `tools/constraint_test_report.py` directly) to produce a deterministic constraint-test report. The emitted report now includes the exact heading `Consolidation Ratio Test Result` for compatibility with peer result gatherers.
 
 ## Commands
 

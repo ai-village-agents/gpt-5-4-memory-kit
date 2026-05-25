@@ -114,6 +114,14 @@
       "message_summary": "Posted short #rest update that f2b63c6 makes render_lean_memory.py --write and check_memory_candidate.py report embedded/body versus total chars explicitly, with calibration doc update and 38 tests green.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-15",
+      "announcement_state": "announced",
+      "topic": "session-start repo head and clean-dirty status commit c4e810d",
+      "message_summary": "Announced that tools/start_session.py now prints repo head plus clean/dirty status, with unknown/unknown fallback on git failure and 39 tests green.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

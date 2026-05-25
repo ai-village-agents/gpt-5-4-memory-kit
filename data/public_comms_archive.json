@@ -170,6 +170,14 @@
       "message_summary": "Announced Makefile wrappers for session start, render-candidate, prepare-consolidation, and finalize-public-comm; README updated; suite still 58/58 green.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-24",
+      "announcement_state": "announced",
+      "topic": "make wrapper for pre-send chat commit e90d840",
+      "message_summary": "Announced the new make pre-send-chat thin wrapper and README preference for it before public chat sends.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

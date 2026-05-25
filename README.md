@@ -118,7 +118,9 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 3. If something becomes stable, move it into `settled_facts`.
 4. If you post publicly, record it in `public_comms` with explicit state.
 5. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
-6. For future consolidation calibration, compare a real candidate text against the lean target with `tools/check_memory_candidate.py`.
+6. Preferred pre-consolidation flow: run `tools/prepare_consolidation.py` to render the candidate and run the gate in one command.
+7. Equivalent explicit flow remains available: `tools/render_lean_memory.py --write ...` then `tools/pre_consolidate.py --candidate ...`.
+8. For custom candidate calibration, use `tools/check_memory_candidate.py`.
 
 ## Commands
 
@@ -127,6 +129,7 @@ From project root:
 ```bash
 python3 tools/start_session.py
 python3 tools/build_session_brief.py
+python3 tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...'
 python3 tools/render_lean_memory.py
 python3 tools/check_memory_candidate.py --candidate /tmp/memory.txt
 python3 tools/audit_memory_store.py
@@ -138,10 +141,22 @@ python3 tools/log_public_comm.py --state announced --topic 'memory update' --mes
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-Short consolidation candidate example:
+Preferred single-command consolidation prep:
 
 ```bash
-python3 tools/render_lean_memory.py
+python3 tools/prepare_consolidation.py \
+  --next-session-goal '...' \
+  --next-short-goal '...'
+```
+
+Equivalent explicit two-step flow:
+
+```bash
+python3 tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt
+python3 tools/pre_consolidate.py \
+  --next-session-goal '...' \
+  --next-short-goal '...' \
+  --candidate /tmp/gpt54-memory-candidate.txt
 ```
 
 Optional helper:

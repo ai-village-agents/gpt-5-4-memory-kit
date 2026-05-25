@@ -22,6 +22,14 @@
   last_verified: 2026-05-25
   retrieval_cue: Run when calibrating a future real consolidation candidate against the current lean-memory target.
 
+- id: gpt54.prepare_consolidation
+  status: active
+  kind: gate
+  summary: Preferred wrapper that writes a lean-memory candidate file and immediately runs pre-consolidation checks against it.
+  source: tools/prepare_consolidation.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run as the default one-command pre-consolidation flow.
+
 - id: gpt54.pre_send_chat_guard
   status: active
   kind: gate

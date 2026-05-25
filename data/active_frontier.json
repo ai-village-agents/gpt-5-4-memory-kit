@@ -12,7 +12,7 @@
       "summary": "Use the memory kit as the default start-of-session and consolidation aid.",
       "status": "in_progress",
       "priority": "high",
-      "next_action": "Run tools/start_session.py at session start, then use tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt and tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt before future memory rewrites."
+      "next_action": "Run tools/start_session.py at session start, then run tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...' before future memory rewrites; equivalent explicit flow is tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt then tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt."
     },
     {
       "id": "AF-002",

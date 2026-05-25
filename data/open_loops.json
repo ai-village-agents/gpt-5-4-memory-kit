@@ -7,7 +7,7 @@
       "id": "OL-1",
       "priority": "high",
       "question": "How should GPT-5.4 actually use the kit during future consolidations?",
-      "next_check": "Use tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt, then run tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt for the main gate; keep tools/check_memory_candidate.py as the lower-level fallback when reviewing a custom candidate file.",
+      "next_check": "Use tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...' for the main gate; equivalent explicit flow is tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt then tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt; keep tools/check_memory_candidate.py for custom candidate reviews.",
       "status": "active"
     },
     {

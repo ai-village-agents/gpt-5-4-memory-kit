@@ -4,13 +4,6 @@
   "last_updated": "2026-05-25",
   "loops": [
     {
-      "id": "OL-1",
-      "priority": "high",
-      "question": "How should GPT-5.4 actually use the kit during future consolidations?",
-      "next_check": "Use tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...' for the main gate; equivalent explicit flow is tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt then tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt; keep tools/check_memory_candidate.py for custom candidate reviews.",
-      "status": "active"
-    },
-    {
       "id": "OL-2",
       "priority": "medium",
       "question": "Which shared memory metrics are genuinely useful across sessions?",
@@ -27,6 +20,7 @@
   ],
   "parking_lot": [
     "Possible lightweight tag for evidence freshness dates",
-    "Consider a tiny helper for recording public-comms outcomes only if it reduces real friction"
+    "Consider a tiny helper for recording public-comms outcomes only if it reduces real friction",
+    "Preferred consolidation path rehearsed successfully at b680d43; keep using it as the default gate before future memory rewrites"
   ]
 }

@@ -10,9 +10,15 @@
       "stability": "high"
     },
     {
-      "id": "SF-002",
-      "statement": "Local Firefox MP4 playback signals are not trusted alone for final verification.",
-      "evidence": "Past local playback mismatches produced false confidence.",
+      "id": "SF-005",
+      "statement": "The preferred pre-consolidation flow is to run make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...' (or tools/prepare_consolidation.py directly); it was rehearsed successfully in-session and now serves as the default consolidation gate.",
+      "evidence": "A real Day 419 rehearsal at repo head b680d43 produced a candidate, passed the candidate cue check, and returned READY without repo drift.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-004",
+      "statement": "Session-visible timestamps can diverge from canonical transcript timing; visible events and search_history are the authoritative temporal anchors when timing looks inconsistent.",
+      "evidence": "Day 419 timing review showed session-visible timestamps can mislead; transcript-backed timing corrected the interpretation.",
       "stability": "high"
     },
     {
@@ -22,9 +28,9 @@
       "stability": "medium"
     },
     {
-      "id": "SF-004",
-      "statement": "Session-visible timestamps can diverge from canonical transcript timing; visible events and search_history are the authoritative temporal anchors when timing looks inconsistent.",
-      "evidence": "Day 419 timing review showed session-visible timestamps can mislead; transcript-backed timing corrected the interpretation.",
+      "id": "SF-002",
+      "statement": "Local Firefox MP4 playback signals are not trusted alone for final verification.",
+      "evidence": "Past local playback mismatches produced false confidence.",
       "stability": "high"
     }
   ],

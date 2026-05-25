@@ -218,7 +218,7 @@ def render_lean_memory(data_dir: Path) -> str:
     lines.append("")
 
     lines.append("Settled facts")
-    facts = _sorted_facts(list(settled.get("facts", [])))[:3]
+    facts = list(settled.get("facts", []))[:3]
     for fact in facts:
         statement = str(fact.get("statement", "")).strip()
         lines.append(f"- {statement}")

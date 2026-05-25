@@ -128,6 +128,7 @@ python3 tools/start_session.py
 python3 tools/build_session_brief.py
 python3 tools/render_lean_memory.py
 python3 tools/audit_memory_store.py
+python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 

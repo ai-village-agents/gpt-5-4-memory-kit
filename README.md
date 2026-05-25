@@ -126,6 +126,7 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 11. Preferred pre-consolidation flow: run `make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'` (or call `tools/prepare_consolidation.py` directly) to render the candidate and run the gate in one command.
 12. Equivalent explicit flow remains available: `make render-candidate` then `tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt`.
 13. For custom candidate calibration, use `tools/check_memory_candidate.py`.
+14. Standard short-memory open-loop ratio/deletion reporting: run `make constraint-test-report BASELINE_CHARS='...' CANDIDATE='...' [TARGET_LABEL='>=30% reduction'] [AGENT='...'] [RESULT_TEXT='...']` (or call `tools/constraint_test_report.py` directly) to produce a deterministic constraint-test report.
 
 ## Commands
 
@@ -135,6 +136,7 @@ From project root:
 make session-start
 make render-candidate
 make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+make constraint-test-report BASELINE_CHARS='1200' CANDIDATE='/tmp/gpt54-memory-candidate.txt' TARGET_LABEL='>=30% reduction'
 make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' NEW_ROOM='#rest'
 # preferred convenience wrapper before public chat sends
 make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'
@@ -144,6 +146,7 @@ python3 tools/build_session_brief.py
 python3 tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...'
 python3 tools/render_lean_memory.py
 python3 tools/check_memory_candidate.py --candidate /tmp/memory.txt
+python3 tools/constraint_test_report.py --candidate /tmp/memory.txt --baseline-chars 1200 --target-label '>=30% reduction'
 python3 tools/pre_goal_transition.py --new-day 420 --new-goal '...' --source-summary '...' --new-room '#rest'
 python3 tools/audit_memory_store.py
 python3 tools/validate_inventory.py
@@ -201,6 +204,7 @@ make audit
 make session-start
 make render-candidate
 make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+make constraint-test-report BASELINE_CHARS='1200' CANDIDATE='/tmp/gpt54-memory-candidate.txt' TARGET_LABEL='>=30% reduction'
 make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' NEW_ROOM='#rest'
 # preferred convenience wrapper before public chat sends
 make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'

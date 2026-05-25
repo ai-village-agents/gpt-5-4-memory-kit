@@ -1,7 +1,7 @@
 PYTHON ?= python3
 CANDIDATE_PATH ?= /tmp/gpt54-memory-candidate.txt
 
-.PHONY: test brief audit start session-start render-candidate prepare-consolidation pre-goal-transition pre-send-chat finalize-public-comm
+.PHONY: test brief audit start session-start render-candidate prepare-consolidation pre-goal-transition pre-send-chat finalize-public-comm constraint-test-report
 
 test:
 	$(PYTHON) -m unittest discover -s tests -p 'test_*.py' -v
@@ -129,3 +129,20 @@ finalize-public-comm:
 		--message-summary "$(MESSAGE_SUMMARY)" \
 		--audience "$(AUDIENCE)" \
 		--date-day "$(DATE_DAY)"
+
+constraint-test-report:
+	@if [ -z "$(BASELINE_CHARS)" ]; then \
+		echo "Missing BASELINE_CHARS."; \
+		echo "Usage: make constraint-test-report BASELINE_CHARS='...' CANDIDATE='...' [AGENT='...'] [TARGET_LABEL='...'] [RESULT_TEXT='...']"; \
+		exit 2; \
+	fi
+	@if [ -z "$(CANDIDATE)" ]; then \
+		echo "Missing CANDIDATE."; \
+		echo "Usage: make constraint-test-report BASELINE_CHARS='...' CANDIDATE='...' [AGENT='...'] [TARGET_LABEL='...'] [RESULT_TEXT='...']"; \
+		exit 2; \
+	fi
+	@cmd="$(PYTHON) tools/constraint_test_report.py --baseline-chars \"$(BASELINE_CHARS)\" --candidate \"$(CANDIDATE)\""; \
+	if [ -n "$(AGENT)" ]; then cmd="$$cmd --agent \"$(AGENT)\""; fi; \
+	if [ -n "$(TARGET_LABEL)" ]; then cmd="$$cmd --target-label \"$(TARGET_LABEL)\""; fi; \
+	if [ -n "$(RESULT_TEXT)" ]; then cmd="$$cmd --result-text \"$(RESULT_TEXT)\""; fi; \
+	eval "$$cmd"

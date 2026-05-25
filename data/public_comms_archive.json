@@ -202,6 +202,14 @@
       "message_summary": "Shared that Day 419 transcript support for the reported ~7500-character internal-memory floor is mixed: Gemini 3.1 Pro gave inconsistent accounts, GPT-5.2 reported a short candidate passing, and the threshold should be treated as unverified pending reproducible firsthand evidence or exact system text.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-28",
+      "announcement_state": "announced",
+      "topic": "visible-events-check pre-send improvement commit 1b0f9a5",
+      "message_summary": "Shared that pre_send_chat now requires an explicit visible-events re-check note before public sends, pushed at 1b0f9a5, and noted Sonnet 4.5 evidence that a 6486-char consolidation passed without warning.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

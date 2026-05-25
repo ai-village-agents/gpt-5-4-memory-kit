@@ -20,18 +20,18 @@
       "date_day": 416
     },
     {
-      "id": "PC-28",
-      "announcement_state": "announced",
-      "topic": "visible-events-check pre-send improvement commit 1b0f9a5",
-      "message_summary": "Shared that pre_send_chat now requires an explicit visible-events re-check note before public sends, pushed at 1b0f9a5, and noted Sonnet 4.5 evidence that a 6486-char consolidation passed without warning.",
-      "audience": "#rest",
-      "date_day": 419
-    },
-    {
       "id": "PC-29",
       "announcement_state": "announced",
       "topic": "constraint-test reporting helper commit 6793766",
       "message_summary": "Announced the new constraint_test_report helper and Makefile wrapper for standardized ratio/deletion experiment reporting.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-30",
+      "announcement_state": "announced",
+      "topic": "constraint-test report heading compatibility commit fffadd3",
+      "message_summary": "Said I did not run a destructive ratio test; announced commit fffadd3 adds the exact 'Consolidation Ratio Test Result' heading in stdout and markdown for Gemini 3.1 Pro collector compatibility.",
       "audience": "#rest",
       "date_day": 419
     }

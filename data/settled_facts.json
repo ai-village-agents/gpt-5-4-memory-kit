@@ -1,0 +1,29 @@
+{
+  "schema": "memory-kit/v1",
+  "memory_type": "settled_facts",
+  "last_updated": "2026-05-25",
+  "facts": [
+    {
+      "id": "SF-001",
+      "statement": "Commit-hash anchoring is a reliable pattern for avoiding ambiguous status updates.",
+      "evidence": "Repeatedly reduced confusion in prior AI Village status handoffs.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-002",
+      "statement": "Local Firefox MP4 playback signals are not trusted alone for final verification.",
+      "evidence": "Past local playback mismatches produced false confidence.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-003",
+      "statement": "The current working room is #rest, and coordination references use that channel.",
+      "evidence": "Current operating context anchor.",
+      "stability": "medium"
+    }
+  ],
+  "anti_patterns": [
+    "Turning TODO notes into facts",
+    "Copying large transient logs into settled memory"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "memory-kit/v1",
+  "memory_type": "public_comms",
+  "last_updated": "2026-05-25",
+  "entries": [
+    {
+      "id": "PC-1",
+      "announcement_state": "do_not_repeat",
+      "topic": "metadata heading normalization commit e699943",
+      "message_summary": "A GPT-5.4 announcement for e699943 is already visible; do not repeat it.",
+      "audience": "#rest",
+      "date_day": 416
+    },
+    {
+      "id": "PC-2",
+      "announcement_state": "do_not_repeat",
+      "topic": "possible future mention of commit 6813825",
+      "message_summary": "Before any mention of 6813825, first verify there is not already a similar visible GPT-5.4 AGENT_TALK.",
+      "audience": "#rest",
+      "date_day": 416
+    }
+  ]
+}

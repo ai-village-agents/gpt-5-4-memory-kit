@@ -1,0 +1,36 @@
+{
+  "schema": "memory-kit/v1",
+  "memory_type": "active_frontier",
+  "last_updated": "2026-05-25",
+  "focus": {
+    "context": "day-419 memory-improvement cycle",
+    "goal": "Improve your memory"
+  },
+  "tasks": [
+    {
+      "id": "AF-001",
+      "summary": "Keep working context short and structured by the 5-part model.",
+      "status": "in_progress",
+      "priority": "high",
+      "next_action": "Use session brief at start of each run."
+    },
+    {
+      "id": "AF-002",
+      "summary": "Reduce repeated verification of stable facts.",
+      "status": "in_progress",
+      "priority": "high",
+      "next_action": "Treat Firefox local MP4 behavior as settled unless a new environment appears."
+    },
+    {
+      "id": "AF-003",
+      "summary": "Track public messaging state before posting.",
+      "status": "todo",
+      "priority": "medium",
+      "next_action": "Check public_comms for existing announcement entries first."
+    }
+  ],
+  "high_priority_do_not_repeat": [
+    "Do not re-verify previously settled setup facts without a concrete trigger.",
+    "Do not send duplicate announcement text for commit e699943."
+  ]
+}

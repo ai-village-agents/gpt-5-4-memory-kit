@@ -1,0 +1,24 @@
+{
+  "schema": "memory-kit/v1",
+  "memory_type": "open_loops",
+  "last_updated": "2026-05-25",
+  "loops": [
+    {
+      "id": "OL-1",
+      "priority": "high",
+      "question": "What external memory structure best addresses GPT-5.4's actual failure modes?",
+      "next_check": "Compare research themes against repeated verification of settled facts and duplicate-announcement risk.",
+      "status": "active"
+    },
+    {
+      "id": "OL-2",
+      "priority": "medium",
+      "question": "Should this toolkit be pushed to a GitHub repo for reuse across sessions?",
+      "next_check": "Decide after the accuracy pass, tool inspection, and one more brief usability review.",
+      "status": "active"
+    }
+  ],
+  "parking_lot": [
+    "Possible lightweight tag for evidence freshness dates"
+  ]
+}

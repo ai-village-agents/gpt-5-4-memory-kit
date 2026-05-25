@@ -11,7 +11,7 @@ class RenderLeanMemoryTests(unittest.TestCase):
         self.data_dir = Path(self.tmpdir.name)
 
         (self.data_dir / "identity_constraints.json").write_text(
-            '{"schema":"memory-kit/v1","memory_type":"identity_constraints","last_updated":"2026-05-25","principles":[],"hard_rules":["Follow the one-tool-call rule where that operational constraint applies.","Do not expose sensitive personal data in shared channels.","Do not re-announce already announced status updates without new substance."],"anchors":{"room":"#rest","contact_email":"gpt-5.4@agentvillage.org"},"do_not_store":[],"identity":{"room":"#rest","email":"gpt-5.4@agentvillage.org"}}',
+            '{"schema":"memory-kit/v1","memory_type":"identity_constraints","last_updated":"2026-05-25","principles":[],"hard_rules":["Follow the one-tool-call rule where that operational constraint applies.","Do not expose sensitive personal data in shared channels.","Do not re-announce already announced status updates without new substance."],"anchors":{"room":"#rest","contact_email":"gpt-5.4@agentvillage.org","memory_kit_path":"/home/computeruse/gpt54-memory-kit"},"do_not_store":[],"identity":{"room":"#rest","email":"gpt-5.4@agentvillage.org"}}',
             encoding="utf-8",
         )
         (self.data_dir / "active_frontier.json").write_text(
@@ -27,7 +27,7 @@ class RenderLeanMemoryTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.data_dir / "open_loops.json").write_text(
-            '{"schema":"memory-kit/v1","memory_type":"open_loops","last_updated":"2026-05-25","loops":[{"id":"OL-1","priority":"medium","question":"Question one?","next_check":"Check one","status":"active"},{"id":"OL-2","priority":"high","question":"Question two?","next_check":"Check two","status":"active"},{"id":"OL-3","priority":"low","question":"Question three?","next_check":"Check three","status":"active"}],"parking_lot":[]}',
+            '{"schema":"memory-kit/v1","memory_type":"open_loops","last_updated":"2026-05-25","loops":[{"id":"OL-1","priority":"medium","question":"Question one?","next_check":"Check one","status":"active"},{"id":"OL-2","priority":"high","question":"Question two?","next_check":"Check two","status":"active"},{"id":"OL-3","priority":"low","question":"Question three?","next_check":"Check three","status":"active"},{"id":"OL-4","priority":"low","question":"Question four?","next_check":"Check four","status":"active"}],"parking_lot":[]}',
             encoding="utf-8",
         )
 
@@ -58,6 +58,7 @@ class RenderLeanMemoryTests(unittest.TestCase):
 
         self.assertIn("Room: #rest", rendered)
         self.assertIn("Email: gpt-5.4@agentvillage.org", rendered)
+        self.assertIn("Memory Kit Path: /home/computeruse/gpt54-memory-kit", rendered)
         self.assertIn("Day 419", rendered)
         self.assertIn("CHAR_COUNT=", rendered)
 
@@ -76,7 +77,8 @@ class RenderLeanMemoryTests(unittest.TestCase):
 
         self.assertIn("Question one?", rendered)
         self.assertIn("Question two?", rendered)
-        self.assertNotIn("Question three?", rendered)
+        self.assertIn("Question three?", rendered)
+        self.assertNotIn("Question four?", rendered)
 
 
 if __name__ == "__main__":

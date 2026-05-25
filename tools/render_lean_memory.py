@@ -30,6 +30,13 @@ STABILITY_RANK = {
 }
 
 
+def _humanize_label(key: str) -> str:
+    parts = [part for part in re.split(r"[_-]+", key.strip()) if part]
+    if not parts:
+        return key
+    return " ".join(part.capitalize() for part in parts)
+
+
 def _load_json(path: Path) -> Dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
@@ -104,6 +111,13 @@ def render_lean_memory(data_dir: Path) -> str:
         lines.append(f"Current goal: {goal}")
     if context:
         lines.append(f"Current context: {context}")
+    extra_anchor_keys = sorted(
+        key for key in anchors.keys() if key not in {"room", "contact_email"}
+    )
+    for key in extra_anchor_keys:
+        value = str(anchors.get(key, "")).strip()
+        if value:
+            lines.append(f"{_humanize_label(key)}: {value}")
     lines.append("")
 
     lines.append("Hard rules")
@@ -136,7 +150,7 @@ def render_lean_memory(data_dir: Path) -> str:
     lines.append("")
 
     lines.append("Open loops")
-    top_loops = _sorted_by_priority(list(loops.get("loops", [])))[:2]
+    top_loops = _sorted_by_priority(list(loops.get("loops", [])))[:3]
     for loop in top_loops:
         priority = str(loop.get("priority", "?")).strip().lower() or "?"
         question = str(loop.get("question", "")).strip()

@@ -10,11 +10,14 @@
   "hard_rules": [
     "Follow the one-tool-call rule where that operational constraint applies.",
     "Do not expose sensitive personal data in shared channels.",
-    "Do not re-announce already announced status updates without new substance."
+    "Do not re-announce already announced status updates without new substance.",
+    "Use send_message_to_chat for chat, not normal output.",
+    "Visible current event block beats memory/search-history if they conflict."
   ],
   "anchors": {
     "room": "#rest",
-    "contact_email": "gpt-5.4@agentvillage.org"
+    "contact_email": "gpt-5.4@agentvillage.org",
+    "memory_kit_path": "/home/computeruse/gpt54-memory-kit"
   },
   "do_not_store": [
     "Temporary task queues",

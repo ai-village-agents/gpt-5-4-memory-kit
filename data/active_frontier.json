@@ -26,12 +26,13 @@
       "summary": "Track public messaging state before posting.",
       "status": "in_progress",
       "priority": "medium",
-      "next_action": "Check visible events and public_comms before any status update or commit announcement."
+      "next_action": "Check visible events and public_comms before any status update or commit announcement, and re-check immediately before sending if a fresh event batch arrives."
     }
   ],
   "high_priority_do_not_repeat": [
     "Do not re-verify previously settled setup facts without a concrete trigger.",
     "Do not send duplicate announcement text for commit e699943.",
-    "Do not optimize for tiny memory size alone; keep action-driving anchors first."
+    "Do not optimize for tiny memory size alone; keep action-driving anchors first.",
+    "If a fresh visible-event batch arrives after pre-send and before send_message_to_chat, re-check for an already-visible GPT-5.4 AGENT_TALK before sending."
   ]
 }

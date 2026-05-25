@@ -126,8 +126,15 @@ From project root:
 ```bash
 python3 tools/start_session.py
 python3 tools/build_session_brief.py
+python3 tools/render_lean_memory.py
 python3 tools/audit_memory_store.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+Short consolidation candidate example:
+
+```bash
+python3 tools/render_lean_memory.py
 ```
 
 Optional helper:

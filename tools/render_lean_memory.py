@@ -1,0 +1,163 @@
+#!/usr/bin/env python3
+"""Render a compact GPT-5.4 internal-memory candidate from memory JSON files."""
+
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+from typing import Any, Dict, List
+
+FILES = [
+    "identity_constraints",
+    "active_frontier",
+    "settled_facts",
+    "public_comms",
+    "open_loops",
+]
+
+PRIORITY_RANK = {
+    "high": 0,
+    "medium": 1,
+    "low": 2,
+}
+
+STABILITY_RANK = {
+    "high": 0,
+    "medium": 1,
+    "low": 2,
+}
+
+
+def _load_json(path: Path) -> Dict[str, Any]:
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _infer_day(context: str) -> str | None:
+    match = re.search(r"(?:^|\b)day[-_\s]?(\d+)(?:\b|$)", context, flags=re.IGNORECASE)
+    if not match:
+        return None
+    return f"Day {match.group(1)}"
+
+
+def _sorted_by_priority(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    return sorted(
+        items,
+        key=lambda item: (
+            PRIORITY_RANK.get(str(item.get("priority", "")).strip().lower(), 99),
+            str(item.get("id", "")),
+        ),
+    )
+
+
+def _sorted_facts(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    return sorted(
+        items,
+        key=lambda item: (
+            STABILITY_RANK.get(str(item.get("stability", "")).strip().lower(), 99),
+            str(item.get("id", "")),
+        ),
+    )
+
+
+def render_lean_memory(data_dir: Path) -> str:
+    store: Dict[str, Dict[str, Any]] = {}
+    for name in FILES:
+        store[name] = _load_json(data_dir / f"{name}.json")
+
+    identity = store["identity_constraints"]
+    frontier = store["active_frontier"]
+    settled = store["settled_facts"]
+    public_comms = store["public_comms"]
+    loops = store["open_loops"]
+
+    focus = frontier.get("focus", {})
+    context = str(focus.get("context", "")).strip()
+    goal = str(focus.get("goal", "")).strip()
+
+    anchors = identity.get("anchors", {})
+    room = str(anchors.get("room") or identity.get("identity", {}).get("room") or "").strip()
+    email = str(
+        anchors.get("contact_email") or identity.get("identity", {}).get("email") or ""
+    ).strip()
+
+    lines: List[str] = []
+
+    lines.append("Day / goal anchor")
+    day_line = _infer_day(context)
+    if day_line:
+        lines.append(day_line)
+    if goal:
+        lines.append(f"Goal: {goal}")
+    if context:
+        lines.append(f"Context: {context}")
+    lines.append("")
+
+    lines.append("Identity / environment")
+    if room:
+        lines.append(f"Room: {room}")
+    if email:
+        lines.append(f"Email: {email}")
+    if goal:
+        lines.append(f"Current goal: {goal}")
+    if context:
+        lines.append(f"Current context: {context}")
+    lines.append("")
+
+    lines.append("Hard rules")
+    hard_rules = identity.get("hard_rules", [])
+    for rule in hard_rules[:5]:
+        lines.append(f"- {rule}")
+    lines.append("")
+
+    lines.append("Active frontier")
+    tasks = _sorted_by_priority(list(frontier.get("tasks", [])))[:3]
+    for task in tasks:
+        priority = str(task.get("priority", "?")).strip().lower() or "?"
+        summary = str(task.get("summary", "")).strip()
+        next_action = str(task.get("next_action", "")).strip()
+        lines.append(f"- [{priority}] {summary} | next: {next_action}")
+    lines.append("")
+
+    lines.append("Settled facts")
+    facts = _sorted_facts(list(settled.get("facts", [])))[:3]
+    for fact in facts:
+        statement = str(fact.get("statement", "")).strip()
+        lines.append(f"- {statement}")
+    lines.append("")
+
+    lines.append("Public comms cautions")
+    for entry in public_comms.get("entries", []):
+        topic = str(entry.get("topic", "")).strip()
+        summary = str(entry.get("message_summary", "")).strip()
+        lines.append(f"- {topic}: {summary}")
+    lines.append("")
+
+    lines.append("Open loops")
+    top_loops = _sorted_by_priority(list(loops.get("loops", [])))[:2]
+    for loop in top_loops:
+        priority = str(loop.get("priority", "?")).strip().lower() or "?"
+        question = str(loop.get("question", "")).strip()
+        next_check = str(loop.get("next_check", "")).strip()
+        lines.append(f"- [{priority}] {question} | next: {next_check}")
+
+    body = "\n".join(lines).rstrip() + "\n"
+    char_count = len(body)
+    return f"{body}CHAR_COUNT={char_count}\n"
+
+
+def main(argv: list[str] | None = None) -> int:
+    argv = argv or sys.argv[1:]
+    if argv:
+        data_dir = Path(argv[0]).resolve()
+    else:
+        data_dir = Path(__file__).resolve().parents[1] / "data"
+
+    print(render_lean_memory(data_dir), end="")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

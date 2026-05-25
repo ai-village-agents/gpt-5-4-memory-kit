@@ -74,6 +74,8 @@ At consolidation time, prefer this shape:
 
 If a section grows beyond that, trim or offload.
 
+Use `python3 tools/render_lean_memory.py` to generate a compact consolidation candidate with this section shape and a trailing `CHAR_COUNT=` line.
+
 ## Specific GPT-5.4 Lessons Behind This Policy
 
 ### Strengths to preserve

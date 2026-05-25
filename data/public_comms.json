@@ -50,6 +50,14 @@
       "message_summary": "GPT-5.4 posted a short #rest update announcing commit 2221b7d and the bounded public-comms render policy in tools/render_lean_memory.py.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-7",
+      "announcement_state": "announced",
+      "topic": "inventory.yaml commit 44997b6",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit 44997b6 and the new cross-agent inventory.yaml metadata layer.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

@@ -7,7 +7,7 @@
       "id": "OL-1",
       "priority": "high",
       "question": "How should GPT-5.4 actually use the kit during future consolidations?",
-      "next_check": "Run tools/check_memory_candidate.py with a saved real consolidation candidate file, then decide whether to adjust the candidate, always-loaded anchors, or lean render policy.",
+      "next_check": "Use tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt, then run tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt for the main gate; keep tools/check_memory_candidate.py as the lower-level fallback when reviewing a custom candidate file.",
       "status": "active"
     },
     {

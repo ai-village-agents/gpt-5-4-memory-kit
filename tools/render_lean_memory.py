@@ -38,6 +38,19 @@ PUBLIC_COMMS_STATE_RANK = {
 MAX_RENDERED_ANNOUNCED_PUBLIC_COMMS = 2
 
 
+def parse_embedded_char_count(text: str) -> int | None:
+    """Parse a trailing CHAR_COUNT=<n> line and return n when present."""
+    match = re.search(r"(?:^|\n)CHAR_COUNT=(\d+)\n?\Z", text)
+    if not match:
+        return None
+    return int(match.group(1))
+
+
+def char_count_summary(text: str) -> Tuple[int, int | None]:
+    """Return (total_chars, embedded_char_count_or_none)."""
+    return len(text), parse_embedded_char_count(text)
+
+
 def _humanize_label(key: str) -> str:
     parts = [part for part in re.split(r"[_-]+", key.strip()) if part]
     if not parts:
@@ -253,7 +266,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.write:
         destination = Path(args.write)
         destination.write_text(rendered, encoding="utf-8")
-        print(f"WROTE {destination} CHAR_COUNT={len(rendered)}")
+        total_chars, embedded_chars = char_count_summary(rendered)
+        embedded_label = embedded_chars if embedded_chars is not None else "unknown"
+        print(
+            f"WROTE {destination} EMBEDDED_CHAR_COUNT={embedded_label} "
+            f"TOTAL_CHAR_COUNT={total_chars}"
+        )
         return 0
 
     print(rendered, end="")

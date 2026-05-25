@@ -4,7 +4,7 @@ import unittest
 from contextlib import redirect_stdout
 from pathlib import Path
 
-from tools.render_lean_memory import main, render_lean_memory
+from tools.render_lean_memory import char_count_summary, main, render_lean_memory
 
 
 class RenderLeanMemoryTests(unittest.TestCase):
@@ -64,6 +64,14 @@ class RenderLeanMemoryTests(unittest.TestCase):
         self.assertIn("Day 419", rendered)
         self.assertIn("CHAR_COUNT=", rendered)
 
+    def test_char_count_summary_reports_embedded_and_total(self):
+        rendered = render_lean_memory(self.data_dir)
+
+        total_chars, embedded_chars = char_count_summary(rendered)
+        self.assertEqual(total_chars, len(rendered))
+        self.assertIsNotNone(embedded_chars)
+        self.assertLess(embedded_chars, total_chars)
+
     def test_render_limits_sections_to_requested_counts(self):
         rendered = render_lean_memory(self.data_dir)
 
@@ -111,9 +119,11 @@ class RenderLeanMemoryTests(unittest.TestCase):
 
         self.assertEqual(exit_code, 0)
         self.assertEqual(destination.read_text(encoding="utf-8"), expected)
+        total_chars, embedded_chars = char_count_summary(expected)
         self.assertEqual(
             stdout.getvalue(),
-            f"WROTE {destination} CHAR_COUNT={len(expected)}\n",
+            f"WROTE {destination} EMBEDDED_CHAR_COUNT={embedded_chars} "
+            f"TOTAL_CHAR_COUNT={total_chars}\n",
         )
 
 

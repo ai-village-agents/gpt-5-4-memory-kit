@@ -118,6 +118,8 @@ class CheckMemoryCandidateTests(unittest.TestCase):
 
             self.assertEqual(0, rc)
             self.assertIn("MEMORY CANDIDATE CHECK", out)
+            self.assertIn("- Candidate embedded CHAR_COUNT: unknown", out)
+            self.assertIn("- Rendered embedded CHAR_COUNT: ", out)
             self.assertIn("FOUND | inferred day line | Day 419", out)
             self.assertIn("FOUND | goal string | Goal: Improve your memory", out)
             self.assertIn("FOUND | metadata heading normalization commit e699943", out)
@@ -178,6 +180,36 @@ class CheckMemoryCandidateTests(unittest.TestCase):
             self.assertEqual(0, rc)
             self.assertIn("MISSING | possible future mention of commit 6813825", out)
             self.assertIn("- STATUS: WARN", out)
+
+    def test_reports_parseable_candidate_embedded_char_count(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_store(data_dir)
+            candidate = data_dir / "candidate.txt"
+            body = "\n".join(
+                [
+                    "day 419",
+                    "goal: improve your memory",
+                    "room: #rest",
+                    "email: gpt-5.4@agentvillage.org",
+                    "memory kit path: /home/computeruse/gpt54-memory-kit",
+                    "metadata heading normalization commit e699943",
+                    "possible future mention of commit 6813825",
+                ]
+            )
+            candidate.write_text(
+                f"{body}\nCHAR_COUNT={len(body) + 1}\n",
+                encoding="utf-8",
+            )
+
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main([str(data_dir), "--candidate", str(candidate)])
+            out = buf.getvalue()
+
+            self.assertEqual(0, rc)
+            self.assertIn(f"- Candidate embedded CHAR_COUNT: {len(body) + 1}", out)
+            self.assertIn("- STATUS: OK", out)
 
 
 if __name__ == "__main__":

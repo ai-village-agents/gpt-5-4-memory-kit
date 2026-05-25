@@ -10,9 +10,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
 try:
-    from render_lean_memory import _infer_day, render_lean_memory
+    from render_lean_memory import _infer_day, char_count_summary, render_lean_memory
 except ModuleNotFoundError:
-    from .render_lean_memory import _infer_day, render_lean_memory
+    from .render_lean_memory import _infer_day, char_count_summary, render_lean_memory
 
 FILES = [
     "identity_constraints",
@@ -89,6 +89,8 @@ def check_memory_candidate(data_dir: Path, candidate_path: Path) -> int:
 
     store = _load_store(data_dir)
     rendered = render_lean_memory(data_dir)
+    candidate_total_chars, candidate_embedded_chars = char_count_summary(candidate_text)
+    rendered_total_chars, rendered_embedded_chars = char_count_summary(rendered)
 
     required_cues = _required_anchor_cues(store)
     required_topics = _required_do_not_repeat_topics(store)
@@ -97,8 +99,16 @@ def check_memory_candidate(data_dir: Path, candidate_path: Path) -> int:
 
     print("MEMORY CANDIDATE CHECK")
     print(f"- Candidate: {candidate_path}")
-    print(f"- Candidate chars: {len(candidate_text)}")
-    print(f"- Rendered chars: {len(rendered)}")
+    print(f"- Candidate total chars: {candidate_total_chars}")
+    print(
+        "- Candidate embedded CHAR_COUNT: "
+        f"{candidate_embedded_chars if candidate_embedded_chars is not None else 'unknown'}"
+    )
+    print(f"- Rendered total chars: {rendered_total_chars}")
+    print(
+        "- Rendered embedded CHAR_COUNT: "
+        f"{rendered_embedded_chars if rendered_embedded_chars is not None else 'unknown'}"
+    )
 
     print("- Required anchor cues:")
     all_found = True

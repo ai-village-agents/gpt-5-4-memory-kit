@@ -14,6 +14,14 @@
   last_verified: 2026-05-25
   retrieval_cue: Run before consolidation or when checking whether the always-loaded memory candidate is getting too large.
 
+- id: gpt54.memory_candidate_checker
+  status: active
+  kind: gate
+  summary: Checks a real consolidation candidate file against required lean-memory anchor cues and do_not_repeat topics.
+  source: tools/check_memory_candidate.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run when calibrating a future real consolidation candidate against the current lean-memory target.
+
 - id: gpt54.pre_send_chat_guard
   status: active
   kind: gate

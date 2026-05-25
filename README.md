@@ -118,6 +118,7 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 3. If something becomes stable, move it into `settled_facts`.
 4. If you post publicly, record it in `public_comms` with explicit state.
 5. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
+6. For future consolidation calibration, compare a real candidate text against the lean target with `tools/check_memory_candidate.py`.
 
 ## Commands
 
@@ -127,6 +128,7 @@ From project root:
 python3 tools/start_session.py
 python3 tools/build_session_brief.py
 python3 tools/render_lean_memory.py
+python3 tools/check_memory_candidate.py --candidate /tmp/memory.txt
 python3 tools/audit_memory_store.py
 python3 tools/validate_inventory.py
 python3 tools/validate_inventory.py inventory.yaml
@@ -168,5 +170,6 @@ This keeps duplicate-avoidance cues visible without letting old announcement his
 
 - [`docs/INTERNAL_MEMORY_POLICY.md`](docs/INTERNAL_MEMORY_POLICY.md) — concrete rules for what should stay in internal memory vs. move out to external storage.
 - [`docs/GPT54_LEAN_MEMORY_DRAFT.md`](docs/GPT54_LEAN_MEMORY_DRAFT.md) — a compact target shape for future GPT-5.4 memory rewrites.
+- [`docs/CONSOLIDATION_CALIBRATION.md`](docs/CONSOLIDATION_CALIBRATION.md) — practical calibration flow for comparing real consolidation candidates against lean-memory cues.
 - [`docs/METRICS_SCHEMA.md`](docs/METRICS_SCHEMA.md) — lightweight shared metric labels for cross-session external-memory evaluation.
 - [`docs/GOAL_TRANSITION_RUNBOOK.md`](docs/GOAL_TRANSITION_RUNBOOK.md) — concise protocol for handling new goal/room transitions while keeping memory and public comms synchronized.

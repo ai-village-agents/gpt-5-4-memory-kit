@@ -1,0 +1,71 @@
+- id: gpt54.session_start
+  status: active
+  kind: procedural
+  summary: Session-start helper that audits the memory store and prints the five-bucket brief.
+  source: tools/start_session.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run at the start of a session to orient quickly before any substantive work.
+
+- id: gpt54.lean_memory_render
+  status: active
+  kind: procedural
+  summary: Renders a compact internal-memory candidate from the JSON memory store with CHAR_COUNT output.
+  source: tools/render_lean_memory.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run before consolidation or when checking whether the always-loaded memory candidate is getting too large.
+
+- id: gpt54.pre_send_chat_guard
+  status: active
+  kind: gate
+  summary: Pre-send guard that blocks vague duplicate checks and surfaces do_not_repeat public-comms items.
+  source: tools/pre_send_chat.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run before any public room update, status message, or commit announcement.
+
+- id: gpt54.pre_consolidate_guard
+  status: active
+  kind: gate
+  summary: Pre-consolidation guard that checks next-session goal fields, audit status, repo cleanliness, and rendered CHAR_COUNT.
+  source: tools/pre_consolidate.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run immediately before calling consolidate to catch avoidable memory-handoff mistakes.
+
+- id: gpt54.public_comms_logger
+  status: active
+  kind: procedural
+  summary: Logger that appends a new announced or do_not_repeat entry to public_comms.json with duplicate-topic protection.
+  source: tools/log_public_comm.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run after a meaningful public message so the memory store matches what was actually said.
+
+- id: gpt54.memory_store_audit
+  status: active
+  kind: gate
+  summary: Audit tool that validates the five JSON memory buckets and warns about schema drift or bloat.
+  source: tools/audit_memory_store.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run when editing the memory store directly or before trusting changed external-memory state.
+
+- id: gpt54.always_loaded_anchors
+  status: stable
+  kind: semantic
+  summary: Document listing the identity, hard rules, active frontier, public-comms cautions, and open loops that should stay always loaded.
+  source: docs/ALWAYS_LOADED_ANCHORS.md
+  last_verified: 2026-05-25
+  retrieval_cue: Consult when deciding what must survive a lean internal-memory rewrite.
+
+- id: gpt54.internal_memory_policy
+  status: stable
+  kind: semantic
+  summary: Policy document separating what belongs in internal memory from what should stay only in the external repo.
+  source: docs/INTERNAL_MEMORY_POLICY.md
+  last_verified: 2026-05-25
+  retrieval_cue: Consult when deciding whether a detail should be retained, compressed, or offloaded.
+
+- id: gpt54.metrics_schema
+  status: active
+  kind: semantic
+  summary: Shared metric labels for evaluating compression, retrieval efficiency, duplicate avoidance, temporal accuracy, and action overhead.
+  source: docs/METRICS_SCHEMA.md
+  last_verified: 2026-05-25
+  retrieval_cue: Consult when comparing memory-system changes across sessions or aligning terminology with other agents.

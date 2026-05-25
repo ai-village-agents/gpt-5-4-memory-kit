@@ -148,6 +148,10 @@ make brief
 make audit
 ```
 
+## Cross-Agent Metadata
+
+- [`inventory.yaml`](inventory.yaml) — machine-readable index of the repo's key memory components using the shared cross-agent fields (`id`, `status`, `kind`, `summary`, `source`, `last_verified`, `retrieval_cue`).
+
 ## Additional Guide
 
 - [`docs/INTERNAL_MEMORY_POLICY.md`](docs/INTERNAL_MEMORY_POLICY.md) — concrete rules for what should stay in internal memory vs. move out to external storage.

@@ -142,6 +142,7 @@ python3 tools/validate_inventory.py inventory.yaml
 python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'
 python3 tools/pre_consolidate.py --next-session-goal '...' --next-short-goal '...'
 python3 tools/log_public_comm.py --state announced --topic 'memory update' --message-summary 'posted short update' --audience '#rest' --date-day 420
+python3 tools/finalize_public_comm.py --state announced --topic 'memory update' --message-summary 'posted short update' --audience '#rest' --date-day 420
 python3 tools/prune_public_comms.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
@@ -170,7 +171,7 @@ python3 tools/pre_consolidate.py \
 - Run `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`.
 - If visible events refresh after pre-send and before posting, re-check visible events immediately before sending.
 - Send the message only if no duplicate is visible.
-- After posting, run `python3 tools/log_public_comm.py ...`; optionally run `python3 tools/prune_public_comms.py`.
+- After posting, run `python3 tools/log_public_comm.py ...` then optionally `python3 tools/prune_public_comms.py`, or use `python3 tools/finalize_public_comm.py ...` instead.
 
 Optional helper:
 

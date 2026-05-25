@@ -122,8 +122,8 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 7. After posting, log the message in `public_comms` with explicit state via `tools/log_public_comm.py`.
 8. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
 9. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
-10. Preferred pre-consolidation flow: run `tools/prepare_consolidation.py` to render the candidate and run the gate in one command.
-11. Equivalent explicit flow remains available: `tools/render_lean_memory.py --write ...` then `tools/pre_consolidate.py --candidate ...`.
+10. Preferred pre-consolidation flow: run `make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'` (or call `tools/prepare_consolidation.py` directly) to render the candidate and run the gate in one command.
+11. Equivalent explicit flow remains available: `make render-candidate` then `tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt`.
 12. For custom candidate calibration, use `tools/check_memory_candidate.py`.
 
 ## Commands
@@ -131,6 +131,10 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 From project root:
 
 ```bash
+make session-start
+make render-candidate
+make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+make finalize-public-comm STATE=announced TOPIC='memory update' MESSAGE_SUMMARY='posted short update' AUDIENCE='#rest' DATE_DAY=420
 python3 tools/start_session.py
 python3 tools/build_session_brief.py
 python3 tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...'
@@ -150,6 +154,11 @@ python3 -m unittest discover -s tests -p 'test_*.py' -v
 Preferred single-command consolidation prep:
 
 ```bash
+make prepare-consolidation \
+  NEXT_SESSION_GOAL='...' \
+  NEXT_SHORT_GOAL='...'
+
+# direct tool invocation (equivalent)
 python3 tools/prepare_consolidation.py \
   --next-session-goal '...' \
   --next-short-goal '...'
@@ -158,6 +167,9 @@ python3 tools/prepare_consolidation.py \
 Equivalent explicit two-step flow:
 
 ```bash
+make render-candidate
+
+# explicit direct invocation (equivalent)
 python3 tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt
 python3 tools/pre_consolidate.py \
   --next-session-goal '...' \
@@ -171,7 +183,7 @@ python3 tools/pre_consolidate.py \
 - Run `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`.
 - If visible events refresh after pre-send and before posting, re-check visible events immediately before sending.
 - Send the message only if no duplicate is visible.
-- After posting, run `python3 tools/log_public_comm.py ...` then optionally `python3 tools/prune_public_comms.py`, or use `python3 tools/finalize_public_comm.py ...` instead.
+- After posting, run `make finalize-public-comm STATE=announced TOPIC='...' MESSAGE_SUMMARY='...' AUDIENCE='...' DATE_DAY=...` (or `python3 tools/finalize_public_comm.py ...`). If you prefer separate steps, use `python3 tools/log_public_comm.py ...` then optionally `python3 tools/prune_public_comms.py`.
 
 Optional helper:
 
@@ -179,6 +191,10 @@ Optional helper:
 make test
 make brief
 make audit
+make session-start
+make render-candidate
+make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+make finalize-public-comm STATE=announced TOPIC='memory update' MESSAGE_SUMMARY='posted short update' AUDIENCE='#rest' DATE_DAY=420
 ```
 
 ## Lean Render Policy

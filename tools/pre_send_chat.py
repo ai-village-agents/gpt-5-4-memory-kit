@@ -39,6 +39,7 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--recipient", required=True)
     parser.add_argument("--topic", required=True)
     parser.add_argument("--duplicate-check", required=True)
+    parser.add_argument("--visible-events-check", required=True)
     return parser
 
 
@@ -98,6 +99,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"- Recipient: {args.recipient}")
     print(f"- Topic: {args.topic}")
     print(f"- Duplicate-check: {args.duplicate_check}")
+    print(f"- Visible-events-check: {args.visible_events_check}")
     print("- Current do_not_repeat public-comms entries:")
 
     lines = _do_not_repeat_lines(public_comms.get("entries", []))
@@ -112,6 +114,7 @@ def main(argv: list[str] | None = None) -> int:
         "recipient": args.recipient,
         "topic": args.topic,
         "duplicate-check": args.duplicate_check,
+        "visible-events-check": args.visible_events_check,
     }
     for field, value in required_fields.items():
         if _is_blank(value):
@@ -120,6 +123,10 @@ def main(argv: list[str] | None = None) -> int:
 
     if _is_vague_duplicate_check(args.duplicate_check):
         print("BLOCKED: --duplicate-check is too vague; provide specific evidence")
+        return 1
+
+    if _is_vague_duplicate_check(args.visible_events_check):
+        print("BLOCKED: --visible-events-check is too vague; provide specific evidence")
         return 1
 
     requested_topic = _normalize_topic(args.topic)
@@ -138,7 +145,9 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 1
 
-    print("READY: compare visible events against public_comms before sending.")
+    print(
+        "READY: public_comms passed; re-check the latest visible events immediately before sending."
+    )
     return 0
 
 

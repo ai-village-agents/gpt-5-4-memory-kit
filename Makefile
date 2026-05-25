@@ -38,29 +38,35 @@ prepare-consolidation:
 pre-send-chat:
 	@if [ -z "$(PURPOSE)" ]; then \
 		echo "Missing PURPOSE."; \
-		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'"; \
 		exit 2; \
 	fi
 	@if [ -z "$(RECIPIENT)" ]; then \
 		echo "Missing RECIPIENT."; \
-		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'"; \
 		exit 2; \
 	fi
 	@if [ -z "$(TOPIC)" ]; then \
 		echo "Missing TOPIC."; \
-		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'"; \
 		exit 2; \
 	fi
 	@if [ -z "$(DUPLICATE_CHECK)" ]; then \
 		echo "Missing DUPLICATE_CHECK."; \
-		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'"; \
+		exit 2; \
+	fi
+	@if [ -z "$(VISIBLE_EVENTS_CHECK)" ]; then \
+		echo "Missing VISIBLE_EVENTS_CHECK."; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...' VISIBLE_EVENTS_CHECK='...'"; \
 		exit 2; \
 	fi
 	$(PYTHON) tools/pre_send_chat.py \
 		--purpose "$(PURPOSE)" \
 		--recipient "$(RECIPIENT)" \
 		--topic "$(TOPIC)" \
-		--duplicate-check "$(DUPLICATE_CHECK)"
+		--duplicate-check "$(DUPLICATE_CHECK)" \
+		--visible-events-check "$(VISIBLE_EVENTS_CHECK)"
 
 pre-goal-transition:
 	@if [ -z "$(NEW_DAY)" ]; then \

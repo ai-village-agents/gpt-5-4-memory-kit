@@ -67,13 +67,22 @@ class PreSendChatTests(unittest.TestCase):
                         "checkpoint summary",
                         "--duplicate-check",
                         "Compared against visible AGENT_TALK events for this topic",
+                        "--visible-events-check",
+                        "Re-checked latest visible AGENT_TALK events before send",
                     ]
                 )
             out = buf.getvalue()
             self.assertEqual(0, rc)
             self.assertIn("PRE-SEND CHAT CHECK", out)
             self.assertIn("- PC-1: already announced status update", out)
-            self.assertIn("READY: compare visible events against public_comms before sending.", out)
+            self.assertIn(
+                "- Visible-events-check: Re-checked latest visible AGENT_TALK events before send",
+                out,
+            )
+            self.assertIn(
+                "READY: public_comms passed; re-check the latest visible events immediately before sending.",
+                out,
+            )
 
     def test_blocked_blank_required_field(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -92,6 +101,8 @@ class PreSendChatTests(unittest.TestCase):
                         "checkpoint summary",
                         "--duplicate-check",
                         "Compared with existing visible status updates",
+                        "--visible-events-check",
+                        "Re-checked latest visible status events before send",
                     ]
                 )
             out = buf.getvalue()
@@ -115,11 +126,63 @@ class PreSendChatTests(unittest.TestCase):
                         "checkpoint summary",
                         "--duplicate-check",
                         "ok",
+                        "--visible-events-check",
+                        "Re-checked latest visible status events before send",
                     ]
                 )
             out = buf.getvalue()
             self.assertEqual(1, rc)
             self.assertIn("BLOCKED: --duplicate-check is too vague", out)
+
+    def test_blocked_blank_visible_events_check(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_public_comms(data_dir)
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main(
+                    [
+                        str(data_dir),
+                        "--purpose",
+                        "share status",
+                        "--recipient",
+                        "#rest",
+                        "--topic",
+                        "checkpoint summary",
+                        "--duplicate-check",
+                        "Compared with existing visible status updates",
+                        "--visible-events-check",
+                        "   ",
+                    ]
+                )
+            out = buf.getvalue()
+            self.assertEqual(1, rc)
+            self.assertIn("BLOCKED: --visible-events-check must not be blank", out)
+
+    def test_blocked_vague_visible_events_check(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_public_comms(data_dir)
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main(
+                    [
+                        str(data_dir),
+                        "--purpose",
+                        "share status",
+                        "--recipient",
+                        "#rest",
+                        "--topic",
+                        "checkpoint summary",
+                        "--duplicate-check",
+                        "Compared with existing visible status updates",
+                        "--visible-events-check",
+                        "checked",
+                    ]
+                )
+            out = buf.getvalue()
+            self.assertEqual(1, rc)
+            self.assertIn("BLOCKED: --visible-events-check is too vague", out)
 
     def test_blocked_duplicate_topic_in_active(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -138,6 +201,8 @@ class PreSendChatTests(unittest.TestCase):
                         "  ALREADY ANNOUNCED STATUS UPDATE  ",
                         "--duplicate-check",
                         "Compared against existing entries and visible event log",
+                        "--visible-events-check",
+                        "Re-checked latest visible event log before sending",
                     ]
                 )
             out = buf.getvalue()
@@ -165,6 +230,8 @@ class PreSendChatTests(unittest.TestCase):
                         " ARCHIVED MILESTONE NOTE ",
                         "--duplicate-check",
                         "Compared against existing entries and visible event log",
+                        "--visible-events-check",
+                        "Re-checked latest visible event log before sending",
                     ]
                 )
             out = buf.getvalue()

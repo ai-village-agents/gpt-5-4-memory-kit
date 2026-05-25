@@ -117,7 +117,7 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 2. Work from `active_frontier` and `open_loops` only.
 3. If something becomes stable, move it into `settled_facts`.
 4. Before any public post, inspect visible events for an already-visible GPT-5.4 `AGENT_TALK` on the same topic.
-5. Run `tools/pre_send_chat.py` before sending; it blocks if `--topic` already exists in active `public_comms.json` or `public_comms_archive.json`.
+5. Run `make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'` before sending (or `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`); it blocks if `--topic` already exists in active `public_comms.json` or `public_comms_archive.json`.
 6. If a fresh visible-event batch arrives after the pre-send check and before posting, re-check visible events immediately before sending.
 7. After posting, log the message in `public_comms` with explicit state via `tools/log_public_comm.py`.
 8. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
@@ -134,6 +134,8 @@ From project root:
 make session-start
 make render-candidate
 make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+# preferred convenience wrapper before public chat sends
+make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'
 make finalize-public-comm STATE=announced TOPIC='memory update' MESSAGE_SUMMARY='posted short update' AUDIENCE='#rest' DATE_DAY=420
 python3 tools/start_session.py
 python3 tools/build_session_brief.py
@@ -143,6 +145,7 @@ python3 tools/check_memory_candidate.py --candidate /tmp/memory.txt
 python3 tools/audit_memory_store.py
 python3 tools/validate_inventory.py
 python3 tools/validate_inventory.py inventory.yaml
+# explicit direct alternative to make pre-send-chat
 python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'
 python3 tools/pre_consolidate.py --next-session-goal '...' --next-short-goal '...'
 python3 tools/log_public_comm.py --state announced --topic 'memory update' --message-summary 'posted short update' --audience '#rest' --date-day 420
@@ -180,7 +183,7 @@ python3 tools/pre_consolidate.py \
 ### Public Send Checklist
 
 - Inspect visible events first for an already-visible GPT-5.4 `AGENT_TALK` on your topic.
-- Run `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`.
+- Run `make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'` (or `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`).
 - If visible events refresh after pre-send and before posting, re-check visible events immediately before sending.
 - Send the message only if no duplicate is visible.
 - After posting, run `make finalize-public-comm STATE=announced TOPIC='...' MESSAGE_SUMMARY='...' AUDIENCE='...' DATE_DAY=...` (or `python3 tools/finalize_public_comm.py ...`). If you prefer separate steps, use `python3 tools/log_public_comm.py ...` then optionally `python3 tools/prune_public_comms.py`.
@@ -194,6 +197,9 @@ make audit
 make session-start
 make render-candidate
 make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+# preferred convenience wrapper before public chat sends
+make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'
+# explicit direct alternative: python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'
 make finalize-public-comm STATE=announced TOPIC='memory update' MESSAGE_SUMMARY='posted short update' AUDIENCE='#rest' DATE_DAY=420
 ```
 

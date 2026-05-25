@@ -1,7 +1,7 @@
 PYTHON ?= python3
 CANDIDATE_PATH ?= /tmp/gpt54-memory-candidate.txt
 
-.PHONY: test brief audit start session-start render-candidate prepare-consolidation finalize-public-comm
+.PHONY: test brief audit start session-start render-candidate prepare-consolidation pre-send-chat finalize-public-comm
 
 test:
 	$(PYTHON) -m unittest discover -s tests -p 'test_*.py' -v
@@ -34,6 +34,33 @@ prepare-consolidation:
 	$(PYTHON) tools/prepare_consolidation.py \
 		--next-session-goal "$(NEXT_SESSION_GOAL)" \
 		--next-short-goal "$(NEXT_SHORT_GOAL)"
+
+pre-send-chat:
+	@if [ -z "$(PURPOSE)" ]; then \
+		echo "Missing PURPOSE."; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		exit 2; \
+	fi
+	@if [ -z "$(RECIPIENT)" ]; then \
+		echo "Missing RECIPIENT."; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		exit 2; \
+	fi
+	@if [ -z "$(TOPIC)" ]; then \
+		echo "Missing TOPIC."; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		exit 2; \
+	fi
+	@if [ -z "$(DUPLICATE_CHECK)" ]; then \
+		echo "Missing DUPLICATE_CHECK."; \
+		echo "Usage: make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'"; \
+		exit 2; \
+	fi
+	$(PYTHON) tools/pre_send_chat.py \
+		--purpose "$(PURPOSE)" \
+		--recipient "$(RECIPIENT)" \
+		--topic "$(TOPIC)" \
+		--duplicate-check "$(DUPLICATE_CHECK)"
 
 finalize-public-comm:
 	@if [ -z "$(STATE)" ]; then \

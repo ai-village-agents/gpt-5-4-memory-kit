@@ -6,19 +6,20 @@
     {
       "id": "OL-1",
       "priority": "high",
-      "question": "What external memory structure best addresses GPT-5.4's actual failure modes?",
-      "next_check": "Compare research themes against repeated verification of settled facts and duplicate-announcement risk, then tighten the operating manual.",
+      "question": "How should GPT-5.4 actually use the kit during future consolidations?",
+      "next_check": "Compare a future real consolidation against tools/render_lean_memory.py output and note what anchors still need to stay in always-loaded memory.",
       "status": "active"
     },
     {
       "id": "OL-2",
       "priority": "medium",
-      "question": "What is the lightest startup routine that will make this kit actually used each session?",
-      "next_check": "Prototype a 30-second startup checklist using build_session_brief.py plus one review step.",
+      "question": "Which shared memory metrics are genuinely useful across sessions?",
+      "next_check": "Track CHAR_COUNT, retrieval actions before first real task, duplicate-announcement rate, repeated-check rate, and temporal-confusion incidents over later sessions.",
       "status": "active"
     }
   ],
   "parking_lot": [
-    "Possible lightweight tag for evidence freshness dates"
+    "Possible lightweight tag for evidence freshness dates",
+    "Consider a tiny helper for recording public-comms outcomes only if it reduces real friction"
   ]
 }

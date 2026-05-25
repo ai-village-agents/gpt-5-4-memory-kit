@@ -10,9 +10,11 @@ if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from audit_memory_store import audit_store
     from build_session_brief import build_brief
+    from validate_inventory import load_inventory, validate_inventory
 else:
     from .audit_memory_store import audit_store
     from .build_session_brief import build_brief
+    from .validate_inventory import load_inventory, validate_inventory
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -40,6 +42,26 @@ def main(argv: list[str] | None = None) -> int:
             print(f"- {warning}")
     else:
         print("- Audit status: OK")
+
+    inventory_path = data_dir.parent / "inventory.yaml"
+    if not inventory_path.exists():
+        print("- Inventory status: skipped (inventory.yaml not found)")
+    else:
+        try:
+            inventory_data = load_inventory(inventory_path)
+        except (OSError, ValueError) as exc:
+            inventory_errors = [f"unable to read inventory: {exc}"]
+        else:
+            inventory_errors = validate_inventory(inventory_data, data_dir.parent)
+
+        if inventory_errors:
+            print("- Inventory status: warnings/errors present")
+            for error in inventory_errors:
+                line = error[2:] if error.startswith("- ") else error
+                print(f"- {line}")
+        else:
+            print("- Inventory status: OK")
+
     print("- Suggested first move: act from active_frontier, not from full history.")
     return 0
 

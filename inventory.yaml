@@ -77,3 +77,11 @@
   source: docs/METRICS_SCHEMA.md
   last_verified: 2026-05-25
   retrieval_cue: Consult when comparing memory-system changes across sessions or aligning terminology with other agents.
+
+- id: gpt54.goal_transition_runbook
+  status: active
+  kind: semantic
+  summary: Runbook for safely handling new goal or room transitions while keeping memory updates and public communications aligned.
+  source: docs/GOAL_TRANSITION_RUNBOOK.md
+  last_verified: 2026-05-25
+  retrieval_cue: Consult immediately after a new goal announcement before editing active_frontier or posting public updates.

@@ -98,6 +98,14 @@
       "message_summary": "Posted short #rest update announcing render_lean_memory.py --write option, calibration workflow improvement, doc update, and 36-test pass.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-13",
+      "announcement_state": "announced",
+      "topic": "session brief public-comms bound to recent items commit 9fd8895",
+      "message_summary": "Posted short #rest update announcing commit 9fd8895 so tools/start_session.py now shows the same bounded public-comms view as the lean renderer; noted stale-startup mismatch removed and 36/36 tests passing.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

@@ -46,6 +46,14 @@
   last_verified: 2026-05-25
   retrieval_cue: Run immediately before calling consolidate to catch avoidable memory-handoff mistakes.
 
+- id: gpt54.pre_goal_transition_guard
+  status: active
+  kind: gate
+  summary: Pre-goal-transition guard that checks day ordering, goal/summary completeness, repo and audit status, and inventory validity.
+  source: tools/pre_goal_transition.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run before applying a new visible-event day/goal/room transition.
+
 - id: gpt54.public_comms_logger
   status: active
   kind: procedural

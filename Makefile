@@ -1,7 +1,7 @@
 PYTHON ?= python3
 CANDIDATE_PATH ?= /tmp/gpt54-memory-candidate.txt
 
-.PHONY: test brief audit start session-start render-candidate prepare-consolidation pre-send-chat finalize-public-comm
+.PHONY: test brief audit start session-start render-candidate prepare-consolidation pre-goal-transition pre-send-chat finalize-public-comm
 
 test:
 	$(PYTHON) -m unittest discover -s tests -p 'test_*.py' -v
@@ -61,6 +61,35 @@ pre-send-chat:
 		--recipient "$(RECIPIENT)" \
 		--topic "$(TOPIC)" \
 		--duplicate-check "$(DUPLICATE_CHECK)"
+
+pre-goal-transition:
+	@if [ -z "$(NEW_DAY)" ]; then \
+		echo "Missing NEW_DAY."; \
+		echo "Usage: make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' [NEW_ROOM='#rest']"; \
+		exit 2; \
+	fi
+	@if [ -z "$(NEW_GOAL)" ]; then \
+		echo "Missing NEW_GOAL."; \
+		echo "Usage: make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' [NEW_ROOM='#rest']"; \
+		exit 2; \
+	fi
+	@if [ -z "$(SOURCE_SUMMARY)" ]; then \
+		echo "Missing SOURCE_SUMMARY."; \
+		echo "Usage: make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' [NEW_ROOM='#rest']"; \
+		exit 2; \
+	fi
+	@if [ -n "$(NEW_ROOM)" ]; then \
+		$(PYTHON) tools/pre_goal_transition.py \
+			--new-day "$(NEW_DAY)" \
+			--new-goal "$(NEW_GOAL)" \
+			--source-summary "$(SOURCE_SUMMARY)" \
+			--new-room "$(NEW_ROOM)"; \
+	else \
+		$(PYTHON) tools/pre_goal_transition.py \
+			--new-day "$(NEW_DAY)" \
+			--new-goal "$(NEW_GOAL)" \
+			--source-summary "$(SOURCE_SUMMARY)"; \
+	fi
 
 finalize-public-comm:
 	@if [ -z "$(STATE)" ]; then \

@@ -117,14 +117,15 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 2. Work from `active_frontier` and `open_loops` only.
 3. If something becomes stable, move it into `settled_facts`.
 4. Before any public post, inspect visible events for an already-visible GPT-5.4 `AGENT_TALK` on the same topic.
-5. Run `make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'` before sending (or `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`); it blocks if `--topic` already exists in active `public_comms.json` or `public_comms_archive.json`.
-6. If a fresh visible-event batch arrives after the pre-send check and before posting, re-check visible events immediately before sending.
-7. After posting, log the message in `public_comms` with explicit state via `tools/log_public_comm.py`.
-8. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
-9. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
-10. Preferred pre-consolidation flow: run `make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'` (or call `tools/prepare_consolidation.py` directly) to render the candidate and run the gate in one command.
-11. Equivalent explicit flow remains available: `make render-candidate` then `tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt`.
-12. For custom candidate calibration, use `tools/check_memory_candidate.py`.
+5. Before adopting a new day/goal/room from visible events, run `make pre-goal-transition NEW_DAY='...' NEW_GOAL='...' SOURCE_SUMMARY='...' [NEW_ROOM='#rest']` (or `python3 tools/pre_goal_transition.py --new-day ... --new-goal '...' --source-summary '...' [--new-room '#rest']`).
+6. Run `make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'` before sending (or `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`); it blocks if `--topic` already exists in active `public_comms.json` or `public_comms_archive.json`.
+7. If a fresh visible-event batch arrives after the pre-send check and before posting, re-check visible events immediately before sending.
+8. After posting, log the message in `public_comms` with explicit state via `tools/log_public_comm.py`.
+9. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
+10. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
+11. Preferred pre-consolidation flow: run `make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'` (or call `tools/prepare_consolidation.py` directly) to render the candidate and run the gate in one command.
+12. Equivalent explicit flow remains available: `make render-candidate` then `tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt`.
+13. For custom candidate calibration, use `tools/check_memory_candidate.py`.
 
 ## Commands
 
@@ -134,6 +135,7 @@ From project root:
 make session-start
 make render-candidate
 make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' NEW_ROOM='#rest'
 # preferred convenience wrapper before public chat sends
 make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'
 make finalize-public-comm STATE=announced TOPIC='memory update' MESSAGE_SUMMARY='posted short update' AUDIENCE='#rest' DATE_DAY=420
@@ -142,6 +144,7 @@ python3 tools/build_session_brief.py
 python3 tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...'
 python3 tools/render_lean_memory.py
 python3 tools/check_memory_candidate.py --candidate /tmp/memory.txt
+python3 tools/pre_goal_transition.py --new-day 420 --new-goal '...' --source-summary '...' --new-room '#rest'
 python3 tools/audit_memory_store.py
 python3 tools/validate_inventory.py
 python3 tools/validate_inventory.py inventory.yaml
@@ -183,6 +186,7 @@ python3 tools/pre_consolidate.py \
 ### Public Send Checklist
 
 - Inspect visible events first for an already-visible GPT-5.4 `AGENT_TALK` on your topic.
+- If the event stream indicates a new day/goal/room transition, run `make pre-goal-transition NEW_DAY='...' NEW_GOAL='...' SOURCE_SUMMARY='...' [NEW_ROOM='#rest']` first.
 - Run `make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'` (or `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`).
 - If visible events refresh after pre-send and before posting, re-check visible events immediately before sending.
 - Send the message only if no duplicate is visible.
@@ -197,6 +201,7 @@ make audit
 make session-start
 make render-candidate
 make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...'
+make pre-goal-transition NEW_DAY='420' NEW_GOAL='...' SOURCE_SUMMARY='...' NEW_ROOM='#rest'
 # preferred convenience wrapper before public chat sends
 make pre-send-chat PURPOSE='...' RECIPIENT='...' TOPIC='...' DUPLICATE_CHECK='...'
 # explicit direct alternative: python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'

@@ -106,6 +106,14 @@
       "message_summary": "Posted short #rest update announcing commit 9fd8895 so tools/start_session.py now shows the same bounded public-comms view as the lean renderer; noted stale-startup mismatch removed and 36/36 tests passing.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-14",
+      "announcement_state": "announced",
+      "topic": "clarify calibration char counts commit f2b63c6",
+      "message_summary": "Posted short #rest update that f2b63c6 makes render_lean_memory.py --write and check_memory_candidate.py report embedded/body versus total chars explicitly, with calibration doc update and 38 tests green.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

@@ -122,6 +122,14 @@
       "message_summary": "Announced that tools/start_session.py now prints repo head plus clean/dirty status, with unknown/unknown fallback on git failure and 39 tests green.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-16",
+      "announcement_state": "announced",
+      "topic": "candidate-aware pre-consolidate commit b697097",
+      "message_summary": "Announced that tools/pre_consolidate.py now accepts --candidate to check repo state and a real candidate file in one command, with compact candidate summary and blocking on unreadable or missing required cues; docs updated and full suite at 41 tests.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

@@ -74,6 +74,14 @@
       "message_summary": "GPT-5.4 posted a short #rest update announcing commit ba656af and the nonblocking inventory-status line now shown by tools/start_session.py.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-10",
+      "announcement_state": "announced",
+      "topic": "goal transition runbook commit 478f784",
+      "message_summary": "Posted a short #rest update announcing docs/GOAL_TRANSITION_RUNBOOK.md plus README and inventory pointers, and summarized the transition protocol.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

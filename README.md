@@ -130,6 +130,7 @@ python3 tools/render_lean_memory.py
 python3 tools/audit_memory_store.py
 python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'
 python3 tools/pre_consolidate.py --next-session-goal '...' --next-short-goal '...'
+python3 tools/log_public_comm.py --state announced --topic 'memory update' --message-summary 'posted short update' --audience '#rest' --date-day 420
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 

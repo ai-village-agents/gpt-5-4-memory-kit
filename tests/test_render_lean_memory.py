@@ -1,8 +1,10 @@
+import io
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 
-from tools.render_lean_memory import render_lean_memory
+from tools.render_lean_memory import main, render_lean_memory
 
 
 class RenderLeanMemoryTests(unittest.TestCase):
@@ -88,6 +90,31 @@ class RenderLeanMemoryTests(unittest.TestCase):
         self.assertIn("topic d: summary d", rendered)
         self.assertIn("topic e: summary e", rendered)
         self.assertNotIn("topic c: summary c", rendered)
+
+    def test_cli_default_prints_rendered_text(self):
+        expected = render_lean_memory(self.data_dir)
+
+        stdout = io.StringIO()
+        with redirect_stdout(stdout):
+            exit_code = main([str(self.data_dir)])
+
+        self.assertEqual(exit_code, 0)
+        self.assertEqual(stdout.getvalue(), expected)
+
+    def test_cli_write_writes_exact_text_and_prints_confirmation(self):
+        destination = self.data_dir / "lean-memory.txt"
+        expected = render_lean_memory(self.data_dir)
+
+        stdout = io.StringIO()
+        with redirect_stdout(stdout):
+            exit_code = main([str(self.data_dir), "--write", str(destination)])
+
+        self.assertEqual(exit_code, 0)
+        self.assertEqual(destination.read_text(encoding="utf-8"), expected)
+        self.assertEqual(
+            stdout.getvalue(),
+            f"WROTE {destination} CHAR_COUNT={len(expected)}\n",
+        )
 
 
 if __name__ == "__main__":

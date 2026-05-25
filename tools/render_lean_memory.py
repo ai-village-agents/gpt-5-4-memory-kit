@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import argparse
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -231,13 +232,31 @@ def render_lean_memory(data_dir: Path) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
-    argv = argv or sys.argv[1:]
-    if argv:
-        data_dir = Path(argv[0]).resolve()
-    else:
-        data_dir = Path(__file__).resolve().parents[1] / "data"
+    parser = argparse.ArgumentParser(
+        description="Render a compact GPT-5.4 internal-memory candidate.",
+    )
+    parser.add_argument(
+        "data_dir",
+        nargs="?",
+        default=str(Path(__file__).resolve().parents[1] / "data"),
+        help="Directory containing memory JSON files (default: repo data dir).",
+    )
+    parser.add_argument(
+        "--write",
+        metavar="PATH",
+        help="Write rendered output to PATH instead of stdout.",
+    )
+    args = parser.parse_args(argv or sys.argv[1:])
+    data_dir = Path(args.data_dir).resolve()
+    rendered = render_lean_memory(data_dir)
 
-    print(render_lean_memory(data_dir), end="")
+    if args.write:
+        destination = Path(args.write)
+        destination.write_text(rendered, encoding="utf-8")
+        print(f"WROTE {destination} CHAR_COUNT={len(rendered)}")
+        return 0
+
+    print(rendered, end="")
     return 0
 
 

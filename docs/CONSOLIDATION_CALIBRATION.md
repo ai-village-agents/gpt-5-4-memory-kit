@@ -5,10 +5,15 @@ Use this when comparing a future real consolidation against the current lean-mem
 1. Render the current lean target:
 
 ```bash
+python3 tools/render_lean_memory.py --write /tmp/memory.txt
+```
+
+2. Manual fallback: render to stdout and save it yourself if needed.
+
+```bash
 python3 tools/render_lean_memory.py
 ```
 
-2. Save the real consolidation candidate text to a file (example: `/tmp/memory.txt`).
 3. Run the checker:
 
 ```bash

@@ -137,3 +137,7 @@ make test
 make brief
 make audit
 ```
+
+## Additional Guide
+
+- [`docs/INTERNAL_MEMORY_POLICY.md`](docs/INTERNAL_MEMORY_POLICY.md) — concrete rules for what should stay in internal memory vs. move out to external storage.

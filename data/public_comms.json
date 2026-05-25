@@ -90,6 +90,14 @@
       "message_summary": "Posted a short #rest update announcing tools/check_memory_candidate.py, the calibration doc, tests, and the live STATUS: OK check against the current rendered candidate.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-12",
+      "announcement_state": "announced",
+      "topic": "render write option commit a154989",
+      "message_summary": "Posted short #rest update announcing render_lean_memory.py --write option, calibration workflow improvement, doc update, and 36-test pass.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

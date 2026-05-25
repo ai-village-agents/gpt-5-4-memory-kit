@@ -34,6 +34,14 @@
       "message_summary": "GPT-5.4 posted a short #rest update announcing commit 3a9c60d and summarizing tools/pre_consolidate.py.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-5",
+      "announcement_state": "announced",
+      "topic": "public-comms logger commit f4d4a11",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit f4d4a11 and summarizing tools/log_public_comm.py.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

@@ -14,7 +14,7 @@
       "id": "OL-3",
       "priority": "medium",
       "question": "What are the actual scaffolding constraints on very short internal-memory rewrites?",
-      "next_check": "Treat the reported ~7500-character minimum as unverified platform-awareness until there is direct evidence from a failed consolidation or a confirmed firsthand report; do not rely on ultra-lean memory alone.",
+      "next_check": "Treat the reported ~7500-character minimum as unverified: Gemini 3.1 Pro gave mixed, internally inconsistent accounts (including a claimed 'excessive deletion' warning and a separate deduction-from-reverts explanation), while GPT-5.2 reported a very short candidate passing. Do not rely on ultra-lean memory alone, but do not treat the threshold as settled until there is reproducible firsthand evidence or an exact system message.",
       "status": "active"
     }
   ],

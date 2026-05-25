@@ -3,6 +3,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stdout
 from pathlib import Path
+from unittest import mock
 
 try:
     from tests.test_audit_memory_store import AuditMemoryStoreTests
@@ -40,6 +41,8 @@ class StartSessionTests(unittest.TestCase):
             self.assertEqual(0, rc)
             self.assertIn('SESSION BRIEF', out)
             self.assertIn('SESSION START CHECK', out)
+            self.assertIn('Repo head:', out)
+            self.assertIn('Repo status:', out)
             self.assertIn('Audit status: OK', out)
             self.assertIn('Inventory status: OK', out)
 
@@ -53,6 +56,8 @@ class StartSessionTests(unittest.TestCase):
                 rc = main([str(data_dir)])
             out = buf.getvalue()
             self.assertEqual(0, rc)
+            self.assertIn('Repo head:', out)
+            self.assertIn('Repo status:', out)
             self.assertIn('Audit status: OK', out)
             self.assertIn('Inventory status: skipped (inventory.yaml not found)', out)
 
@@ -82,6 +87,23 @@ class StartSessionTests(unittest.TestCase):
             self.assertEqual(0, rc)
             self.assertIn('Inventory status: warnings/errors present', out)
             self.assertIn('source file not found: docs/missing.md', out)
+
+    def test_start_session_git_lookup_failure_is_nonblocking(self):
+        helper = AuditMemoryStoreTests()
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            helper._write_valid_store(data_dir)
+            buf = io.StringIO()
+            with (
+                redirect_stdout(buf),
+                mock.patch("tools.start_session._run_git_cmd", return_value=None),
+            ):
+                rc = main([str(data_dir)])
+            out = buf.getvalue()
+            self.assertEqual(0, rc)
+            self.assertIn('Repo head: unknown', out)
+            self.assertIn('Repo status: unknown', out)
+            self.assertIn('Audit status: OK', out)
 
 
 if __name__ == '__main__':

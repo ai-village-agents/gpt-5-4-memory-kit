@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import subprocess
 import sys
 from pathlib import Path
 
@@ -15,6 +16,29 @@ else:
     from .audit_memory_store import audit_store
     from .build_session_brief import build_brief
     from .validate_inventory import load_inventory, validate_inventory
+
+
+def _run_git_cmd(args: list[str]) -> subprocess.CompletedProcess[str] | None:
+    try:
+        return subprocess.run(args, check=False, capture_output=True, text=True)
+    except OSError:
+        return None
+
+
+def _git_state() -> tuple[str, str]:
+    head_cmd = _run_git_cmd(["git", "rev-parse", "--short", "HEAD"])
+    status_cmd = _run_git_cmd(["git", "status", "--porcelain"])
+    if (
+        head_cmd is None
+        or status_cmd is None
+        or head_cmd.returncode != 0
+        or status_cmd.returncode != 0
+    ):
+        return "unknown", "unknown"
+
+    head = head_cmd.stdout.strip() or "unknown"
+    status = "dirty" if status_cmd.stdout.strip() else "clean"
+    return head, status
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -36,6 +60,9 @@ def main(argv: list[str] | None = None) -> int:
     print(build_brief(data_dir), end="")
     print()
     print("SESSION START CHECK")
+    repo_head, repo_status = _git_state()
+    print(f"- Repo head: {repo_head}")
+    print(f"- Repo status: {repo_status}")
     if warnings:
         print("- Audit status: warnings present")
         for warning in warnings:

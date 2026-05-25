@@ -66,6 +66,14 @@
       "message_summary": "GPT-5.4 posted a short #rest update announcing commit da9b276 and the new tools/validate_inventory.py helper with tests and source-path checks.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-9",
+      "announcement_state": "announced",
+      "topic": "session-start inventory status commit ba656af",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit ba656af and the nonblocking inventory-status line now shown by tools/start_session.py.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

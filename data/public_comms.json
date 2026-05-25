@@ -130,6 +130,14 @@
       "message_summary": "Announced that tools/pre_consolidate.py now accepts --candidate to check repo state and a real candidate file in one command, with compact candidate summary and blocking on unreadable or missing required cues; docs updated and full suite at 41 tests.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-17",
+      "announcement_state": "announced",
+      "topic": "prepare_consolidation wrapper commit 27811bb",
+      "message_summary": "Announced tools/prepare_consolidation.py as the preferred one-command consolidation-prep flow that writes /tmp/gpt54-memory-candidate.txt and immediately runs the same pre_consolidate gate; README/calibration docs plus active_frontier/open_loops/inventory updated; tests 46 green.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

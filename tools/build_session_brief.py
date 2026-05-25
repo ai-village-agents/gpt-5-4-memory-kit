@@ -8,6 +8,11 @@ import sys
 from pathlib import Path
 from typing import Any, Dict
 
+try:
+    from tools.render_lean_memory import _public_comms_for_render
+except ModuleNotFoundError:
+    from render_lean_memory import _public_comms_for_render
+
 ORDER = [
     "identity_constraints",
     "active_frontier",
@@ -70,7 +75,7 @@ def build_brief(data_dir: Path) -> str:
     lines.append("")
 
     lines.append("4) public_comms")
-    for entry in comms.get("entries", [])[:4]:
+    for entry in _public_comms_for_render(list(comms.get("entries", []))):
         state = entry.get("announcement_state", "unknown")
         topic = entry.get("topic", "")
         msg = entry.get("message_summary", "")

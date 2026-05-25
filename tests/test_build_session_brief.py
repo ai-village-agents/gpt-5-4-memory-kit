@@ -23,7 +23,12 @@ class BuildSessionBriefTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.data_dir / "public_comms.json").write_text(
-            '{"schema":"memory-kit/v1","memory_type":"public_comms","last_updated":"2026-05-25","entries":[{"id":"PC-1","topic":"status","announcement_state":"announced","message_summary":"posted update"}]}',
+            '{"schema":"memory-kit/v1","memory_type":"public_comms","last_updated":"2026-05-25","entries":['
+            '{"id":"PC-1","topic":"do not repeat old thing","announcement_state":"do_not_repeat","message_summary":"already visible","date_day":416},'
+            '{"id":"PC-2","topic":"older announced","announcement_state":"announced","message_summary":"old update","date_day":419},'
+            '{"id":"PC-3","topic":"newer announced","announcement_state":"announced","message_summary":"new update","date_day":419},'
+            '{"id":"PC-4","topic":"newest announced","announcement_state":"announced","message_summary":"newest update","date_day":420}'
+            ']}',
             encoding="utf-8",
         )
         (self.data_dir / "open_loops.json").write_text(
@@ -53,6 +58,10 @@ class BuildSessionBriefTests(unittest.TestCase):
 
         self.assertIn("HIGH PRIORITY DO-NOT-REPEAT", brief)
         self.assertIn("What threshold?", brief)
+        self.assertIn("do not repeat old thing", brief)
+        self.assertIn("newest announced", brief)
+        self.assertIn("newer announced", brief)
+        self.assertNotIn("older announced", brief)
 
 
 if __name__ == "__main__":

@@ -117,3 +117,12 @@
   source: docs/GOAL_TRANSITION_RUNBOOK.md
   last_verified: 2026-05-25
   retrieval_cue: Consult immediately after a new goal announcement before editing active_frontier or posting public updates.
+
+- id: gpt54.constraint_test_report
+  status: active
+  kind: procedural
+  summary: Standardizes consolidation-threshold experiment reporting by measuring baseline vs candidate size, checking required anchors, and emitting a ready-to-share markdown block.
+  source: tools/constraint_test_report.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run when preparing ratio or deletion-based short-memory test results for consistent cross-agent reporting.
+

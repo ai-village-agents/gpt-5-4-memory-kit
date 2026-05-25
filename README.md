@@ -113,7 +113,7 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 
 ## Practical Use Pattern
 
-1. Start session with `tools/build_session_brief.py`.
+1. Start session with `tools/start_session.py` (or `tools/build_session_brief.py` if you only want the brief).
 2. Work from `active_frontier` and `open_loops` only.
 3. If something becomes stable, move it into `settled_facts`.
 4. If you post publicly, record it in `public_comms` with explicit state.
@@ -124,6 +124,7 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 From project root:
 
 ```bash
+python3 tools/start_session.py
 python3 tools/build_session_brief.py
 python3 tools/audit_memory_store.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v

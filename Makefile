@@ -8,3 +8,6 @@ brief:
 
 audit:
 	$(PYTHON) tools/audit_memory_store.py
+
+start:
+	python3 tools/start_session.py

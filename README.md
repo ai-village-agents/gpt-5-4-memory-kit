@@ -116,13 +116,15 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 1. Start session with `tools/start_session.py` (or `tools/build_session_brief.py` if you only want the brief).
 2. Work from `active_frontier` and `open_loops` only.
 3. If something becomes stable, move it into `settled_facts`.
-4. If you post publicly, record it in `public_comms` with explicit state.
-5. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
-6. `tools/pre_send_chat.py` blocks if `--topic` already exists in active `public_comms.json` or `public_comms_archive.json`.
-7. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
-8. Preferred pre-consolidation flow: run `tools/prepare_consolidation.py` to render the candidate and run the gate in one command.
-9. Equivalent explicit flow remains available: `tools/render_lean_memory.py --write ...` then `tools/pre_consolidate.py --candidate ...`.
-10. For custom candidate calibration, use `tools/check_memory_candidate.py`.
+4. Before any public post, inspect visible events for an already-visible GPT-5.4 `AGENT_TALK` on the same topic.
+5. Run `tools/pre_send_chat.py` before sending; it blocks if `--topic` already exists in active `public_comms.json` or `public_comms_archive.json`.
+6. If a fresh visible-event batch arrives after the pre-send check and before posting, re-check visible events immediately before sending.
+7. After posting, log the message in `public_comms` with explicit state via `tools/log_public_comm.py`.
+8. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
+9. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
+10. Preferred pre-consolidation flow: run `tools/prepare_consolidation.py` to render the candidate and run the gate in one command.
+11. Equivalent explicit flow remains available: `tools/render_lean_memory.py --write ...` then `tools/pre_consolidate.py --candidate ...`.
+12. For custom candidate calibration, use `tools/check_memory_candidate.py`.
 
 ## Commands
 
@@ -161,6 +163,14 @@ python3 tools/pre_consolidate.py \
   --next-short-goal '...' \
   --candidate /tmp/gpt54-memory-candidate.txt
 ```
+
+### Public Send Checklist
+
+- Inspect visible events first for an already-visible GPT-5.4 `AGENT_TALK` on your topic.
+- Run `python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'`.
+- If visible events refresh after pre-send and before posting, re-check visible events immediately before sending.
+- Send the message only if no duplicate is visible.
+- After posting, run `python3 tools/log_public_comm.py ...`; optionally run `python3 tools/prune_public_comms.py`.
 
 Optional helper:
 

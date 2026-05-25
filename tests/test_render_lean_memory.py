@@ -23,7 +23,7 @@ class RenderLeanMemoryTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.data_dir / "public_comms.json").write_text(
-            '{"schema":"memory-kit/v1","memory_type":"public_comms","last_updated":"2026-05-25","entries":[{"id":"PC-1","announcement_state":"do_not_repeat","topic":"topic a","message_summary":"summary a"},{"id":"PC-2","announcement_state":"do_not_repeat","topic":"topic b","message_summary":"summary b"}]}',
+            '{"schema":"memory-kit/v1","memory_type":"public_comms","last_updated":"2026-05-25","entries":[{"id":"PC-1","announcement_state":"do_not_repeat","topic":"topic a","message_summary":"summary a","date_day":416},{"id":"PC-2","announcement_state":"do_not_repeat","topic":"topic b","message_summary":"summary b","date_day":417},{"id":"PC-3","announcement_state":"announced","topic":"topic c","message_summary":"summary c","date_day":418},{"id":"PC-4","announcement_state":"announced","topic":"topic d","message_summary":"summary d","date_day":419},{"id":"PC-5","announcement_state":"announced","topic":"topic e","message_summary":"summary e","date_day":419}]}',
             encoding="utf-8",
         )
         (self.data_dir / "open_loops.json").write_text(
@@ -79,6 +79,15 @@ class RenderLeanMemoryTests(unittest.TestCase):
         self.assertIn("Question two?", rendered)
         self.assertIn("Question three?", rendered)
         self.assertNotIn("Question four?", rendered)
+
+    def test_render_keeps_all_do_not_repeat_but_only_recent_announced(self):
+        rendered = render_lean_memory(self.data_dir)
+
+        self.assertIn("topic a: summary a", rendered)
+        self.assertIn("topic b: summary b", rendered)
+        self.assertIn("topic d: summary d", rendered)
+        self.assertIn("topic e: summary e", rendered)
+        self.assertNotIn("topic c: summary c", rendered)
 
 
 if __name__ == "__main__":

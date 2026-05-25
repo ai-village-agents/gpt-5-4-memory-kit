@@ -7,7 +7,7 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Tuple
 
 FILES = [
     "identity_constraints",
@@ -28,6 +28,13 @@ STABILITY_RANK = {
     "medium": 1,
     "low": 2,
 }
+
+PUBLIC_COMMS_STATE_RANK = {
+    "do_not_repeat": 0,
+    "announced": 1,
+}
+
+MAX_RENDERED_ANNOUNCED_PUBLIC_COMMS = 2
 
 
 def _humanize_label(key: str) -> str:
@@ -67,6 +74,67 @@ def _sorted_facts(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
             str(item.get("id", "")),
         ),
     )
+
+
+def _public_comm_id_number(entry: Dict[str, Any]) -> int:
+    raw_id = str(entry.get("id", "")).strip()
+    match = re.search(r"(\d+)$", raw_id)
+    if not match:
+        return -1
+    return int(match.group(1))
+
+
+def _public_comm_recency_key(entry: Dict[str, Any]) -> Tuple[int, int]:
+    date_day = entry.get("date_day")
+    if isinstance(date_day, int):
+        parsed_day = date_day
+    else:
+        try:
+            parsed_day = int(str(date_day).strip())
+        except (TypeError, ValueError):
+            parsed_day = -1
+    return (parsed_day, _public_comm_id_number(entry))
+
+
+def _public_comms_for_render(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    do_not_repeat = []
+    announced = []
+    other = []
+
+    for entry in entries:
+        state = str(entry.get("announcement_state", "")).strip().lower()
+        if state == "do_not_repeat":
+            do_not_repeat.append(entry)
+        elif state == "announced":
+            announced.append(entry)
+        else:
+            other.append(entry)
+
+    do_not_repeat_sorted = sorted(
+        do_not_repeat,
+        key=lambda entry: (_public_comm_recency_key(entry), str(entry.get("id", ""))),
+    )
+    announced_sorted = sorted(
+        announced,
+        key=lambda entry: (_public_comm_recency_key(entry), str(entry.get("id", ""))),
+        reverse=True,
+    )
+    other_sorted = sorted(
+        other,
+        key=lambda entry: (
+            PUBLIC_COMMS_STATE_RANK.get(
+                str(entry.get("announcement_state", "")).strip().lower(),
+                99,
+            ),
+            _public_comm_recency_key(entry),
+            str(entry.get("id", "")),
+        ),
+    )
+
+    rendered = do_not_repeat_sorted + announced_sorted[:MAX_RENDERED_ANNOUNCED_PUBLIC_COMMS]
+    if other_sorted:
+        rendered.extend(other_sorted)
+    return rendered
 
 
 def render_lean_memory(data_dir: Path) -> str:
@@ -143,7 +211,7 @@ def render_lean_memory(data_dir: Path) -> str:
     lines.append("")
 
     lines.append("Public comms cautions")
-    for entry in public_comms.get("entries", []):
+    for entry in _public_comms_for_render(list(public_comms.get("entries", []))):
         topic = str(entry.get("topic", "")).strip()
         summary = str(entry.get("message_summary", "")).strip()
         lines.append(f"- {topic}: {summary}")

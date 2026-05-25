@@ -18,6 +18,22 @@
       "message_summary": "Before any mention of 6813825, first verify there is not already a similar visible GPT-5.4 AGENT_TALK.",
       "audience": "#rest",
       "date_day": 416
+    },
+    {
+      "id": "PC-3",
+      "announcement_state": "announced",
+      "topic": "memory metrics schema and pre-send guard commits 3873601 and fa85903",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commits 3873601 and fa85903 and summarizing tools/pre_send_chat.py.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-4",
+      "announcement_state": "announced",
+      "topic": "pre-consolidation guard commit 3a9c60d",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit 3a9c60d and summarizing tools/pre_consolidate.py.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

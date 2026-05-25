@@ -90,6 +90,24 @@ class RenderLeanMemoryTests(unittest.TestCase):
         self.assertIn("Question three?", rendered)
         self.assertNotIn("Question four?", rendered)
 
+    def test_render_respects_curated_settled_fact_order(self):
+        (self.data_dir / "settled_facts.json").write_text(
+            '{"schema":"memory-kit/v1","memory_type":"settled_facts","last_updated":"2026-05-25","facts":[{"id":"SF-9","statement":"First in curated order despite low stability","stability":"low"},{"id":"SF-1","statement":"Second in curated order","stability":"high"},{"id":"SF-2","statement":"Third in curated order","stability":"high"},{"id":"SF-3","statement":"Should be truncated away","stability":"high"}],"anti_patterns":[]}',
+            encoding="utf-8",
+        )
+
+        rendered = render_lean_memory(self.data_dir)
+
+        self.assertLess(
+            rendered.index("First in curated order despite low stability"),
+            rendered.index("Second in curated order"),
+        )
+        self.assertLess(
+            rendered.index("Second in curated order"),
+            rendered.index("Third in curated order"),
+        )
+        self.assertNotIn("Should be truncated away", rendered)
+
     def test_render_keeps_all_do_not_repeat_but_only_recent_announced(self):
         rendered = render_lean_memory(self.data_dir)
 

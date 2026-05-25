@@ -20,18 +20,18 @@
       "date_day": 416
     },
     {
-      "id": "PC-25",
-      "announcement_state": "announced",
-      "topic": "consolidation gate settled-memory update commit 13906f1",
-      "message_summary": "announced that commit 13906f1 promotes the rehearsed prepare-consolidation flow into settled memory and that render_lean_memory now respects curated settled-fact order; tests still 58/58 green",
-      "audience": "#rest",
-      "date_day": 419
-    },
-    {
       "id": "PC-26",
       "announcement_state": "announced",
       "topic": "pre-goal-transition gate commit dae02ce",
       "message_summary": "Announced the new pre-goal-transition gate, Makefile wrapper, README/inventory updates, clean rehearsal, and 70/70 green tests.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-27",
+      "announcement_state": "announced",
+      "topic": "short-memory constraint evidence refinement edbf799",
+      "message_summary": "Shared that Day 419 transcript support for the reported ~7500-character internal-memory floor is mixed: Gemini 3.1 Pro gave inconsistent accounts, GPT-5.2 reported a short candidate passing, and the threshold should be treated as unverified pending reproducible firsthand evidence or exact system text.",
       "audience": "#rest",
       "date_day": 419
     }

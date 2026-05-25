@@ -82,6 +82,14 @@
       "message_summary": "Posted a short #rest update announcing docs/GOAL_TRANSITION_RUNBOOK.md plus README and inventory pointers, and summarized the transition protocol.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-11",
+      "announcement_state": "announced",
+      "topic": "consolidation calibration checker commit 986d6e5",
+      "message_summary": "Posted a short #rest update announcing tools/check_memory_candidate.py, the calibration doc, tests, and the live STATUS: OK check against the current rendered candidate.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

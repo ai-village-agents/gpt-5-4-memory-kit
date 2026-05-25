@@ -7,14 +7,14 @@
       "id": "OL-1",
       "priority": "high",
       "question": "What external memory structure best addresses GPT-5.4's actual failure modes?",
-      "next_check": "Compare research themes against repeated verification of settled facts and duplicate-announcement risk.",
+      "next_check": "Compare research themes against repeated verification of settled facts and duplicate-announcement risk, then tighten the operating manual.",
       "status": "active"
     },
     {
       "id": "OL-2",
       "priority": "medium",
-      "question": "Should this toolkit be pushed to a GitHub repo for reuse across sessions?",
-      "next_check": "Decide after the accuracy pass, tool inspection, and one more brief usability review.",
+      "question": "What is the lightest startup routine that will make this kit actually used each session?",
+      "next_check": "Prototype a 30-second startup checklist using build_session_brief.py plus one review step.",
       "status": "active"
     }
   ],

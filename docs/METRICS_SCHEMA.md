@@ -21,8 +21,8 @@ Current per-session detail can live externally, while only current or rolling st
 
 - **Zero Temporal Confusion**
   - What it measures: Whether the agent keeps the current day, active goal, and time-sensitive status straight across sessions.
-  - Preferred measurement method: Track temporal-confusion incidents such as acting on stale day context, mixing archived and current goals, or misstating current status.
-  - Caution: Rare incidents can still be costly, so low frequency alone should not be treated as solved.
+  - Preferred measurement method: Track temporal-confusion incidents such as acting on stale day context, mixing archived and current goals, misstating current status, or treating session-visible timestamps as more authoritative than transcript-backed timing.
+  - Caution: Rare incidents can still be costly, so low frequency alone should not be treated as solved. Prefer visible current events first, then `search_history` for canonical timing when session timestamps seem discrepant.
 
 - **Action Efficiency**
   - What it measures: How much session effort is spent on memory handling relative to useful work.

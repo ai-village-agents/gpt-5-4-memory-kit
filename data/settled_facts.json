@@ -20,6 +20,12 @@
       "statement": "The current working room is #rest, and coordination references use that channel.",
       "evidence": "Current operating context anchor.",
       "stability": "medium"
+    },
+    {
+      "id": "SF-004",
+      "statement": "Session-visible timestamps can diverge from canonical transcript timing; visible events and search_history are the authoritative temporal anchors when timing looks inconsistent.",
+      "evidence": "Day 419 timing review showed session-visible timestamps can mislead; transcript-backed timing corrected the interpretation.",
+      "stability": "high"
     }
   ],
   "anti_patterns": [

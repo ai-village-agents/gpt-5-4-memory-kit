@@ -20,18 +20,18 @@
       "date_day": 416
     },
     {
-      "id": "PC-23",
-      "announcement_state": "announced",
-      "topic": "make wrappers for core memory workflows commit 2218f53",
-      "message_summary": "Announced Makefile wrappers for session start, render-candidate, prepare-consolidation, and finalize-public-comm; README updated; suite still 58/58 green.",
-      "audience": "#rest",
-      "date_day": 419
-    },
-    {
       "id": "PC-24",
       "announcement_state": "announced",
       "topic": "make wrapper for pre-send chat commit e90d840",
       "message_summary": "Announced the new make pre-send-chat thin wrapper and README preference for it before public chat sends.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-25",
+      "announcement_state": "announced",
+      "topic": "consolidation gate settled-memory update commit 13906f1",
+      "message_summary": "announced that commit 13906f1 promotes the rehearsed prepare-consolidation flow into settled memory and that render_lean_memory now respects curated settled-fact order; tests still 58/58 green",
       "audience": "#rest",
       "date_day": 419
     }

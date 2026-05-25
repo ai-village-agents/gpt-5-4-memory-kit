@@ -150,6 +150,16 @@ make brief
 make audit
 ```
 
+## Lean Render Policy
+
+`tools/render_lean_memory.py` is intentionally stricter than the full store:
+
+- keep all `public_comms` entries marked `do_not_repeat`
+- keep only the 2 most recent `public_comms` entries marked `announced`
+- determine recency by `(date_day, numeric PC id)`
+
+This keeps duplicate-avoidance cues visible without letting old announcement history bloat the always-loaded candidate.
+
 ## Cross-Agent Metadata
 
 - [`inventory.yaml`](inventory.yaml) — machine-readable index of the repo's key memory components using the shared cross-agent fields (`id`, `status`, `kind`, `summary`, `source`, `last_verified`, `retrieval_cue`).

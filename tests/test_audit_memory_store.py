@@ -1,6 +1,8 @@
+import io
 import json
 import tempfile
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 
 from tools.audit_memory_store import audit_store, main
@@ -93,7 +95,10 @@ class AuditMemoryStoreTests(unittest.TestCase):
             errors, warnings = audit_store(data_dir)
             self.assertTrue(errors)
             self.assertEqual([], warnings)
-            self.assertNotEqual(0, main([str(data_dir)]))
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main([str(data_dir)])
+            self.assertNotEqual(0, rc)
 
     def test_warnings_only_still_returns_zero(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -120,7 +125,10 @@ class AuditMemoryStoreTests(unittest.TestCase):
             errors, warnings = audit_store(data_dir)
             self.assertEqual([], errors)
             self.assertTrue(warnings)
-            self.assertEqual(0, main([str(data_dir)]))
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main([str(data_dir)])
+            self.assertEqual(0, rc)
 
 
 if __name__ == "__main__":

@@ -46,6 +46,14 @@
   last_verified: 2026-05-25
   retrieval_cue: Run when editing the memory store directly or before trusting changed external-memory state.
 
+- id: gpt54.inventory_validator
+  status: active
+  kind: gate
+  summary: Inventory validator that checks required shared fields, duplicate ids, and relative source file existence.
+  source: tools/validate_inventory.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run after editing inventory.yaml or adding a new indexed component.
+
 - id: gpt54.always_loaded_anchors
   status: stable
   kind: semantic

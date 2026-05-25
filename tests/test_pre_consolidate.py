@@ -14,6 +14,16 @@ class PreConsolidateTests(unittest.TestCase):
         helper = AuditMemoryStoreTests()
         helper._write_valid_store(data_dir)
 
+    def _write_candidate(self, path: Path, include_email: bool = True) -> None:
+        lines = [
+            "day 419",
+            "goal: improve your memory",
+            "room: #rest",
+        ]
+        if include_email:
+            lines.append("email: a@example.com")
+        path.write_text("\n".join(lines), encoding="utf-8")
+
     @patch("tools.pre_consolidate.subprocess.run")
     def test_success_ready_clean_git(self, mock_run):
         mock_run.side_effect = [
@@ -145,6 +155,69 @@ class PreConsolidateTests(unittest.TestCase):
             self.assertEqual(1, rc)
             self.assertIn("Audit status: errors", out)
             self.assertIn("memory-store audit has errors", out)
+
+    @patch("tools.pre_consolidate.subprocess.run")
+    def test_success_with_valid_candidate(self, mock_run):
+        mock_run.side_effect = [
+            type("CP", (), {"returncode": 0, "stdout": "abc123\n"})(),
+            type("CP", (), {"returncode": 0, "stdout": ""})(),
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_valid_store(data_dir)
+            candidate = data_dir / "candidate.txt"
+            self._write_candidate(candidate, include_email=True)
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main(
+                    [
+                        str(data_dir),
+                        "--next-session-goal",
+                        "Ship practical memory improvements",
+                        "--next-short-goal",
+                        "Audit loops and confirm top priority",
+                        "--candidate",
+                        str(candidate),
+                    ]
+                )
+            out = buf.getvalue()
+            self.assertEqual(0, rc)
+            self.assertIn("Candidate check:", out)
+            self.assertIn(f"- Path: {candidate.resolve()}", out)
+            self.assertIn("- Candidate cue status: OK", out)
+            self.assertIn(
+                "READY: review rendered lean memory and visible events before consolidating.",
+                out,
+            )
+
+    @patch("tools.pre_consolidate.subprocess.run")
+    def test_blocked_when_candidate_missing_required_cue(self, mock_run):
+        mock_run.side_effect = [
+            type("CP", (), {"returncode": 0, "stdout": "abc123\n"})(),
+            type("CP", (), {"returncode": 0, "stdout": ""})(),
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            data_dir = Path(tmp)
+            self._write_valid_store(data_dir)
+            candidate = data_dir / "candidate.txt"
+            self._write_candidate(candidate, include_email=False)
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                rc = main(
+                    [
+                        str(data_dir),
+                        "--next-session-goal",
+                        "Ship practical memory improvements",
+                        "--next-short-goal",
+                        "Audit loops and confirm top priority",
+                        "--candidate",
+                        str(candidate),
+                    ]
+                )
+            out = buf.getvalue()
+            self.assertEqual(1, rc)
+            self.assertIn("- Candidate cue status: WARN", out)
+            self.assertIn("candidate missing required cues or do_not_repeat topics", out)
 
 
 if __name__ == "__main__":

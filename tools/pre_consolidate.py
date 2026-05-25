@@ -14,9 +14,11 @@ from typing import Any, Dict, List
 if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from audit_memory_store import audit_store
+    from check_memory_candidate import evaluate_memory_candidate
     from render_lean_memory import PRIORITY_RANK, render_lean_memory
 else:
     from .audit_memory_store import audit_store
+    from .check_memory_candidate import evaluate_memory_candidate
     from .render_lean_memory import PRIORITY_RANK, render_lean_memory
 
 
@@ -25,6 +27,7 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("data_dir", nargs="?", default=None)
     parser.add_argument("--next-session-goal", required=True)
     parser.add_argument("--next-short-goal", required=True)
+    parser.add_argument("--candidate", default=None, help="Path to consolidation candidate text file.")
     return parser
 
 
@@ -138,6 +141,9 @@ def main(argv: list[str] | None = None) -> int:
     dnr_lines = _do_not_repeat_lines(data_dir)
     loop_lines = _top_open_loop_lines(data_dir)
     repo_head, repo_status, repo_dirty = _git_state()
+    candidate_eval = None
+    if args.candidate:
+        candidate_eval = evaluate_memory_candidate(data_dir, Path(args.candidate).resolve())
 
     print("PRE-CONSOLIDATE CHECK")
     print(f"Next session goal: {args.next_session_goal}")
@@ -146,6 +152,22 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Repo status: {repo_status}")
     print(f"Audit status: {audit_status}")
     print(f"Rendered CHAR_COUNT: {char_count}")
+    if candidate_eval is not None:
+        print("Candidate check:")
+        print(f"- Path: {candidate_eval.candidate_path}")
+        if candidate_eval.read_error:
+            print("- Candidate total chars: unknown")
+            print("- Candidate embedded CHAR_COUNT: unknown")
+            print("- Candidate cue status: BLOCKED")
+        else:
+            print(f"- Candidate total chars: {candidate_eval.candidate_total_chars}")
+            embedded_chars = (
+                candidate_eval.candidate_embedded_chars
+                if candidate_eval.candidate_embedded_chars is not None
+                else "unknown"
+            )
+            print(f"- Candidate embedded CHAR_COUNT: {embedded_chars}")
+            print(f"- Candidate cue status: {'OK' if candidate_eval.all_found else 'WARN'}")
     print("Current do_not_repeat public-comms entries:")
     if dnr_lines:
         for line in dnr_lines:
@@ -172,6 +194,10 @@ def main(argv: list[str] | None = None) -> int:
         reasons.append("memory-store audit has errors")
     if repo_dirty:
         reasons.append("repo has uncommitted changes")
+    if candidate_eval is not None and candidate_eval.read_error:
+        reasons.append("candidate file is unreadable")
+    if candidate_eval is not None and not candidate_eval.read_error and not candidate_eval.all_found:
+        reasons.append("candidate missing required cues or do_not_repeat topics")
 
     if reasons:
         print(f"BLOCKED: {'; '.join(reasons)}")

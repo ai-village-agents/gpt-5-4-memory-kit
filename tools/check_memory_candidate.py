@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -80,12 +81,36 @@ def _is_found(candidate_lower: str, expected: str) -> bool:
     return expected.strip().lower() in candidate_lower
 
 
-def check_memory_candidate(data_dir: Path, candidate_path: Path) -> int:
+@dataclass(frozen=True)
+class CandidateEvaluation:
+    candidate_path: Path
+    candidate_total_chars: int | None
+    candidate_embedded_chars: int | None
+    rendered_total_chars: int | None
+    rendered_embedded_chars: int | None
+    required_cue_results: List[Tuple[str, str, bool]]
+    required_topic_results: List[Tuple[str, bool]]
+    hard_rules: List[str]
+    all_found: bool
+    read_error: str | None = None
+
+
+def evaluate_memory_candidate(data_dir: Path, candidate_path: Path) -> CandidateEvaluation:
     try:
         candidate_text = candidate_path.read_text(encoding="utf-8")
     except OSError as exc:
-        print(f"ERROR: unable to read candidate file: {exc}")
-        return 1
+        return CandidateEvaluation(
+            candidate_path=candidate_path,
+            candidate_total_chars=None,
+            candidate_embedded_chars=None,
+            rendered_total_chars=None,
+            rendered_embedded_chars=None,
+            required_cue_results=[],
+            required_topic_results=[],
+            hard_rules=[],
+            all_found=False,
+            read_error=str(exc),
+        )
 
     store = _load_store(data_dir)
     rendered = render_lean_memory(data_dir)
@@ -96,41 +121,60 @@ def check_memory_candidate(data_dir: Path, candidate_path: Path) -> int:
     required_topics = _required_do_not_repeat_topics(store)
 
     candidate_lower = candidate_text.lower()
+    cue_results = [
+        (label, snippet, _is_found(candidate_lower, snippet)) for label, snippet in required_cues
+    ]
+    topic_results = [(topic, _is_found(candidate_lower, topic)) for topic in required_topics]
+    all_found = all(found for _, _, found in cue_results) and all(found for _, found in topic_results)
+    hard_rules = list(store["identity_constraints"].get("hard_rules", []))
+
+    return CandidateEvaluation(
+        candidate_path=candidate_path,
+        candidate_total_chars=candidate_total_chars,
+        candidate_embedded_chars=candidate_embedded_chars,
+        rendered_total_chars=rendered_total_chars,
+        rendered_embedded_chars=rendered_embedded_chars,
+        required_cue_results=cue_results,
+        required_topic_results=topic_results,
+        hard_rules=hard_rules,
+        all_found=all_found,
+    )
+
+
+def check_memory_candidate(data_dir: Path, candidate_path: Path) -> int:
+    evaluation = evaluate_memory_candidate(data_dir, candidate_path)
+    if evaluation.read_error:
+        print(f"ERROR: unable to read candidate file: {evaluation.read_error}")
+        return 1
 
     print("MEMORY CANDIDATE CHECK")
-    print(f"- Candidate: {candidate_path}")
-    print(f"- Candidate total chars: {candidate_total_chars}")
+    print(f"- Candidate: {evaluation.candidate_path}")
+    print(f"- Candidate total chars: {evaluation.candidate_total_chars}")
     print(
         "- Candidate embedded CHAR_COUNT: "
-        f"{candidate_embedded_chars if candidate_embedded_chars is not None else 'unknown'}"
+        f"{evaluation.candidate_embedded_chars if evaluation.candidate_embedded_chars is not None else 'unknown'}"
     )
-    print(f"- Rendered total chars: {rendered_total_chars}")
+    print(f"- Rendered total chars: {evaluation.rendered_total_chars}")
     print(
         "- Rendered embedded CHAR_COUNT: "
-        f"{rendered_embedded_chars if rendered_embedded_chars is not None else 'unknown'}"
+        f"{evaluation.rendered_embedded_chars if evaluation.rendered_embedded_chars is not None else 'unknown'}"
     )
 
     print("- Required anchor cues:")
-    all_found = True
-    for label, snippet in required_cues:
-        found = _is_found(candidate_lower, snippet)
-        all_found = all_found and found
+    for label, snippet, found in evaluation.required_cue_results:
         status = "FOUND" if found else "MISSING"
         print(f"  * {status} | {label} | {snippet}")
 
     print("- Required do_not_repeat topics:")
-    for topic in required_topics:
-        found = _is_found(candidate_lower, topic)
-        all_found = all_found and found
+    for topic, found in evaluation.required_topic_results:
         status = "FOUND" if found else "MISSING"
         print(f"  * {status} | {topic}")
 
     print("- Reviewer reminders:")
-    hard_rules = list(store["identity_constraints"].get("hard_rules", []))
-    for rule in hard_rules[:5]:
+    for rule in evaluation.hard_rules[:5]:
         print(f"  * {rule}")
 
-    print("- STATUS: OK" if all_found else "- STATUS: WARN")
+    print("- STATUS: OK" if evaluation.all_found else "- STATUS: WARN")
     return 0
 
 

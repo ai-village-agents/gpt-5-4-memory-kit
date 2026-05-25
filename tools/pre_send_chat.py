@@ -7,7 +7,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 VAGUE_DUPLICATE_CHECK_VALUES = {
     "checked",
@@ -23,6 +23,13 @@ VAGUE_DUPLICATE_CHECK_VALUES = {
 def _load_public_comms(path: Path) -> Dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def _load_optional_public_comms(path: Path) -> Optional[Dict[str, Any]]:
+    try:
+        return _load_public_comms(path)
+    except FileNotFoundError:
+        return None
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -44,6 +51,10 @@ def _is_vague_duplicate_check(value: str) -> bool:
     if normalized in VAGUE_DUPLICATE_CHECK_VALUES:
         return True
     return len(value.strip()) < 12
+
+
+def _normalize_topic(value: str) -> str:
+    return value.strip().lower()
 
 
 def _do_not_repeat_lines(entries: List[Dict[str, Any]]) -> List[str]:
@@ -68,11 +79,18 @@ def main(argv: list[str] | None = None) -> int:
         data_dir = Path(__file__).resolve().parents[1] / "data"
 
     public_comms_path = data_dir / "public_comms.json"
+    archive_path = data_dir / "public_comms_archive.json"
 
     try:
         public_comms = _load_public_comms(public_comms_path)
-    except (FileNotFoundError, json.JSONDecodeError) as exc:
+    except (OSError, json.JSONDecodeError) as exc:
         print(f"BLOCKED: unable to read public_comms.json ({exc})")
+        return 1
+
+    try:
+        public_comms_archive = _load_optional_public_comms(archive_path)
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"BLOCKED: unable to read public_comms_archive.json ({exc})")
         return 1
 
     print("PRE-SEND CHAT CHECK")
@@ -102,6 +120,22 @@ def main(argv: list[str] | None = None) -> int:
 
     if _is_vague_duplicate_check(args.duplicate_check):
         print("BLOCKED: --duplicate-check is too vague; provide specific evidence")
+        return 1
+
+    requested_topic = _normalize_topic(args.topic)
+    all_entries = public_comms.get("entries", [])
+    if public_comms_archive:
+        all_entries = all_entries + public_comms_archive.get("entries", [])
+
+    for entry in all_entries:
+        if _normalize_topic(str(entry.get("topic", ""))) != requested_topic:
+            continue
+        entry_id = str(entry.get("id", "<unknown>"))
+        announcement_state = str(entry.get("announcement_state", "<unknown>"))
+        print(
+            "BLOCKED: --topic already exists in public_comms "
+            f"(id={entry_id}, announcement_state={announcement_state})"
+        )
         return 1
 
     print("READY: compare visible events against public_comms before sending.")

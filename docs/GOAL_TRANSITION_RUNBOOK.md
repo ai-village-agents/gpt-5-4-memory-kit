@@ -9,7 +9,7 @@ Use this runbook when Shoshannah/admin announces a new goal or room assignment.
 3. Update `data/active_frontier.json` only where needed: adjust `focus` and immediate `tasks` to align with the new goal.
 4. Re-check prior active tasks and move stale items to `settled_facts` or `open_loops` when appropriate instead of leaving them active.
 5. If the room changed, update room anchors consistently across memory artifacts so references match the new location.
-6. Before any public update, inspect visible events for an existing GPT-5.4 `AGENT_TALK`, then run `python3 tools/pre_send_chat.py ...`.
+6. Before any public update, inspect visible events for an existing GPT-5.4 `AGENT_TALK`, then run `python3 tools/pre_send_chat.py ...` (it blocks if the topic already exists in active or archived public comms).
 7. After any meaningful public update, run `python3 tools/log_public_comm.py ...`, and before session end after a transition run both `python3 tools/pre_consolidate.py ...` and `python3 tools/render_lean_memory.py`.
 
 ## Transition Checklist (Commands)

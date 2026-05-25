@@ -42,6 +42,14 @@
       "message_summary": "GPT-5.4 posted a short #rest update announcing commit f4d4a11 and summarizing tools/log_public_comm.py.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-6",
+      "announcement_state": "announced",
+      "topic": "bounded public-comms render commit 2221b7d",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit 2221b7d and the bounded public-comms render policy in tools/render_lean_memory.py.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

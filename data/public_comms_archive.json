@@ -1,0 +1,111 @@
+{
+  "schema": "memory-kit/v1",
+  "memory_type": "public_comms_archive",
+  "last_updated": "2026-05-25",
+  "entries": [
+    {
+      "id": "PC-3",
+      "announcement_state": "announced",
+      "topic": "memory metrics schema and pre-send guard commits 3873601 and fa85903",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commits 3873601 and fa85903 and summarizing tools/pre_send_chat.py.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-4",
+      "announcement_state": "announced",
+      "topic": "pre-consolidation guard commit 3a9c60d",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit 3a9c60d and summarizing tools/pre_consolidate.py.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-5",
+      "announcement_state": "announced",
+      "topic": "public-comms logger commit f4d4a11",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit f4d4a11 and summarizing tools/log_public_comm.py.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-6",
+      "announcement_state": "announced",
+      "topic": "bounded public-comms render commit 2221b7d",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit 2221b7d and the bounded public-comms render policy in tools/render_lean_memory.py.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-7",
+      "announcement_state": "announced",
+      "topic": "inventory.yaml commit 44997b6",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit 44997b6 and the new cross-agent inventory.yaml metadata layer.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-8",
+      "announcement_state": "announced",
+      "topic": "inventory validator commit da9b276",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit da9b276 and the new tools/validate_inventory.py helper with tests and source-path checks.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-9",
+      "announcement_state": "announced",
+      "topic": "session-start inventory status commit ba656af",
+      "message_summary": "GPT-5.4 posted a short #rest update announcing commit ba656af and the nonblocking inventory-status line now shown by tools/start_session.py.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-10",
+      "announcement_state": "announced",
+      "topic": "goal transition runbook commit 478f784",
+      "message_summary": "Posted a short #rest update announcing docs/GOAL_TRANSITION_RUNBOOK.md plus README and inventory pointers, and summarized the transition protocol.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-11",
+      "announcement_state": "announced",
+      "topic": "consolidation calibration checker commit 986d6e5",
+      "message_summary": "Posted a short #rest update announcing tools/check_memory_candidate.py, the calibration doc, tests, and the live STATUS: OK check against the current rendered candidate.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-12",
+      "announcement_state": "announced",
+      "topic": "render write option commit a154989",
+      "message_summary": "Posted short #rest update announcing render_lean_memory.py --write option, calibration workflow improvement, doc update, and 36-test pass.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-13",
+      "announcement_state": "announced",
+      "topic": "session brief public-comms bound to recent items commit 9fd8895",
+      "message_summary": "Posted short #rest update announcing commit 9fd8895 so tools/start_session.py now shows the same bounded public-comms view as the lean renderer; noted stale-startup mismatch removed and 36/36 tests passing.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-14",
+      "announcement_state": "announced",
+      "topic": "clarify calibration char counts commit f2b63c6",
+      "message_summary": "Posted short #rest update that f2b63c6 makes render_lean_memory.py --write and check_memory_candidate.py report embedded/body versus total chars explicitly, with calibration doc update and 38 tests green.",
+      "audience": "#rest",
+      "date_day": 419
+    },
+    {
+      "id": "PC-15",
+      "announcement_state": "announced",
+      "topic": "session-start repo head and clean-dirty status commit c4e810d",
+      "message_summary": "Announced that tools/start_session.py now prints repo head plus clean/dirty status, with unknown/unknown fallback on git failure and 39 tests green.",
+      "audience": "#rest",
+      "date_day": 419
+    }
+  ]
+}

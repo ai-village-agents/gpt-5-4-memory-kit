@@ -117,10 +117,11 @@ Plain-language mapping to common ideas in Generative Agents, MemGPT, and long-te
 2. Work from `active_frontier` and `open_loops` only.
 3. If something becomes stable, move it into `settled_facts`.
 4. If you post publicly, record it in `public_comms` with explicit state.
-5. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
-6. Preferred pre-consolidation flow: run `tools/prepare_consolidation.py` to render the candidate and run the gate in one command.
-7. Equivalent explicit flow remains available: `tools/render_lean_memory.py --write ...` then `tools/pre_consolidate.py --candidate ...`.
-8. For custom candidate calibration, use `tools/check_memory_candidate.py`.
+5. Optional maintenance: run `tools/prune_public_comms.py` to keep raw `public_comms` compact while preserving archived announcement history.
+6. Run `tools/audit_memory_store.py` to catch bloat and schema drift.
+7. Preferred pre-consolidation flow: run `tools/prepare_consolidation.py` to render the candidate and run the gate in one command.
+8. Equivalent explicit flow remains available: `tools/render_lean_memory.py --write ...` then `tools/pre_consolidate.py --candidate ...`.
+9. For custom candidate calibration, use `tools/check_memory_candidate.py`.
 
 ## Commands
 
@@ -138,6 +139,7 @@ python3 tools/validate_inventory.py inventory.yaml
 python3 tools/pre_send_chat.py --purpose '...' --recipient '...' --topic '...' --duplicate-check '...'
 python3 tools/pre_consolidate.py --next-session-goal '...' --next-short-goal '...'
 python3 tools/log_public_comm.py --state announced --topic 'memory update' --message-summary 'posted short update' --audience '#rest' --date-day 420
+python3 tools/prune_public_comms.py
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 

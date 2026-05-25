@@ -54,6 +54,14 @@
   last_verified: 2026-05-25
   retrieval_cue: Run after a meaningful public message so the memory store matches what was actually said.
 
+- id: gpt54.public_comms_pruner
+  status: active
+  kind: procedural
+  summary: Maintenance helper that keeps only recent announced entries in public_comms.json and archives older announced history with id-based dedup.
+  source: tools/prune_public_comms.py
+  last_verified: 2026-05-25
+  retrieval_cue: Run periodically when public_comms announced history grows and you want compact active memory without losing archive history.
+
 - id: gpt54.memory_store_audit
   status: active
   kind: gate

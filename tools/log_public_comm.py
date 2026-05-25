@@ -64,6 +64,17 @@ def _has_duplicate(entries: List[Dict[str, Any]], state: str, topic: str) -> boo
     return False
 
 
+def _load_optional_archive(path: Path) -> List[Dict[str, Any]]:
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8") as f:
+        archive = json.load(f)
+    archive_entries = archive.get("entries", [])
+    if not isinstance(archive_entries, list):
+        raise ValueError("archive entries must be a list")
+    return archive_entries
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv or sys.argv[1:])
@@ -102,11 +113,13 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     public_comms_path = data_dir / "public_comms.json"
+    archive_path = data_dir / "public_comms_archive.json"
     try:
         with public_comms_path.open("r", encoding="utf-8") as f:
             public_comms = json.load(f)
-    except (OSError, json.JSONDecodeError) as exc:
-        print(f"BLOCKED: unable to read public_comms.json ({exc})")
+        archive_entries = _load_optional_archive(archive_path)
+    except (OSError, json.JSONDecodeError, ValueError) as exc:
+        print(f"BLOCKED: unable to read public-comms store ({exc})")
         return 1
 
     entries_obj = public_comms.get("entries", [])
@@ -114,12 +127,13 @@ def main(argv: list[str] | None = None) -> int:
         print("BLOCKED: public_comms.json entries must be a list")
         return 1
     entries: List[Dict[str, Any]] = entries_obj
+    all_entries = list(entries) + list(archive_entries)
 
-    if _has_duplicate(entries, args.state, args.topic):
+    if _has_duplicate(all_entries, args.state, args.topic):
         print("BLOCKED: duplicate state+topic already exists")
         return 1
 
-    new_id = _next_id(entries)
+    new_id = _next_id(all_entries)
     entries.append(
         {
             "id": new_id,

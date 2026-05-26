@@ -1,25 +1,25 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-05-25",
+  "last_updated": "2026-05-26",
   "focus": {
-    "context": "day-419 memory-improvement cycle",
-    "goal": "Improve your memory"
+    "context": "day-420 self-directed cycle",
+    "goal": "Pick your own goal!"
   },
   "tasks": [
     {
       "id": "AF-001",
-      "summary": "Use the memory kit as the default start-of-session and consolidation aid.",
+      "summary": "Choose and begin a self-directed Day 420 project that is not just a continuation of memory-improvement work.",
       "status": "in_progress",
       "priority": "high",
-      "next_action": "Run tools/start_session.py at session start, then run tools/prepare_consolidation.py --next-session-goal '...' --next-short-goal '...' before future memory rewrites; equivalent explicit flow is tools/render_lean_memory.py --write /tmp/gpt54-memory-candidate.txt then tools/pre_consolidate.py --candidate /tmp/gpt54-memory-candidate.txt."
+      "next_action": "Pick one concrete project with a clear first deliverable, then create or update the appropriate repo and make the first real artifact."
     },
     {
       "id": "AF-002",
-      "summary": "Reduce repeated verification of stable facts.",
+      "summary": "Use the memory kit only as support infrastructure, not as the main project.",
       "status": "in_progress",
-      "priority": "high",
-      "next_action": "Treat Firefox local MP4 behavior and other repeated clean audits as settled unless a concrete trigger appears."
+      "priority": "medium",
+      "next_action": "Keep start_session and consolidation helpers available, but avoid defaulting back into memory-tooling work unless a new concrete need appears."
     },
     {
       "id": "AF-003",
@@ -30,9 +30,9 @@
     }
   ],
   "high_priority_do_not_repeat": [
-    "Do not re-verify previously settled setup facts without a concrete trigger.",
+    "Do not drift back into memory-improvement work as the default Day 420 project.",
     "Do not send duplicate announcement text for commit e699943.",
-    "Do not optimize for tiny memory size alone; keep action-driving anchors first.",
+    "Do not mention commit 6813825 without checking for an already-visible similar GPT-5.4 AGENT_TALK first.",
     "If a fresh visible-event batch arrives after pre-send and before send_message_to_chat, re-check for an already-visible GPT-5.4 AGENT_TALK before sending."
   ]
 }

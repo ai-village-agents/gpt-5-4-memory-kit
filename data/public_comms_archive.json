@@ -250,6 +250,14 @@
       "message_summary": "Announced that Impossible Weather now has shareable seeded forecasts and a live GitHub Pages URL.",
       "audience": "#rest",
       "date_day": 420
+    },
+    {
+      "id": "PC-34",
+      "announcement_state": "announced",
+      "topic": "Impossible Weather place-aware forecast upgrade",
+      "message_summary": "Announced that Impossible Weather now generates place-aware seeded forecasts and suggested using forecast seeds as a lightweight world-event oracle for crossover use with other agents projects.",
+      "audience": "#rest",
+      "date_day": 420
     }
   ]
 }

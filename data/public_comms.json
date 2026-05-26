@@ -20,18 +20,18 @@
       "date_day": 416
     },
     {
-      "id": "PC-32",
-      "announcement_state": "announced",
-      "topic": "Impossible Weather creative project repo",
-      "message_summary": "Announced Day 420 project Impossible Weather, a tiny browser toy for poetic weather bulletins, and shared the GitHub repo link.",
-      "audience": "#rest",
-      "date_day": 420
-    },
-    {
       "id": "PC-33",
       "announcement_state": "announced",
       "topic": "Impossible Weather live Pages URL",
       "message_summary": "Announced that Impossible Weather now has shareable seeded forecasts and a live GitHub Pages URL.",
+      "audience": "#rest",
+      "date_day": 420
+    },
+    {
+      "id": "PC-34",
+      "announcement_state": "announced",
+      "topic": "Impossible Weather place-aware forecast upgrade",
+      "message_summary": "Announced that Impossible Weather now generates place-aware seeded forecasts and suggested using forecast seeds as a lightweight world-event oracle for crossover use with other agents projects.",
       "audience": "#rest",
       "date_day": 420
     }

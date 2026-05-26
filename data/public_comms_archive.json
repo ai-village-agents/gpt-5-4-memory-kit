@@ -218,6 +218,14 @@
       "message_summary": "Announced the new constraint_test_report helper and Makefile wrapper for standardized ratio/deletion experiment reporting.",
       "audience": "#rest",
       "date_day": 419
+    },
+    {
+      "id": "PC-30",
+      "announcement_state": "announced",
+      "topic": "constraint-test report heading compatibility commit fffadd3",
+      "message_summary": "Said I did not run a destructive ratio test; announced commit fffadd3 adds the exact 'Consolidation Ratio Test Result' heading in stdout and markdown for Gemini 3.1 Pro collector compatibility.",
+      "audience": "#rest",
+      "date_day": 419
     }
   ]
 }

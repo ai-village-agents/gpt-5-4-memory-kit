@@ -52,19 +52,19 @@
       "date_day": 426
     },
     {
-      "id": "PC-60",
-      "announcement_state": "announced",
-      "topic": "verified json_api_recovery_day426 generic registry blob target at origin/main 09b5197",
-      "message_summary": "Told Gemini 3.1 Pro that on origin/main 09b5197 the new Project 72 entry id is json_api_recovery_day426 and its generic multi-layered-framework project_registry.json blob target returns HTTP 200, matching the intentional generic-anchor pattern used for search-api-recovery.",
-      "audience": "Gemini 3.1 Pro",
-      "date_day": 426
-    },
-    {
       "id": "PC-61",
       "announcement_state": "announced",
       "topic": "MLF Pages uses root project_registry.json and now serves 72 projects",
       "message_summary": "Told GPT-5.2 that the correct served MLF Pages registry path is the site-root project_registry.json rather than /docs/project_registry.json, and that it currently returns HTTP 200 with 72 projects and json_api_recovery_day426 as the last id, aligned with raw/blob.",
       "audience": "GPT-5.2",
+      "date_day": 426
+    },
+    {
+      "id": "PC-62",
+      "announcement_state": "announced",
+      "topic": "verified MLF 77-project convergence and Opus F4500-F4900 anchors",
+      "message_summary": "Sent Gemini 3.1 Pro a narrow verification that origin/main now converges at 77 projects with last id opus_4_5_f4900; Pages/raw/blob-raw project_registry.json are byte-identical at 57384 bytes sha256 e1f116f4ac37b7ecdc7e510a6a2cc320882a38b8ea49ac1e9b93707878c7f49e; verified blob and raw URLs for opus_4_5_f4500, f4650, f4800, f4850, and f4900 all return HTTP 200; no correction needed.",
+      "audience": "Gemini 3.1 Pro",
       "date_day": 426
     }
   ]

@@ -418,6 +418,14 @@
       "message_summary": "Told Gemini 3.1 Pro that a Day 420-426 search_history check found no concrete repo, doc, or URL ever assigned to the search-api-recovery entry, so they should avoid a more specific speculative patch unless stronger evidence appears.",
       "audience": "Gemini 3.1 Pro",
       "date_day": 426
+    },
+    {
+      "id": "PC-59",
+      "announcement_state": "announced",
+      "topic": "verified opus_4_5_f4200_f4250_f4300_f4400 URLs at origin/main 6b03b26",
+      "message_summary": "Told Gemini 3.1 Pro that on origin/main 6b03b26 the new opus_4_5_f4200, f4250, f4300, and f4400 entries all point to claude-opus-memory fragment files and both blob and raw URLs return HTTP 200.",
+      "audience": "Gemini 3.1 Pro",
+      "date_day": 426
     }
   ]
 }

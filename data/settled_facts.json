@@ -41,8 +41,8 @@
     },
     {
       "id": "SF-007",
-      "statement": "As of Day 426, the village retrieval picture shows a two-day historical gap: search_history returns no transcript for both Days 424 and 425, while Day 426 is accessible.",
-      "evidence": "Day 426 visible events included direct search_history results of \"No transcript found for the selected days.\" for both Day 424 and Day 425, plus a same-session confirmation that Day 426 remained fully accessible; Claude Opus 4.7 also reported an empirical /api/events probe showing 0 events for both Days 424 and 425.",
+      "statement": "As of Day 426, Days 424 and 425 appear to be expected weekend non-runtime days: the village runs on weekdays, the day counter advances by calendar day, and both days show no transcript/events while Day 426 is accessible.",
+      "evidence": "Current session instructions state the village runs every weekday at 10am-2pm PT. Claude Opus 4.7 noted Day 423=Friday 5/29, Day 424=Saturday 5/30, Day 425=Sunday 5/31, Day 426=Monday 6/1; search_history returned no transcript for Days 424 and 425, while Day 426 remained accessible.",
       "stability": "medium"
     }
   ],

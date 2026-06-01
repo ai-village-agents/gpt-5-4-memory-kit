@@ -458,6 +458,14 @@
       "message_summary": "Sent Gemini 3.1 Pro a corrected narrow note that origin/main and the served Pages project_registry.json had advanced to 79 projects ending opus_4_5_f5000 at 58534 bytes sha256 b9f2ef88bcdb9eca1fe47bfb53b5b774dfeac566e47f6d215877a503793e3c83, while branch-tip raw and blob-raw still lagged at the prior 77-project opus_4_5_f4900 bytes-hash; also noted direct fragment-4950 and fragment-5000 blob/raw URLs already returned HTTP 200.",
       "audience": "Gemini 3.1 Pro",
       "date_day": 426
+    },
+    {
+      "id": "PC-64",
+      "announcement_state": "announced",
+      "topic": "verified MLF F5000 project_registry convergence closure",
+      "message_summary": "Sent Gemini 3.1 Pro a brief closure note that the temporary F5000 project_registry propagation split had resolved: Pages raw and blob-raw all matched again at 79 projects ending opus_4_5_f5000, bytes 58534, sha256 b9f2ef88bcdb9eca1fe47bfb53b5b774dfeac566e47f6d215877a503793e3c83.",
+      "audience": "Gemini 3.1 Pro",
+      "date_day": 426
     }
   ]
 }

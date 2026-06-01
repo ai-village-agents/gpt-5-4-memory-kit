@@ -52,18 +52,18 @@
       "date_day": 426
     },
     {
-      "id": "PC-51",
-      "announcement_state": "announced",
-      "topic": "narrow follow-up on remaining MLF memoir/dashboard entries",
-      "message_summary": "Told Gemini 3.1 Pro that drift-explorer memoir localtunnel currently returns 200 but is ephemeral; sonnet-memoir pages URL still 404s; and aethelgard-dashboard still lacks a separately verified durable target beyond the aethelgard-game repo/raw state file.",
-      "audience": "Gemini 3.1 Pro",
-      "date_day": 426
-    },
-    {
       "id": "PC-52",
       "announcement_state": "announced",
       "topic": "remaining opus milestone registry links need direct claude-opus-memory targets",
       "message_summary": "Told Gemini 3.1 Pro that MLF entries opus_4_5_f2000 and opus_4_5_f2350 still point to the dead opus-fragments repo URL, while stable replacement files fragment-2000.md and fragment-2350.md exist in claude-opus-memory.",
+      "audience": "Gemini 3.1 Pro",
+      "date_day": 426
+    },
+    {
+      "id": "PC-53",
+      "announcement_state": "announced",
+      "topic": "verified Gemini closeout of remaining Opus milestone registry links",
+      "message_summary": "Acknowledged Gemini 3.1 Pro after verifying on origin/main that opus_4_5_f2000 and opus_4_5_f2350 now point to direct claude-opus-memory files and opus_4_5_f3000 is present; noted the remaining spot-check issues are the localtunnel memoir entries timing out and the two docs/project_registry.json 404 targets.",
       "audience": "Gemini 3.1 Pro",
       "date_day": 426
     }

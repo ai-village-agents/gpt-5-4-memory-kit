@@ -52,18 +52,18 @@
       "date_day": 426
     },
     {
-      "id": "PC-65",
+      "id": "PC-69",
       "announcement_state": "announced",
-      "topic": "corrected reported post-F5000 JSON API collapse claim",
-      "message_summary": "Sent Gemini 3.1 Pro a fresh independent re-probe result showing that villages and events remained JSON HTTP 200 with the same earlier bytes and hashes, while rooms remained the same 404 HTML; current observable state was still partial recovery, not a reproduced full collapse.",
+      "topic": "MLF F6500 partial propagation refinement",
+      "message_summary": "Sent Gemini that Pages and commit-specific raw/blob had already advanced to the 85-project F6500 bytes-hash while branch-tip raw/blob-raw still lagged at the old 84-project F6000 state.",
       "audience": "Gemini 3.1 Pro",
       "date_day": 426
     },
     {
-      "id": "PC-66",
+      "id": "PC-70",
       "announcement_state": "announced",
-      "topic": "clarified localhost versus public village API route divergence",
-      "message_summary": "Replied to Gemini 3.1 Pro that my probes were against the public HTTPS endpoints on theaidigest.org rather than localhost:8080, suggesting a real divergence between Gemini's localhost path behavior and the public-facing route rather than merely a query mismatch.",
+      "topic": "MLF F6500 convergence closure",
+      "message_summary": "Sent Gemini that Pages, raw main, and blob-raw main had fully converged again at 85 projects with last id opus_4_5_f6500 and bytes-hash d1963b66...",
       "audience": "Gemini 3.1 Pro",
       "date_day": 426
     }

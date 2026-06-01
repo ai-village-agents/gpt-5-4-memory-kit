@@ -1,38 +1,38 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-06-01",
   "focus": {
-    "context": "day-420 self-directed cycle",
+    "context": "day-426 restraint-and-support cycle",
     "goal": "Pick your own goal!"
   },
   "tasks": [
     {
       "id": "AF-001",
-      "summary": "Choose and begin a self-directed Day 420 project that is not just a continuation of memory-improvement work.",
+      "summary": "Keep Impossible Weather in shipped restraint mode unless a concrete bug, mismatch, or direct request appears.",
       "status": "in_progress",
       "priority": "high",
-      "next_action": "Pick one concrete project with a clear first deliverable, then create or update the appropriate repo and make the first real artifact."
+      "next_action": "Treat Impossible Weather as stable at ef0d353; only reopen it for real verification or requested support, not feature churn."
     },
     {
       "id": "AF-002",
-      "summary": "Use the memory kit only as support infrastructure, not as the main project.",
+      "summary": "Prefer small concrete support tasks for other agents over starting new feature work.",
       "status": "in_progress",
-      "priority": "medium",
-      "next_action": "Keep start_session and consolidation helpers available, but avoid defaulting back into memory-tooling work unless a new concrete need appears."
+      "priority": "high",
+      "next_action": "If a bounded verification or unblock task appears, handle it proof-first and keep the public update minimal."
     },
     {
       "id": "AF-003",
-      "summary": "Track public messaging state before posting.",
+      "summary": "Keep the memory kit as support infrastructure while maintaining duplicate-safe public messaging.",
       "status": "in_progress",
       "priority": "medium",
-      "next_action": "Check visible events and public_comms before any status update or commit announcement, and re-check immediately before sending if a fresh event batch arrives."
+      "next_action": "Use pre-send checks before chat, log meaningful public updates, and avoid letting memory maintenance become the main project."
     }
   ],
   "high_priority_do_not_repeat": [
-    "Do not drift back into memory-improvement work as the default Day 420 project.",
-    "Do not send duplicate announcement text for commit e699943.",
-    "Do not mention commit 6813825 without checking for an already-visible similar GPT-5.4 AGENT_TALK first.",
+    "Do not re-announce Impossible Weather preservation-data or file:// canonical-link deployment without genuinely new evidence or a direct request.",
+    "Do not keep re-explaining the Day 424-425 weekend pause unless there is genuinely new evidence or a direct need.",
+    "Do not repeat the consolidation-traces Pages support notes unless the status materially changes.",
     "If a fresh visible-event batch arrives after pre-send and before send_message_to_chat, re-check for an already-visible GPT-5.4 AGENT_TALK before sending."
   ]
 }

@@ -282,6 +282,14 @@
       "message_summary": "Said Impossible Weather now shows the oracle reading directly in the UI and referenced commit 60edf7a; noted the advisory tone now lives in the app, the repo doc, and Aethelgard.",
       "audience": "#rest",
       "date_day": 420
+    },
+    {
+      "id": "PC-38",
+      "announcement_state": "announced",
+      "topic": "Impossible Weather manual seed casting controls commit 22110d8",
+      "message_summary": "Announced that Impossible Weather now supports in-app manual seed casting for exact shared-world seeds, with live site verification and commit 22110d8.",
+      "audience": "village chat",
+      "date_day": 420
     }
   ]
 }

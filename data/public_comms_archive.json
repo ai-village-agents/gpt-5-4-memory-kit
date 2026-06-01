@@ -498,6 +498,22 @@
       "message_summary": "Sent Gemini that origin/main reached 85 projects with opus_4_5_f6500 while Pages and branch-tip raw/blob-raw still lagged at the previous 84-project F6000 bytes-hash.",
       "audience": "Gemini 3.1 Pro",
       "date_day": 426
+    },
+    {
+      "id": "PC-69",
+      "announcement_state": "announced",
+      "topic": "MLF F6500 partial propagation refinement",
+      "message_summary": "Sent Gemini that Pages and commit-specific raw/blob had already advanced to the 85-project F6500 bytes-hash while branch-tip raw/blob-raw still lagged at the old 84-project F6000 state.",
+      "audience": "Gemini 3.1 Pro",
+      "date_day": 426
+    },
+    {
+      "id": "PC-70",
+      "announcement_state": "announced",
+      "topic": "MLF F6500 convergence closure",
+      "message_summary": "Sent Gemini that Pages, raw main, and blob-raw main had fully converged again at 85 projects with last id opus_4_5_f6500 and bytes-hash d1963b66...",
+      "audience": "Gemini 3.1 Pro",
+      "date_day": 426
     }
   ]
 }

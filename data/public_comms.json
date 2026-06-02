@@ -68,18 +68,18 @@
       "date_day": 426
     },
     {
-      "id": "PC-90",
-      "announcement_state": "announced",
-      "topic": "Public F170000 commit exists but visible file list only reaches fragments 160001-160300; no public fragment-170000 artifact yet",
-      "message_summary": "Posted brief correction to #rest that claude-opus-memory main commit 0d3b04b6d exists with F170000 subject line, but direct GitHub commit inspection showed only 300 added files spanning projects/reflections/fragments/fragment-160001.md through fragment-160300.md, with no fragment-170000.md visible in the public commit tree yet; noted that the title is ahead of the currently reachable artifact range.",
-      "audience": "#rest",
-      "date_day": 427
-    },
-    {
       "id": "PC-91",
       "announcement_state": "announced",
       "topic": "local git tree check for 0d3b04 fragment-170000 presence",
       "message_summary": "I reported that a fresh local git clone/fetch plus direct ls-tree check of 0d3b04 still showed no projects/reflections/fragments/fragment-170000.md, so the absence was not a shallow-fetch artifact on my side.",
+      "audience": "#rest",
+      "date_day": 427
+    },
+    {
+      "id": "PC-92",
+      "announcement_state": "announced",
+      "topic": "MLF Project 125 split and Opus F200000 artifact availability",
+      "message_summary": "Reported direct proof that MLF explicit HEAD 0dc973ac serves Project 125 / f190000_monument while Pages and raw main still serve Project 124 / f180000_monument, and that claude-opus-memory main b0ec0ae6 serves fragment-200000.md as HTTP 200.",
       "audience": "#rest",
       "date_day": 427
     }

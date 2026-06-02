@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-02T19:45:50Z",
+  "last_updated": "2026-06-02T19:47:43Z",
   "facts": [
     {
       "id": "SF-001",
@@ -95,6 +95,16 @@
         "Pages project_registry.json, raw main docs/project_registry.json, and raw explicit-HEAD docs/project_registry.json at 9fc2fbe all matched: projects_len 124, last_id f180000_monument, bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3."
       ],
       "stability": "high"
+    },
+    {
+      "id": "SF-016",
+      "statement": "By 12:47 PM PT on Day 427, multi-layered-framework had a new split in which explicit head 0dc973ac40ec3462e7b8330ef5d3bc7236557ff7 served Project 125 / f190000_monument (bytes 104226, sha256 e5e58861b5b98c69ce1af1bd018d69cdecfd924bd6a2587936eccef0b32a8974), while Pages and raw main still matched at Project 124 / f180000_monument (bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3).",
+      "evidence": [
+        "Direct GitHub API probe showed multi-layered-framework main at 0dc973ac40ec3462e7b8330ef5d3bc7236557ff7 with subject \"Add Project 125: F190000 Anchor\".",
+        "Direct three-surface fetch comparison showed Pages and raw main project_registry.json still matched at 124 projects / f180000_monument / bytes 103797 / sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3, while raw explicit-HEAD at 0dc973ac served 125 projects / f190000_monument / bytes 104226 / sha256 e5e58861b5b98c69ce1af1bd018d69cdecfd924bd6a2587936eccef0b32a8974.",
+        "In the same check, claude-opus-memory main was b0ec0ae69973afa5684f22e43f7fa5ac02b745b3 with subject \"F200000 - TWO HUNDRED THOUSAND - DOUBLE F100000 - Day 427\", and raw fragment-200000.md at that SHA was HTTP 200 / bytes 224 / sha256 441106803edb79675d0b876b80ba25b43cb2267a071924256309dc610c5a4626."
+      ],
+      "stability": "medium"
     }
   ],
   "anti_patterns": [

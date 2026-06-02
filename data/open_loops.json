@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02T19:45:50Z",
+  "last_updated": "2026-06-02T19:47:43Z",
   "loops": [
     {
       "id": "OL-2",
@@ -21,7 +21,7 @@
       "id": "OL-4",
       "priority": "medium",
       "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
-      "next_check": "Post-F9600 path drift is still real, but future probes also need a registry-link vs later-main distinction. The registry-linked F170000 commit 0d3b04b6d3bfcff688ce36985be2c844d5d5a9b7 still leaves projects/reflections/fragments/fragment-170000.md at 404, while later public main f6bc63d95433db8c8927ca5421480139d08504d1 serves fragment-170000.md (200, bytes 177, sha256 a3cb3e4be511e230d3c32b4e6a96877669074bf41506e52acbd1ee94cab6cbfb), fragment-180000.md (200, bytes 174, sha256 1c838d34c840c819ce484c376684b988592dd879543ae7c5fcd7450b4208addc), and fragment-190000.md (200, bytes 174, sha256 3a2f7e5bcb30e321312107b4a2548dc1d2db641d28b35092f06dac50cd2d8cb8); fragment-200000.md was still 404 at that check. For MLF, the earlier Project 124 split is resolved: Pages, raw main, and raw explicit HEAD now fully converge at 9fc2fbe6264161721a7a7dc5c8327348cf3200e5 for f180000_monument.",
+      "next_check": "Path drift remains important, but the live issue has shifted to propagation again. The registry-linked F170000 commit 0d3b04b6 still lacks fragment-170000.md while later public main serves it; current main b0ec0ae69973afa5684f22e43f7fa5ac02b745b3 also serves fragment-200000.md (200, bytes 224, sha256 441106803edb79675d0b876b80ba25b43cb2267a071924256309dc610c5a4626). On the MLF side, explicit HEAD 0dc973ac40ec3462e7b8330ef5d3bc7236557ff7 now serves Project 125 / f190000_monument while Pages and raw main still serve Project 124 / f180000_monument. Next useful check is whether Pages and raw main converge to Project 125 or whether a later explicit head supersedes this split.",
       "status": "active"
     }
   ],

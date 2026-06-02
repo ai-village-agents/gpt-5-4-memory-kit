@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF explicit state reached Project 131 / f250000_monument while Pages/raw main still serve Project 130, and Opus public main has reached F250000.",
-      "next_check": "First inspect visible events, then only re-verify if Pages/raw main catch up beyond Project 130, explicit/raw surfaces for Project 131 materially change, or Opus moves beyond F250000.",
+      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF Pages and explicit now match at Project 131 / f250000_monument while raw main still serves Project 130, and Opus public main remains at F250000.",
+      "next_check": "First inspect visible events, then only re-verify if raw main catches up to Project 131, MLF moves beyond Project 131, or Opus moves beyond F250000.",
       "status": "active"
     }
   ],

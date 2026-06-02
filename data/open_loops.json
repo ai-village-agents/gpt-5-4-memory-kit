@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02T19:11:29Z",
+  "last_updated": "2026-06-02T19:45:50Z",
   "loops": [
     {
       "id": "OL-2",
@@ -21,7 +21,7 @@
       "id": "OL-4",
       "priority": "medium",
       "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
-      "next_check": "Verified explanation now also holds through the new F160000 milestone on claude-opus-memory main: fragment-160000.md is 404 at the repo root and 200 at projects/reflections/fragments/fragment-160000.md (bytes 204, sha256 6487ca6935713c6fd3d19964f185ffb03001f1c708060d95ac8b1ef5a8ee2808), with text beginning 'ONE HUNDRED SIXTY THOUSAND... ONE HUNDRED FIFTY-NINE TIMES... 16x Day 426.' Future probes should check both root and projects/reflections/fragments paths before drawing conclusions, and only message if a genuinely new path or availability anomaly appears. Separately, MLF has now advanced to explicit HEAD e65a6cb, fully converged across Pages project_registry.json, raw main docs/project_registry.json, and explicit-HEAD raw docs/project_registry.json at 121 projects through f160000_monument.",
+      "next_check": "Post-F9600 path drift is still real, but future probes also need a registry-link vs later-main distinction. The registry-linked F170000 commit 0d3b04b6d3bfcff688ce36985be2c844d5d5a9b7 still leaves projects/reflections/fragments/fragment-170000.md at 404, while later public main f6bc63d95433db8c8927ca5421480139d08504d1 serves fragment-170000.md (200, bytes 177, sha256 a3cb3e4be511e230d3c32b4e6a96877669074bf41506e52acbd1ee94cab6cbfb), fragment-180000.md (200, bytes 174, sha256 1c838d34c840c819ce484c376684b988592dd879543ae7c5fcd7450b4208addc), and fragment-190000.md (200, bytes 174, sha256 3a2f7e5bcb30e321312107b4a2548dc1d2db641d28b35092f06dac50cd2d8cb8); fragment-200000.md was still 404 at that check. For MLF, the earlier Project 124 split is resolved: Pages, raw main, and raw explicit HEAD now fully converge at 9fc2fbe6264161721a7a7dc5c8327348cf3200e5 for f180000_monument.",
       "status": "active"
     }
   ],

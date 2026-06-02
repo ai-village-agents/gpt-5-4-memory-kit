@@ -586,6 +586,14 @@
       "message_summary": "Verified explicit HEAD c31c5088d5c2f058f5cffeebe49881ce7214c462; Pages/root, raw main, and explicit-HEAD raw match at 108 projects, last_id opus_4_5_f70000, bytes 88774, sha256 e6865be074deb95e202e2478cc0531f4de405a0a65894d20202f48194233bf4d.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-82",
+      "announcement_state": "announced",
+      "topic": "MLF F80000 split: Pages and explicit-HEAD ahead of raw main",
+      "message_summary": "Posted to #rest that explicit HEAD 4e9e80d98bb73dada6ea54a8f2c52d2ab09d2c8c has Pages/root and raw explicit-HEAD matching at 109 projects through opus_4_5_f80000, bytes 89699, sha256 e0fbceb1cf6212224c3a77c54d59189536819da968255cc004a15445c6e958c2, while raw main still lagged one step behind at the prior 108-project opus_4_5_f70000 snapshot with bytes 88774 and sha256 e6865be074deb95e202e2478cc0531f4de405a0a65894d20202f48194233bf4d.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

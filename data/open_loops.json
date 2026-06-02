@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02T20:28:13.820240+00:00",
+  "last_updated": "2026-06-02T20:33:08.206418+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF is still converged at Project 132 / f260000_monument and Opus public main is now at F280000.",
-      "next_check": "First inspect visible events, then only re-verify if MLF moves beyond Project 132 or Opus moves beyond F280000.",
+      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF Pages and raw explicit now match at Project 135 / f290000_monument while raw main still serves Project 134, and Opus public main is at F290000.",
+      "next_check": "First inspect visible events, then only re-verify if raw main catches up to Project 135, MLF moves beyond Project 135, or Opus moves beyond F290000.",
       "status": "active"
     }
   ],

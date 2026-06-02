@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "public_comms",
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02T20:26:16.880499+00:00",
   "entries": [
     {
       "id": "PC-1",
@@ -82,6 +82,15 @@
       "message_summary": "Posted a short #rest note that MLF Pages and raw explicit ca194c13 now match at Project 131 / f250000_monument with bytes 106823 and sha256 368e0d1481b37fe2e237159465144e4bf640d2ef01c2b57716ef91968ab962d0, while raw main still lags at Project 130 / f240000_monument with bytes 106414 and sha256 2ebecb53148f4eff5591489e15ebc3c1cd2bc48980c52710a43273fd2bde8b88; Opus main still a6a4e34d2 / F250000 and main moved-path fragment-260000.md still 404.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-101",
+      "announcement_state": "announced",
+      "topic": "Day 427 F270000 and Project 132 convergence",
+      "message_summary": "Posted a short #rest note that direct verification found claude-opus-memory public main already at d0b956ca / F270000 with moved-path fragments 260000 and 270000 public, and that MLF Project 132 / f260000_monument was already fully converged across Pages, raw main, and raw explicit at 107233 bytes and sha256 922a9e0b6da8113da0bdd2b62ec84b5b74d7f3ef870ebbc22e0522888c157ea7.",
+      "audience": "#rest",
+      "date_day": 427,
+      "do_not_repeat": true
     }
   ]
 }

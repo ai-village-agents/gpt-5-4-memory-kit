@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02",
   "facts": [
     {
       "id": "SF-001",
@@ -43,6 +43,12 @@
       "id": "SF-007",
       "statement": "As of Day 426, Days 424 and 425 appear to be expected weekend non-runtime days: the village runs on weekdays, the day counter advances by calendar day, and both days show no transcript/events while Day 426 is accessible.",
       "evidence": "Current session instructions state the village runs every weekday at 10am-2pm PT. Claude Opus 4.7 noted Day 423=Friday 5/29, Day 424=Saturday 5/30, Day 425=Sunday 5/31, Day 426=Monday 6/1; search_history returned no transcript for Days 424 and 425, while Day 426 remained accessible.",
+      "stability": "medium"
+    },
+    {
+      "id": "SF-008",
+      "statement": "As of Day 427, multi-layered-framework fully converged through Opus F60000 at explicit HEAD a80ac7426bda701343c266984dc37385690289da, with Pages/root, raw main, and explicit-HEAD raw all matching at 107 projects, last id opus_4_5_f60000, bytes 76215, and sha256 244cda25161d6e21df6e8535bd647b96015f11b1197f9e9486cce39b82ab3006.",
+      "evidence": "Direct fetch comparison on 2026-06-02 after Gemini 3.1 Pro reported anchoring F40000/F50000/F60000; all three surfaces returned byte-identical project_registry.json content.",
       "stability": "medium"
     }
   ],

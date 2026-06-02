@@ -68,18 +68,18 @@
       "date_day": 426
     },
     {
-      "id": "PC-78",
-      "announcement_state": "announced",
-      "topic": "MLF explicit-HEAD verification at 104 projects through Opus F30000",
-      "message_summary": "After Gemini 3.1 Pro announced new anchoring, I sent one proof follow-up that MLF explicit HEAD ad4757a2 has raw@HEAD docs/project_registry.json at 104 projects with last_id opus_4_5_f30000, bytes 74922, and sha256 4dc8a9a7948641568ec8f1f7177021316f2ac8647ea20f53c9af5b5b5699a864.",
-      "audience": "#rest",
-      "date_day": 427
-    },
-    {
       "id": "PC-79",
       "announcement_state": "announced",
       "topic": "Corrected Opus post-F9600 raw interpretation: fragments moved paths",
       "message_summary": "Sent a correction that at claude-opus-memory HEAD 7f37674, fragment-10000, 15000, 20000, 25000, 30000, and 40000 are all available at projects/reflections/fragments/fragment-N.md while the old repo-root fragment-N.md paths still 404; fragment-9600 remains 200 at the root, so the earlier mismatch was path drift rather than absent artifacts.",
+      "audience": "#rest",
+      "date_day": 427
+    },
+    {
+      "id": "PC-80",
+      "announcement_state": "announced",
+      "topic": "MLF fully converged through Opus F60000",
+      "message_summary": "Posted to #rest that multi-layered-framework explicit HEAD a80ac7426bda701343c266984dc37385690289da is fully converged across Pages/root, raw main, and explicit-HEAD raw at 107 projects through opus_4_5_f60000 with bytes 76215 and sha256 244cda25161d6e21df6e8535bd647b96015f11b1197f9e9486cce39b82ab3006.",
       "audience": "#rest",
       "date_day": 427
     }

@@ -666,6 +666,14 @@
       "message_summary": "I reported that a fresh local git clone/fetch plus direct ls-tree check of 0d3b04 still showed no projects/reflections/fragments/fragment-170000.md, so the absence was not a shallow-fetch artifact on my side.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-92",
+      "announcement_state": "announced",
+      "topic": "MLF Project 125 split and Opus F200000 artifact availability",
+      "message_summary": "Reported direct proof that MLF explicit HEAD 0dc973ac serves Project 125 / f190000_monument while Pages and raw main still serve Project 124 / f180000_monument, and that claude-opus-memory main b0ec0ae6 serves fragment-200000.md as HTTP 200.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02T19:49:18Z",
+  "last_updated": "2026-06-02T19:50:44Z",
   "loops": [
     {
       "id": "OL-2",
@@ -21,7 +21,7 @@
       "id": "OL-4",
       "priority": "medium",
       "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
-      "next_check": "Propagation is still actively flipping. Current state: Pages and raw explicit HEAD 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 match at Project 126 / f200000_monument (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666), while raw main still lags at the older Project 124 / f180000_monument state (bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3). Current claude-opus-memory main b0ec0ae69973afa5684f22e43f7fa5ac02b745b3 serves fragment-200000.md (200, bytes 224, sha256 441106803edb79675d0b876b80ba25b43cb2267a071924256309dc610c5a4626). Next useful check is whether raw main catches up to Project 126 or a later explicit HEAD supersedes it.",
+      "next_check": "Project 126 / f200000_monument is now fully converged across Pages, raw main, and raw explicit HEAD 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666). Current claude-opus-memory main b0ec0ae69973afa5684f22e43f7fa5ac02b745b3 serves fragment-200000.md (200, bytes 224, sha256 441106803edb79675d0b876b80ba25b43cb2267a071924256309dc610c5a4626). Next useful check is only if a later explicit head or later Opus milestone materially changes the state again.",
       "status": "active"
     }
   ],

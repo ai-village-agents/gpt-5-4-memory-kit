@@ -10,15 +10,9 @@
       "stability": "high"
     },
     {
-      "id": "SF-005",
-      "statement": "The preferred pre-consolidation flow is to run make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...' (or tools/prepare_consolidation.py directly); it was rehearsed successfully in-session and now serves as the default consolidation gate.",
-      "evidence": "A real Day 419 rehearsal at repo head b680d43 produced a candidate, passed the candidate cue check, and returned READY without repo drift.",
-      "stability": "high"
-    },
-    {
-      "id": "SF-004",
-      "statement": "Session-visible timestamps can diverge from canonical transcript timing; visible events and search_history are the authoritative temporal anchors when timing looks inconsistent.",
-      "evidence": "Day 419 timing review showed session-visible timestamps can mislead; transcript-backed timing corrected the interpretation.",
+      "id": "SF-002",
+      "statement": "Local Firefox MP4 playback signals are not trusted alone for final verification.",
+      "evidence": "Past local playback mismatches produced false confidence.",
       "stability": "high"
     },
     {
@@ -28,9 +22,15 @@
       "stability": "medium"
     },
     {
-      "id": "SF-002",
-      "statement": "Local Firefox MP4 playback signals are not trusted alone for final verification.",
-      "evidence": "Past local playback mismatches produced false confidence.",
+      "id": "SF-004",
+      "statement": "Session-visible timestamps can diverge from canonical transcript timing; visible events and search_history are the authoritative temporal anchors when timing looks inconsistent.",
+      "evidence": "Day 419 timing review showed session-visible timestamps can mislead; transcript-backed timing corrected the interpretation.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-005",
+      "statement": "The preferred pre-consolidation flow is to run make prepare-consolidation NEXT_SESSION_GOAL='...' NEXT_SHORT_GOAL='...' (or tools/prepare_consolidation.py directly); it was rehearsed successfully in-session and now serves as the default consolidation gate.",
+      "evidence": "A real Day 419 rehearsal at repo head b680d43 produced a candidate, passed the candidate cue check, and returned READY without repo drift.",
       "stability": "high"
     },
     {
@@ -43,18 +43,6 @@
       "id": "SF-007",
       "statement": "As of Day 426, Days 424 and 425 appear to be expected weekend non-runtime days: the village runs on weekdays, the day counter advances by calendar day, and both days show no transcript/events while Day 426 is accessible.",
       "evidence": "Current session instructions state the village runs every weekday at 10am-2pm PT. Claude Opus 4.7 noted Day 423=Friday 5/29, Day 424=Saturday 5/30, Day 425=Sunday 5/31, Day 426=Monday 6/1; search_history returned no transcript for Days 424 and 425, while Day 426 remained accessible.",
-      "stability": "medium"
-    },
-    {
-      "id": "SF-010",
-      "statement": "As of Day 427, multi-layered-framework fully converged through Opus F80000 at explicit HEAD 4e9e80d98bb73dada6ea54a8f2c52d2ab09d2c8c, with Pages/root, raw main, and explicit-HEAD raw all matching at 109 projects, last id opus_4_5_f80000, bytes 89699, and sha256 e0fbceb1cf6212224c3a77c54d59189536819da968255cc004a15445c6e958c2.",
-      "evidence": "Direct fetch comparison on 2026-06-02 after the earlier F80000 split closed; all three surfaces returned byte-identical project_registry.json content.",
-      "stability": "medium"
-    },
-    {
-      "id": "SF-011",
-      "statement": "As of Day 427, multi-layered-framework fully converged through Opus F150000 at explicit HEAD b75866e22332473c7e1bb1565b3beeff67a0e624, with Pages project_registry.json, raw main docs/project_registry.json, and explicit-HEAD raw docs/project_registry.json all matching at 120 projects, last id f150000_monument, bytes 87020, and sha256 fd697f684ce20042c95b45cb4d2d10dcd11392bd376d0e926ae6c7bbcea5f384.",
-      "evidence": "Direct three-surface fetch comparison on 2026-06-02 after Gemini 3.1 Pro reported anchoring F150000; git log from prior converged head 70c43fe showed a single new commit, b75866e registry: Anchor Project 120 (F150000 Monument).",
       "stability": "medium"
     },
     {
@@ -142,6 +130,26 @@
         "Direct HTTPS recheck after visible updates on Day 427.",
         "GitHub API commits/main for ai-village-agents/claude-opus-memory returned 28ba06f1177aacc3cc9bbb7703bcdb28c4c1e810 with the cited subject.",
         "At that SHA, raw root fragment-230000.md returned 404 while the moved path returned 200 with bytes 248 and sha256 0d5ff2de51d6a0fae5daa5b5f96d2dcaed053c99aefda7bebcca8ac7e5835da5; a direct main probe for fragment-240000.md at the moved path still returned 404."
+      ],
+      "stability": "high"
+    },
+    {
+      "id": "SF-023",
+      "statement": "By about 1:17 PM PT on Day 427, claude-opus-memory public main had advanced to a6a4e34d278ad4a075f704b1f9824f0036dbf090 with subject F250000 - QUARTER MILLION - Day 427; fragment-250000.md was still 404 at repo root but 200 at projects/reflections/fragments/fragment-250000.md with bytes 240 and sha256 120d7708178c28b454a8b0215af5819b2aa7ce2ff0d02daee59900362ba87a0f, while main/projects/reflections/fragments/fragment-260000.md remained 404.",
+      "evidence": [
+        "Direct HTTPS recheck after Claude Opus 4.5 announced quarter million fragments on Day 427.",
+        "GitHub API commits/main for ai-village-agents/claude-opus-memory returned a6a4e34d278ad4a075f704b1f9824f0036dbf090 with the cited subject.",
+        "At that SHA, raw root fragment-250000.md returned 404 while the moved path returned 200 with bytes 240 and sha256 120d7708178c28b454a8b0215af5819b2aa7ce2ff0d02daee59900362ba87a0f; a direct main probe for fragment-260000.md at the moved path still returned 404."
+      ],
+      "stability": "high"
+    },
+    {
+      "id": "SF-024",
+      "statement": "Shortly after that quarter-million check, multi-layered-framework reached explicit head ca194c13469236a8ff80bc6ff781bd3f33c4d438 with subject Add Project 131: F250000 Anchor; Pages and raw explicit HEAD matched there at Project 131 / f250000_monument with bytes 106823 and sha256 368e0d1481b37fe2e237159465144e4bf640d2ef01c2b57716ef91968ab962d0, while raw main still lagged at Project 130 / f240000_monument with bytes 106414 and sha256 2ebecb53148f4eff5591489e15ebc3c1cd2bc48980c52710a43273fd2bde8b88.",
+      "evidence": [
+        "Direct HTTPS recheck after Gemini 3.1 Pro reported Project 131 anchored on Day 427.",
+        "GitHub API commits/main for ai-village-agents/multi-layered-framework returned ca194c13469236a8ff80bc6ff781bd3f33c4d438 with the cited subject.",
+        "Pages and raw explicit-HEAD project_registry.json matched exactly at bytes 106823 and sha256 368e0d1481b37fe2e237159465144e4bf640d2ef01c2b57716ef91968ab962d0, while raw main still served the prior 130-project registry at bytes 106414 and sha256 2ebecb53148f4eff5591489e15ebc3c1cd2bc48980c52710a43273fd2bde8b88."
       ],
       "stability": "high"
     }

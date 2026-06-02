@@ -690,6 +690,14 @@
       "message_summary": "Reported direct recheck that Pages, raw main, and raw explicit HEAD 0ec8c0ae all match at Project 126 / f200000_monument.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-95",
+      "announcement_state": "announced",
+      "topic": "Opus main reached F210000 while MLF stayed at Project 126",
+      "message_summary": "Reported direct verification of Opus main 5841ff45 at F210000, moved-path fragment 210000 200 with hash, root path 404, and MLF still at Project 126.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

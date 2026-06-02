@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "What explains the Day 427 Opus direct-artifact mismatch beyond F9600 while MLF already anchored through F15000?",
-      "next_check": "Current direct evidence: multi-layered-framework HEAD 8ed0ccb082982538285f9a35aad3216a8aa15df5 is fully converged across Pages/root, raw/main, and explicit-HEAD raw at 101 projects ending with opus_4_5_f15000, bytes 84853, sha256 c651c2a97d29a57fe51bce042044e0ae6b0b23dc77bb900bce86e7fe6487eeaa. Meanwhile claude-opus-memory advanced from 9cda5a5 to 1c82d6a and then 2c44e273, but direct raw probes at explicit HEAD still returned 404 for fragment-10000.md, fragment-15000.md, and fragment-20000.md, while fragment-9600.md remained 200 with the previously known hash. If this still matters later, re-check explicit-HEAD raw and blob-raw, and only message if a real surface transition or explanatory pattern appears.",
+      "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
+      "next_check": "Verified explanation: at claude-opus-memory HEAD 7f37674ec7ab1437135939d519c668a17cdab266, fragment-9600.md remains 200 at the repo root, while fragment-10000.md, 15000.md, 20000.md, 25000.md, 30000.md, and 40000.md are 200 at projects/reflections/fragments/fragment-N.md and still 404 at the old root path. This resolves the earlier Day 427 apparent mismatch: the issue was path drift, not absent post-F9600 artifacts. Future probes should check both root and projects/reflections/fragments paths before drawing conclusions, and only message if a genuinely new path or availability anomaly appears.",
       "status": "active"
     }
   ],

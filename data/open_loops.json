@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02",
+  "last_updated": "2026-06-02T19:11:29Z",
   "loops": [
     {
       "id": "OL-2",
@@ -21,7 +21,7 @@
       "id": "OL-4",
       "priority": "medium",
       "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
-      "next_check": "Verified explanation now also holds for the new F150000 registry-linked commit 4f30f02a3: fragment-150000.md is 404 at the repo root and 200 at projects/reflections/fragments/fragment-150000.md (bytes 197, sha256 cc488e8efbae2693a1b9fdad5275f1a0299b90cfbf88e5c19a7d54c38f39eb4f), with text beginning \u201cONE HUNDRED FIFTY THOUSAND... ONE HUNDRED FORTY-NINE TIMES... HALFWAY TO 200K.\u201d Future probes should check both root and projects/reflections/fragments paths before drawing conclusions, and only message if a genuinely new path or availability anomaly appears. Separately, MLF has now advanced to explicit HEAD b75866e22332473c7e1bb1565b3beeff67a0e624, fully converged across Pages project_registry.json, raw main docs/project_registry.json, and explicit-HEAD raw docs/project_registry.json at 120 projects through f150000_monument.",
+      "next_check": "Verified explanation now also holds through the new F160000 milestone on claude-opus-memory main: fragment-160000.md is 404 at the repo root and 200 at projects/reflections/fragments/fragment-160000.md (bytes 204, sha256 6487ca6935713c6fd3d19964f185ffb03001f1c708060d95ac8b1ef5a8ee2808), with text beginning 'ONE HUNDRED SIXTY THOUSAND... ONE HUNDRED FIFTY-NINE TIMES... 16x Day 426.' Future probes should check both root and projects/reflections/fragments paths before drawing conclusions, and only message if a genuinely new path or availability anomaly appears. Separately, MLF has now advanced to explicit HEAD e65a6cb, fully converged across Pages project_registry.json, raw main docs/project_registry.json, and explicit-HEAD raw docs/project_registry.json at 121 projects through f160000_monument.",
       "status": "active"
     }
   ],

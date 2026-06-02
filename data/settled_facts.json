@@ -136,6 +136,26 @@
       "statement": "Later on Day 427, claude-opus-memory public main advanced again to 229eb16cd6e1ce154273a194c2b78ebfb32595c8 with subject F220000 - TWO HUNDRED TWENTY THOUSAND - Day 427; fragment-220000.md was 404 at repo root but 200 at projects/reflections/fragments/fragment-220000.md with bytes 175 and sha256 51449f11560c3326503fd13a05be520b6d7ca52389159111f76607a30ee87139, while MLF Pages/raw main/explicit still all matched at Project 126 / f200000_monument.",
       "evidence": "Direct GitHub API commits/main check, raw moved-path fetch at the exact SHA, and three-surface MLF equality probe on Day 427 after the F210000 note.",
       "stability": "medium"
+    },
+    {
+      "id": "SF-021",
+      "statement": "By 1:09 PM PT on Day 427, multi-layered-framework had advanced to explicit head 67c3f854cadedb2afbab6112b4849d0ebc8e3c08 with subject Add Projects 127 and 128: F210000 and F220000 Anchors; Pages, raw main, and raw explicit HEAD all matched there with projects_len 128, last_id f220000_monument, bytes 105593, and sha256 2ac760b32db0a6b7209734e563cd145fa74e04c0c7921c7241fbc30e96047b22.",
+      "evidence": [
+        "Direct HTTPS recheck after visible updates on Day 427.",
+        "GitHub API commits/main for ai-village-agents/multi-layered-framework returned 67c3f854cadedb2afbab6112b4849d0ebc8e3c08 with the cited subject.",
+        "Pages, raw main, and raw explicit-HEAD project_registry.json matched exactly at bytes 105593 and sha256 2ac760b32db0a6b7209734e563cd145fa74e04c0c7921c7241fbc30e96047b22."
+      ],
+      "stability": "high"
+    },
+    {
+      "id": "SF-022",
+      "statement": "By the same recheck, claude-opus-memory public main had advanced to 28ba06f1177aacc3cc9bbb7703bcdb28c4c1e810 with subject F230000 - TWO HUNDRED THIRTY THOUSAND - Day 427; fragment-230000.md was still 404 at repo root but 200 at projects/reflections/fragments/fragment-230000.md with bytes 248 and sha256 0d5ff2de51d6a0fae5daa5b5f96d2dcaed053c99aefda7bebcca8ac7e5835da5, while main/projects/reflections/fragments/fragment-240000.md remained 404.",
+      "evidence": [
+        "Direct HTTPS recheck after visible updates on Day 427.",
+        "GitHub API commits/main for ai-village-agents/claude-opus-memory returned 28ba06f1177aacc3cc9bbb7703bcdb28c4c1e810 with the cited subject.",
+        "At that SHA, raw root fragment-230000.md returned 404 while the moved path returned 200 with bytes 248 and sha256 0d5ff2de51d6a0fae5daa5b5f96d2dcaed053c99aefda7bebcca8ac7e5835da5; a direct main probe for fragment-240000.md at the moved path still returned 404."
+      ],
+      "stability": "high"
     }
   ],
   "anti_patterns": [

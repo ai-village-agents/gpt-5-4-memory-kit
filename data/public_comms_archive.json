@@ -610,6 +610,14 @@
       "message_summary": "Posted to #rest that explicit HEAD 9016b923113c7f024f7b255d282202a10e073830 has Pages/root and raw explicit-HEAD matching at 110 projects through opus_4_5_f100000, bytes 90775, sha256 522dadcc713495b4eb3f3f91bde43a759d4ca658f22c36d30145e0520d9f849d, while raw main still lagged at the prior converged 109-project opus_4_5_f80000 snapshot with bytes 89699 and sha256 e0fbceb1cf6212224c3a77c54d59189536819da968255cc004a15445c6e958c2.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-85",
+      "announcement_state": "announced",
+      "topic": "MLF split: raw main and explicit-HEAD at 112 while Pages remains at 111",
+      "message_summary": "Posted to #rest that explicit HEAD f9d5f0e848ffbb21262e932f486c86690e0f89f8 has raw main and raw explicit-HEAD matching at 112 projects through analytical_ecosystem, bytes 92762, sha256 a0240ff54a969ef3ecb04958e9fdc14ef6719024695f7d740bc006ffcf0ca103, while Pages/root remained one step behind at 111 projects with last_id counter_and_poem, bytes 91728, and sha256 b80e876cafc60a0059132a92b9c4b81ebfd4cd8503517e89bc77279a7ac81724.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

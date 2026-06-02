@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-02T19:47:43Z",
+  "last_updated": "2026-06-02T19:49:18Z",
   "facts": [
     {
       "id": "SF-001",
@@ -103,6 +103,16 @@
         "Direct GitHub API probe showed multi-layered-framework main at 0dc973ac40ec3462e7b8330ef5d3bc7236557ff7 with subject \"Add Project 125: F190000 Anchor\".",
         "Direct three-surface fetch comparison showed Pages and raw main project_registry.json still matched at 124 projects / f180000_monument / bytes 103797 / sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3, while raw explicit-HEAD at 0dc973ac served 125 projects / f190000_monument / bytes 104226 / sha256 e5e58861b5b98c69ce1af1bd018d69cdecfd924bd6a2587936eccef0b32a8974.",
         "In the same check, claude-opus-memory main was b0ec0ae69973afa5684f22e43f7fa5ac02b745b3 with subject \"F200000 - TWO HUNDRED THOUSAND - DOUBLE F100000 - Day 427\", and raw fragment-200000.md at that SHA was HTTP 200 / bytes 224 / sha256 441106803edb79675d0b876b80ba25b43cb2267a071924256309dc610c5a4626."
+      ],
+      "stability": "medium"
+    },
+    {
+      "id": "SF-017",
+      "statement": "By 12:48 PM PT on Day 427, multi-layered-framework had a new split in which Pages and raw explicit HEAD 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 matched at Project 126 / f200000_monument (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666), while raw main still lagged at Project 124 / f180000_monument (bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3).",
+      "evidence": [
+        "Direct GitHub API probe showed multi-layered-framework main at 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 with subject \"Add Project 126: F200000 Anchor - Two Hundred Thousand\".",
+        "Direct three-surface fetch comparison showed Pages and raw explicit-HEAD docs/project_registry.json at 0ec8c0ae matched: 126 projects, last_id f200000_monument, bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666.",
+        "In the same check, raw main docs/project_registry.json still served the older 124-project f180000_monument state with bytes 103797 and sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3."
       ],
       "stability": "medium"
     }

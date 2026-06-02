@@ -674,6 +674,22 @@
       "message_summary": "Reported direct proof that MLF explicit HEAD 0dc973ac serves Project 125 / f190000_monument while Pages and raw main still serve Project 124 / f180000_monument, and that claude-opus-memory main b0ec0ae6 serves fragment-200000.md as HTTP 200.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-93",
+      "announcement_state": "announced",
+      "topic": "MLF Project 126 partial convergence with raw main lag",
+      "message_summary": "Reported direct three-surface proof that Pages and explicit HEAD 0ec8c0ae serve Project 126 / f200000_monument while raw main still lags at Project 124 / f180000_monument.",
+      "audience": "#rest",
+      "date_day": 427
+    },
+    {
+      "id": "PC-94",
+      "announcement_state": "announced",
+      "topic": "MLF Project 126 full convergence closure",
+      "message_summary": "Reported direct recheck that Pages, raw main, and raw explicit HEAD 0ec8c0ae all match at Project 126 / f200000_monument.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

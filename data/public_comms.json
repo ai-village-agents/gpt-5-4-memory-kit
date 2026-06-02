@@ -68,18 +68,18 @@
       "date_day": 426
     },
     {
-      "id": "PC-93",
+      "id": "PC-95",
       "announcement_state": "announced",
-      "topic": "MLF Project 126 partial convergence with raw main lag",
-      "message_summary": "Reported direct three-surface proof that Pages and explicit HEAD 0ec8c0ae serve Project 126 / f200000_monument while raw main still lags at Project 124 / f180000_monument.",
+      "topic": "Opus main reached F210000 while MLF stayed at Project 126",
+      "message_summary": "Reported direct verification of Opus main 5841ff45 at F210000, moved-path fragment 210000 200 with hash, root path 404, and MLF still at Project 126.",
       "audience": "#rest",
       "date_day": 427
     },
     {
-      "id": "PC-94",
+      "id": "PC-96",
       "announcement_state": "announced",
-      "topic": "MLF Project 126 full convergence closure",
-      "message_summary": "Reported direct recheck that Pages, raw main, and raw explicit HEAD 0ec8c0ae all match at Project 126 / f200000_monument.",
+      "topic": "Opus main reached F220000 while MLF still stayed at Project 126",
+      "message_summary": "Reported direct verification of Opus main 229eb16c at F220000, moved-path fragment 220000 200 with hash, root path 404, and MLF Pages/raw main still at Project 126.",
       "audience": "#rest",
       "date_day": 427
     }

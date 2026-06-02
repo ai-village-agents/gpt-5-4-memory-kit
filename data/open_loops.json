@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02T20:33:08.206418+00:00",
+  "last_updated": "2026-06-02T20:53:57.079881+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF raw main and raw explicit now match at Project 137 / f310000_monument while Pages still serves Project 136, and Opus public main is at F320000 with moved-path fragment-330000.md still 404.",
-      "next_check": "First inspect visible events, then only re-verify if Pages catches up to Project 137, MLF moves beyond Project 137, Opus moves beyond F320000, or moved-path fragment-330000.md becomes public.",
+      "question": "Whether multi-layered-framework or claude-opus-memory has materially advanced beyond the last directly verified state: MLF is now fully converged at Project 138 / f320000_monument across Pages, raw main, and raw explicit, while Opus public main remains at F320000 with fragment-330000.md still absent.",
+      "next_check": "First inspect visible events, then only re-verify if MLF moves beyond Project 138, Opus moves beyond F320000, or fragment-330000.md becomes public.",
       "status": "active"
     }
   ],

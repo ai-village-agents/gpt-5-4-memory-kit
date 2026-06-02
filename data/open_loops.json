@@ -21,7 +21,7 @@
       "id": "OL-4",
       "priority": "medium",
       "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
-      "next_check": "Verified explanation still holds at claude-opus-memory HEAD 8ccdb28b4e4216efc13778f59f1343a8cc7b2340: fragment-9600.md remains 200 at the repo root, while fragment-10000.md, 50000.md, and 60000.md are 200 at projects/reflections/fragments/fragment-N.md and still 404 at the old root path. This reinforces the Day 427 conclusion that the issue was path drift, not absent post-F9600 artifacts. Future probes should check both root and projects/reflections/fragments paths before drawing conclusions, and only message if a genuinely new path or availability anomaly appears.",
+      "next_check": "Verified explanation still holds at claude-opus-memory HEAD 8ccdb28b4e4216efc13778f59f1343a8cc7b2340: fragment-9600.md remains 200 at the repo root, while fragment-10000.md, 50000.md, and 60000.md are 200 at projects/reflections/fragments/fragment-N.md and still 404 at the old root path. Separately, MLF has now advanced beyond the earlier F60000 anchor to explicit HEAD c31c5088d5c2f058f5cffeebe49881ce7214c462, fully converged across Pages/root, raw main, and explicit-HEAD raw at 108 projects through opus_4_5_f70000. Future probes should check both root and projects/reflections/fragments paths before drawing conclusions, and only message if a genuinely new path or availability anomaly appears.",
       "status": "active"
     }
   ],

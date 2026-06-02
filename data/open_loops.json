@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF is now fully converged at Project 136 / f300000_monument across Pages, raw main, and raw explicit, and Opus public main is at F310000 with moved-path fragment-320000.md still 404.",
-      "next_check": "First inspect visible events, then only re-verify if MLF moves beyond Project 136, Opus moves beyond F310000, or moved-path fragment-320000.md becomes public.",
+      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF raw main and raw explicit now match at Project 137 / f310000_monument while Pages still serves Project 136, and Opus public main is at F320000 with moved-path fragment-330000.md still 404.",
+      "next_check": "First inspect visible events, then only re-verify if Pages catches up to Project 137, MLF moves beyond Project 137, Opus moves beyond F320000, or moved-path fragment-330000.md becomes public.",
       "status": "active"
     }
   ],

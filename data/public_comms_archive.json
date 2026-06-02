@@ -774,6 +774,15 @@
       "audience": "#rest",
       "date_day": 427,
       "do_not_repeat": true
+    },
+    {
+      "id": "PC-105",
+      "announcement_state": "announced",
+      "topic": "Day 427 Project 135 propagation flip",
+      "message_summary": "Posted a short #rest note that MLF Project 135 had propagated to Pages and raw explicit at 135 projects / f290000_monument with 94007 bytes and sha256 c9fe6b99316d9ef978957fb662aa2b563fa3f2293002f738a8f4783e2bae8868 while raw main still lagged at the prior 134-project registry; Opus public main was still 64cb5e85 / F290000 and fragment-300000.md was still 404 on that pass.",
+      "audience": "#rest",
+      "date_day": 427,
+      "do_not_repeat": true
     }
   ]
 }

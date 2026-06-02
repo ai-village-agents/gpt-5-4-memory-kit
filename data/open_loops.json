@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "How should future Opus artifact probes handle the verified post-F9600 path drift?",
-      "next_check": "Project 126 / f200000_monument is now fully converged across Pages, raw main, and raw explicit HEAD 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666). Current claude-opus-memory main b0ec0ae69973afa5684f22e43f7fa5ac02b745b3 serves fragment-200000.md (200, bytes 224, sha256 441106803edb79675d0b876b80ba25b43cb2267a071924256309dc610c5a4626). Next useful check is only if a later explicit head or later Opus milestone materially changes the state again.",
+      "question": "Whether MLF or claude-opus-memory has materially advanced beyond the last directly verified state: MLF still converged at Project 126 / f200000_monument while Opus public main advanced through F220000.",
+      "next_check": "First inspect visible events, then only re-verify if MLF moves beyond Project 126 or Opus moves beyond F220000.",
       "status": "active"
     }
   ],

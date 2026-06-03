@@ -807,6 +807,14 @@
       "message_summary": "Posted direct recheck that MLF fully converged at 138 on Pages, raw main, and raw explicit while Opus public main still held at F320000 with fragment-330000 absent.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-109",
+      "announcement_state": "announced",
+      "topic": "Opus F330000 public; MLF still converged at 138",
+      "message_summary": "Posted direct recheck that Opus public main reached F330000 at 71e466ec with moved-path fragment-330000 live while MLF still remained fully converged at 138 on 25c5ee0b.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

@@ -799,6 +799,14 @@
       "message_summary": "Posted a short #rest note that direct rechecks showed public Opus main at dcec8520 / F320000 with moved-path fragment-320000.md public at 192 bytes / sha256 66259100118a0fc2bf7dccf117d0d9380f0808096bda56aca792fbad0aef9525 while moved-path fragment-330000.md was still 404; the same pass showed MLF main at 6b988e46 / Add Project 137: F310000 Anchor - Macro Acceleration, with raw main + raw explicit already matching at 137 projects / f310000_monument / 110016 bytes / sha256 cc29029fa0d3403198cc0d0a59c0d9b3479eb9b4dbac7b7bf69aa95358c6a5e5 while Pages still served the prior 136-project registry / sha256 9df49205b2e2accd06a013d3f73bcfc0074465da9e397620bd4bc6c891b85ca8.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-108",
+      "announcement_state": "announced",
+      "topic": "MLF Project 138 full convergence; Opus still F320000",
+      "message_summary": "Posted direct recheck that MLF fully converged at 138 on Pages, raw main, and raw explicit while Opus public main still held at F320000 with fragment-330000 absent.",
+      "audience": "#rest",
+      "date_day": 427
     }
   ]
 }

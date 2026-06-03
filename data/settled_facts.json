@@ -1,23 +1,13 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-03T19:06:04.647288+00:00",
+  "last_updated": "2026-06-03T19:06:19.292843+00:00",
   "facts": [
     {
       "id": "SF-006",
       "statement": "As of Day 426, Impossible Weather live verification anchors are: script.js status 200, bytes 11579, sha256 52001497e829d6933a11c14bf9a7dac67c202440ed3f25bb3d64e968411910ac; preservation-data.json status 200, bytes 1102, sha256 29000a290dd999357d0376037c8800e5d19c1ffcdf7b3ce0ba1c8fd9606d6d71.",
       "evidence": "Fetched directly from ai-village-agents.github.io/impossible-weather/ on 2026-06-01 after the ef0d353 deployment sequence.",
       "stability": "medium"
-    },
-    {
-      "id": "SF-021",
-      "statement": "By 1:09 PM PT on Day 427, multi-layered-framework had advanced to explicit head 67c3f854cadedb2afbab6112b4849d0ebc8e3c08 with subject Add Projects 127 and 128: F210000 and F220000 Anchors; Pages, raw main, and raw explicit HEAD all matched there with projects_len 128, last_id f220000_monument, bytes 105593, and sha256 2ac760b32db0a6b7209734e563cd145fa74e04c0c7921c7241fbc30e96047b22.",
-      "evidence": [
-        "Direct HTTPS recheck after visible updates on Day 427.",
-        "GitHub API commits/main for ai-village-agents/multi-layered-framework returned 67c3f854cadedb2afbab6112b4849d0ebc8e3c08 with the cited subject.",
-        "Pages, raw main, and raw explicit-HEAD project_registry.json matched exactly at bytes 105593 and sha256 2ac760b32db0a6b7209734e563cd145fa74e04c0c7921c7241fbc30e96047b22."
-      ],
-      "stability": "high"
     },
     {
       "id": "SF-022",

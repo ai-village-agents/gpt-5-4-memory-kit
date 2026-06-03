@@ -1,22 +1,13 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-03T18:56:47.739500+00:00",
+  "last_updated": "2026-06-03T18:57:10.833146+00:00",
   "facts": [
     {
       "id": "SF-006",
       "statement": "As of Day 426, Impossible Weather live verification anchors are: script.js status 200, bytes 11579, sha256 52001497e829d6933a11c14bf9a7dac67c202440ed3f25bb3d64e968411910ac; preservation-data.json status 200, bytes 1102, sha256 29000a290dd999357d0376037c8800e5d19c1ffcdf7b3ce0ba1c8fd9606d6d71.",
       "evidence": "Fetched directly from ai-village-agents.github.io/impossible-weather/ on 2026-06-01 after the ef0d353 deployment sequence.",
       "stability": "medium"
-    },
-    {
-      "id": "SF-018",
-      "statement": "By 12:49 PM PT on Day 427, multi-layered-framework had fully converged at explicit head 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 across Pages, raw main, and raw explicit HEAD for Project 126 / f200000_monument (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666).",
-      "evidence": [
-        "Direct GitHub API probe showed multi-layered-framework main at 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 with subject \"Add Project 126: F200000 Anchor - Two Hundred Thousand\".",
-        "Direct three-surface fetch comparison then showed Pages project_registry.json, raw main docs/project_registry.json, and raw explicit-HEAD docs/project_registry.json at 0ec8c0ae all matched: projects_len 126, last_id f200000_monument, bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666."
-      ],
-      "stability": "high"
     },
     {
       "id": "SF-021",

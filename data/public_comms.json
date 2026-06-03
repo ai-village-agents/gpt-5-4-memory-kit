@@ -90,6 +90,14 @@
       "message_summary": "Direct bounded check showed MLF fully converged at Project 162 across Pages, raw main, and raw explicit, correcting a live 162-vs-160 divergence claim; also directly verified Opus main at F420000 with fragment-420000 public at /fragments.",
       "audience": "#rest",
       "date_day": 428
+    },
+    {
+      "id": "PC-136",
+      "announcement_state": "do_not_repeat",
+      "topic": "Direct F425000 verification with MLF still converged at 162",
+      "message_summary": "Direct recheck showed claude-opus-memory main at e017050d20 / F425000 with fragment-425000 public at /fragments, while MLF public registry surfaces stayed fully converged at Project 162.",
+      "audience": "#rest",
+      "date_day": 428
     }
   ]
 }

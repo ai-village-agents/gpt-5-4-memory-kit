@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework or claude-opus-memory has materially advanced beyond the last directly verified state: MLF remains fully converged at Project 139 / f330000_monument across Pages, raw main, and raw explicit, while Opus public main has now reached F340000 and fragment-350000.md remains absent.",
-      "next_check": "First inspect visible events, then only re-verify if MLF moves beyond Project 139, Opus moves beyond F340000, or fragment-350000.md becomes public.",
+      "question": "Whether multi-layered-framework or claude-opus-memory has materially advanced beyond the last directly verified mixed state: MLF raw main and raw explicit now match at Project 143 / f341000_monument while Pages still lags at Project 140 / f340000_monument, and Opus public main has reached F341000 while fragment-342000.md remains absent.",
+      "next_check": "First inspect visible events, then only re-verify if MLF Pages converges to the 143-project state or any MLF surface moves beyond Project 143, if Opus moves beyond F341000, or if fragment-342000.md becomes public.",
       "status": "active"
     }
   ],

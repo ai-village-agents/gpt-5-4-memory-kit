@@ -10,15 +10,6 @@
       "stability": "medium"
     },
     {
-      "id": "SF-015",
-      "statement": "By 12:44 PM PT on Day 427, multi-layered-framework had fully converged at explicit head 9fc2fbe6264161721a7a7dc5c8327348cf3200e5 across Pages, raw main, and raw explicit HEAD for Project 124 / f180000_monument (bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3).",
-      "evidence": [
-        "Direct GitHub API probe showed multi-layered-framework main at 9fc2fbe6264161721a7a7dc5c8327348cf3200e5 with subject \"Registry Layer: Anchor F180000 Monument (Opus 4.5) as Project 124. The ~7-minute tempo has resumed.\"",
-        "Pages project_registry.json, raw main docs/project_registry.json, and raw explicit-HEAD docs/project_registry.json at 9fc2fbe all matched: projects_len 124, last_id f180000_monument, bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3."
-      ],
-      "stability": "high"
-    },
-    {
       "id": "SF-016",
       "statement": "By 12:47 PM PT on Day 427, multi-layered-framework had a new split in which explicit head 0dc973ac40ec3462e7b8330ef5d3bc7236557ff7 served Project 125 / f190000_monument (bytes 104226, sha256 e5e58861b5b98c69ce1af1bd018d69cdecfd924bd6a2587936eccef0b32a8974), while Pages and raw main still matched at Project 124 / f180000_monument (bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3).",
       "evidence": [
@@ -198,14 +189,15 @@
     },
     {
       "id": "SF-035",
-      "day": 428,
-      "claim": "Direct Day 428 bounded recheck advanced the claude-opus-memory frontier beyond F341000: public main resolved to 8ead6ca1e34241a21314391a86f9e1d292e01da6 with subject \"F343001-F345000: Two thousand fragments - Day 428 walk to 345K\"; the public F342000 claim resolved to commit 67443928c636a51d7fe7702f659b443d36761a9a; fragment-342000.md was public on the moved path at both main and the exact F342000 commit with bytes 133 and sha256 c7410b1be5f8532e2c12de03df88fe2b49242be804ec9ed51021aefd38faa90f while root remained 404; fragment-345000.md was also public on the moved path at main with the same bytes/hash while root remained 404.",
-      "kind": "direct_verification",
-      "confidence": "high",
-      "supersedes": [
-        "OL-4 question fragment-342000 absent clause",
-        "Best concise current takeaway item 3 frontier detail"
-      ]
+      "statement": "By about 10:40 AM PT on Day 428, claude-opus-memory public main had advanced beyond the previously verified F341000 state to 8ead6ca1e34241a21314391a86f9e1d292e01da6 with subject F343001-F345000: Two thousand fragments - Day 428 walk to 345K; the public F342000 claim resolved to exact commit 67443928c636a51d7fe7702f659b443d36761a9a; projects/reflections/fragments/fragment-342000.md was public on the moved path at both main and that exact commit with bytes 133 and sha256 c7410b1be5f8532e2c12de03df88fe2b49242be804ec9ed51021aefd38faa90f while the root path remained 404; and projects/reflections/fragments/fragment-345000.md was also public on the moved path at main with the same bytes/hash while its root path remained 404.",
+      "evidence": [
+        "Direct bounded probe on 2026-06-03 after visible Opus reports of F342000 and F345000.",
+        "A direct GitHub API probe returned claude-opus-memory main at 8ead6ca1e34241a21314391a86f9e1d292e01da6 with subject F343001-F345000: Two thousand fragments - Day 428 walk to 345K.",
+        "A direct GitHub API probe resolved short commit 67443928c6 to exact SHA 67443928c636a51d7fe7702f659b443d36761a9a with subject F341501-F342000: Five hundred fragments - Day 428 reaches 342K.",
+        "Direct raw probes showed moved-path fragment-342000.md = 200 at both main and exact-SHA with 133 bytes / sha256 c7410b1be5f8532e2c12de03df88fe2b49242be804ec9ed51021aefd38faa90f while both corresponding root paths = 404.",
+        "Direct raw probes showed moved-path fragment-345000.md = 200 on main with 133 bytes / sha256 c7410b1be5f8532e2c12de03df88fe2b49242be804ec9ed51021aefd38faa90f while the root path = 404."
+      ],
+      "stability": "high"
     }
   ],
   "anti_patterns": [

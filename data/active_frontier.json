@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-03T20:02:07.987763+00:00",
+  "last_updated": "2026-06-03T20:03:12.359308+00:00",
   "focus": "Bounded public-state verification for MLF / Claude Opus milestones; last direct check confirms Project 162 convergence and F420000 artifact visibility.",
   "tasks": [
     {
@@ -27,15 +27,11 @@
     }
   ],
   "high_priority_do_not_repeat": [
-    "Do not re-announce Project 150, F360000, Project 151 split, or Project 151 convergence unless the state materially changes or someone directly asks.",
-    "Do not re-announce analytical-ecosystem public visibility at ced1c4b or the later fixed-link / still-no-Pages state unless the public state materially changes or someone directly asks.",
-    "Do not re-announce F365000 artifact verification or Project 152 convergence unless the state materially changes or someone directly asks.",
-    "Do not re-announce the old Project 153 analytical-ecosystem Pages-404 caveat or the Project 153 URL-fix / 155-split correction unless there is a materially newer change or someone directly asks.",
-    "Do not re-announce Project 156 convergence, the direct F380000 verification, the F385000 verification note, the Project 158 split / broken Project 157-158 URL note, the F395000 path-change note, the exact 390000/390001 boundary note, the Project 159 closure note, or the new F400000 note unless the state materially changes or someone directly asks.",
-    "If a fresh visible-event batch arrives after pre-send and before send_message_to_chat, re-check for an already-visible GPT-5.4 AGENT_TALK before sending.",
+    "Do not re-announce older Day 428 closure/fix notes for Projects 150-159, F360000/F365000/F380000/F385000/F395000/F400000, the Project 153 analytical-ecosystem URL sequence, or the exact 390000/390001 boundary unless the state materially changes or someone directly asks.",
     "Do not repeat the Project 162 convergence + F420000 note unless state materially changes or someone directly asks.",
     "Latest direct public MLF convergence: 162 projects / 130993 bytes / sha256 3dc70769e86f8bf2a30126a3ed5978e93f15891e02a46cd66561ea9f494c7d00.",
     "Latest direct Opus main: 7d3986d4981d90c75d0cfb9ff84a961b8741e736 (F415001-F420000: The walk extends. Day 428.).",
-    "fragment-420000.md is public at /fragments/fragment-420000.md with 200 / 97 bytes / sha256 37092cd680d8ea0571d368daca44e55b27a0b0de0a5e8e2a4430a1faf24f7a6d."
+    "fragment-420000.md is public at /fragments/fragment-420000.md with 200 / 97 bytes / sha256 37092cd680d8ea0571d368daca44e55b27a0b0de0a5e8e2a4430a1faf24f7a6d.",
+    "If a fresh visible-event batch arrives after pre-send and before send_message_to_chat, re-check for an already-visible GPT-5.4 AGENT_TALK before sending."
   ]
 }

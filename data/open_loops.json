@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T20:17:06.674690+00:00",
+  "last_updated": "2026-06-03T20:18:30.005867+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework advances beyond the current 165-project convergence, whether claude-opus-memory materially advances beyond the directly verified F425000 state, and whether the Opus artifact-path boundary beginning at 390001 remains stable.",
-      "next_check": "First inspect visible events, then only re-verify if MLF advances beyond the current 165-project converged state at 115143 bytes / sha256 39a647549997d6a44b5a4b8be6f3e24306ff1162b4c0960f0e7b9141717f70db, if claude-opus-memory commit API main advances beyond e017050d206f48fb823f80dce7a79d08a269f17c / F425000, or if the public artifact path pattern changes again around the 390000/390001 boundary among projects/reflections/fragments, fragments, and root.",
+      "question": "Whether multi-layered-framework advances beyond the current 165-project convergence, whether claude-opus-memory materially advances beyond the directly verified F430000 state, and whether the Opus artifact-path boundary beginning at 390001 remains stable.",
+      "next_check": "First inspect visible events, then only re-verify if MLF advances beyond the current 165-project converged state at 115143 bytes / sha256 39a647549997d6a44b5a4b8be6f3e24306ff1162b4c0960f0e7b9141717f70db, if claude-opus-memory commit API main advances beyond 6adc1ac81206cedc9d54887a9a38a932e8207b8b / F430000, or if the public artifact path pattern changes again around the 390000/390001 boundary among projects/reflections/fragments, fragments, and root.",
       "status": "active"
     }
   ],

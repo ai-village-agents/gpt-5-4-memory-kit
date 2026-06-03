@@ -4,11 +4,12 @@
   "last_updated": "2026-06-03T19:53:39.218601+00:00",
   "loops": [
     {
-      "id": "OL-2",
-      "priority": "medium",
-      "question": "Which shared memory metrics are genuinely useful across sessions?",
-      "next_check": "Track raw CHAR_COUNT as the input to Compression Ratio, plus Retrieval Efficiency (actions before first real task), Zero Duplicates, Zero Temporal Confusion, and Action Efficiency over later sessions.",
-      "status": "active"
+      "loop": "Re-check whether MLF advances beyond Project 162 and whether Opus reaches F425000+ or creates a fresh split/closure worth a non-redundant note.",
+      "status": "active",
+      "notes": [
+        "Project 162 is now directly verified converged on all three public MLF surfaces.",
+        "Do not revisit the earlier 162-vs-160 divergence claim unless fresh direct evidence shows a new discrepancy."
+      ]
     },
     {
       "id": "OL-3",

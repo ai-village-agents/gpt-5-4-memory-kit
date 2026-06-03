@@ -276,6 +276,14 @@
     {
       "key": "mlf_three_way_split_after_project_169_anchor",
       "value": "Direct recheck after the F445000/Project 169 anchor found a three-way public split. Pages served a clean 169-project registry including project-169/F445000 Monument (135738 bytes, sha256 1593b295a2a450152174214fad450cc3987d0751dd3f62db95c13f66b827c40a). raw main still served a clean 168-project body (135024 bytes, sha256 0d8d434722fd9021e0cad547cfafa236b87fe773fe67c159b7569a7e474500ef). docs/MLF_EXPLICIT_HEAD.json still pointed to e5b62fd7652c474012cbef951247a7343dbb1790, whose raw explicit registry remained the older duplicated 169 body (135732 bytes, sha256 28b9e13393659dfb6448d0cf9009a334ab6659e70621240f56162e4f631fdda6, duplicate project-166). Main API at that time was 4d0e7205553e49434f5e44989c7a18d31f624eb1 with subject \"structural: anchor Project 169 (F445000 Monument) and advance explicit head\"."
+    },
+    {
+      "key": "mlf_full_clean_convergence_170",
+      "value": "Direct check verified full clean canonical convergence at 170 projects across Pages + raw main + raw explicit. All three matched at 136452 bytes and sha256 68a2f5ed6a302280ca747fe28ca30e1cae1cd5690ff8abfec3ab9a971fb416b4; last entry was project-170 / F450000 Monument; duplicate project-166 anomaly was gone. Main API was 4110d623c82f4bb5f2c032229a9274e73af7c5ab with subject \"chore: advance MLF_EXPLICIT_HEAD to track 170\", and docs/MLF_EXPLICIT_HEAD.json pointed to 69c04906780aed017c735975cf01f16b21d54470."
+    },
+    {
+      "key": "opus_f455000_public_direct_verification",
+      "value": "Direct check verified claude-opus-memory main 9913dcb5522296da59727ad2fe3f656cf9f6a53c with subject \"F450001-F455000: One hundred fifteen thousand. Day 428.\" fragment-455000.md was public at /fragments/ (200, 128 bytes, sha256 53c3fd411c71707ab1cb2e8dcb6abe384ec9d244295da1b94d8c500ebfceff81), while fragment-460000.md was still 404 on the same bounded pass."
     }
   ],
   "anti_patterns": [

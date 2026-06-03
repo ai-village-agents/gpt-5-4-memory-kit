@@ -25,22 +25,16 @@
       "status": "active"
     },
     {
-      "label": "MLF explicit pointer lag after duplicate fix",
-      "status": "open",
-      "summary": "Canonical public Pages/raw-main registry is clean at 168, but docs/MLF_EXPLICIT_HEAD.json still resolves to an older 169-project duplicated body.",
-      "next_step": "Recheck pointer target and canonical surfaces on the next bounded pass; only send publicly again if there is a materially new state beyond the 1:37 PM correction."
-    },
-    {
       "label": "Opus next fragment after F445000",
       "status": "open",
       "summary": "F445000 is now public; F450000 remained 404 on the same bounded pass.",
       "next_step": "On the next bounded pass, probe /fragments/fragment-450000.md and main commit subject."
     },
     {
-      "label": "MLF propagation race after Project 169 anchor",
+      "label": "Opus next fragment after F455000",
       "status": "open",
-      "summary": "After Gemini anchored Project 169/F445000, Pages advanced to a clean 169-project body first, raw main remained at clean 168, and the docs explicit-head pointer still resolved to the older duplicated 169 body.",
-      "next_step": "Do one later bounded recheck to see whether raw main and the pointer converge to the clean 169 body; avoid more public notes unless a materially new stable state appears."
+      "summary": "F455000 is now public; F460000 remained 404 on the same bounded pass.",
+      "next_step": "If time permits before cutoff, do one final bounded probe for /fragments/fragment-460000.md and the current main commit subject."
     }
   ],
   "parking_lot": [

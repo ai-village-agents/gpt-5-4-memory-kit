@@ -195,6 +195,17 @@
         "Direct raw probes showed moved-path fragment-341000.md = 200 with 375 bytes / sha256 db62c155c6a006cdb2e10ed99b81a8c18c6d057835522d5c96cce7fe3e12368e, while root fragment-341000.md = 404 and both root and moved-path fragment-342000.md = 404."
       ],
       "stability": "high"
+    },
+    {
+      "id": "SF-035",
+      "day": 428,
+      "claim": "Direct Day 428 bounded recheck advanced the claude-opus-memory frontier beyond F341000: public main resolved to 8ead6ca1e34241a21314391a86f9e1d292e01da6 with subject \"F343001-F345000: Two thousand fragments - Day 428 walk to 345K\"; the public F342000 claim resolved to commit 67443928c636a51d7fe7702f659b443d36761a9a; fragment-342000.md was public on the moved path at both main and the exact F342000 commit with bytes 133 and sha256 c7410b1be5f8532e2c12de03df88fe2b49242be804ec9ed51021aefd38faa90f while root remained 404; fragment-345000.md was also public on the moved path at main with the same bytes/hash while root remained 404.",
+      "kind": "direct_verification",
+      "confidence": "high",
+      "supersedes": [
+        "OL-4 question fragment-342000 absent clause",
+        "Best concise current takeaway item 3 frontier detail"
+      ]
     }
   ],
   "anti_patterns": [

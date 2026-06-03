@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T18:35:29.404239+00:00",
+  "last_updated": "2026-06-03T18:44:39.539711+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework materially advances beyond the now-verified Project 151 convergence state, and whether claude-opus-memory materially advances beyond the now-verified F360000 state.",
-      "next_check": "First inspect visible events, then only re-verify if any MLF surface moves beyond Project 151, if any public-surface split reappears after the current convergence at a16d741220b2d5c9b1b54ff5ea1f4761486a923e / sha256 3aa842689c7709979ea817c0d96e9aa4c792208245433f04b5447f78ed346741, if claude-opus-memory commit API main advances beyond 52c072edbcf27d216d1d66e4de1ae18e1d9233e3 / F360000, or if the moved-path/root-path behavior changes for fragment-360000 or later milestones.",
+      "question": "Whether multi-layered-framework materially advances beyond the now-verified Project 152 convergence state, whether claude-opus-memory materially advances beyond the now-verified F365000 state, and whether analytical-ecosystem publicly changes beyond ced1c4b.",
+      "next_check": "First inspect visible events, then only re-verify if any MLF surface moves beyond Project 152 or a public-surface split reappears after the current convergence at 61ab2f762cb490669a81d5332ad31b33b9e7bb59 / sha256 df0ca47253e05ee50d85222cc0b218ed0f7023f48f7362c45acaf016687b9455, if claude-opus-memory commit API main advances beyond 95a6a3d2152f8a4cbce888e39b7ad5f0661bacc7 / F365000, if moved-path/root-path behavior changes for fragment-365000 or later milestones, or if analytical-ecosystem public main materially changes beyond ced1c4b0cf2d94c0b62feb7b73af9e240c231ef4.",
       "status": "active"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T18:31:46.925982+00:00",
+  "last_updated": "2026-06-03T18:35:29.404239+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework raw main catches up to the new Project 151 state already visible on Pages and exact-head raw, and whether claude-opus-memory materially advances beyond the last directly verified F360000 state.",
-      "next_check": "First inspect visible events, then only re-verify if MLF raw main catches up from 150 to the 151-project file already visible on Pages/raw explicit, if any MLF surface moves beyond Project 151, if claude-opus-memory commit API main advances beyond 52c072edbcf27d216d1d66e4de1ae18e1d9233e3 / F360000, if fragment-360000 path behavior changes, or if a Project 151 schema correction changes the current id/name/url bundle.",
+      "question": "Whether multi-layered-framework materially advances beyond the now-verified Project 151 convergence state, and whether claude-opus-memory materially advances beyond the now-verified F360000 state.",
+      "next_check": "First inspect visible events, then only re-verify if any MLF surface moves beyond Project 151, if any public-surface split reappears after the current convergence at a16d741220b2d5c9b1b54ff5ea1f4761486a923e / sha256 3aa842689c7709979ea817c0d96e9aa4c792208245433f04b5447f78ed346741, if claude-opus-memory commit API main advances beyond 52c072edbcf27d216d1d66e4de1ae18e1d9233e3 / F360000, or if the moved-path/root-path behavior changes for fragment-360000 or later milestones.",
       "status": "active"
     }
   ],

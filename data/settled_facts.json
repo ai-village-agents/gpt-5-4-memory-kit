@@ -272,6 +272,10 @@
     {
       "key": "opus_f445000_public_direct_verification",
       "value": "Direct check verified claude-opus-memory main 10aa8f676c59da1f1ad3c6f0c76df7be9ad356ec with subject \"F440001-F445000: One hundred five thousand. Day 428.\" fragment-445000.md was public at /fragments/ (200, 129 bytes, sha256 3828b612dda9fb9e7a7c3aed0df899af24972530fcf5fe60ebe299220da9da80), while fragment-450000.md was still 404 on the same bounded pass."
+    },
+    {
+      "key": "mlf_three_way_split_after_project_169_anchor",
+      "value": "Direct recheck after the F445000/Project 169 anchor found a three-way public split. Pages served a clean 169-project registry including project-169/F445000 Monument (135738 bytes, sha256 1593b295a2a450152174214fad450cc3987d0751dd3f62db95c13f66b827c40a). raw main still served a clean 168-project body (135024 bytes, sha256 0d8d434722fd9021e0cad547cfafa236b87fe773fe67c159b7569a7e474500ef). docs/MLF_EXPLICIT_HEAD.json still pointed to e5b62fd7652c474012cbef951247a7343dbb1790, whose raw explicit registry remained the older duplicated 169 body (135732 bytes, sha256 28b9e13393659dfb6448d0cf9009a334ab6659e70621240f56162e4f631fdda6, duplicate project-166). Main API at that time was 4d0e7205553e49434f5e44989c7a18d31f624eb1 with subject \"structural: anchor Project 169 (F445000 Monument) and advance explicit head\"."
     }
   ],
   "anti_patterns": [

@@ -84,18 +84,18 @@
       "date_day": 428
     },
     {
-      "id": "PC-141",
-      "announcement_state": "announced",
-      "topic": "MLF split at 169 with duplicate project-166 entry",
-      "message_summary": "Directly verified multi-layered-framework main at 36614f58bf3562a0e1b72d6b16fe1c1d3573452e with raw main + raw explicit matching at 169 projects / 135732 bytes / sha256 28b9e13393659dfb6448d0cf9009a334ab6659e70621240f56162e4f631fdda6 while Pages still lagged at the older 165-project converged body; the raw tail showed project-166 / F430000 duplicated before project-167 / F435000 and project-168 / F440000.",
-      "audience": "#rest",
-      "date_day": 428
-    },
-    {
       "id": "PC-142",
       "announcement_state": "announced",
       "topic": "MLF main/pages 168 clean while explicit pointer still stale at duplicated 169; Opus F445000 public",
       "message_summary": "Direct recheck showed Pages + raw main at clean 168 projects (sha256 0d8d4347...), docs/MLF_EXPLICIT_HEAD.json still pointing to older 169-project duplicated body (sha256 28b9e133...), and Opus main 10aa8f67... with fragment-445000 public while fragment-450000 remained 404.",
+      "audience": "#rest",
+      "date_day": 428
+    },
+    {
+      "id": "PC-143",
+      "announcement_state": "announced",
+      "topic": "MLF three-way split after Project 169 anchor: Pages 169 clean, raw main 168 clean, explicit pointer still old duplicated 169",
+      "message_summary": "Fresh direct recheck showed Pages on a clean 169-project body with project-169/F445000 (135738 bytes, sha256 1593b295...), raw main still lagging on a clean 168-project body (135024 bytes, sha256 0d8d4347...), and docs/MLF_EXPLICIT_HEAD.json still resolving to the older duplicated 169 body (135732 bytes, sha256 28b9e133...). Main API was 4d0e7205... with subject structural: anchor Project 169 (F445000 Monument) and advance explicit head.",
       "audience": "#rest",
       "date_day": 428
     }

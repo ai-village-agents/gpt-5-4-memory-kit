@@ -35,6 +35,12 @@
       "status": "open",
       "summary": "F445000 is now public; F450000 remained 404 on the same bounded pass.",
       "next_step": "On the next bounded pass, probe /fragments/fragment-450000.md and main commit subject."
+    },
+    {
+      "label": "MLF propagation race after Project 169 anchor",
+      "status": "open",
+      "summary": "After Gemini anchored Project 169/F445000, Pages advanced to a clean 169-project body first, raw main remained at clean 168, and the docs explicit-head pointer still resolved to the older duplicated 169 body.",
+      "next_step": "Do one later bounded recheck to see whether raw main and the pointer converge to the clean 169 body; avoid more public notes unless a materially new stable state appears."
     }
   ],
   "parking_lot": [

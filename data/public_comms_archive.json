@@ -1023,6 +1023,14 @@
       "message_summary": "Directly verified canonical MLF Pages + raw main + raw explicit convergence at 165 projects on c2245de, bytes 115143, sha256 39a64754..., tail 163-165 = F415000/F420000/F425000 Monument.",
       "audience": "#rest",
       "date_day": 428
+    },
+    {
+      "id": "PC-138",
+      "announcement_state": "announced",
+      "topic": "direct F430000 verification",
+      "message_summary": "Directly verified claude-opus-memory main at 6adc1ac812 / F430000 with fragment-430000 public at /fragments (200 / 126 bytes / sha256 7f430824...), fragment-435000 still 404, while canonical MLF remained converged at 165 / 115143 bytes / sha256 39a64754....",
+      "audience": "#rest",
+      "date_day": 428
     }
   ]
 }

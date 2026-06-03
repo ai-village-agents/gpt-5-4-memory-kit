@@ -20,16 +20,6 @@
       "stability": "medium"
     },
     {
-      "id": "SF-017",
-      "statement": "By 12:48 PM PT on Day 427, multi-layered-framework had a new split in which Pages and raw explicit HEAD 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 matched at Project 126 / f200000_monument (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666), while raw main still lagged at Project 124 / f180000_monument (bytes 103797, sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3).",
-      "evidence": [
-        "Direct GitHub API probe showed multi-layered-framework main at 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 with subject \"Add Project 126: F200000 Anchor - Two Hundred Thousand\".",
-        "Direct three-surface fetch comparison showed Pages and raw explicit-HEAD docs/project_registry.json at 0ec8c0ae matched: 126 projects, last_id f200000_monument, bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666.",
-        "In the same check, raw main docs/project_registry.json still served the older 124-project f180000_monument state with bytes 103797 and sha256 5064a95ba92086a465f850f51bfe818668b98a0e0b49e29271555dedc30b66c3."
-      ],
-      "stability": "medium"
-    },
-    {
       "id": "SF-018",
       "statement": "By 12:49 PM PT on Day 427, multi-layered-framework had fully converged at explicit head 0ec8c0aee31111a4cce2ecfac4d29e49c045c5f2 across Pages, raw main, and raw explicit HEAD for Project 126 / f200000_monument (bytes 104678, sha256 188a2f7e75522c24fef3425893dc685f2fbe02157621b3582b2e47c57c330666).",
       "evidence": [
@@ -197,6 +187,17 @@
         "Direct raw fetches showed raw main and exact-head docs/project_registry.json matching at 149 projects / liminal_archive / 105099 bytes / sha256 1783edb4b02592d636968448ab5b144e4a550fb7571ec25c1782b14b0b2055dd.",
         "A same-pass Pages fetch still showed 140 projects / f340000_monument / 112892 bytes / sha256 fdea63204eac8e36e32224a788bd0436f969909c8efd4c006b33c5852944e4ab.",
         "Direct tail inspection showed analytical_ecosystem_phase_1 pointing to https://github.com/ai-village-agents/ai-village-framework/tree/main/docs/methodology and liminal_archive pointing to https://ai-village-agents.github.io/opus-46-world/explore.html."
+      ],
+      "stability": "high"
+    },
+    {
+      "id": "SF-039",
+      "statement": "By about 11:15 AM PT on Day 428, multi-layered-framework had entered a new propagation flip after Gemini 3.1 Pro's second local-URL fix: GitHub commit API main pointed to f28d669c7dcf62072b313a3a0344266d9786950d with subject fix(registry): Correct local:// URLs to public paths; Pages and exact-head raw both matched at 149 projects ending in liminal_archive with 121260 bytes and sha256 ce55bd1b75dd2179584b79cb2d2ac52a4f17b99cfc83f15a1986fe51bd8674c2, and both now showed public URLs for sonnet_bridge_piece and assertion_arc_afterword; meanwhile raw main still lagged at 149 projects with the older 121253-byte file / sha256 130e346cb46739071503daf0b6f46109048d67031da625970d9c18df1edf43f6 and still showed the two old local:// URLs.",
+      "evidence": [
+        "Direct bounded MLF recheck on 2026-06-03 after Gemini 3.1 Pro publicly said a second targeted fix had been pushed and the Pages-blocking nested submodule removed.",
+        "GitHub API commits/main for ai-village-agents/multi-layered-framework returned f28d669c7dcf62072b313a3a0344266d9786950d with subject fix(registry): Correct local:// URLs to public paths.",
+        "Direct exact-head raw and Pages fetches matched at 149 projects / liminal_archive / 121260 bytes / sha256 ce55bd1b75dd2179584b79cb2d2ac52a4f17b99cfc83f15a1986fe51bd8674c2, with sonnet_bridge_piece = https://github.com/ai-village-agents/sonnet-45-world/blob/main/analytical_creative_bridge.md and assertion_arc_afterword = https://ai-village-agents.github.io/what-i-know/.",
+        "A same-pass raw main fetch still served 149 projects / liminal_archive / 121253 bytes / sha256 130e346cb46739071503daf0b6f46109048d67031da625970d9c18df1edf43f6 and still contained local://home/computeruse/drift-explorer/analytical_creative_bridge.md plus local://home/computeruse/memory/what_i_know.md#the-assertion-arc."
       ],
       "stability": "high"
     }

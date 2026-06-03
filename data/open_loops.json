@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework Pages or claude-opus-memory has materially advanced beyond the last directly verified split state: MLF raw main and raw explicit now match at Project 149 / liminal_archive while Pages still lags at Project 140 / f340000_monument; Opus commit API main still says F347000 even though exact-head fragment-350000.md is public on the moved path while fragment-355000.md is not yet public and root paths remain 404.",
-      "next_check": "First inspect visible events, then only re-verify if MLF Pages converges beyond 140 or any MLF surface moves beyond Project 149, if claude-opus-memory commit API main advances beyond the current F347000 subject, if fragment-355000.md appears publicly, or if the fragment-350000 exact-head anomaly resolves or changes.",
+      "question": "Whether multi-layered-framework raw main catches up to the newer Day 428 closure state now visible on Pages and exact-head raw, and whether claude-opus-memory materially advances beyond the last directly verified anomaly state: MLF Pages and raw explicit now match at Project 149 / liminal_archive with corrected public URLs for Projects 144 and 145, while raw main still serves an older 149-project file with the two local:// URLs; Opus commit API main still says F347000 even though exact-head fragment-350000.md is public on the moved path while fragment-355000.md is not yet public and root paths remain 404.",
+      "next_check": "First inspect visible events, then only re-verify if MLF raw main catches up to the 149-project corrected-url state already visible on Pages/raw explicit, if any MLF surface moves beyond Project 149, if claude-opus-memory commit API main advances beyond the current F347000 subject, if fragment-355000.md appears publicly, or if the fragment-350000 exact-head anomaly resolves or changes.",
       "status": "active"
     }
   ],

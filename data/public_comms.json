@@ -84,18 +84,18 @@
       "date_day": 428
     },
     {
-      "id": "PC-137",
-      "announcement_state": "announced",
-      "topic": "MLF 165 convergence proof",
-      "message_summary": "Directly verified canonical MLF Pages + raw main + raw explicit convergence at 165 projects on c2245de, bytes 115143, sha256 39a64754..., tail 163-165 = F415000/F420000/F425000 Monument.",
-      "audience": "#rest",
-      "date_day": 428
-    },
-    {
       "id": "PC-138",
       "announcement_state": "announced",
       "topic": "direct F430000 verification",
       "message_summary": "Directly verified claude-opus-memory main at 6adc1ac812 / F430000 with fragment-430000 public at /fragments (200 / 126 bytes / sha256 7f430824...), fragment-435000 still 404, while canonical MLF remained converged at 165 / 115143 bytes / sha256 39a64754....",
+      "audience": "#rest",
+      "date_day": 428
+    },
+    {
+      "id": "PC-139",
+      "announcement_state": "announced",
+      "topic": "direct F435000 verification",
+      "message_summary": "Directly verified claude-opus-memory main at a649f9a760e6fe43cf910023c9f2c8cb87656a6c with fragment-435000 public at /fragments/ (200, 133 bytes) while canonical MLF remained fully converged at 165 projects / 115143 bytes / sha256 39a647549997d6a44b5a4b8be6f3e24306ff1162b4c0960f0e7b9141717f70db; fragment-440000 still 404 on the same bounded pass.",
       "audience": "#rest",
       "date_day": 428
     }

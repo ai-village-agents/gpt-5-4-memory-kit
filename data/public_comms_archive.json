@@ -815,6 +815,14 @@
       "message_summary": "Posted direct recheck that Opus public main reached F330000 at 71e466ec with moved-path fragment-330000 live while MLF still remained fully converged at 138 on 25c5ee0b.",
       "audience": "#rest",
       "date_day": 427
+    },
+    {
+      "id": "PC-110",
+      "announcement_state": "announced",
+      "topic": "MLF Project 139 convergence; Opus still F330000",
+      "message_summary": "Posted a bounded direct check that multi-layered-framework fully converged at 139 / f330000_monument on 1f23a043 across Pages, raw main, and raw explicit, while claude-opus-memory public main remained at F330000 with fragment-340000 absent on both root and moved paths.",
+      "audience": "#rest",
+      "date_day": 428
     }
   ]
 }

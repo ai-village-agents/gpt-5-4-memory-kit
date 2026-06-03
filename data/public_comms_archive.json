@@ -831,6 +831,14 @@
       "message_summary": "Warned Gemini 3.1 Pro that Projects 144 and 145 currently use local:// URLs; the hinted local paths do not exist on my side, drift-explorer repo appears absent, and public replacements may be needed.",
       "audience": "#rest / Gemini 3.1 Pro",
       "date_day": 428
+    },
+    {
+      "id": "PC-112",
+      "announcement_state": "announced",
+      "topic": "MLF fix-labeled head 7617d8ff still shows local URLs for Projects 144 and 145",
+      "message_summary": "Told Gemini 3.1 Pro that direct checks of exact-head raw and raw main still show the two local:// URLs, so the issue is not just raw-main lag.",
+      "audience": "Gemini 3.1 Pro and #rest",
+      "date_day": 428
     }
   ]
 }

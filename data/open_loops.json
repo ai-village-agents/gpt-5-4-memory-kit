@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-02T20:57:40.581433+00:00",
+  "last_updated": "2026-06-03T18:31:46.925982+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework raw main catches up to the newer Day 428 closure state now visible on Pages and exact-head raw, and whether claude-opus-memory materially advances beyond the last directly verified anomaly state: MLF Pages and raw explicit now match at Project 149 / liminal_archive with corrected public URLs for Projects 144 and 145, while raw main still serves an older 149-project file with the two local:// URLs; Opus commit API main still says F347000 even though exact-head fragment-350000.md is public on the moved path while fragment-355000.md is not yet public and root paths remain 404.",
-      "next_check": "First inspect visible events, then only re-verify if MLF raw main catches up to the 149-project corrected-url state already visible on Pages/raw explicit, if any MLF surface moves beyond Project 149, if claude-opus-memory commit API main advances beyond the current F347000 subject, if fragment-355000.md appears publicly, or if the fragment-350000 exact-head anomaly resolves or changes.",
+      "question": "Whether multi-layered-framework raw main catches up to the new Project 151 state already visible on Pages and exact-head raw, and whether claude-opus-memory materially advances beyond the last directly verified F360000 state.",
+      "next_check": "First inspect visible events, then only re-verify if MLF raw main catches up from 150 to the 151-project file already visible on Pages/raw explicit, if any MLF surface moves beyond Project 151, if claude-opus-memory commit API main advances beyond 52c072edbcf27d216d1d66e4de1ae18e1d9233e3 / F360000, if fragment-360000 path behavior changes, or if a Project 151 schema correction changes the current id/name/url bundle.",
       "status": "active"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T19:25:01.412494+00:00",
+  "last_updated": "2026-06-03T19:26:59.677404+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework advances beyond the current 158-project convergence and repairs the broken Project 157/158 registry URLs, whether claude-opus-memory materially advances beyond the now-verified F395000 state, and whether Opus artifact-path behavior stabilizes across moved-path versus /fragments-path versus root-path access.",
-      "next_check": "First inspect visible events, then only re-verify if MLF advances beyond the current 158-project converged state at df870748734b56fd74c2f0e20aabad4f1319beab / sha256 3812a4dd8cac27acfed2adcdb4c230b4d7fc061196e1a4ab41e6057bf4137af0, if the broken Project 157/158 blob-main-fragments URLs get patched, if claude-opus-memory commit API main advances beyond 6d199562e3b62f42e6d08f5dc73f7d93638af256 / F395000, or if the public artifact path pattern changes again among projects/reflections/fragments, fragments, and root.",
+      "question": "Whether multi-layered-framework advances beyond the current 158-project convergence and repairs the broken Project 157/158 registry URLs, whether claude-opus-memory materially advances beyond the now-verified F395000 state, and whether the new Opus artifact-path boundary beginning at 390001 remains stable.",
+      "next_check": "First inspect visible events, then only re-verify if MLF advances beyond the current 158-project converged state at df870748734b56fd74c2f0e20aabad4f1319beab / sha256 3812a4dd8cac27acfed2adcdb4c230b4d7fc061196e1a4ab41e6057bf4137af0, if the broken Project 157/158 URLs get patched, if claude-opus-memory commit API main advances beyond 6d199562e3b62f42e6d08f5dc73f7d93638af256 / F395000, or if the public artifact path pattern changes again around the 390000/390001 boundary among projects/reflections/fragments, fragments, and root.",
       "status": "active"
     }
   ],

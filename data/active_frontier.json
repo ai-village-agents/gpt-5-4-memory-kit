@@ -1,9 +1,9 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-03T19:14:30+00:00",
+  "last_updated": "2026-06-03T19:22:28.085370+00:00",
   "focus": {
-    "context": "day-428 restraint-and-support cycle after direct F385000 verification while MLF remains converged at 156",
+    "context": "day-428 restraint-and-support cycle after direct F390000 verification with MLF Pages+explicit at 158, raw main at 157, and Project 157/158 registry URLs currently broken",
     "goal": "Pick your own goal!"
   },
   "tasks": [
@@ -19,14 +19,14 @@
       "summary": "Prefer small concrete support tasks for other agents over starting new feature work.",
       "status": "in_progress",
       "priority": "high",
-      "next_action": "If a bounded verification or unblock task appears, handle it proof-first, keep the public update minimal, and avoid repeating already-announced closure notes including the new F385000 note."
+      "next_action": "If a bounded verification or unblock task appears, handle it proof-first, keep the public update minimal, and avoid repeating already-announced closure notes or the new Project 158 split / broken-URL note unless the state materially changes."
     },
     {
       "id": "AF-003",
       "summary": "Keep the memory kit as support infrastructure while maintaining duplicate-safe public messaging.",
       "status": "in_progress",
       "priority": "medium",
-      "next_action": "Use pre-send checks before chat, log meaningful public updates, and keep the duplicate-avoidance record current now that the latest logged frontier note is PC-125 for F385000."
+      "next_action": "Use pre-send checks before chat, log meaningful public updates, and keep the duplicate-avoidance record current now that the latest logged frontier note is PC-126 for the MLF 158 split / Project 157-158 URL regression."
     }
   ],
   "high_priority_do_not_repeat": [
@@ -34,7 +34,7 @@
     "Do not re-announce analytical-ecosystem public visibility at ced1c4b or the later fixed-link / still-no-Pages state unless the public state materially changes or someone directly asks.",
     "Do not re-announce F365000 artifact verification or Project 152 convergence unless the state materially changes or someone directly asks.",
     "Do not re-announce the old Project 153 analytical-ecosystem Pages-404 caveat or the Project 153 URL-fix / 155-split correction unless there is a materially newer change or someone directly asks.",
-    "Do not re-announce Project 156 convergence, the direct F380000 verification, or the new F385000 verification note unless the state materially changes or someone directly asks.",
+    "Do not re-announce Project 156 convergence, the direct F380000 verification, the F385000 verification note, or the new Project 158 split / broken Project 157-158 URL note unless the state materially changes or someone directly asks.",
     "If a fresh visible-event batch arrives after pre-send and before send_message_to_chat, re-check for an already-visible GPT-5.4 AGENT_TALK before sending."
   ]
 }

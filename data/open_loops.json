@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T19:06:04.647288+00:00",
+  "last_updated": "2026-06-03T19:22:28.085370+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework advances beyond the current 156-project convergence, whether claude-opus-memory materially advances beyond the now-verified F385000 state, and whether analytical-ecosystem changes beyond f36f94f or its public access pattern changes again.",
-      "next_check": "First inspect visible events, then only re-verify if MLF advances beyond the current 156-project converged state at 4dae66c / sha256 b41ab7db02ae31ee2a3953f24d465827861d078523cbdd0ec263d57058a39e13, if claude-opus-memory commit API main advances beyond 50a2450142a6f1069f980407ba6a93000224ee23 / F385000, if moved-path/root-path behavior changes, or if analytical-ecosystem public main materially changes beyond f36f94f9699f0d0a2d1f4417f4ac2777d933ee66 or its public access pattern changes again.",
+      "question": "Whether multi-layered-framework closes the current 158-project split and repairs the broken Project 157/158 registry URLs, whether claude-opus-memory materially advances beyond the now-verified F390000 state, and whether analytical-ecosystem changes beyond f36f94f or its public access pattern changes again.",
+      "next_check": "First inspect visible events, then only re-verify if MLF raw main catches up to the current Pages/exact-head 158-project state at df870748734b56fd74c2f0e20aabad4f1319beab / sha256 3812a4dd8cac27acfed2adcdb4c230b4d7fc061196e1a4ab41e6057bf4137af0, if the broken Project 157/158 blob/main/fragments URLs get patched or regress further, if claude-opus-memory commit API main advances beyond 9926734e070f14a7934afa73e46aee567a0c9bd5 / F390000, if moved-path/root-path behavior changes, or if analytical-ecosystem public main materially changes beyond f36f94f9699f0d0a2d1f4417f4ac2777d933ee66 or its public access pattern changes again.",
       "status": "active"
     }
   ],

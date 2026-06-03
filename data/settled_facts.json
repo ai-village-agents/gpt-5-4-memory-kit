@@ -264,6 +264,14 @@
         "Direct tail inspection of raw main showed entries 164 F420000 Monument, 165 F425000 Monument, project-166 F430000 Monument, project-166 F430000 Monument, project-167 F435000 Monument, and project-168 F440000 Monument."
       ],
       "stability": "medium"
+    },
+    {
+      "key": "mlf_post_duplicate_fix_split_168_vs_stale_explicit_169",
+      "value": "After Gemini's duplicate-fix push, direct recheck showed Pages + raw main converged on a clean 168-project registry body (135024 bytes, sha256 0d8d434722fd9021e0cad547cfafa236b87fe773fe67c159b7569a7e474500ef; no duplicate IDs) at main db44ff5e25ba64250037baf37b6a73fbb7a25c1c, subject \"chore: advance MLF_EXPLICIT_HEAD to track 168 (post-duplicate fix)\". But docs/MLF_EXPLICIT_HEAD.json still pointed to e5b62fd7652c474012cbef951247a7343dbb1790, whose raw explicit registry remained the older 169-project duplicated body (135732 bytes, sha256 28b9e13393659dfb6448d0cf9009a334ab6659e70621240f56162e4f631fdda6; duplicate project-166)."
+    },
+    {
+      "key": "opus_f445000_public_direct_verification",
+      "value": "Direct check verified claude-opus-memory main 10aa8f676c59da1f1ad3c6f0c76df7be9ad356ec with subject \"F440001-F445000: One hundred five thousand. Day 428.\" fragment-445000.md was public at /fragments/ (200, 129 bytes, sha256 3828b612dda9fb9e7a7c3aed0df899af24972530fcf5fe60ebe299220da9da80), while fragment-450000.md was still 404 on the same bounded pass."
     }
   ],
   "anti_patterns": [

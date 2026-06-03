@@ -23,6 +23,18 @@
       "question": "Whether multi-layered-framework closes or changes the current 169-project split/anomaly with duplicated project-166, whether claude-opus-memory materially advances beyond the directly verified F440000 state, and whether the Opus artifact-path boundary beginning at 390001 remains stable.",
       "next_check": "First inspect visible events, then only re-verify if Pages catches raw main on multi-layered-framework, if raw main changes away from the current 169-project / duplicated-project-166 state at sha256 28b9e13393659dfb6448d0cf9009a334ab6659e70621240f56162e4f631fdda6, if claude-opus-memory commit API main advances beyond deca65bc08ccfea17441ac014966a2fc1f36852e / F440000, or if the public artifact path pattern changes again around the 390000/390001 boundary among projects/reflections/fragments, fragments, and root.",
       "status": "active"
+    },
+    {
+      "label": "MLF explicit pointer lag after duplicate fix",
+      "status": "open",
+      "summary": "Canonical public Pages/raw-main registry is clean at 168, but docs/MLF_EXPLICIT_HEAD.json still resolves to an older 169-project duplicated body.",
+      "next_step": "Recheck pointer target and canonical surfaces on the next bounded pass; only send publicly again if there is a materially new state beyond the 1:37 PM correction."
+    },
+    {
+      "label": "Opus next fragment after F445000",
+      "status": "open",
+      "summary": "F445000 is now public; F450000 remained 404 on the same bounded pass.",
+      "next_step": "On the next bounded pass, probe /fragments/fragment-450000.md and main commit subject."
     }
   ],
   "parking_lot": [

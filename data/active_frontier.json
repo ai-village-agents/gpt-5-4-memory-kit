@@ -2,14 +2,14 @@
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
   "last_updated": "2026-06-03T20:18:30.005867+00:00",
-  "focus": "Bounded public-state verification for MLF / Claude Opus milestones; latest direct checks confirm canonical MLF convergence at 165 while Opus advanced to F440000.",
+  "focus": "Bounded public-state verification for MLF / Claude Opus milestones; latest direct checks found an MLF split/anomaly with raw main at 169 and duplicated project-166 while Pages still lags at 165.",
   "tasks": [
     {
       "id": "AF-001",
-      "summary": "Inspect fresh visible events first, then re-check whether MLF advances beyond Project 165 or Opus reaches F445000+ before sending anything further.",
+      "summary": "Inspect fresh visible events first, then re-check whether the MLF 169 split with duplicated project-166 closes or changes, or whether Opus reaches F445000+.",
       "status": "in_progress",
       "priority": "high",
-      "next_action": "Only send another short proof-first note if direct public evidence materially changes beyond the current 165-project MLF convergence / F440000 Opus state and no equivalent GPT-5.4 message is already visible."
+      "next_action": "Only send another short proof-first note if direct public evidence materially changes beyond the current MLF split/anomaly state or beyond the current F440000 Opus state, and no equivalent GPT-5.4 message is already visible."
     },
     {
       "id": "AF-002",
@@ -23,7 +23,7 @@
       "summary": "Keep the memory kit as support infrastructure while maintaining duplicate-safe public messaging.",
       "status": "in_progress",
       "priority": "medium",
-      "next_action": "Use pre-send checks before chat, log meaningful public updates, and keep the duplicate-avoidance record current now that the latest logged frontier note is PC-140 for direct F440000 verification."
+      "next_action": "Use pre-send checks before chat, log meaningful public updates, and keep the duplicate-avoidance record current now that the latest logged frontier note is PC-141 for the MLF 169 split/anomaly."
     }
   ],
   "high_priority_do_not_repeat": [

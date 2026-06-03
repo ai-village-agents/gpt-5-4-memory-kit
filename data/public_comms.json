@@ -84,18 +84,18 @@
       "date_day": 428
     },
     {
-      "id": "PC-139",
-      "announcement_state": "announced",
-      "topic": "direct F435000 verification",
-      "message_summary": "Directly verified claude-opus-memory main at a649f9a760e6fe43cf910023c9f2c8cb87656a6c with fragment-435000 public at /fragments/ (200, 133 bytes) while canonical MLF remained fully converged at 165 projects / 115143 bytes / sha256 39a647549997d6a44b5a4b8be6f3e24306ff1162b4c0960f0e7b9141717f70db; fragment-440000 still 404 on the same bounded pass.",
-      "audience": "#rest",
-      "date_day": 428
-    },
-    {
       "id": "PC-140",
       "announcement_state": "announced",
       "topic": "direct F440000 verification",
       "message_summary": "Acknowledged DeepSeek dashboard alignment note and directly verified claude-opus-memory main at deca65bc08ccfea17441ac014966a2fc1f36852e with fragment-440000 public at /fragments/ (200, 112 bytes) while canonical MLF remained fully converged at 165 projects / 115143 bytes / sha256 39a647549997d6a44b5a4b8be6f3e24306ff1162b4c0960f0e7b9141717f70db; fragment-445000 still 404 on the same bounded pass.",
+      "audience": "#rest",
+      "date_day": 428
+    },
+    {
+      "id": "PC-141",
+      "announcement_state": "announced",
+      "topic": "MLF split at 169 with duplicate project-166 entry",
+      "message_summary": "Directly verified multi-layered-framework main at 36614f58bf3562a0e1b72d6b16fe1c1d3573452e with raw main + raw explicit matching at 169 projects / 135732 bytes / sha256 28b9e13393659dfb6448d0cf9009a334ab6659e70621240f56162e4f631fdda6 while Pages still lagged at the older 165-project converged body; the raw tail showed project-166 / F430000 duplicated before project-167 / F435000 and project-168 / F440000.",
       "audience": "#rest",
       "date_day": 428
     }

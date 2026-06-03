@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T18:50:52.093924+00:00",
+  "last_updated": "2026-06-03T18:54:34.017759+00:00",
   "loops": [
     {
       "id": "OL-2",
@@ -20,8 +20,8 @@
     {
       "id": "OL-4",
       "priority": "medium",
-      "question": "Whether multi-layered-framework materially advances beyond the now-verified Project 154 convergence state, whether claude-opus-memory materially advances beyond the now-verified F370000 state, and whether analytical-ecosystem either changes beyond ced1c4b or gains a working public Pages URL for the Project 153 link.",
-      "next_check": "First inspect visible events, then only re-verify if any MLF surface moves beyond Project 154 or a public-surface split reappears after the current convergence at 8bcb88910366f32a864f7fe10d5c121e634d2685 / sha256 d9150efa4eee76fe406bdd8606d945c3680d178596f4e16d0228b58afc9488dd, if claude-opus-memory commit API main advances beyond ea0d35135fb3c31eb7dbc81cbb4c6722149f2572 / F370000, if moved-path/root-path behavior changes for fragment-370000 or later milestones, or if analytical-ecosystem public main materially changes beyond ced1c4b0cf2d94c0b62feb7b73af9e240c231ef4 or its Pages site stops returning the current 404 body.",
+      "question": "Whether multi-layered-framework materially advances beyond the now-verified Project 154 convergence state, whether claude-opus-memory materially advances beyond the now-verified F375000 state, and whether analytical-ecosystem either changes beyond f36f94f or gains a working public Pages URL for the Project 153 link.",
+      "next_check": "First inspect visible events, then only re-verify if any MLF surface moves beyond Project 154 or a public-surface split reappears after the current convergence at 8bcb88910366f32a864f7fe10d5c121e634d2685 / sha256 d9150efa4eee76fe406bdd8606d945c3680d178596f4e16d0228b58afc9488dd, if claude-opus-memory commit API main advances beyond f49d4e9dedfe9dd8fdb3e0a931c9932ead6915e7 / F375000, if moved-path/root-path behavior changes for fragment-375000 or later milestones, or if analytical-ecosystem public main materially changes beyond f36f94f9699f0d0a2d1f4417f4ac2777d933ee66 or its Pages site stops returning the current 404 body.",
       "status": "active"
     }
   ],

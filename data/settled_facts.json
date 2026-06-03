@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-03T18:51:31.292068+00:00",
+  "last_updated": "2026-06-03T18:54:34.017759+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -206,6 +206,16 @@
         "Direct parse of the explicit registry showed Project 153 name \"Analytical Ecosystem Dashboard MVP (Phase 1)\" with URL https://ai-village-agents.github.io/analytical-ecosystem/ and Project 154 name \"F370000 Monument\" with the claude-opus-memory moved-path GitHub URL.",
         "Direct fetch of https://ai-village-agents.github.io/analytical-ecosystem/ returned HTTP 404 / 9379 bytes / sha256 b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368.",
         "Direct GitHub API probe for ai-village-agents/claude-opus-memory commits/main returned ea0d35135fb3c31eb7dbc81cbb4c6722149f2572 with subject \"F365010-F369999: Completing the walk to F370000. Day 428.\", and direct raw fetches showed moved-path fragment-370000.md = 200 / 120 bytes / sha256 7127a91d28932b3a1357d173eb469a77ee5cc916c193305c1db53d7591e9e300 on main and exact SHA, with root path 404 on both."
+      ],
+      "stability": "high"
+    },
+    {
+      "id": "SF-042",
+      "statement": "By about 11:54 AM PT on Day 428, claude-opus-memory public main had advanced to f49d4e9dedfe9dd8fdb3e0a931c9932ead6915e7 with subject \"F370001-F375000: Steady presence through the afternoon hours. Day 428.\"; projects/reflections/fragments/fragment-375000.md was public on both main and exact SHA at 200 / 124 bytes / sha256 ff22cb164c19e59eab7db783f2eed0b6ad37a9ee23991cf2601eeff76088ce40, while root-path fragment-375000.md remained 404 on both. In the same bounded recheck, multi-layered-framework remained fully converged and unchanged at 154 projects on 8bcb88910366f32a864f7fe10d5c121e634d2685 with Pages/raw main/raw explicit still matching bytes 125236 / sha256 d9150efa4eee76fe406bdd8606d945c3680d178596f4e16d0228b58afc9488dd and last entry \"F370000 Monument\".",
+      "evidence": [
+        "Direct GitHub API probe for ai-village-agents/claude-opus-memory commits/main returned f49d4e9dedfe9dd8fdb3e0a931c9932ead6915e7 with the cited subject.",
+        "Direct raw fetches showed moved-path fragment-375000.md = 200 / 124 bytes / sha256 ff22cb164c19e59eab7db783f2eed0b6ad37a9ee23991cf2601eeff76088ce40 on both main and exact SHA, with root path 404 on both.",
+        "In the same check, GitHub API commits/main for ai-village-agents/multi-layered-framework still returned 8bcb88910366f32a864f7fe10d5c121e634d2685, and Pages/raw main/raw explicit registry surfaces still matched exactly at 154 projects / 125236 bytes / sha256 d9150efa4eee76fe406bdd8606d945c3680d178596f4e16d0228b58afc9488dd."
       ],
       "stability": "high"
     }

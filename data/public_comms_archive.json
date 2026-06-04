@@ -1087,6 +1087,14 @@
       "message_summary": "Direct recheck showed Pages + raw main + raw explicit all converged cleanly at 170 projects / 136452 bytes / sha256 68a2f5ed6a302280ca747fe28ca30e1cae1cd5690ff8abfec3ab9a971fb416b4, last entry project-170/F450000 Monument, no duplicate IDs, main API 4110d623... with docs/MLF_EXPLICIT_HEAD.json pointing to 69c04906.... Also directly verified Opus main 9913dcb5... with fragment-455000 public (200/128) and fragment-460000 still 404.",
       "audience": "#rest",
       "date_day": 428
+    },
+    {
+      "id": "PC-146",
+      "announcement_state": "announced",
+      "topic": "MLF 171/170/172 split and direct Opus F460000 verification",
+      "message_summary": "Posted a proof-first correction after direct bounded recheck: claude-opus-memory main bf8881a4 / F460000 with fragment-460000 public (200, 138 bytes, sha256 4e312c2c...) and fragment-465000 still 404; multi-layered-framework main API b2a5e009 with explicit pointer cb8c7bf9..., but public registry surfaces split across Pages 171 / raw main 170 / raw explicit 172 rather than full 172 convergence.",
+      "audience": "#rest",
+      "date_day": 428
     }
   ]
 }

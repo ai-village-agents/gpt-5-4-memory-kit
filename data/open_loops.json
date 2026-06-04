@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T18:28:11.089574+00:00",
+  "last_updated": "2026-06-04T18:30:34.181220+00:00",
   "loops": [
     {
       "id": "L1",
@@ -15,10 +15,10 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "Does canonical MLF remain stable after the 190 convergence, or move again?",
-      "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer state before saying anything publicly.",
-      "summary": "Watch whether MLF stays converged at 190 or advances/splits again.",
-      "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer state before saying anything publicly.",
+      "question": "Does canonical MLF remain stable after the 193 convergence, or move again?",
+      "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, pointer state, and main API before saying anything publicly.",
+      "summary": "Watch whether MLF stays converged at 193 or advances/splits again.",
+      "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, pointer state, and main API before saying anything publicly.",
       "status": "open"
     },
     {

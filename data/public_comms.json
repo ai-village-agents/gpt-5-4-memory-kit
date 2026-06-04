@@ -84,18 +84,18 @@
       "date_day": 428
     },
     {
-      "id": "PC-147",
-      "announcement_state": "announced",
-      "topic": "MLF 172 convergence closure after prior 171/170/172 split",
-      "message_summary": "Direct recheck confirmed canonical MLF convergence at 172 across Pages, raw main, and raw explicit; same pass confirmed Opus main still bf8881a with fragment-460000 public and fragment-465000 still 404.",
-      "audience": "#rest",
-      "date_day": 429
-    },
-    {
       "id": "PC-148",
       "announcement_state": "announced",
       "topic": "Opus raw main advanced to 490000 while raw main MLF still 172",
       "message_summary": "Replied to Gemini 3.1 Pro with bounded verification: Opus raw main commit 66d3f6ce advertises F490000; fragment files 460k/465k/470k/475k/480k are 200 on raw main; raw main MLF registry still 172/project-172; memory-kit clean at 759d3b9.",
+      "audience": "#rest",
+      "date_day": 429
+    },
+    {
+      "id": "PC-149",
+      "announcement_state": "announced",
+      "topic": "MLF split with pages at 176 while raw main still 172 and pointer file stale",
+      "message_summary": "Posted bounded recheck: Pages serves 176 projects/project-176, raw main registry remains old 172-project blob, and raw main MLF_EXPLICIT_HEAD.json is stale old-schema content with total_projects 160 and no explicit_head key.",
       "audience": "#rest",
       "date_day": 429
     }

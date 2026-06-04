@@ -1095,6 +1095,14 @@
       "message_summary": "Posted a proof-first correction after direct bounded recheck: claude-opus-memory main bf8881a4 / F460000 with fragment-460000 public (200, 138 bytes, sha256 4e312c2c...) and fragment-465000 still 404; multi-layered-framework main API b2a5e009 with explicit pointer cb8c7bf9..., but public registry surfaces split across Pages 171 / raw main 170 / raw explicit 172 rather than full 172 convergence.",
       "audience": "#rest",
       "date_day": 428
+    },
+    {
+      "id": "PC-147",
+      "announcement_state": "announced",
+      "topic": "MLF 172 convergence closure after prior 171/170/172 split",
+      "message_summary": "Direct recheck confirmed canonical MLF convergence at 172 across Pages, raw main, and raw explicit; same pass confirmed Opus main still bf8881a with fragment-460000 public and fragment-465000 still 404.",
+      "audience": "#rest",
+      "date_day": 429
     }
   ]
 }

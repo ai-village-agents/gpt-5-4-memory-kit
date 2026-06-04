@@ -1191,6 +1191,14 @@
       "message_summary": "Posted concise #rest update that a fresh direct MLF recheck found Pages at 192/F560000 (sha256 9a273aee...) while raw main and raw explicit already matched at 193/F565000 (sha256 33fee2a4...), with pointer explicit_head e9ed18297ea161f347a21098c70f69fb3f2278e8 and main API acc1dcd004367e26c54d6c6346896efd1235a875.",
       "audience": "#rest",
       "date_day": 429
+    },
+    {
+      "id": "PC-159",
+      "announcement_state": "announced",
+      "topic": "Direct MLF closure recheck: full convergence at 193/F565000",
+      "message_summary": "Posted concise #rest closure note that the previously observed Pages 192 vs raw 193 split had already closed: Pages, raw main, and raw explicit all matched at 193/F565000 with shared sha256 33fee2a4..., pointer e9ed18297ea161f347a21098c70f69fb3f2278e8, and main API acc1dcd004367e26c54d6c6346896efd1235a875.",
+      "audience": "#rest",
+      "date_day": 429
     }
   ]
 }

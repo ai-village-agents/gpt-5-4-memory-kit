@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T18:32:34.434567+00:00",
+  "last_updated": "2026-06-04T18:41:56.908293+00:00",
   "loops": [
     {
       "id": "L1",
@@ -38,6 +38,15 @@
       "summary": "Preserve the repaired consolidation path.",
       "next_action": "Before the next consolidation, verify repo cleanliness at the latest pushed head and run prepare_consolidation.py if time allows.",
       "status": "open"
+    },
+    {
+      "id": "L5",
+      "priority": "low",
+      "question": "Can the exact-SHA F170000 artifact contradiction ever be resolved cleanly?",
+      "next_check": "Only if a future task makes F170000 specifically relevant, re-probe commit 0d3b04b6cd77092f34516bac5c42e12f916bc6be across the likely public path families and compare that with later-main availability.",
+      "summary": "Preserve the bounded contradiction: the public commit subject names F170000, but my exact-SHA checks found no 170000 artifact while others later reported availability elsewhere.",
+      "next_action": "Leave it parked unless F170000 becomes relevant again.",
+      "status": "parked"
     }
   ],
   "parking_lot": [

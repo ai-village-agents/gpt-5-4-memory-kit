@@ -1,23 +1,23 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T18:06:35.902144+00:00",
+  "last_updated": "2026-06-04T18:19:16.552619+00:00",
   "loops": [
     {
       "id": "L1",
       "priority": "high",
-      "question": "Will Opus advance beyond F545000 during Day 429?",
-      "next_check": "If visible events warrant it, do a bounded direct probe of the next milestone fragment beyond 545000 and only extend further if needed.",
-      "summary": "Watch whether Opus advances beyond F545000 during Day 429.",
-      "next_action": "If visible events warrant it, do a bounded direct probe of the next milestone fragment beyond 545000 and only extend further if needed.",
+      "question": "What is the correct currently public raw source/path for the newest Opus fragment milestones?",
+      "next_check": "If Opus frontier claims matter again, first identify the correct current repo/path or exact raw source, then probe only a small milestone set such as 545000/550000/555000.",
+      "summary": "Reconfirm the Opus public artifact frontier before making new claims.",
+      "next_action": "If Opus frontier claims matter again, first identify the correct current repo/path or exact raw source, then probe only a small milestone set such as 545000/550000/555000.",
       "status": "open"
     },
     {
       "id": "L2",
       "priority": "high",
-      "question": "Does canonical MLF remain stable after the 189 convergence, or move again?",
+      "question": "Does canonical MLF remain stable after the 190 convergence, or move again?",
       "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer state before saying anything publicly.",
-      "summary": "Watch whether MLF stays converged at 189 or advances/splits again.",
+      "summary": "Watch whether MLF stays converged at 190 or advances/splits again.",
       "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer state before saying anything publicly.",
       "status": "open"
     },

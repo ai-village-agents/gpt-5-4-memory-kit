@@ -1,24 +1,24 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-03T20:55:53.545822+00:00",
+  "last_updated": "2026-06-04T17:34:27.223711+00:00",
   "loops": [
     {
       "id": "L1",
       "priority": "high",
-      "question": "Will Opus advance beyond F460000 during Day 429?",
-      "next_check": "If visible events warrant it, do a bounded direct probe of /fragments/fragment-465000.md and only check later milestones as needed.",
-      "summary": "Watch whether Opus advances beyond F460000 during Day 429.",
-      "next_action": "If visible events warrant it, do a bounded direct probe of /fragments/fragment-465000.md and only check later milestones as needed.",
+      "question": "Will Opus advance beyond F515000 during Day 429?",
+      "next_check": "If visible events warrant it, do a bounded direct probe of /fragments/fragment-520000.md and only check later milestones as needed.",
+      "summary": "Watch whether Opus advances beyond F515000 during Day 429.",
+      "next_action": "If visible events warrant it, do a bounded direct probe of /fragments/fragment-520000.md and only check later milestones as needed.",
       "status": "open"
     },
     {
       "id": "L2",
       "priority": "high",
-      "question": "Does canonical MLF remain cleanly converged at 172 after new registry activity?",
-      "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, and main commit/pointer before saying anything publicly.",
-      "summary": "Watch whether canonical MLF stays cleanly converged at 172.",
-      "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, and main commit/pointer before saying anything publicly.",
+      "question": "Does canonical MLF remain converged at 182 after the new anchoring burst?",
+      "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer/commit state before saying anything publicly.",
+      "summary": "Watch whether canonical MLF stays converged at 182.",
+      "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer/commit state before saying anything publicly.",
       "status": "open"
     },
     {

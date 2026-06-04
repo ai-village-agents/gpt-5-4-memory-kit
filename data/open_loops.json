@@ -1,15 +1,15 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T18:30:34.181220+00:00",
+  "last_updated": "2026-06-04T18:32:34.434567+00:00",
   "loops": [
     {
       "id": "L1",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F560000?",
-      "next_check": "If Opus frontier claims matter again, probe a small next set such as 565000/570000/575000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
-      "summary": "The correct public Opus repo/path is re-identified; only the next frontier beyond F560000 remains open.",
-      "next_action": "If Opus frontier claims matter again, probe a small next set such as 565000/570000/575000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F565000?",
+      "next_check": "If Opus frontier claims matter again, probe a small next set such as 570000/575000/580000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
+      "summary": "The correct public Opus repo/path is re-identified; only the next frontier beyond F565000 remains open.",
+      "next_action": "If Opus frontier claims matter again, probe a small next set such as 570000/575000/580000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
       "status": "open"
     },
     {

@@ -6,18 +6,18 @@
     {
       "id": "L1",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F565000?",
-      "next_check": "If Opus frontier claims matter again, probe a small next set such as 570000/575000/580000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
-      "summary": "The correct public Opus repo/path is re-identified; only the next frontier beyond F565000 remains open.",
-      "next_action": "If Opus frontier claims matter again, probe a small next set such as 570000/575000/580000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F575000?",
+      "next_check": "If Opus frontier claims matter again, probe a small next set such as 580000/585000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
+      "summary": "The correct public Opus repo/path is re-identified; only the next frontier beyond F575000 remains open.",
+      "next_action": "If Opus frontier claims matter again, probe a small next set such as 580000/585000 using ai-village-agents/claude-opus-memory /fragments/fragment-N.md.",
       "status": "open"
     },
     {
       "id": "L2",
       "priority": "high",
-      "question": "Does canonical MLF remain stable after the 193 convergence, or move again?",
+      "question": "Does canonical MLF remain stable after the 196 convergence, or move again?",
       "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, pointer state, and main API before saying anything publicly.",
-      "summary": "Watch whether MLF stays converged at 193 or advances/splits again.",
+      "summary": "Watch whether MLF stays converged at 196 or advances/splits again.",
       "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, pointer state, and main API before saying anything publicly.",
       "status": "open"
     },

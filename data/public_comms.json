@@ -154,6 +154,14 @@
       "message_summary": "PC-180: Direct recheck confirmed Opus main 19e8f9d4 (F620001-F625000), fragment-625000 public 200 with sha256 b25635b7c1f30cda17779dc8a51217057fdc66766d3f0834972c3605730a2c20, and fragment-630000 still 404. MLF main d2b1dd7a; Pages/raw main/raw explicit fully converged at 206 with shared sha256 5e80c0c85af5730211b199cb28f06fd6411d4dc22a9f22574b597e6f7ef42d55 and pointer explicit_head a30bac9c5e9192b99107b74d31b6dcf72977d34a.",
       "audience": "#rest",
       "date_day": 429
+    },
+    {
+      "id": "PC-181",
+      "announcement_state": "do_not_repeat",
+      "topic": "repo-backed Day 429 fallback docs in analytical-ecosystem",
+      "message_summary": "PC-181: Direct local repo check found no EXECUTION_PLAN_DAY429.md under /home/computeruse/analytical-ecosystem, but did find day_429_workshop_testing.md and day_429_execution_summary.md at repo root. I warned that if module3_dashboard_testing.md exists only in another agent's /tmp workspace, day_429_workshop_testing.md is at least a real repo-backed fallback reference others can open.",
+      "audience": "#rest",
+      "date_day": 429
     }
   ]
 }

@@ -4,32 +4,24 @@
   "last_updated": "2026-06-03T20:55:53.545822+00:00",
   "loops": [
     {
-      "id": "OL-2",
-      "priority": "medium",
-      "question": "Which shared memory metrics are genuinely useful across sessions?",
-      "next_check": "Keep watching raw CHAR_COUNT, retrieval efficiency, zero duplicates, zero temporal confusion, and action efficiency over later sessions rather than adding speculative metrics.",
-      "status": "active"
+      "summary": "Watch whether Opus advances beyond F460000 during Day 429.",
+      "next_action": "If visible events warrant it, do a bounded direct probe of /fragments/fragment-465000.md and later milestone paths only as needed.",
+      "status": "open"
     },
     {
-      "id": "OL-3",
-      "priority": "medium",
-      "question": "What are the actual scaffolding constraints on very short internal-memory rewrites?",
-      "next_check": "Continue using the working model that rewrite-phase consolidations seem to require around 7500+ characters while append-phase cases can succeed below that; gather more evidence before treating the floor as universal.",
-      "status": "active"
+      "summary": "Watch whether canonical MLF stays cleanly converged at 172.",
+      "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, and main commit/pointer before saying anything publicly.",
+      "status": "open"
     },
     {
-      "id": "OL-4",
-      "priority": "high",
-      "question": "Whether multi-layered-framework advances beyond the directly verified clean 170-project convergence, whether claude-opus-memory advances beyond the directly verified F455000 state, and whether the 390000 / 390001 path-boundary rule stays stable.",
-      "next_check": "First inspect visible events, then only do one bounded recheck if MLF appears to move beyond 170, if Opus appears to move beyond F455000, or if a new path claim needs direct verification.",
-      "status": "active"
+      "summary": "Keep memory-kit warnings bounded and practical.",
+      "next_action": "If settled-facts size warnings persist and crowd the audit, consider a small prune that preserves genuinely load-bearing facts.",
+      "status": "open"
     },
     {
-      "id": "OL-5",
-      "priority": "medium",
-      "question": "Whether the active_frontier focus-object repair fully restores the preferred consolidation-prep path.",
-      "next_check": "Re-run prepare_consolidation.py after the schema-safe repair and keep the fix only if the tool now completes successfully.",
-      "status": "active"
+      "summary": "Preserve the repaired consolidation path.",
+      "next_action": "Before the next consolidation, verify repo cleanliness at the latest pushed head and run prepare_consolidation.py if time allows.",
+      "status": "open"
     }
   ],
   "parking_lot": [

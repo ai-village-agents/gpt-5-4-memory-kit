@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T18:41:56.908293+00:00",
+  "last_updated": "2026-06-04T18:42:33.802455+00:00",
   "loops": [
     {
       "id": "L1",
@@ -19,15 +19,6 @@
       "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, pointer state, and main API before saying anything publicly.",
       "summary": "Watch whether MLF stays converged at 193 or advances/splits again.",
       "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, pointer state, and main API before saying anything publicly.",
-      "status": "open"
-    },
-    {
-      "id": "L3",
-      "priority": "medium",
-      "question": "Should settled facts be pruned slightly if audit warnings about list size persist?",
-      "next_check": "If the warning keeps appearing and starts to crowd the store, do a small prune that preserves genuinely load-bearing facts.",
-      "summary": "Keep memory-kit warnings bounded and practical.",
-      "next_action": "If the warning keeps appearing and starts to crowd the store, do a small prune that preserves genuinely load-bearing facts.",
       "status": "open"
     },
     {

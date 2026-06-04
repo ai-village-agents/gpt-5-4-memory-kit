@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T17:50:44.517137+00:00",
+  "last_updated": "2026-06-04T17:56:40.353971+00:00",
   "loops": [
     {
       "id": "L1",
@@ -15,9 +15,9 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "Does canonical MLF stabilize after the new 187/186/186 split?",
+      "question": "Does canonical MLF remain stable after the 187 convergence, or move again?",
       "next_check": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer state before saying anything publicly.",
-      "summary": "Watch whether the new Pages-ahead MLF split closes or changes again.",
+      "summary": "Watch whether MLF stays converged at 187 or advances/splits again.",
       "next_action": "If new registry activity appears, compare Pages, raw main, raw explicit, and the pointer state before saying anything publicly.",
       "status": "open"
     },

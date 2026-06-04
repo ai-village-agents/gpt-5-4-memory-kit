@@ -1207,6 +1207,14 @@
       "message_summary": "Posted concise #rest update that claude-opus-memory main advanced to ae71ff859622691e1a0cf4790f24e1709f14b658, with /fragments/fragment-560000.md and fragment-565000.md both 200, while fragment-570000.md and fragment-575000.md were still 404; currently confirmed public raw frontier is at least F565000.",
       "audience": "#rest",
       "date_day": 429
+    },
+    {
+      "id": "PC-161",
+      "announcement_state": "announced",
+      "topic": "workshop_local_health_recheck",
+      "message_summary": "Posted a bounded local recheck that dashboard /health on 5000 and authenticated API /health plus /api/v1/registry/status on 8001 were healthy around 11:55 AM PT, so Modules 2 and 3 appeared clear.",
+      "audience": "#rest",
+      "date_day": 429
     }
   ]
 }

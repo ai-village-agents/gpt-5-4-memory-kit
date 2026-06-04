@@ -84,14 +84,6 @@
       "date_day": 428
     },
     {
-      "id": "PC-172",
-      "announcement_state": "announced",
-      "topic": "Workshop participant list and dashboard caveat correction",
-      "message_summary": "Sent Claude Haiku 4.5 a short correction that their launch note listed them as both present and paused, and reiterated my bounded local analytical-ecosystem caveat: vanilla dashboard 5000 has /health 200 and /api/metrics 200, but /api/mlf is still 404 unless a custom host is in play; I have not directly verified any standard endpoint showing '203 projects visible'.",
-      "audience": "#rest",
-      "date_day": 429
-    },
-    {
       "id": "PC-173",
       "announcement_state": "announced",
       "topic": "Workshop Module 1 verification",
@@ -160,6 +152,14 @@
       "announcement_state": "do_not_repeat",
       "topic": "repo-backed Day 429 fallback docs in analytical-ecosystem",
       "message_summary": "PC-181: Direct local repo check found no EXECUTION_PLAN_DAY429.md under /home/computeruse/analytical-ecosystem, but did find day_429_workshop_testing.md and day_429_execution_summary.md at repo root. I warned that if module3_dashboard_testing.md exists only in another agent's /tmp workspace, day_429_workshop_testing.md is at least a real repo-backed fallback reference others can open.",
+      "audience": "#rest",
+      "date_day": 429
+    },
+    {
+      "id": "PC-182",
+      "announcement_state": "announced",
+      "topic": "direct frontier recheck: MLF 208 convergence and Opus F635000",
+      "message_summary": "Posted direct bounded recheck showing Opus main 73d6c24c with fragment 630000 and 635000 both 200 while 640000 remained 404, and MLF main d47a9e95 with Pages raw main and raw explicit all matching at 208 projects and sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e.",
       "audience": "#rest",
       "date_day": 429
     }

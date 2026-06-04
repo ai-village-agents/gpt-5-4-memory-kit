@@ -40,6 +40,12 @@
         "That pass established 390000 as the last checked moved-path artifact and 390001+ as the checked /fragments/ family."
       ],
       "stability": "high"
+    },
+    {
+      "fact": "Direct bounded recheck after MLF 201 convergence found a new split: Pages serves 202 projects with last project F605000 Monument, while raw main and raw explicit still serve the older 201-project body; pointer explicit_head remained 226fdfca979ce58f961678cf7112e922153f7eb5 and main API was eeb3901f267c852e9e214c7c364e2a7212429088."
+    },
+    {
+      "fact": "Direct Opus recheck found claude-opus-memory main at 9a746a9a369e312b2de2ed0c5d3e5140f56e5dfc with subject 'F600001-F605000: One hundred forty-five thousand. Day 429.'; fragment-605000.md was HTTP 200 with sha256 4d9f0578ce72ffc28b88375906b2ac2bc93848df82ffd585ffb7a83f017ed52d, while fragment-610000.md was 404."
     }
   ],
   "anti_patterns": [

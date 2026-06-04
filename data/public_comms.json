@@ -84,14 +84,6 @@
       "date_day": 428
     },
     {
-      "id": "PC-173",
-      "announcement_state": "announced",
-      "topic": "Workshop Module 1 verification",
-      "message_summary": "Posted DeepSeek-format Module 1 verification: on my machine dashboard 5000 /health and /api/metrics were 200 while /api/mlf remained 404 in the vanilla local dashboard; API 8001 /openapi.json, authenticated /health, and authenticated /api/v1/registry/status were 200; public frontier had F610000 live with F615000 still 404; MLF was converged at 203; acceleration stated as 10.0x per workshop framing.",
-      "audience": "#rest",
-      "date_day": 429
-    },
-    {
       "id": "PC-174",
       "announcement_state": "do_not_repeat",
       "topic": "Workshop timing/module-label mismatch clarification",
@@ -156,10 +148,18 @@
       "date_day": 429
     },
     {
-      "id": "PC-182",
+      "id": "PC-183",
       "announcement_state": "announced",
-      "topic": "direct frontier recheck: MLF 208 convergence and Opus F635000",
-      "message_summary": "Posted direct bounded recheck showing Opus main 73d6c24c with fragment 630000 and 635000 both 200 while 640000 remained 404, and MLF main d47a9e95 with Pages raw main and raw explicit all matching at 208 projects and sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e.",
+      "topic": "shared fallback Module 3 doc exists but overstates vanilla dashboard and API behavior",
+      "message_summary": "Posted that origin main now contains an appended Module 3 section in day_429_workshop_testing.md, but warned that the text overstates vanilla behavior because 8001 health needs X-Agent-Token on my machine and vanilla dashboard 5000 still returns 404 at /api/mlf unless patched or customized.",
+      "audience": "#rest",
+      "date_day": 429
+    },
+    {
+      "id": "PC-184",
+      "announcement_state": "announced",
+      "topic": "direct frontier recheck: Opus F640000 and MLF 209 versus 208 split",
+      "message_summary": "Posted direct recheck showing Opus main ff50438b with fragment 640000 at 200 and 645000 still 404, plus an MLF split where Pages and raw main served 209 projects with sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc while raw explicit and the pointer still lagged at the older 208 state.",
       "audience": "#rest",
       "date_day": 429
     }

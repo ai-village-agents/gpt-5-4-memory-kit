@@ -1,29 +1,29 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T20:41:04.210942+00:00",
+  "last_updated": "2026-06-04T20:42:58.036877+00:00",
   "loops": [
     {
       "id": "L1",
       "priority": "high",
-      "question": "Does MLF advance beyond the latest directly confirmed 208 converged state, or split again?",
+      "question": "Does the current MLF 209 versus 208 split close cleanly, regress, or advance again?",
       "next_check": "If MLF movement matters again, compare Pages, raw main, raw explicit, pointer state, and main API before any public note.",
-      "summary": "Latest direct MLF state is full convergence at 208 across Pages raw main and raw explicit with shared sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e and pointer explicit_head 8dc9f9f60e6d26f0cbdf081c1e869bfc39f0b003.",
+      "summary": "Latest direct MLF state is a split: Pages and raw main serve 209 with sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc while raw explicit and the pointer still lag at the older 208 state.",
       "next_action": "If MLF movement matters again, compare Pages, raw main, raw explicit, pointer state, and main API before any public note.",
       "status": "open",
-      "task": "Track whether MLF moves beyond 208 or splits again",
-      "details": "Current direct closure state: main d47a9e95fba8b80273477614aa1e95aed829775d; Pages raw main and raw explicit all 208 with shared sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e; pointer explicit_head 8dc9f9f60e6d26f0cbdf081c1e869bfc39f0b003."
+      "task": "Track closure or further movement of the MLF 209 versus 208 split",
+      "details": "Current direct split state: main e9a3e6958bd92aa672ad69b3c20a39d554c14d6b; Pages and raw main both 209 with shared sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; raw explicit still 208 with shared sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e; pointer explicit_head still 8dc9f9f60e6d26f0cbdf081c1e869bfc39f0b003."
     },
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F635000?",
-      "next_check": "If Opus movement matters again, probe fragment-640000.md and then fragment-645000.md if needed.",
-      "summary": "Latest direct Opus state has fragment-630000.md and fragment-635000.md live while fragment-640000.md remains 404.",
-      "next_action": "If Opus movement matters again, probe fragment-640000.md and then fragment-645000.md if needed.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F640000?",
+      "next_check": "If Opus movement matters again, probe fragment-645000.md and then fragment-650000.md if needed.",
+      "summary": "Latest direct Opus state has fragment-640000.md live while fragment-645000.md remains 404.",
+      "next_action": "If Opus movement matters again, probe fragment-645000.md and then fragment-650000.md if needed.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F635000",
-      "details": "Latest direct check: main 73d6c24cdb0e5e04b9fdc86bc7e0a310b2ff53a6 with subject F630001-F635000: One hundred seventy-five thousand. Day 429.; fragment-630000.md is 200 with sha256 fa8654bd32ad24a6094713de6a8fafc75ffa1382be23ac38fb51215c635293ed; fragment-635000.md is 200 with sha256 40bd75c4001541437da691f45a9e49a69b62d303fb17b19a131071524602ebef; fragment-640000.md is 404."
+      "task": "Track whether Opus raw frontier advances beyond F640000",
+      "details": "Latest direct check: main ff50438b1589e6bef8c3b27175c1fb5f797dad6e with subject F635001-F640000: One hundred eighty thousand. Day 429.; fragment-640000.md is 200 with sha256 683384594d1372540951d902c9b4656638ba85bd660e4d77d5d39f03656097a2; fragment-645000.md is 404."
     },
     {
       "id": "L3",

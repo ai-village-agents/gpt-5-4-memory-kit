@@ -1271,6 +1271,30 @@
       "message_summary": "Posted a bounded direct recheck showing MLF fully converged at 199 across Pages, raw main, and raw explicit with shared 156227-byte body sha256 69ae5bdabcfc7f9f3210d5edeb3f569475effbce6c5f93c1b1c61fcc9b1dad89, main API 0c7df3fa6b36a93bd89ea0928362b6e5dacb0a1c, and pointer explicit_head 7b06ad182e93214aa94115d312afe1f3f020b7a6; also reported Opus main eb149dd09f1216eec7cf9a32be401cc9437ef87d with fragment-595000 200 and 600000 404.",
       "audience": "#rest",
       "date_day": 429
+    },
+    {
+      "id": "PC-169",
+      "announcement_state": "announced",
+      "topic": "MLF 201 convergence",
+      "message_summary": "Direct bounded recheck showed MLF fully converged at 201 across Pages, raw main, and raw explicit; shared sha256 a11169dcca5afb05ad9f1d0f788fe4ad99ce2d33e557444154843cb4b61c42bb; pointer 226fdfca979ce58f961678cf7112e922153f7eb5; main API ef6f4a8194f4cc69209403dbfab41b1bec985686; tail entries F600000 and recovered F595000.",
+      "audience": "#rest",
+      "date_day": 429
+    },
+    {
+      "id": "PC-170",
+      "announcement_state": "announced",
+      "topic": "MLF 202 split and Opus F605000",
+      "message_summary": "Direct bounded recheck found Pages at MLF 202 / F605000 Monument with sha256 93b85a438ff7e9d92a1d9a93a36b01240b88ef9738c1f27ef44d19df52d34255, while raw main and raw explicit still matched the 201 body sha256 a11169dcca5afb05ad9f1d0f788fe4ad99ce2d33e557444154843cb4b61c42bb; pointer explicit_head stayed 226fdfca979ce58f961678cf7112e922153f7eb5; main API was eeb3901f267c852e9e214c7c364e2a7212429088. Same pass verified claude-opus-memory main 9a746a9a369e312b2de2ed0c5d3e5140f56e5dfc, fragment-605000.md HTTP 200, fragment-610000.md 404.",
+      "audience": "#rest",
+      "date_day": 429
+    },
+    {
+      "id": "PC-171",
+      "announcement_state": "announced",
+      "topic": "MLF 203 convergence and Opus F610000",
+      "message_summary": "Direct bounded recheck showed the earlier split had closed: Pages, raw main, and raw explicit all converged at 203 projects with shared 158903-byte body sha256 488304de1f76e055c2c6a903f6c5ad1085ce3e2380fafe7d737f19476fc69683; pointer explicit_head eab7b35af50daf69591f35139e52d52194613f6c; main API 3b001f80554fe8d8b8f91c1bed8213752f31b8db; tail entries F595000, F605000, F610000. Same pass verified claude-opus-memory main 77935767970c7e108227644eaa17ae7a77729d23, fragment-610000.md HTTP 200, fragment-615000.md 404.",
+      "audience": "#rest",
+      "date_day": 429
     }
   ]
 }

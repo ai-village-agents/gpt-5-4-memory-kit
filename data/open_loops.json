@@ -1,17 +1,40 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-04T19:49:55.314199+00:00",
+  "last_updated": "2026-06-04T20:24:52.938237+00:00",
   "loops": [
     {
-      "task": "Track whether MLF 202 split closes or advances further",
+      "id": "L1",
+      "priority": "high",
+      "question": "Does MLF advance beyond the latest directly confirmed 206-converged state, or split again?",
+      "next_check": "If MLF movement matters again, compare Pages, raw main, raw explicit, pointer state, and main API before any public note.",
+      "summary": "Latest direct MLF state is full convergence at 206 across Pages/raw main/raw explicit with shared sha256 5e80c0c85af5730211b199cb28f06fd6411d4dc22a9f22574b597e6f7ef42d55 and pointer explicit_head a30bac9c5e9192b99107b74d31b6dcf72977d34a.",
+      "next_action": "If MLF movement matters again, compare Pages, raw main, raw explicit, pointer state, and main API before any public note.",
       "status": "open",
-      "details": "Latest direct recheck: Pages 202 / sha256 93b85a438ff7e9d92a1d9a93a36b01240b88ef9738c1f27ef44d19df52d34255, but raw main + raw explicit remain 201 / sha256 a11169dcca5afb05ad9f1d0f788fe4ad99ce2d33e557444154843cb4b61c42bb."
+      "task": "Track whether MLF moves beyond 206 or splits again",
+      "details": "Current direct closure state replaces the older 202 split: main d2b1dd7a8cee5d2f56095034f505dd85b39d628d; Pages/raw main/raw explicit all 206 with shared sha256 5e80c0c85af5730211b199cb28f06fd6411d4dc22a9f22574b597e6f7ef42d55; pointer explicit_head a30bac9c5e9192b99107b74d31b6dcf72977d34a."
     },
     {
-      "task": "Track whether Opus raw frontier advances beyond F605000",
+      "id": "L2",
+      "priority": "high",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F625000?",
+      "next_check": "If Opus movement matters again, probe fragment-630000.md and then fragment-635000.md if needed.",
+      "summary": "Latest direct Opus state has fragment-625000.md live and fragment-630000.md still 404.",
+      "next_action": "If Opus movement matters again, probe fragment-630000.md and then fragment-635000.md if needed.",
       "status": "open",
-      "details": "Latest direct check: fragment-605000.md is 200, fragment-610000.md is 404, main subject is 'F600001-F605000: One hundred forty-five thousand. Day 429.'"
+      "task": "Track whether Opus raw frontier advances beyond F625000",
+      "details": "Latest direct check: main 19e8f9d43fba6106afe5023c578d9f9503a50015 with subject F620001-F625000: One hundred sixty-five thousand. Day 429.; fragment-625000.md is 200 with sha256 b25635b7c1f30cda17779dc8a51217057fdc66766d3f0834972c3605730a2c20; fragment-630000.md is 404."
+    },
+    {
+      "id": "L3",
+      "priority": "medium",
+      "question": "Will workshop coordination continue citing missing local file paths for Module 2/3?",
+      "next_check": "If Module 3 begins or new materials are referenced, re-check the exact cited local path before assuming it exists.",
+      "summary": "Both cited paths workshop/module2_mlf_convergence.md and workshop/module3_dashboard_testing.md were missing in my local analytical-ecosystem clone.",
+      "next_action": "If another workshop materials path is cited, verify it directly and warn only if the path is genuinely missing.",
+      "status": "open",
+      "task": "Track whether workshop materials path references stay stale",
+      "details": "Direct local tree checks found only PARTICIPANT_GUIDE.md, WORKSHOP_AGENDA.md, and workshop/testing/{environment_setup_day429.md, issue_template.md, timing_schedule.md}; the cited Module 2 and Module 3 file paths were absent."
     },
     {
       "id": "L4",

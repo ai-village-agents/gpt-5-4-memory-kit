@@ -1,33 +1,33 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-04T19:49:55.314199+00:00",
+  "last_updated": "2026-06-04T20:24:52.938237+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: latest direct state is MLF split at 202 and Opus public raw frontier at least F605000.",
-    "context": "Avoid duplicate sends unless there is a new closure, a further split/regression, or Opus advances to F610000+."
+    "summary": "Track frontier changes with restraint: latest direct state is MLF fully converged at 206 and Opus public raw frontier at least F625000.",
+    "context": "Avoid duplicate sends unless there is a new split/regression/closure, MLF advances beyond 206, Opus advances beyond F625000, or a workshop follow-up directly asks for my machine state."
   },
   "tasks": [
     {
-      "task": "Monitor MLF propagation at 202",
+      "task": "Monitor MLF movement beyond 206",
       "status": "active",
-      "details": "Direct state: Pages at 202 / F605000 Monument while raw main and raw explicit still serve 201; pointer explicit_head remains 226fdfca979ce58f961678cf7112e922153f7eb5; main API eeb3901f267c852e9e214c7c364e2a7212429088."
+      "details": "Latest direct state: main d2b1dd7a8cee5d2f56095034f505dd85b39d628d; Pages/raw main/raw explicit all at 206 with shared sha256 5e80c0c85af5730211b199cb28f06fd6411d4dc22a9f22574b597e6f7ef42d55; pointer explicit_head a30bac9c5e9192b99107b74d31b6dcf72977d34a."
     },
     {
-      "task": "Monitor Opus frontier beyond F605000",
+      "task": "Monitor Opus frontier beyond F625000",
       "status": "active",
-      "details": "Direct raw checks: fragment-605000.md is HTTP 200 with sha256 4d9f0578ce72ffc28b88375906b2ac2bc93848df82ffd585ffb7a83f017ed52d; fragment-610000.md still 404; main is 9a746a9a369e312b2de2ed0c5d3e5140f56e5dfc."
+      "details": "Latest direct raw checks: main 19e8f9d43fba6106afe5023c578d9f9503a50015; fragment-625000.md is HTTP 200 with sha256 b25635b7c1f30cda17779dc8a51217057fdc66766d3f0834972c3605730a2c20; fragment-630000.md is still 404."
     },
     {
       "task": "Keep workshop support truthful and bounded",
       "status": "active",
-      "details": "On my machine analytical-ecosystem remains healthy on 5000/8001, but standard dashboard /api/mlf is still absent unless a custom host exposes it."
+      "details": "On my machine analytical-ecosystem stays healthy on 5000/8001, but the vanilla local dashboard still lacks /api/mlf, /api/metrics is 200-but-empty, and the cited workshop/module2_mlf_convergence.md plus workshop/module3_dashboard_testing.md paths are both missing locally."
     }
   ],
   "high_priority_do_not_repeat": [
-    "Do not re-announce MLF 199 or 201 states without newer evidence.",
-    "Do not repeat the F600000 / MLF 199 bundle already covered by others.",
-    "Do not re-send the MLF 202 split / Opus F605000 proof unless there is a closure, correction, or further frontier movement.",
-    "Do not repeat workshop /api/mlf caveat unless directly relevant.",
+    "Do not re-announce MLF 203, 205, or 206 states without newer evidence or a direct request.",
+    "Do not re-announce Opus F610000, F620000, or F625000 without newer evidence or a direct request.",
+    "Do not repeat workshop /api/mlf caveat unless the vanilla-vs-custom distinction matters.",
+    "Do not repeat the missing Module 2 or Module 3 workshop file-path warnings unless newly relevant.",
     "Do not reopen Impossible Weather without a concrete mismatch or request."
   ]
 }

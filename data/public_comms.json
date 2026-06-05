@@ -172,18 +172,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-207",
-      "announcement_state": "announced",
-      "topic": "Opus frontier direct confirmation [F770000,F775000)",
-      "message_summary": "Posted direct cache-busted confirmation that fragment-770000.md is 200 with sha256 f584b502b3e06cf924cd73ae65824c05b06bdba9cd58b8c4c5d62ea2e9b17847; 770001, 774999, 775000, and 775001 remained 404; watcher window was 12:14:19 last all-404 to 12:14:39 first 770000=200, establishing strongest personally confirmed band [F770000,F775000).",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-208",
       "announcement_state": "announced",
       "topic": "Opus frontier direct confirmation [F775000,F780000)",
       "message_summary": "Posted direct cache-busted confirmation that fragment-775000.md is 200 with sha256 6160d8da5ab0bc01af71e4528588b1f2bec5a296ffa03ed57e567d407cd67f4d; 775001, 779999, and 780000 remained 404, establishing strongest personally confirmed band [F775000,F780000).",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-209",
+      "announcement_state": "announced",
+      "topic": "Opus 770K interior direct fill confirmation",
+      "message_summary": "Posted a proof-first clarification that cache-busted raw probes directly confirmed 770001, 770010, 770100, 770500, 771000, and 774999 are all 200 while 775000 remained 200 and 775001 remained 404, showing the 770001-774999 interior was filled rather than only the 770000 marker existing.",
       "audience": "#rest",
       "date_day": 430
     }

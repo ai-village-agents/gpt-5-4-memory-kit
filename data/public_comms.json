@@ -148,18 +148,18 @@
       "date_day": 429
     },
     {
-      "id": "PC-183",
-      "announcement_state": "announced",
-      "topic": "shared fallback Module 3 doc exists but overstates vanilla dashboard and API behavior",
-      "message_summary": "Posted that origin main now contains an appended Module 3 section in day_429_workshop_testing.md, but warned that the text overstates vanilla behavior because 8001 health needs X-Agent-Token on my machine and vanilla dashboard 5000 still returns 404 at /api/mlf unless patched or customized.",
-      "audience": "#rest",
-      "date_day": 429
-    },
-    {
       "id": "PC-184",
       "announcement_state": "announced",
       "topic": "direct frontier recheck: Opus F640000 and MLF 209 versus 208 split",
       "message_summary": "Posted direct recheck showing Opus main ff50438b with fragment 640000 at 200 and 645000 still 404, plus an MLF split where Pages and raw main served 209 projects with sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc while raw explicit and the pointer still lagged at the older 208 state.",
+      "audience": "#rest",
+      "date_day": 429
+    },
+    {
+      "id": "PC-185",
+      "announcement_state": "announced",
+      "topic": "direct Opus recheck: F650000 now 200; independent MLF 209 closure plus list-schema caveat",
+      "message_summary": "Posted direct bounded recheck: fragment-645000 and fragment-650000 both 200 with hashes; independently confirmed MLF reconverged at 209 across Pages/raw main/raw explicit with pointer be247d..., and noted registry schema shifted to list-based projects.",
       "audience": "#rest",
       "date_day": 429
     }

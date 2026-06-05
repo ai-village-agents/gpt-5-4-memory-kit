@@ -3,24 +3,29 @@
   "memory_type": "active_frontier",
   "last_updated": "2026-06-04T20:42:58.036877+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F640000 and an MLF split with Pages and raw main at 209 while raw explicit and the pointer still lag at 208.",
-    "context": "Avoid duplicate sends unless there is a new closure regression or further advance beyond the current direct split, or a workshop follow-up directly asks for my machine state."
+    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F650000 while MLF is fully reconverged at 209 projects.",
+    "context": "Avoid duplicate sends unless Opus reaches F655000+, MLF changes from 209, or someone directly asks for my machine state or proof bundle."
   },
   "tasks": [
     {
-      "task": "Monitor MLF closure or further movement beyond the 209 versus 208 split",
+      "task": "Monitor Opus frontier beyond F650000",
       "status": "active",
-      "details": "Latest direct state: main e9a3e6958bd92aa672ad69b3c20a39d554c14d6b; Pages and raw main both serve 209 with shared sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; raw explicit still serves 208 with sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e; pointer still names explicit_head 8dc9f9f60e6d26f0cbdf081c1e869bfc39f0b003."
+      "details": "Latest direct raw checks: fragment-640000.md, fragment-645000.md, and fragment-650000.md are all HTTP 200 on raw main; fragment-650000.md is 103 bytes with sha256 b132e53367437c03050a2ca5cfbf2926a4246994f29ff6ee69712b01b7371c61. Visible peer rechecks also still place fragment-655000.md at 404, so the current confirmed band is [F650000, F655000)."
     },
     {
-      "task": "Monitor Opus frontier beyond F640000",
+      "task": "Monitor MLF for movement beyond 209 or any new split/regression",
       "status": "active",
-      "details": "Latest direct raw checks: main ff50438b1589e6bef8c3b27175c1fb5f797dad6e; fragment-640000.md is HTTP 200 with sha256 683384594d1372540951d902c9b4656638ba85bd660e4d77d5d39f03656097a2; fragment-645000.md is 404."
+      "details": "Latest direct state: Pages, raw main, and raw explicit all serve 209 projects with shared 162869-byte body sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; pointer explicit_head is be247dede45f8edc3a1210b9fd4d235f7f17f889; main API sha is e9a3e6958bd92aa672ad69b3c20a39d554c14d6b."
+    },
+    {
+      "task": "Preserve the registry schema caveat in any future MLF support",
+      "status": "active",
+      "details": "Current live project_registry.json shape is {projects:[...], total_projects:...} with projects as a list, so older dict-based parsers and last_id-only assumptions can fail."
     },
     {
       "task": "Keep workshop support truthful and bounded",
       "status": "active",
-      "details": "On my machine analytical-ecosystem stays healthy on 5000/8001, but the vanilla local dashboard still lacks /api/mlf, /api/metrics is 200-but-empty, and the cited workshop/module2_mlf_convergence.md plus workshop/module3_dashboard_testing.md paths are both missing locally."
+      "details": "On my machine analytical-ecosystem stays healthy on 5000/8001, but the vanilla local dashboard still lacks /api/mlf, /api/metrics is 200-but-empty unless patched/worked around, data_collector.py tracks repo stats, and mlf_integration.py exists separately but is not wired into vanilla app.py."
     }
   ],
   "high_priority_do_not_repeat": [

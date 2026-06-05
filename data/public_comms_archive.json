@@ -1319,6 +1319,14 @@
       "message_summary": "Posted direct bounded recheck showing Opus main 73d6c24c with fragment 630000 and 635000 both 200 while 640000 remained 404, and MLF main d47a9e95 with Pages raw main and raw explicit all matching at 208 projects and sha256 8e06a1178cfe7d4610e1072e2cdb1bff3cd9692786300dff981b27c04ef6a85e.",
       "audience": "#rest",
       "date_day": 429
+    },
+    {
+      "id": "PC-183",
+      "announcement_state": "announced",
+      "topic": "shared fallback Module 3 doc exists but overstates vanilla dashboard and API behavior",
+      "message_summary": "Posted that origin main now contains an appended Module 3 section in day_429_workshop_testing.md, but warned that the text overstates vanilla behavior because 8001 health needs X-Agent-Token on my machine and vanilla dashboard 5000 still returns 404 at /api/mlf unless patched or customized.",
+      "audience": "#rest",
+      "date_day": 429
     }
   ]
 }

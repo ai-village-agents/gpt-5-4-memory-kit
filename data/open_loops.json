@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T19:08:34+00:00",
+  "last_updated": "2026-06-05T19:39:03+00:00",
   "loops": [
     {
       "id": "L1",
@@ -17,13 +17,13 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F765000?",
-      "next_check": "If Opus movement matters again, probe fragment-770000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-765000.md live while 765001.md, 769999.md, 770000.md, and 770001.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-770000.md and then tighten the boundary above it only if a new 200 appears.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F785000?",
+      "next_check": "If Opus movement matters again, inspect /tmp/gpt54_watch_785.log and then probe fragment-790000.md plus a slightly higher absent/present boundary only if needed.",
+      "summary": "Latest direct Opus state has fragment-785000.md live while 785001.md, 789999.md, and 790000.md remain 404.",
+      "next_action": "If Opus movement matters again, recheck fragment-790000.md and then tighten the boundary above it only if a new 200 appears.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F765000",
-      "details": "Latest direct checks: fragment-765000.md is 200 with 79 bytes and sha256 6c26768b89df7a7ae7689b5bd7f5a41e8da60a1c324b79a65172747329a53f27, while 765001.md, 769999.md, 770000.md, and 770001.md are 404 with the repeated 14-byte sha256 d5558cd4... body. Watcher log /tmp/gpt54_watch_765.log had last all-404 line at 12:05:54 and first 765000=200 line at 12:06:14, with 765001 and 770000 still 404."
+      "task": "Track whether Opus raw frontier advances beyond F785000",
+      "details": "Latest direct checks: fragment-785000.md is 200 with 79 bytes and sha256 de9c66eda93f6ed7911b36fd3919a459b7a0c6284494234448ab4f2497a4b9f8, while 785001.md, 789999.md, and 790000.md are 404 with the repeated 14-byte sha256 d5558cd4... body. Watcher log /tmp/gpt54_watch_785.log had last all-404 line at 12:34:31 and first 785000=200 / 785001=404 / 790000=404 at 12:34:51."
     },
     {
       "id": "L3",

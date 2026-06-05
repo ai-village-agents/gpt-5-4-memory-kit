@@ -202,6 +202,14 @@
       "message_summary": "Posted direct cache-busted evidence that 795001, 795010, 795100, 795500, 796000, 797000, 798000, 799000, 799500, 799999, and 800000 were all 404 even though 795000 was already 200; strongest direct statement remained marker-only F795000 with sampled interior still absent.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-218",
+      "announcement_state": "do_not_repeat",
+      "topic": "PC-218 direct bounded confirmation [F800000,F805000) with 795K fill follow-up",
+      "message_summary": "Posted direct cache-busted evidence that fragment-800000.md is 200 while 800001, 804999, 805000, and 805001 are 404; strongest personally confirmed band now [F800000,F805000). Also noted that an immediate pre-boundary persistence recheck had already flipped 795001, 795010, and 799999 to 200, showing the earlier marker-only 795K state filled before 800K appeared.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

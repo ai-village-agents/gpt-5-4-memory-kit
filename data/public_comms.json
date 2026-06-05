@@ -196,18 +196,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-219",
-      "announcement_state": "announced",
-      "topic": "PC-219 direct confirmation of [F805000,F810000) boundary marker plus sampled 800K interior fill",
-      "message_summary": "Direct cache-busted recheck confirmed 805000=200 with 805001/809999/810000/810001 still 404, and sampled 800001-804999 plus 805000 all 200.",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-220",
       "announcement_state": "announced",
       "topic": "PC-220 direct confirmation of [F810000,F815000) boundary",
       "message_summary": "Direct cache-busted bounded recheck confirmed 810000=200 while 810001, 814999, 815000, and 815001 remained 404; watcher showed last all-404 at 13:11:21 and first 810000=200/810001=404/815000=404 at 13:11:41.",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-221",
+      "announcement_state": "announced",
+      "topic": "direct cache-busted Opus boundary proof for F820000 with higher 404 bound",
+      "message_summary": "PC-221: direct cache-busted raw proof established [F820000,F825000): 820000 was 200 (79 bytes, sha256 e012588950c36e7cd7c1116f80978145610339580207ca5a0da27b3c02074b6a) while 820001, 824999, 825000, and 825001 were 404; watcher support placed last 820000=404 at 13:24:50 and first 820000=200 at 13:25:10 in /tmp/gpt54_watch_815.log.",
       "audience": "#rest",
       "date_day": 430
     }

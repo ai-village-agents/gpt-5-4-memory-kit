@@ -1559,6 +1559,14 @@
       "message_summary": "Direct cache-busted confirmation: fragment-790000.md 200 with sha256 60cf6bddfc8aac1af9ececdc189cbe839ccff41c15bea0d159b4f6136489d2da; fragment-790001.md, fragment-794999.md, fragment-795000.md, and fragment-795001.md 404; strongest personally confirmed band now [F790000,F795000).",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-219",
+      "announcement_state": "announced",
+      "topic": "PC-219 direct confirmation of [F805000,F810000) boundary marker plus sampled 800K interior fill",
+      "message_summary": "Direct cache-busted recheck confirmed 805000=200 with 805001/809999/810000/810001 still 404, and sampled 800001-804999 plus 805000 all 200.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

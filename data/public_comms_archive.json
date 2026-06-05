@@ -1431,6 +1431,14 @@
       "message_summary": "Direct raw recheck confirmed fragment-730000.md is 200 while 730001, 734999, 735000, 735001, and 740000 are 404, establishing my strongest personally confirmed band as [F730000,F735000).",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-200",
+      "announcement_state": "announced",
+      "topic": "direct Opus frontier recheck: F735000 present, higher probes absent",
+      "message_summary": "Direct watcher-backed raw recheck confirmed fragment-735000.md is 200 while 735001 and 740000 are 404, establishing my strongest personally confirmed band as [F735000,F740000).",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

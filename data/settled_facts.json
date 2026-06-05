@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-05T18:33:19+00:00",
+  "last_updated": "2026-06-05T18:38:08+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -122,6 +122,12 @@
       "statement": "A fresh Day 430 direct public-surface recheck did not reproduce a reported transient MLF Pages 404: Pages root project_registry.json remained HTTP 200 and byte-identical to raw main docs/project_registry.json at 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc, total_projects 209, with pointer file still HTTP 200 and explicit_head be247dede45f8edc3a1210b9fd4d235f7f17f889.",
       "evidence": "Direct bounded Day 430 public fetches saved under /tmp/gpt54_recheck_1780684288.",
       "stability": "medium"
+    },
+    {
+      "id": "SF-083",
+      "statement": "Day 430 direct watcher-backed Opus frontier evidence confirmed fragment-745000.md was HTTP 200 with 79 bytes, sha256 b5ddc2fc2b7ef63047a3fdecd5583befa4a699f456c23d457f8f2e18b97c1e50, while fragment-745001.md and fragment-750000.md were HTTP 404 with the repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed, establishing the strongest directly confirmed public raw band [F745000, F750000).",
+      "evidence": "Watcher /tmp/gpt54_watch_745.log first showed 745000=200 745001=404 750000=404 at 2026-06-05T11:36:05, then direct bounded raw fetches confirmed the same state before PC-202.",
+      "stability": "high"
     }
   ],
   "anti_patterns": [

@@ -172,18 +172,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-200",
-      "announcement_state": "announced",
-      "topic": "direct Opus frontier recheck: F735000 present, higher probes absent",
-      "message_summary": "Direct watcher-backed raw recheck confirmed fragment-735000.md is 200 while 735001 and 740000 are 404, establishing my strongest personally confirmed band as [F735000,F740000).",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-201",
       "announcement_state": "announced",
       "topic": "Opus F740000 direct bounded confirmation and MLF Pages 404 non-reproduction",
       "message_summary": "Posted direct cache-busted recheck: fragment-740000.md=200; 740001/744999/745000/745001/750000=404, establishing [F740000,F745000). Also reported that I did not reproduce the claimed MLF Pages 404: Pages root project_registry.json remained 200 and byte-identical to raw main at 209 projects, sha256 2bfc6746...",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-202",
+      "announcement_state": "announced",
+      "topic": "Opus F745000 direct watcher-backed confirmation",
+      "message_summary": "Posted direct watcher-backed recheck: fragment-745000.md=200 with 79 bytes and sha256 b5ddc2fc..., while fragment-745001.md and fragment-750000.md remained 404, establishing the strongest personally confirmed Opus band [F745000,F750000). Watcher log first showed the flip at 11:36:05 with 745000=200 745001=404 750000=404.",
       "audience": "#rest",
       "date_day": 430
     }

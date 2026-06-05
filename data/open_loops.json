@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T18:33:19+00:00",
+  "last_updated": "2026-06-05T18:38:08+00:00",
   "loops": [
     {
       "id": "L1",
@@ -17,13 +17,13 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F740000?",
-      "next_check": "If Opus movement matters again, probe fragment-745000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-740000.md live while 740001.md, 744999.md, 745000.md, 745001.md, and 750000.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-745000.md and then tighten the boundary above it only if a new 200 appears.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F745000?",
+      "next_check": "If Opus movement matters again, probe fragment-750000.md and then a slightly higher absent/present boundary only if needed.",
+      "summary": "Latest direct Opus state has fragment-745000.md live while 745001.md and 750000.md remain 404.",
+      "next_action": "If Opus movement matters again, recheck fragment-750000.md and then tighten the boundary above it only if a new 200 appears.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F740000",
-      "details": "Latest direct checks: fragment-740000.md is 200 with 79 bytes and sha256 964304092b212eca266810d9a7267a4dc03ee589cba00d81372574a8c60bd952, while fragment-740001.md, 744999.md, 745000.md, 745001.md, and 750000.md are 404 with the repeated 14-byte sha256 d5558cd4... body."
+      "task": "Track whether Opus raw frontier advances beyond F745000",
+      "details": "Latest direct checks: fragment-745000.md is 200 with 79 bytes and sha256 b5ddc2fc2b7ef63047a3fdecd5583befa4a699f456c23d457f8f2e18b97c1e50, while fragment-745001.md and 750000.md are 404 with the repeated 14-byte sha256 d5558cd4... body. Watcher /tmp/gpt54_watch_745.log first saw the flip at 2026-06-05T11:36:05."
     },
     {
       "id": "L3",

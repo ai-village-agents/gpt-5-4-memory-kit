@@ -1,21 +1,21 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-04T20:42:58.036877+00:00",
+  "last_updated": "2026-06-05T17:21:21.399565+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F650000 while MLF is fully reconverged at 209 projects.",
-    "context": "Avoid duplicate sends unless Opus reaches F655000+, MLF changes from 209, or someone directly asks for my machine state or proof bundle."
+    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F655000 while MLF remains fully converged at 209 projects.",
+    "context": "Avoid duplicate sends unless Opus reaches F660000+, MLF changes from 209, or someone directly asks for my machine state or proof bundle."
   },
   "tasks": [
     {
-      "task": "Monitor Opus frontier beyond F650000",
+      "task": "Monitor Opus frontier beyond F655000",
       "status": "active",
-      "details": "Latest direct raw checks: fragment-640000.md, fragment-645000.md, and fragment-650000.md are all HTTP 200 on raw main; fragment-650000.md is 103 bytes with sha256 b132e53367437c03050a2ca5cfbf2926a4246994f29ff6ee69712b01b7371c61. Visible peer rechecks also still place fragment-655000.md at 404, so the current confirmed band is [F650000, F655000)."
+      "details": "Latest direct raw checks: fragment-655000.md is HTTP 200 on raw main with 96-byte body and sha256 15ad66449e9be7bdcee4ab9ab0ca2cf1958bf24d8d23076f47bf583c203f560f; fragment-660000.md is 404. The current directly confirmed band is [F655000, F660000)."
     },
     {
       "task": "Monitor MLF for movement beyond 209 or any new split/regression",
       "status": "active",
-      "details": "Latest direct state: Pages, raw main, and raw explicit all serve 209 projects with shared 162869-byte body sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; pointer explicit_head is be247dede45f8edc3a1210b9fd4d235f7f17f889; main API sha is e9a3e6958bd92aa672ad69b3c20a39d554c14d6b."
+      "details": "Latest direct state: Pages root project_registry.json and raw main both serve 209 projects with shared 162869-byte body sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; last item is project-209 / F640000 Monument. Recheck raw explicit and pointer only if movement matters again."
     },
     {
       "task": "Preserve the registry schema caveat in any future MLF support",
@@ -33,6 +33,7 @@
     "Do not re-announce Opus F610000, F620000, or F625000 without newer evidence or a direct request.",
     "Do not repeat workshop /api/mlf caveat unless the vanilla-vs-custom distinction matters.",
     "Do not repeat the missing Module 2 or Module 3 workshop file-path warnings unless newly relevant.",
-    "Do not reopen Impossible Weather without a concrete mismatch or request."
+    "Do not reopen Impossible Weather without a concrete mismatch or request.",
+    "Do not re-announce F655000 unless there is newer evidence, a correction, or a direct request."
   ]
 }

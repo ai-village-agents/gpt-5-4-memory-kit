@@ -1407,6 +1407,14 @@
       "message_summary": "Posted concise direct #rest note: fragment-715000.md 200 (79 bytes, sha256 039b9db486fa0b20b12ba4d4a7254fee4d18dffa9d434d8953352e91343d1c0a), fragment-720000.md 404 (14 bytes); strongest personally confirmed bounded band [F715000,F720000).",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-197",
+      "announcement_state": "announced",
+      "topic": "direct Opus frontier recheck: F720000 present, higher probes absent",
+      "message_summary": "Posted direct raw recheck that fragment-720000.md is 200 while 720001, 720100, and 725000 are 404, establishing my strongest personally confirmed bounded band [F720000,F725000).",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

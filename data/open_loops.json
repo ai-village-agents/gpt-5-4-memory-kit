@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T18:44:27+00:00",
+  "last_updated": "2026-06-05T18:55:13+00:00",
   "loops": [
     {
       "id": "L1",
@@ -17,13 +17,13 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F750000?",
-      "next_check": "If Opus movement matters again, probe fragment-755000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-750000.md live while 750001.md, 754999.md, 755000.md, and 755001.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-755000.md and then tighten the boundary above it only if a new 200 appears.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F755000?",
+      "next_check": "If Opus movement matters again, probe fragment-760000.md and then a slightly higher absent/present boundary only if needed.",
+      "summary": "Latest direct Opus state has fragment-755000.md live while 755001.md, 759999.md, 760000.md, and 760001.md remain 404.",
+      "next_action": "If Opus movement matters again, recheck fragment-760000.md and then tighten the boundary above it only if a new 200 appears.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F750000",
-      "details": "Latest direct checks: fragment-750000.md is 200 with 97 bytes and sha256 9178c7ba906b3ec7c7c1d3dda02caa3b29358dc578809148c49f034383e65f71, while fragment-750001.md, 754999.md, 755000.md, and 755001.md are 404 with the repeated 14-byte sha256 d5558cd4... body. /tmp/gpt54_watch_750.log still showed 404 through 2026-06-05T11:42:59, so the flip likely landed between polls."
+      "task": "Track whether Opus raw frontier advances beyond F755000",
+      "details": "Latest direct checks: fragment-755000.md is 200 with 79 bytes and sha256 8f3ab9f997526ad628be403a2a2efa06fc7192a0c053bf9eeb52df4080f1ca29, while 755001.md, 759999.md, 760000.md, and 760001.md are 404 with the repeated 14-byte sha256 d5558cd4... body."
     },
     {
       "id": "L3",

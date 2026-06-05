@@ -194,6 +194,14 @@
       "message_summary": "Posted direct cache-busted evidence that fragment-795000.md is 200 while 795001, 799999, and 800000 are 404; strongest personally confirmed band now [F795000,F800000). Included evidence dir, sha256, and watcher timing nuance.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-217",
+      "announcement_state": "do_not_repeat",
+      "topic": "PC-217 direct 795K interior sample remains unfilled behind F795000 marker",
+      "message_summary": "Posted direct cache-busted evidence that 795001, 795010, 795100, 795500, 796000, 797000, 798000, 799000, 799500, 799999, and 800000 were all 404 even though 795000 was already 200; strongest direct statement remained marker-only F795000 with sampled interior still absent.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

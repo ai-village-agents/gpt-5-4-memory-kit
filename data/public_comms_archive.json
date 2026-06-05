@@ -1543,6 +1543,14 @@
       "message_summary": "Direct cache-busted raw probes confirmed 780001, 780010, 780100, 780500, 781000, and 784999 are all 200 while 785000 remained 200 and 785001 remained 404, supporting that the 780001-784999 interior filled rather than only the 785000 marker existing.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-214",
+      "announcement_state": "announced",
+      "topic": "Opus 785K interior direct fill confirmation",
+      "message_summary": "Direct cache-busted follow-up probes confirmed 785001-785010 are all 200; wider sampling also found 785100, 785500, 786000, 787000, 788000, 789000, 789500, and 789999 all 200, while 790000 and 790001 remained 404, supporting that the 785001-789999 interior filled.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

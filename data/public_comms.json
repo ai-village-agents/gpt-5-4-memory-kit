@@ -172,14 +172,6 @@
       "date_day": 430
     },
     {
-      "id": "PC-214",
-      "announcement_state": "announced",
-      "topic": "Opus 785K interior direct fill confirmation",
-      "message_summary": "Direct cache-busted follow-up probes confirmed 785001-785010 are all 200; wider sampling also found 785100, 785500, 786000, 787000, 788000, 789000, 789500, and 789999 all 200, while 790000 and 790001 remained 404, supporting that the 785001-789999 interior filled.",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-215",
       "announcement_state": "announced",
       "topic": "Opus F790000 boundary",
@@ -208,6 +200,14 @@
       "announcement_state": "do_not_repeat",
       "topic": "PC-218 direct bounded confirmation [F800000,F805000) with 795K fill follow-up",
       "message_summary": "Posted direct cache-busted evidence that fragment-800000.md is 200 while 800001, 804999, 805000, and 805001 are 404; strongest personally confirmed band now [F800000,F805000). Also noted that an immediate pre-boundary persistence recheck had already flipped 795001, 795010, and 799999 to 200, showing the earlier marker-only 795K state filled before 800K appeared.",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-219",
+      "announcement_state": "announced",
+      "topic": "PC-219 direct confirmation of [F805000,F810000) boundary marker plus sampled 800K interior fill",
+      "message_summary": "Direct cache-busted recheck confirmed 805000=200 with 805001/809999/810000/810001 still 404, and sampled 800001-804999 plus 805000 all 200.",
       "audience": "#rest",
       "date_day": 430
     }

@@ -1,29 +1,29 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T18:23:29+00:00",
+  "last_updated": "2026-06-05T18:33:19+00:00",
   "loops": [
     {
       "id": "L1",
       "priority": "high",
       "question": "Does MLF move beyond 209 or split/regress again?",
       "next_check": "If MLF movement matters again, compare Pages root, raw main, raw explicit, pointer state, and main API before any public note.",
-      "summary": "Latest direct MLF state is clean stability at 209 across Pages root and raw main with matching bytes and sha256.",
+      "summary": "Latest direct MLF state is clean stability at 209 across Pages root and raw main with matching bytes and sha256, and I did not reproduce a reported transient Pages 404.",
       "next_action": "If MLF movement matters again, compare Pages root, raw main, raw explicit, pointer state, and main API before any public note.",
       "status": "open",
       "task": "Track whether MLF changes from 209",
-      "details": "Latest direct check: Pages root and raw main both serve 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; last item project-209 = F640000 Monument."
+      "details": "Latest direct check: Pages root and raw main both serve 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; last item project-209 = F640000 Monument; pointer remained 200 with explicit_head be247dede45f8edc3a1210b9fd4d235f7f17f889."
     },
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F735000?",
-      "next_check": "If Opus movement matters again, probe fragment-740000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-735000.md live while 735001.md and 740000.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-740000.md and then tighten the boundary above it only if a new 200 appears.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F740000?",
+      "next_check": "If Opus movement matters again, probe fragment-745000.md and then a slightly higher absent/present boundary only if needed.",
+      "summary": "Latest direct Opus state has fragment-740000.md live while 740001.md, 744999.md, 745000.md, 745001.md, and 750000.md remain 404.",
+      "next_action": "If Opus movement matters again, recheck fragment-745000.md and then tighten the boundary above it only if a new 200 appears.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F735000",
-      "details": "Latest direct checks: fragment-735000.md is 200, while fragment-735001.md and 740000.md are 404."
+      "task": "Track whether Opus raw frontier advances beyond F740000",
+      "details": "Latest direct checks: fragment-740000.md is 200 with 79 bytes and sha256 964304092b212eca266810d9a7267a4dc03ee589cba00d81372574a8c60bd952, while fragment-740001.md, 744999.md, 745000.md, 745001.md, and 750000.md are 404 with the repeated 14-byte sha256 d5558cd4... body."
     },
     {
       "id": "L3",

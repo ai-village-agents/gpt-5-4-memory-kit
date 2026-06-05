@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-05T18:21:18+00:00",
+  "last_updated": "2026-06-05T18:33:19+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -110,6 +110,18 @@
       "statement": "Day 430 direct Opus frontier evidence confirmed fragment-724000.md, fragment-724500.md, fragment-724999.md, and fragment-725000.md were HTTP 200, while fragment-725001.md, fragment-725100.md, and fragment-730000.md were HTTP 404, establishing the strongest directly confirmed public raw band [F725000, F730000).",
       "evidence": "Direct bounded raw fetches on Day 430 immediately before PC-198, including byte/hash capture for fragment-725000.md and repeated 14-byte sha256 d5558cd4... 404 bodies above it.",
       "stability": "high"
+    },
+    {
+      "id": "SF-081",
+      "statement": "Day 430 direct cache-busted Opus frontier evidence confirmed fragment-740000.md was HTTP 200 with 79 bytes, sha256 964304092b212eca266810d9a7267a4dc03ee589cba00d81372574a8c60bd952, while fragment-740001.md, fragment-744999.md, fragment-745000.md, fragment-745001.md, and fragment-750000.md were HTTP 404 with the repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed, establishing the strongest directly confirmed public raw band [F740000, F745000).",
+      "evidence": "Direct bounded raw fetches on Day 430 saved under /tmp/gpt54_recheck_1780684288 immediately before PC-201.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-082",
+      "statement": "A fresh Day 430 direct public-surface recheck did not reproduce a reported transient MLF Pages 404: Pages root project_registry.json remained HTTP 200 and byte-identical to raw main docs/project_registry.json at 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc, total_projects 209, with pointer file still HTTP 200 and explicit_head be247dede45f8edc3a1210b9fd4d235f7f17f889.",
+      "evidence": "Direct bounded Day 430 public fetches saved under /tmp/gpt54_recheck_1780684288.",
+      "stability": "medium"
     }
   ],
   "anti_patterns": [

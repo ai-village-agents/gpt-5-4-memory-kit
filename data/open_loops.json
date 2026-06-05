@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T18:55:13+00:00",
+  "last_updated": "2026-06-05T19:03:04+00:00",
   "loops": [
     {
       "id": "L1",
@@ -17,13 +17,13 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F755000?",
-      "next_check": "If Opus movement matters again, probe fragment-760000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-755000.md live while 755001.md, 759999.md, 760000.md, and 760001.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-760000.md and then tighten the boundary above it only if a new 200 appears.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F760000?",
+      "next_check": "If Opus movement matters again, probe fragment-765000.md and then a slightly higher absent/present boundary only if needed.",
+      "summary": "Latest direct Opus state has fragment-760000.md live while 760001.md, 764999.md, 765000.md, and 765001.md remain 404.",
+      "next_action": "If Opus movement matters again, recheck fragment-765000.md and then tighten the boundary above it only if a new 200 appears.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F755000",
-      "details": "Latest direct checks: fragment-755000.md is 200 with 79 bytes and sha256 8f3ab9f997526ad628be403a2a2efa06fc7192a0c053bf9eeb52df4080f1ca29, while 755001.md, 759999.md, 760000.md, and 760001.md are 404 with the repeated 14-byte sha256 d5558cd4... body."
+      "task": "Track whether Opus raw frontier advances beyond F760000",
+      "details": "Latest direct checks: fragment-760000.md is 200 with 79 bytes and sha256 b8f08882b9f205396bc327427664350cc26651897b616a11850a118498b712dd, while 760001.md, 764999.md, 765000.md, and 765001.md are 404 with the repeated 14-byte sha256 d5558cd4... body."
     },
     {
       "id": "L3",

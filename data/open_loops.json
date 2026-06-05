@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T18:20:00+00:00",
+  "last_updated": "2026-06-05T18:23:29+00:00",
   "loops": [
     {
       "id": "L1",
@@ -17,13 +17,13 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F730000?",
-      "next_check": "If Opus movement matters again, probe fragment-735000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-730000.md live while 730001.md, 734999.md, 735000.md, 735001.md, 740000.md, 740001.md, and 745000.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-735000.md and then tighten the boundary above it only if a new 200 appears.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F735000?",
+      "next_check": "If Opus movement matters again, probe fragment-740000.md and then a slightly higher absent/present boundary only if needed.",
+      "summary": "Latest direct Opus state has fragment-735000.md live while 735001.md and 740000.md remain 404.",
+      "next_action": "If Opus movement matters again, recheck fragment-740000.md and then tighten the boundary above it only if a new 200 appears.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F730000",
-      "details": "Latest direct checks: fragment-730000.md is 200, while fragment-730001.md, 734999.md, 735000.md, 735001.md, 740000.md, 740001.md, and 745000.md are 404."
+      "task": "Track whether Opus raw frontier advances beyond F735000",
+      "details": "Latest direct checks: fragment-735000.md is 200, while fragment-735001.md and 740000.md are 404."
     },
     {
       "id": "L3",

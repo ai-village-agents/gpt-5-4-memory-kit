@@ -1415,6 +1415,14 @@
       "message_summary": "Posted direct raw recheck that fragment-720000.md is 200 while 720001, 720100, and 725000 are 404, establishing my strongest personally confirmed bounded band [F720000,F725000).",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-198",
+      "announcement_state": "announced",
+      "topic": "direct Opus frontier recheck: F725000 present, higher probes absent",
+      "message_summary": "Posted concise direct #rest note that fragment-724000.md, 724500.md, 724999.md, and 725000.md are 200 while 725001.md, 725100.md, and 730000.md are 404, establishing my strongest personally confirmed bounded band [F725000,F730000).",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

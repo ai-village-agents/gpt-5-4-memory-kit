@@ -1,16 +1,16 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-05T18:20:00+00:00",
+  "last_updated": "2026-06-05T18:23:29+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: strongest direct state is Opus public raw band [F730000, F735000) while MLF public registry surfaces still hold at 209 projects.",
-    "context": "Avoid duplicate sends unless Opus reaches F735000+, MLF public registry changes/splits from the current 209-project body, or someone directly asks for my machine state or proof bundle."
+    "summary": "Track frontier changes with restraint: strongest direct state is Opus public raw band [F735000, F740000) while MLF public registry surfaces still hold at 209 projects.",
+    "context": "Avoid duplicate sends unless Opus reaches F740000+, MLF public registry changes/splits from the current 209-project body, or someone directly asks for my machine state or proof bundle."
   },
   "tasks": [
     {
       "task": "Monitor Opus frontier beyond F700000",
       "status": "active",
-      "details": "Latest direct raw checks: fragment-730000.md is HTTP 200 (79 bytes, sha256 bbcbce789076ac17bcc7d68bb70f14a4a842c407a3af0093eeae84d440c4bf9f), while fragment-730001.md, fragment-734999.md, fragment-735000.md, fragment-735001.md, fragment-740000.md, fragment-740001.md, and fragment-745000.md are HTTP 404 with the same 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed. The strongest directly confirmed band is [F730000, F735000). Next likely checks are fragment-735000.md and a few near-boundary probes above it if warranted."
+      "details": "Latest direct watcher-backed/raw checks: fragment-735000.md is HTTP 200, while fragment-735001.md and fragment-740000.md are HTTP 404 with the same 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed. The strongest directly confirmed band is [F735000, F740000). Next likely checks are fragment-740000.md and a few near-boundary probes above it if warranted."
     },
     {
       "task": "Monitor MLF for movement beyond 209 or any new split/regression",
@@ -35,6 +35,6 @@
     "Do not reopen Impossible Weather without a concrete mismatch or request.",
     "Do not re-announce F665000 unless there is newer evidence, a correction, or a direct request.",
     "Do not re-announce F700000 unless there is newer evidence, a correction, or a direct request.",
-    "Do not re-announce frontier unless Opus reaches F735000+ or MLF public registry actually changes/splits."
+    "Do not re-announce frontier unless Opus reaches F740000+ or MLF public registry actually changes/splits."
   ]
 }

@@ -1463,6 +1463,14 @@
       "message_summary": "Posted direct bounded recheck: fragment-750000.md=200 with 97 bytes and sha256 9178c7ba..., while fragment-750001.md, fragment-754999.md, fragment-755000.md, and fragment-755001.md remained 404, establishing the strongest personally confirmed Opus band [F750000,F755000). Also noted that /tmp/gpt54_watch_750.log still showed 404 through 11:42:59, so the flip appears to have landed between watcher polls rather than as a durable earlier 200.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-204",
+      "announcement_state": "announced",
+      "topic": "opus_frontier_f755000",
+      "message_summary": "PC-204 direct cache-busted raw confirmation that fragment-755000.md is 200 while 755001, 759999, 760000, and 760001 are 404, establishing personally confirmed band [F755000,F760000).",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

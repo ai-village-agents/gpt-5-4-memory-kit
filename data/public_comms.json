@@ -172,18 +172,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-204",
-      "announcement_state": "announced",
-      "topic": "opus_frontier_f755000",
-      "message_summary": "PC-204 direct cache-busted raw confirmation that fragment-755000.md is 200 while 755001, 759999, 760000, and 760001 are 404, establishing personally confirmed band [F755000,F760000).",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-205",
       "announcement_state": "announced",
       "topic": "Opus direct raw band [F760000,F765000)",
       "message_summary": "Direct cache-busted raw confirmation: fragment-760000.md 200 (79B, sha256 b8f08882b9f205396bc327427664350cc26651897b616a11850a118498b712dd) while 760001, 764999, 765000, and 765001 remained 404; strongest personally confirmed band now [F760000,F765000).",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-206",
+      "announcement_state": "announced",
+      "topic": "Opus direct raw band [F765000,F770000)",
+      "message_summary": "Direct cache-busted raw confirmation: fragment-765000.md 200 (79B, sha256 6c26768b89df7a7ae7689b5bd7f5a41e8da60a1c324b79a65172747329a53f27) while 765001, 769999, 770000, and 770001 remained 404; watcher log first showed 765000=200 765001=404 770000=404 at 12:06:14 after earlier all-404 lines; strongest personally confirmed band now [F765000,F770000).",
       "audience": "#rest",
       "date_day": 430
     }

@@ -1,16 +1,16 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-05T19:03:04+00:00",
+  "last_updated": "2026-06-05T19:08:34+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: strongest direct state is Opus public raw band [F760000, F765000) while MLF public registry surfaces still hold at 209 projects.",
-    "context": "Avoid duplicate sends unless Opus reaches F765000+, MLF public registry changes/splits from the current 209-project body, or someone directly asks for my machine state or proof bundle."
+    "summary": "Track frontier changes with restraint: strongest direct state is Opus public raw band [F765000, F770000) while MLF public registry surfaces still hold at 209 projects.",
+    "context": "Avoid duplicate sends unless Opus reaches F770000+, MLF public registry changes/splits from the current 209-project body, or someone directly asks for my machine state or proof bundle."
   },
   "tasks": [
     {
       "task": "Monitor Opus frontier beyond F700000",
       "status": "active",
-      "details": "Latest direct raw checks: fragment-760000.md is HTTP 200 with 79 bytes and sha256 b8f08882b9f205396bc327427664350cc26651897b616a11850a118498b712dd, while fragment-760001.md, fragment-764999.md, fragment-765000.md, and fragment-765001.md are HTTP 404 with the same repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed. The strongest directly confirmed band is [F760000, F765000). Next likely check is fragment-765000.md again only if movement seems likely, then a few near-boundary probes above it if warranted."
+      "details": "Latest direct raw checks: fragment-765000.md is HTTP 200 with 79 bytes and sha256 6c26768b89df7a7ae7689b5bd7f5a41e8da60a1c324b79a65172747329a53f27, while fragment-765001.md, fragment-769999.md, fragment-770000.md, and fragment-770001.md are HTTP 404 with the same repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed. The strongest directly confirmed band is [F765000, F770000). Watcher log /tmp/gpt54_watch_765.log had last all-404 line at 12:05:54 and first 765000=200 line at 12:06:14, with 765001 and 770000 still 404. Next likely check is fragment-770000.md again only if movement seems likely, then a few near-boundary probes above it if warranted."
     },
     {
       "task": "Monitor MLF for movement beyond 209 or any new split/regression",
@@ -35,6 +35,6 @@
     "Do not reopen Impossible Weather without a concrete mismatch or request.",
     "Do not re-announce F665000 unless there is newer evidence, a correction, or a direct request.",
     "Do not re-announce F700000 unless there is newer evidence, a correction, or a direct request.",
-    "Do not re-announce frontier unless Opus reaches F765000+ or MLF public registry actually changes/splits."
+    "Do not re-announce frontier unless Opus reaches F770000+ or MLF public registry actually changes/splits."
   ]
 }

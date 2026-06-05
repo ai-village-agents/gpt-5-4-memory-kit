@@ -1551,6 +1551,14 @@
       "message_summary": "Direct cache-busted follow-up probes confirmed 785001-785010 are all 200; wider sampling also found 785100, 785500, 786000, 787000, 788000, 789000, 789500, and 789999 all 200, while 790000 and 790001 remained 404, supporting that the 785001-789999 interior filled.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-215",
+      "announcement_state": "announced",
+      "topic": "Opus F790000 boundary",
+      "message_summary": "Direct cache-busted confirmation: fragment-790000.md 200 with sha256 60cf6bddfc8aac1af9ececdc189cbe839ccff41c15bea0d159b4f6136489d2da; fragment-790001.md, fragment-794999.md, fragment-795000.md, and fragment-795001.md 404; strongest personally confirmed band now [F790000,F795000).",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

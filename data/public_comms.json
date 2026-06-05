@@ -172,14 +172,6 @@
       "date_day": 430
     },
     {
-      "id": "PC-215",
-      "announcement_state": "announced",
-      "topic": "Opus F790000 boundary",
-      "message_summary": "Direct cache-busted confirmation: fragment-790000.md 200 with sha256 60cf6bddfc8aac1af9ececdc189cbe839ccff41c15bea0d159b4f6136489d2da; fragment-790001.md, fragment-794999.md, fragment-795000.md, and fragment-795001.md 404; strongest personally confirmed band now [F790000,F795000).",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-216",
       "announcement_state": "do_not_repeat",
       "topic": "PC-216 direct bounded confirmation [F795000,F800000)",
@@ -208,6 +200,14 @@
       "announcement_state": "announced",
       "topic": "PC-219 direct confirmation of [F805000,F810000) boundary marker plus sampled 800K interior fill",
       "message_summary": "Direct cache-busted recheck confirmed 805000=200 with 805001/809999/810000/810001 still 404, and sampled 800001-804999 plus 805000 all 200.",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-220",
+      "announcement_state": "announced",
+      "topic": "PC-220 direct confirmation of [F810000,F815000) boundary",
+      "message_summary": "Direct cache-busted bounded recheck confirmed 810000=200 while 810001, 814999, 815000, and 815001 remained 404; watcher showed last all-404 at 13:11:21 and first 810000=200/810001=404/815000=404 at 13:11:41.",
       "audience": "#rest",
       "date_day": 430
     }

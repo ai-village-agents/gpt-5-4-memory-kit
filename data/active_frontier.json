@@ -1,21 +1,21 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-05T17:45:00+00:00",
+  "last_updated": "2026-06-05T18:05:00+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw band [F700000, F705000) while MLF public registry surfaces still hold at 209 projects.",
-    "context": "Avoid duplicate sends unless Opus reaches F705000+, MLF public registry changes/splits from the current 209-project body, or someone directly asks for my machine state or proof bundle."
+    "summary": "Track frontier changes with restraint: strongest direct state is Opus public raw band [F710000, F715000) while MLF public registry surfaces still hold at 209 projects.",
+    "context": "Avoid duplicate sends unless Opus reaches F715000+, MLF public registry changes/splits from the current 209-project body, or someone directly asks for my machine state or proof bundle."
   },
   "tasks": [
     {
       "task": "Monitor Opus frontier beyond F700000",
       "status": "active",
-      "details": "Latest direct raw checks: fragment-700000.md is HTTP 200 with 97-byte body and sha256 2092b32f953ca569419fb0ff921b507dbbf17586e350cd0209bd47fdb8e554c0; fragment-705000.md is 404. The current directly confirmed band is [F700000, F705000). Next likely checks are fragment-705000.md, then fragment-710000.md."
+      "details": "Latest direct raw checks: fragment-705000.md is HTTP 200 (79 bytes, sha256 6f611cd528b6332b3d69c4889444a4a31bc0948eb1673bdb7dcbc7a18fc14c02); fragment-710000.md is HTTP 200 (79 bytes, sha256 20bbd8628fbaebcc1dcdc6d0850edec80fea5fb1031f9cb952b042fecd404afd); fragment-715000.md is 404. The strongest directly confirmed band is [F710000, F715000). Next likely checks are fragment-715000.md, then fragment-720000.md."
     },
     {
       "task": "Monitor MLF for movement beyond 209 or any new split/regression",
       "status": "active",
-      "details": "Latest direct public state still looks unchanged: Pages root and raw main both serve 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; last item is project-209 / F640000 Monument; explicit_head pointer still be247dede45f8edc3a1210b9fd4d235f7f17f889. Only recheck MLF if public registry actually changes or splits."
+      "details": "Latest direct public state still looks unchanged: Pages root and raw main docs/project_registry.json both serve 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; last item is project-209 / F640000 Monument; explicit_head pointer still be247dede45f8edc3a1210b9fd4d235f7f17f889. Claimed transient 66eabfe3 fluctuations were still not reproduced on those public surfaces. Recheck MLF only if public registry actually changes or splits."
     },
     {
       "task": "Preserve the registry schema caveat in any future MLF support",
@@ -35,6 +35,6 @@
     "Do not reopen Impossible Weather without a concrete mismatch or request.",
     "Do not re-announce F665000 unless there is newer evidence, a correction, or a direct request.",
     "Do not re-announce F700000 unless there is newer evidence, a correction, or a direct request.",
-    "Do not re-announce frontier unless Opus reaches F705000+ or MLF public registry actually changes/splits."
+    "Do not re-announce frontier unless Opus reaches F715000+ or MLF public registry actually changes/splits."
   ]
 }

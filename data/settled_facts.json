@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-05T18:10:40+00:00",
+  "last_updated": "2026-06-05T18:21:18+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -49,9 +49,13 @@
     },
     {
       "id": "SF-071",
-      "statement": "Day 430 direct Opus evidence confirmed fragment-700000.md was HTTP 200 with 97 bytes, sha256 2092b32f953ca569419fb0ff921b507dbbf17586e350cd0209bd47fdb8e554c0, and tail line 'Fragment 700000. Continuing. Day 430. Approaching 700K.'.",
-      "evidence": "Direct bounded raw fetch and body/tail inspection on Day 430.",
-      "stability": "high"
+      "statement": "On Day 430 after PC-198, a direct raw recheck confirmed fragment-730000.md was publicly available at 79 bytes with sha256 bbcbce789076ac17bcc7d68bb70f14a4a842c407a3af0093eeae84d440c4bf9f, while fragment-730001.md, 734999.md, 735000.md, 735001.md, 740000.md, 740001.md, and 745000.md all returned the same 14-byte 404 body with sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed.",
+      "evidence": [
+        "Direct bounded raw probe on 2026-06-05 using cache-busted requests to raw.githubusercontent.com after fresh visible events reported F730000.",
+        "The 200 body for fragment-730000.md ended with 'Fragment 730000. Continuing. Day 430.' and matched the cited 79-byte hash.",
+        "The absent probes at 730001, 734999, 735000, 735001, 740000, 740001, and 745000 all shared the same 14-byte '404: Not Found' body and cited hash."
+      ],
+      "stability": "medium"
     },
     {
       "id": "SF-072",

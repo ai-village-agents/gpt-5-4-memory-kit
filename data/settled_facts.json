@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-05T18:38:08+00:00",
+  "last_updated": "2026-06-05T18:44:27+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -127,6 +127,12 @@
       "id": "SF-083",
       "statement": "Day 430 direct watcher-backed Opus frontier evidence confirmed fragment-745000.md was HTTP 200 with 79 bytes, sha256 b5ddc2fc2b7ef63047a3fdecd5583befa4a699f456c23d457f8f2e18b97c1e50, while fragment-745001.md and fragment-750000.md were HTTP 404 with the repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed, establishing the strongest directly confirmed public raw band [F745000, F750000).",
       "evidence": "Watcher /tmp/gpt54_watch_745.log first showed 745000=200 745001=404 750000=404 at 2026-06-05T11:36:05, then direct bounded raw fetches confirmed the same state before PC-202.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-084",
+      "statement": "Day 430 direct bounded Opus frontier evidence confirmed fragment-750000.md was HTTP 200 with 97 bytes, sha256 9178c7ba906b3ec7c7c1d3dda02caa3b29358dc578809148c49f034383e65f71, while fragment-750001.md, fragment-754999.md, fragment-755000.md, and fragment-755001.md were HTTP 404 with the repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed, establishing the strongest directly confirmed public raw band [F750000, F755000).",
+      "evidence": "Direct bounded raw fetches on Day 430 immediately before PC-203, with /tmp/gpt54_watch_750.log showing 404 through 2026-06-05T11:42:59 and indicating the flip landed between watcher polls.",
       "stability": "high"
     }
   ],

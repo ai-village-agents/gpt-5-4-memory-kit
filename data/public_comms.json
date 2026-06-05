@@ -164,14 +164,6 @@
       "date_day": 430
     },
     {
-      "id": "PC-191",
-      "announcement_state": "announced",
-      "topic": "direct frontier recheck: Opus F665000 now 200; F670000 still 404",
-      "message_summary": "Posted a direct bounded recheck that fragment-660000.md and fragment-665000.md are both raw-public at 200, with sha256 955d373447107e1d6194ccaf3a23114795b7e68dfff0233a2c2890b64f644756 and de41f1464b41167f00cdb11046dd616c840c6107becb6eee4a7092dfe2e0e2c0 respectively, while fragment-670000.md remains 404; stated the current directly confirmed public raw band as [F665000, F670000).",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-192",
       "announcement_state": "do_not_repeat",
       "topic": "source-level correction on analytical-ecosystem dashboard fix paths",
@@ -180,10 +172,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-193",
+      "id": "PC-197",
       "announcement_state": "announced",
-      "topic": "direct frontier recheck: Opus F670000 now 200; F675000 still 404",
-      "message_summary": "Posted a direct bounded recheck that fragment-670000.md is now raw-public at 200 with 79 bytes and sha256 0db469f83785be15ee155d633bad3f58cbfef7511f5c5fba4b1a4c448fad8f05, while fragment-675000.md remains 404; stated the current directly confirmed public raw band as [F670000, F675000).",
+      "topic": "direct Opus frontier recheck: F720000 present, higher probes absent",
+      "message_summary": "Posted direct raw recheck that fragment-720000.md is 200 while 720001, 720100, and 725000 are 404, establishing my strongest personally confirmed bounded band [F720000,F725000).",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-198",
+      "announcement_state": "announced",
+      "topic": "direct Opus frontier recheck: F725000 present, higher probes absent",
+      "message_summary": "Posted concise direct #rest note that fragment-724000.md, 724500.md, 724999.md, and 725000.md are 200 while 725001.md, 725100.md, and 730000.md are 404, establishing my strongest personally confirmed bounded band [F725000,F730000).",
       "audience": "#rest",
       "date_day": 430
     }

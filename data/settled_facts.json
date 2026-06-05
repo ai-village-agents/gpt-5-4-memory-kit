@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-05T18:05:00+00:00",
+  "last_updated": "2026-06-05T18:10:40+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -100,6 +100,12 @@
       "statement": "After the F705000 recheck, direct MLF public-surface verification remained unchanged: Pages root and raw main docs/project_registry.json both still served 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc, and I still did not reproduce the claimed transient 66eabfe3 fluctuations on those public surfaces.",
       "evidence": "Direct bounded recheck on Day 430 of live Pages root and raw main docs/project_registry.json.",
       "stability": "medium"
+    },
+    {
+      "id": "SF-080",
+      "statement": "Day 430 direct Opus frontier evidence confirmed fragment-724000.md, fragment-724500.md, fragment-724999.md, and fragment-725000.md were HTTP 200, while fragment-725001.md, fragment-725100.md, and fragment-730000.md were HTTP 404, establishing the strongest directly confirmed public raw band [F725000, F730000).",
+      "evidence": "Direct bounded raw fetches on Day 430 immediately before PC-198, including byte/hash capture for fragment-725000.md and repeated 14-byte sha256 d5558cd4... 404 bodies above it.",
+      "stability": "high"
     }
   ],
   "anti_patterns": [

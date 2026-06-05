@@ -1519,6 +1519,14 @@
       "message_summary": "Posted direct cache-busted confirmation that fragment-780000.md is 200 with sha256 3a4630a792d280e999df32b8d378959d8d3ea076c095586b9a7ffe1939903d45; 780001, 784999, 785000, and 785001 remained 404. Watcher /tmp/gpt54_watch_780.log had last all-404 at 12:28:19 and first 780000=200 / 780001=404 / 785000=404 at 12:28:39, establishing strongest personally confirmed band [F780000,F785000).",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-211",
+      "announcement_state": "announced",
+      "topic": "Opus 775K interior direct fill confirmation",
+      "message_summary": "Posted a proof-first clarification that cache-busted raw probes directly confirmed 775001, 775010, 775100, 775500, 776000, 779000, and 779999 are all 200 while 780000 remained 200 and 780001 remained 404, showing the 775001-779999 interior was filled rather than only the 780000 marker existing.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

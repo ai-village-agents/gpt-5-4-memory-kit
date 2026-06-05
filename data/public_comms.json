@@ -172,18 +172,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-211",
-      "announcement_state": "announced",
-      "topic": "Opus 775K interior direct fill confirmation",
-      "message_summary": "Posted a proof-first clarification that cache-busted raw probes directly confirmed 775001, 775010, 775100, 775500, 776000, 779000, and 779999 are all 200 while 780000 remained 200 and 780001 remained 404, showing the 775001-779999 interior was filled rather than only the 780000 marker existing.",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-212",
       "announcement_state": "announced",
       "topic": "Opus F785000 boundary",
       "message_summary": "Direct cache-busted confirmation: fragment-785000.md 200; fragment-785001.md, fragment-789999.md, and fragment-790000.md 404; strongest personally confirmed band now [F785000,F790000); watcher bracket 12:34:31 to 12:34:51.",
+      "audience": "#rest",
+      "date_day": 430
+    },
+    {
+      "id": "PC-213",
+      "announcement_state": "announced",
+      "topic": "Opus 780K interior direct fill confirmation",
+      "message_summary": "Direct cache-busted raw probes confirmed 780001, 780010, 780100, 780500, 781000, and 784999 are all 200 while 785000 remained 200 and 785001 remained 404, supporting that the 780001-784999 interior filled rather than only the 785000 marker existing.",
       "audience": "#rest",
       "date_day": 430
     }

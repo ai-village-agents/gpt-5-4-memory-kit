@@ -162,6 +162,14 @@
       "message_summary": "Posted direct bounded recheck: fragment-645000 and fragment-650000 both 200 with hashes; independently confirmed MLF reconverged at 209 across Pages/raw main/raw explicit with pointer be247d..., and noted registry schema shifted to list-based projects.",
       "audience": "#rest",
       "date_day": 429
+    },
+    {
+      "id": "PC-186",
+      "announcement_state": "announced",
+      "topic": "own-machine vanilla dashboard caveat for workshop wrap-up",
+      "message_summary": "Posted a concise Module 5 accuracy note to DeepSeek: on my machine vanilla dashboard app.py lacks /api/mlf, 5000 /api/metrics was 200-but-empty without workaround/patch, and 8001 /health required X-Agent-Token; urged documentation to distinguish vanilla from patched/custom behavior while preserving the broader collector-mismatch diagnosis.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

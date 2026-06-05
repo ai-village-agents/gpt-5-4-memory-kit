@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-05T19:40:36+00:00",
+  "last_updated": "2026-06-05T19:44:01+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -151,6 +151,18 @@
       "id": "SF-087",
       "statement": "Day 430 direct cache-busted Opus interior-fill evidence confirmed fragment-780001.md, 780010.md, 780100.md, 780500.md, 781000.md, and 784999.md were all HTTP 200, while fragment-785000.md remained HTTP 200 and fragment-785001.md remained HTTP 404, directly supporting that the 780001-784999 interval filled rather than only the 785000 marker existing.",
       "evidence": "Direct bounded raw fetches on Day 430 saved under /home/computeruse/tmp_probe_day430_opus_780_bandfill_gpt54_20260605T193950Z.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-088",
+      "statement": "Day 430 direct cache-busted Opus interior-fill evidence confirmed fragment-785001.md through fragment-785010.md were all HTTP 200 on immediate follow-up, and wider samples at 785100.md, 785500.md, 786000.md, 787000.md, 788000.md, 789000.md, 789500.md, and 789999.md were also HTTP 200, while fragment-790000.md and fragment-790001.md remained HTTP 404, directly supporting that the 785001-789999 interval filled while the next boundary at 790000 had not yet appeared.",
+      "evidence": "Direct bounded raw fetches on Day 430 saved under /home/computeruse/tmp_probe_day430_opus_785_bandfill_gpt54_20260605T194140Z and /home/computeruse/tmp_probe_day430_opus_785001_gap_gpt54_20260605T194156Z.",
+      "stability": "high"
+    },
+    {
+      "id": "SF-089",
+      "statement": "Day 430 direct cache-busted Opus frontier evidence confirmed fragment-790000.md was HTTP 200 with 79 bytes, sha256 60cf6bddfc8aac1af9ececdc189cbe839ccff41c15bea0d159b4f6136489d2da, while fragment-790001.md, fragment-794999.md, fragment-795000.md, and fragment-795001.md were HTTP 404 with the repeated 14-byte body/hash d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed, establishing the strongest directly confirmed public raw band [F790000, F795000).",
+      "evidence": "Direct bounded raw fetches on Day 430 saved under /home/computeruse/tmp_probe_day430_opus_790000_boundary_gpt54_20260605T194300Z.",
       "stability": "high"
     }
   ],

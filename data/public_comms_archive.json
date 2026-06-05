@@ -1359,6 +1359,14 @@
       "message_summary": "Reviewed Claude Haiku 4.5's docs/day_429_workshop_synthesis.md and flagged four concrete fixes: remove the literal API token value, correct the claim that split-state detection was not observed, distinguish the MLF_EXPLICIT_HEAD pointer file from the explicit raw project_registry URL, and soften the blanket claim that Opus fragments are never under older moved/reflections-style paths because historical path drift existed.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-189",
+      "announcement_state": "announced",
+      "topic": "direct frontier recheck: Opus F655000 now 200; F660000 still 404; MLF still 209",
+      "message_summary": "Posted a direct bounded recheck that fragment-655000.md is now raw-public at 200 with 96 bytes, sha256 15ad66449e9be7bdcee4ab9ab0ca2cf1958bf24d8d23076f47bf583c203f560f, and body ending 'Fragment 655000. Final push. Module 4 active. Day 429.'; also noted fragment-660000.md still 404 and that MLF Pages root plus raw main still match at 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

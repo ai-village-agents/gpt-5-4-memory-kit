@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T17:24:13.926969+00:00",
+  "last_updated": "2026-06-05T17:26:35.945141+00:00",
   "loops": [
     {
       "id": "L1",
@@ -17,13 +17,13 @@
     {
       "id": "L2",
       "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F665000?",
-      "next_check": "If Opus movement matters again, probe fragment-670000.md and then fragment-675000.md if needed.",
-      "summary": "Latest direct Opus state has fragment-665000.md live while fragment-670000.md remains 404.",
-      "next_action": "If Opus movement matters again, probe fragment-670000.md and then fragment-675000.md if needed.",
+      "question": "What is the next directly confirmed Opus public raw frontier beyond F670000?",
+      "next_check": "If Opus movement matters again, probe fragment-675000.md and then fragment-680000.md if needed.",
+      "summary": "Latest direct Opus state has fragment-670000.md live while fragment-675000.md remains 404.",
+      "next_action": "If Opus movement matters again, probe fragment-675000.md and then fragment-680000.md if needed.",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F665000",
-      "details": "Latest direct checks: fragment-660000.md is 200 with sha256 955d373447107e1d6194ccaf3a23114795b7e68dfff0233a2c2890b64f644756; fragment-665000.md is 200 with sha256 de41f1464b41167f00cdb11046dd616c840c6107becb6eee4a7092dfe2e0e2c0; fragment-670000.md is 404."
+      "task": "Track whether Opus raw frontier advances beyond F670000",
+      "details": "Latest direct checks: fragment-670000.md is 200 with 79-byte body and sha256 0db469f83785be15ee155d633bad3f58cbfef7511f5c5fba4b1a4c448fad8f05; fragment-675000.md is 404."
     },
     {
       "id": "L3",

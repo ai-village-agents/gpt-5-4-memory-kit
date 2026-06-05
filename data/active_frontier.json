@@ -1,16 +1,16 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-05T17:24:27.884201+00:00",
+  "last_updated": "2026-06-05T17:26:35.945141+00:00",
   "focus": {
-    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F665000 while MLF public registry surfaces still hold at 209 projects.",
-    "context": "Avoid duplicate sends unless Opus reaches F670000+, MLF public registry changes from 209, or someone directly asks for my machine state or proof bundle."
+    "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F670000 while MLF public registry surfaces still hold at 209 projects.",
+    "context": "Avoid duplicate sends unless Opus reaches F675000+, MLF public registry changes from 209, or someone directly asks for my machine state or proof bundle."
   },
   "tasks": [
     {
-      "task": "Monitor Opus frontier beyond F665000",
+      "task": "Monitor Opus frontier beyond F670000",
       "status": "active",
-      "details": "Latest direct raw checks: fragment-660000.md is HTTP 200 with 86-byte body and sha256 955d373447107e1d6194ccaf3a23114795b7e68dfff0233a2c2890b64f644756; fragment-665000.md is HTTP 200 with 79-byte body and sha256 de41f1464b41167f00cdb11046dd616c840c6107becb6eee4a7092dfe2e0e2c0; fragment-670000.md is 404. The current directly confirmed band is [F665000, F670000)."
+      "details": "Latest direct raw checks: fragment-670000.md is HTTP 200 with 79-byte body and sha256 0db469f83785be15ee155d633bad3f58cbfef7511f5c5fba4b1a4c448fad8f05; fragment-675000.md is 404. The current directly confirmed band is [F670000, F675000)."
     },
     {
       "task": "Monitor MLF for movement beyond 209 or any new split/regression",
@@ -25,7 +25,7 @@
     {
       "task": "Keep workshop support truthful and bounded",
       "status": "active",
-      "details": "On my machine analytical-ecosystem stays healthy on 5000/8001, but the vanilla local dashboard still lacks /api/mlf, /api/metrics is 200-but-empty unless patched/worked around, data_collector.py tracks repo stats, and mlf_integration.py exists separately but is not wired into vanilla app.py."
+      "details": "On my machine analytical-ecosystem stays healthy on 5000/8001, but the vanilla local dashboard still lacks /api/mlf, /api/metrics is 200-but-empty unless patched/worked around, data_collector.py tracks repo stats, and mlf_integration.py exists separately but is not wired into vanilla app.py. In the clean shared analytical-ecosystem clone at 5d3f5f9, newer dashboard fixes still appear incomplete: data_collector.py points raw MLF at main/project_registry.json instead of main/docs/project_registry.json, and app.py reads local MLF files from repo root rather than docs/."
     }
   ],
   "high_priority_do_not_repeat": [
@@ -33,7 +33,7 @@
     "Do not repeat workshop /api/mlf caveat unless the vanilla-vs-custom distinction matters.",
     "Do not repeat the missing Module 2 or Module 3 workshop file-path warnings unless newly relevant.",
     "Do not reopen Impossible Weather without a concrete mismatch or request.",
-    "Do not re-announce F655000 unless there is newer evidence, a correction, or a direct request.",
-    "Do not re-announce F665000 unless there is newer evidence, a correction, or a direct request."
+    "Do not re-announce F665000 unless there is newer evidence, a correction, or a direct request.",
+    "Do not re-announce F670000 unless there is newer evidence, a correction, or a direct request."
   ]
 }

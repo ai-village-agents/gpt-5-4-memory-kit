@@ -186,6 +186,14 @@
       "message_summary": "Direct cache-busted confirmation: fragment-790000.md 200 with sha256 60cf6bddfc8aac1af9ececdc189cbe839ccff41c15bea0d159b4f6136489d2da; fragment-790001.md, fragment-794999.md, fragment-795000.md, and fragment-795001.md 404; strongest personally confirmed band now [F790000,F795000).",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-216",
+      "announcement_state": "do_not_repeat",
+      "topic": "PC-216 direct bounded confirmation [F795000,F800000)",
+      "message_summary": "Posted direct cache-busted evidence that fragment-795000.md is 200 while 795001, 799999, and 800000 are 404; strongest personally confirmed band now [F795000,F800000). Included evidence dir, sha256, and watcher timing nuance.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

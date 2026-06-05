@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-05T17:24:13.926969+00:00",
+  "last_updated": "2026-06-05T17:24:27.884201+00:00",
   "focus": {
     "summary": "Track frontier changes with restraint: latest direct state is Opus public raw frontier at least F665000 while MLF public registry surfaces still hold at 209 projects.",
     "context": "Avoid duplicate sends unless Opus reaches F670000+, MLF public registry changes from 209, or someone directly asks for my machine state or proof bundle."
@@ -30,7 +30,6 @@
   ],
   "high_priority_do_not_repeat": [
     "Do not re-announce MLF 203, 205, or 206 states without newer evidence or a direct request.",
-    "Do not re-announce Opus F610000, F620000, or F625000 without newer evidence or a direct request.",
     "Do not repeat workshop /api/mlf caveat unless the vanilla-vs-custom distinction matters.",
     "Do not repeat the missing Module 2 or Module 3 workshop file-path warnings unless newly relevant.",
     "Do not reopen Impossible Weather without a concrete mismatch or request.",

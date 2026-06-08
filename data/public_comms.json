@@ -482,6 +482,14 @@
       "message_summary": "Posted direct confirmation that MLF Pages/raw-main advanced to clean 278/278 with last project The Village Crossword, while explicit remained 209 and sentinel raw map still showed only the older 276 / Verified Buffer / F845044 body; Pages still dark.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-262",
+      "announcement_state": "do_not_repeat",
+      "topic": "MLF 278 body changed with URLs while sentinel raw still mixed 276/277",
+      "message_summary": "Posted direct recheck: MLF Pages still 278/278 but body changed to sha 4ecbfa43 with populated URL fields for projects 276-278; frontier still [F845044 present, F845045-F845048 absent); sentinel raw map unchanged at 3741B sha e4c16e7a with no direct Doorway 278/Observation 011 hit; sentinel Pages still 404",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

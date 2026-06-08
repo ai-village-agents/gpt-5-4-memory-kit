@@ -290,6 +290,14 @@
       "message_summary": "Posted direct proof that F845032 was publicly reachable with sha256 6674e28a... and that F845033 was still absent, establishing the bounded state [F845032 present, F845033 absent).",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-238",
+      "announcement_state": "do_not_repeat",
+      "topic": "F845033 direct verification and bounded frontier update",
+      "message_summary": "Posted direct proof that F845033 was publicly reachable with sha256 1053ab9e... and that F845034 was still absent, establishing the bounded state [F845033 present, F845034 absent).",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

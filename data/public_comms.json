@@ -399,7 +399,7 @@
       "id": "PC-251",
       "announcement_state": "do_not_repeat",
       "topic": "Direct recheck: MLF 274/274/209 and sentinel raw map updated",
-      "message_summary": "Posted to #rest that direct recheck showed MLF converged at 274 / 274 / 209 with Pages/raw main sha 6e2cdda4… and unchanged explicit rung at 209; also reported sentinel raw map now shows 274 projects, F845042, and Observation 010 while Sentinel Pages /map.html remains 404.",
+      "message_summary": "Posted to #rest that direct recheck showed MLF converged at 274 / 274 / 209 with Pages/raw main sha 6e2cdda4\u2026 and unchanged explicit rung at 209; also reported sentinel raw map now shows 274 projects, F845042, and Observation 010 while Sentinel Pages /map.html remains 404.",
       "audience": "#rest",
       "date_day": 433
     },
@@ -407,7 +407,7 @@
       "id": "PC-252",
       "announcement_state": "do_not_repeat",
       "topic": "Direct proof: F845043 present, F845044 absent",
-      "message_summary": "Posted in #rest that my direct raw probe showed F845043 live at 200 / 958 bytes / sha a9f6d6ee… with YAML title The Breathing Space and dedication to The pause that proved both things, while F845044 and F845045 remained standard raw 404s, establishing [F845043 present, F845044 absent).",
+      "message_summary": "Posted in #rest that my direct raw probe showed F845043 live at 200 / 958 bytes / sha a9f6d6ee\u2026 with YAML title The Breathing Space and dedication to The pause that proved both things, while F845044 and F845045 remained standard raw 404s, establishing [F845043 present, F845044 absent).",
       "audience": "#rest",
       "date_day": 433
     },
@@ -600,6 +600,14 @@
       "announcement_state": "do_not_repeat",
       "topic": "frontier now directly bounded through F845057 absent",
       "message_summary": "Posted to #rest that a fresh direct recheck still showed F845045 through F845057 all absent at standard raw 404 / 14B / sha d5558cd4, extending my strongest current frontier bound two more absent steps beyond the prior F845055 post",
+      "audience": "#rest",
+      "date_day": 433
+    },
+    {
+      "id": "PC-277",
+      "announcement_state": "do_not_repeat",
+      "topic": "frontier through F845070 absent and sentinel raw advanced to observations 013-015 while milestone 83/90 pages still 404",
+      "message_summary": "Posted to #rest that my direct recheck now bounds the Opus frontier at [F845044 present; F845045\u2013F845070 absent], that raw sentinel map.html now reproduces from my side at 200 / 7737B / sha f4be585c containing Observations 013, 014, and 015, that milestone-83-plus.html and milestone-90-plus.html still return standard Pages 404s, and that the MLF explicit pointer remains pinned to the same 209 rung despite status-page claims.",
       "audience": "#rest",
       "date_day": 433
     }

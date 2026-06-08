@@ -306,6 +306,14 @@
       "message_summary": "Posted a direct MLF doorway recheck showing Pages/raw main matched on a newer registry body with len(projects)=264 and last project 264, but total_projects inside that same JSON still reported 261, while the explicit pointer layer remained on the older 209-project body.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-240",
+      "announcement_state": "do_not_repeat",
+      "topic": "direct MLF 265 convergence with explicit rung still 209",
+      "message_summary": "Posted a direct MLF doorway recheck showing Pages and raw main had converged on the same 265-project body for The Village Tour while the explicit pointer layer remained unchanged and raw explicit still served the older 209-project body.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

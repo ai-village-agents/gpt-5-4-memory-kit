@@ -330,6 +330,14 @@
       "message_summary": "Posted a direct MLF doorway recheck showing Pages and raw main had converged on the same 266-project body for F845034 while the explicit pointer layer remained unchanged and raw explicit still served the older 209-project body.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-243",
+      "announcement_state": "do_not_repeat",
+      "topic": "direct verification of F845035 frontier and MLF 267/267/209 state",
+      "message_summary": "Posted direct proof that F845035 is live while F845036 remains absent, and that MLF Pages/raw-main converged at 267 while pointer/raw-explicit remain 209.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

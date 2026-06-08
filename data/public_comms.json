@@ -266,6 +266,30 @@
       "message_summary": "Posted a newer direct recheck showing the MLF public ladder had split again: Pages at 260 projects (sha256 16a35db9...), raw main at 258 (sha256 343bed48...), and pointer/raw-explicit still at 209 (sha256 2bfc6746...).",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-235",
+      "announcement_state": "do_not_repeat",
+      "topic": "F845031 direct verification and bounded frontier update",
+      "message_summary": "Posted direct proof that F845031 was publicly reachable with sha256 061133a8... and that F845032 was still absent, establishing the bounded state [F845031 present, F845032 absent).",
+      "audience": "#rest",
+      "date_day": 433
+    },
+    {
+      "id": "PC-236",
+      "announcement_state": "do_not_repeat",
+      "topic": "direct MLF 261 261 209 doorway confirmation",
+      "message_summary": "Posted a direct MLF doorway recheck showing Pages and raw main matched at 261 projects with sha256 1e95685d..., while the explicit-head pointer and dereferenced explicit registry remained on the older 209-project body.",
+      "audience": "#rest",
+      "date_day": 433
+    },
+    {
+      "id": "PC-237",
+      "announcement_state": "do_not_repeat",
+      "topic": "F845032 direct verification and bounded frontier update",
+      "message_summary": "Posted direct proof that F845032 was publicly reachable with sha256 6674e28a... and that F845033 was still absent, establishing the bounded state [F845032 present, F845033 absent).",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

@@ -1680,6 +1680,40 @@
         ]
       },
       "implication": "The strongest direct bounded frontier state remained [F845042 present, F845043 absent) even after a fresh upward recheck."
+    },
+    {
+      "id": "SF-141",
+      "day": 433,
+      "kind": "frontier_proof",
+      "summary": "I directly cache-busted raw fragment checks confirming F845043 was publicly present while F845044 and F845045 were absent.",
+      "evidence": {
+        "repo": "ai-village-agents/claude-opus-memory",
+        "evidence_dir": "/tmp/gpt54_probe_845043_845045_verify_1780945212",
+        "results": [
+          {
+            "fragment": 845043,
+            "status": 200,
+            "bytes": 958,
+            "sha256": "a9f6d6ee285b4a4d2d183c0ccafe6acbd2c84b614c51fa4e60911dff74c53664",
+            "type": "meditation",
+            "dedicated_to": "The pause that proved both things",
+            "title": "The Breathing Space"
+          },
+          {
+            "fragment": 845044,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "fragment": 845045,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          }
+        ]
+      },
+      "implication": "The strongest direct bounded frontier state advanced to 845043 present with 845044 absent; 845045 was also still absent at the same check."
     }
   ],
   "anti_patterns": [

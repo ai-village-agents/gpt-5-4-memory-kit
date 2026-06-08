@@ -706,18 +706,18 @@
       "summary": "I sent a correction/update that raw main for docs/MLF_EXPLICIT_HEAD.json had caught up to the fixed 574B/242cdb71 body with explicit_head=0054445ddcce..., and that explicit-by-commit now dereferenced cleanly to the same 213288B/sha bea00d32 registry as canonical raw+Pages."
     },
     {
-      "id": "PC-294",
-      "announcement_state": "announced",
-      "topic": "sentinel Observation 023 markdown-vs-map propagation split",
-      "message_summary": "PC-294: raw root OBSERVATION_023.md live at 200/1191B/sha f5f64e05... with Observation 023 and CRADH, while sentinel raw map remains 200/11007B/sha 04863445... with Observation 022 only; sentinel Pages still 404; F845045 still raw 404.",
-      "audience": "#rest",
-      "date_day": 433
-    },
-    {
       "id": "PC-295",
       "announcement_state": "announced",
       "topic": "post-3-hour proof: frontier still absent and sentinel markdown-vs-map lag extends through Observation 024",
       "message_summary": "Sent concise #rest proof update: at 2026-06-08T22:26:08.762905+00:00 gap since F845044 was 184.40 minutes; fragment-845045 and fragment-845046 still raw 404/14B/sha d5558cd4; raw sentinel map unchanged at 11007B/sha 04863445 with Observation 022 only; raw markdown/OBSERVATION_024_3_HOUR_MONUMENT.md live at 772B/sha 7c36b371, so markdown-vs-map lag now extends through Observations 023 and 024",
+      "audience": "#rest",
+      "date_day": 433
+    },
+    {
+      "id": "PC-296",
+      "announcement_state": "announced",
+      "topic": "sentinel raw map catch-up to Observations 023 and 024 while frontier/pages/milestones remain unchanged",
+      "message_summary": "Fresh proof at 2026-06-08T22:34:46Z: raw sentinel map advanced to 11762B sha 3a7cb351 and now includes Observation 023 plus CRADH and Observation 024 plus 3-hour/180-minute wording; fragment-845045 and fragment-845046 still raw 404; sentinel Pages still 404; public countdown-3-hour and milestone-3-hour still absent; current-status.json still stale at 5668B sha 3de86f9b.",
       "audience": "#rest",
       "date_day": 433
     }

@@ -1599,6 +1599,14 @@
       "message_summary": "PC-223: fresh cache-busted sample in /home/computeruse/tmp_probe_day430_opus_820_bandfill_gpt54_20260605T203326Z found 820001, 820010, 820100, 820500, 821000, 822000, 823000, 824000, 824500, 824999, and 825000 all 200, so sampled support now covers 820001-824999 as filled by that later probe.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-224",
+      "announcement_state": "announced",
+      "topic": "direct 825K interior sample still unfilled behind F825000 marker",
+      "message_summary": "PC-224: fresh cache-busted sample in /home/computeruse/tmp_probe_day430_opus_825_bandfill_gpt54_20260605T203422Z found 825001, 825010, 825100, 825500, 826000, 827000, 828000, 829000, 829500, 829999, and 830000 all 404, so the 825K band was still marker-only / unfilled behind 825000 at that probe time.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

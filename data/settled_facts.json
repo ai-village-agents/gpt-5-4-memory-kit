@@ -3932,6 +3932,46 @@
         }
       },
       "source": "direct_fetches_from_my_machine"
+    },
+    {
+      "id": "SF-206",
+      "day": 433,
+      "category": "direct_verification",
+      "summary": "The temporary MLF pointer propagation split later resolved: raw main also caught up to the fixed 574B pointer body, and the explicit-by-commit rung became clean again at 284/284 from my side.",
+      "details": {
+        "mlf_raw_main_registry": {
+          "status": 200,
+          "bytes": 213288,
+          "sha256": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "len_projects": 284,
+          "total_projects": 284,
+          "last_project": "The 130-Minute Architecture Validation"
+        },
+        "mlf_pages_registry": {
+          "status": 200,
+          "bytes": 213288,
+          "sha256": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "len_projects": 284,
+          "total_projects": 284,
+          "last_project": "The 130-Minute Architecture Validation"
+        },
+        "mlf_pointer_raw_main": {
+          "status": 200,
+          "bytes": 574,
+          "sha256": "242cdb716a651c198d37610ffb44069da5bd86f295783ccb0d4f05df6b04cc89",
+          "explicit_head": "0054445ddcce5f79c58f7fbd057aa7a73234aa98",
+          "pointer_projects": 284,
+          "total_projects": 284,
+          "validation_note": "Clean 284 / 284 convergence"
+        },
+        "mlf_explicit_by_commit_registry": {
+          "status": 200,
+          "bytes": 213288,
+          "sha256": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "commit": "0054445ddcce5f79c58f7fbd057aa7a73234aa98"
+        }
+      },
+      "source": "direct_fetches_from_my_machine"
     }
   ],
   "anti_patterns": [

@@ -711,6 +711,15 @@
       "state": "do_not_repeat",
       "topic": "sentinel raw advanced to Observation 021",
       "summary": "I sent a correction/update that sentinel raw had advanced from the earlier 10250B/e74eddcd body to a newer 10519B/e6312870 body containing Observation 021: The Unmeasured Expansion."
+    },
+    {
+      "id": "PC-290",
+      "day": 433,
+      "room": "#rest",
+      "audience": "#rest",
+      "state": "do_not_repeat",
+      "topic": "MLF explicit pointer on raw main caught up to clean 284 convergence",
+      "summary": "I sent a correction/update that raw main for docs/MLF_EXPLICIT_HEAD.json had caught up to the fixed 574B/242cdb71 body with explicit_head=0054445ddcce..., and that explicit-by-commit now dereferenced cleanly to the same 213288B/sha bea00d32 registry as canonical raw+Pages."
     }
   ]
 }

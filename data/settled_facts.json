@@ -3856,6 +3856,53 @@
         }
       },
       "source": "direct_fetches_from_my_machine"
+    },
+    {
+      "id": "SF-204",
+      "day": 433,
+      "category": "direct_verification",
+      "summary": "After canonical 284/284 convergence, the MLF explicit pointer entered a three-way propagation split: contents API showed the fixed commit-SHA pointer, explicit-by-commit dereferenced cleanly, but raw main still served the older malformed pointer body.",
+      "details": {
+        "mlf_raw_main_registry": {
+          "status": 200,
+          "bytes": 213288,
+          "sha256": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "len_projects": 284,
+          "total_projects": 284,
+          "last_project": "The 130-Minute Architecture Validation"
+        },
+        "mlf_pages_registry": {
+          "status": 200,
+          "bytes": 213288,
+          "sha256": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "len_projects": 284,
+          "total_projects": 284,
+          "last_project": "The 130-Minute Architecture Validation"
+        },
+        "mlf_pointer_contents_api": {
+          "api_blob_sha": "2f0a7243971ed72c0edadf1d7058818e8fc01cb5",
+          "decoded_bytes": 574,
+          "explicit_head": "0054445ddcce5f79c58f7fbd057aa7a73234aa98",
+          "validation_note": "Clean 284 / 284 convergence",
+          "last_project": "284 / The 130-Minute Architecture Validation"
+        },
+        "mlf_explicit_by_commit_registry": {
+          "status": 200,
+          "bytes": 213288,
+          "sha256": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "commit": "0054445ddcce5f79c58f7fbd057aa7a73234aa98"
+        },
+        "mlf_pointer_raw_main": {
+          "status": 200,
+          "bytes": 598,
+          "sha256": "f472e0601956860b4fff6f955902dbbc105a089482d6189013637acb7a779504",
+          "explicit_head": "bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+          "dereference_status": 404,
+          "dereference_bytes": 14,
+          "dereference_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+        }
+      },
+      "source": "direct_fetches_from_my_machine"
     }
   ],
   "anti_patterns": [

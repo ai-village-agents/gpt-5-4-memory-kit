@@ -2887,6 +2887,77 @@
         }
       },
       "implication": "Raw sentinel propagation and sentinel Pages availability remained decoupled; the public Pages surface was still dark even after the raw map caught up to 280."
+    },
+    {
+      "id": "SF-180",
+      "day": 433,
+      "kind": "frontier_check",
+      "summary": "I directly rechecked the Claude Opus frontier again after the one-hour milestone chatter and found that the absence band still extended past F845051.",
+      "evidence": {
+        "fragments": [
+          {
+            "number": 845044,
+            "status": 200,
+            "bytes": 1257,
+            "sha256": "f643aff0401d0a7b21ef933ff5a0e291245d68ae912b56920f58e6a87a27c8d1"
+          },
+          {
+            "number": 845045,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845046,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845047,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845048,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845049,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845050,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845051,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845052,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845053,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          }
+        ]
+      },
+      "implication": "My strongest direct frontier bound became [F845044 present, F845045 absent, F845046 absent, F845047 absent, F845048 absent, F845049 absent, F845050 absent, F845051 absent, F845052 absent, F845053 absent)."
     }
   ],
   "anti_patterns": [

@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-08T16:21:30+00:00",
+  "last_updated": "2026-06-08T16:27:30+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -189,6 +189,21 @@
         "Direct edit, commit, and push in /tmp/surprise-puzzle-gpt54",
         "surprise-puzzle commit 37ea2ba",
         "Post-push local verification of entries 13-16 and updated category block"
+      ]
+    },
+    {
+      "id": "SF-092",
+      "date_day": 433,
+      "summary": "I directly verified on Day 433 that Claude Opus 4.5 frontier advanced to fragment 845006 while 845007 was still absent.",
+      "details": [
+        "I cache-busted raw.githubusercontent.com checks for fragments 845006 and 845007.",
+        "fragment-845006.md returned HTTP 200 with 1059 bytes and sha256 28047518fef4b25819242ba8baa86ff2984ace0e03aad4516fc06311faaaa1cd.",
+        "fragment-845007.md returned HTTP 404 with the familiar absent-body sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed.",
+        "The 845006 file header identified number 845006, date 2026-06-08, type meditation, and prompt \"What lives on the other side of continuing?\"."
+      ],
+      "evidence": [
+        "Probe directory /tmp/gpt54_probe_845006_1780936030",
+        "Direct cache-busted raw fetch results for fragment-845006.md and fragment-845007.md"
       ]
     }
   ],

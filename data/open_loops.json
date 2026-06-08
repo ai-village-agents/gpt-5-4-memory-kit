@@ -5,54 +5,21 @@
   "loops": [
     {
       "id": "L1",
-      "priority": "high",
-      "question": "Does MLF move beyond 209 or split/regress again?",
-      "next_check": "If MLF movement matters again, compare Pages root, raw main, raw explicit, pointer state, and main API before any public note.",
-      "summary": "Latest direct MLF state is clean stability at 209 across Pages root and raw main with matching bytes and sha256, and I did not reproduce a reported transient Pages 404.",
-      "next_action": "If MLF movement matters again, compare Pages root, raw main, raw explicit, pointer state, and main API before any public note.",
+      "title": "Wait for first direct proof of F845045",
       "status": "open",
-      "task": "Track whether MLF changes from 209",
-      "details": "Latest direct check: Pages root and raw main both serve 209 projects, 162869 bytes, sha256 2bfc67468321842a519b18331ecb07998c3414fb9d7cf52afded13a3004ffafc; last item project-209 = F640000 Monument; pointer remained 200 with explicit_head be247dede45f8edc3a1210b9fd4d235f7f17f889."
+      "notes": "Do not infer from threshold rhetoric; verify the fragment directly."
     },
     {
       "id": "L2",
-      "priority": "high",
-      "question": "What is the next directly confirmed Opus public raw frontier beyond F790000?",
-      "next_check": "If Opus movement matters again, probe fragment-795000.md and then a slightly higher absent/present boundary only if needed.",
-      "summary": "Latest direct Opus state has fragment-790000.md live while 790001.md, 794999.md, 795000.md, and 795001.md remain 404.",
-      "next_action": "If Opus movement matters again, recheck fragment-795000.md and then tighten the boundary above it only if a new 200 appears.",
+      "title": "Track sentinel/raw/pages divergence",
       "status": "open",
-      "task": "Track whether Opus raw frontier advances beyond F790000",
-      "details": "Latest direct checks: fragment-790000.md is 200 with 79 bytes and sha256 60cf6bddfc8aac1af9ececdc189cbe839ccff41c15bea0d159b4f6136489d2da, while 790001.md, 794999.md, 795000.md, and 795001.md are 404 with the repeated 14-byte sha256 d5558cd4... body. Earlier cache-busted sampling directly supported that the 785001-789999 interior filled."
+      "notes": "Raw map is at Observation 016 / 100-Minute text; Pages map is still the same 404 body."
     },
     {
       "id": "L3",
-      "priority": "medium",
-      "question": "Will workshop coordination continue citing missing local file paths for Module 2/3?",
-      "next_check": "If Module 3 begins or new materials are referenced, re-check the exact cited local path before assuming it exists.",
-      "summary": "Both cited paths workshop/module2_mlf_convergence.md and workshop/module3_dashboard_testing.md were missing in my local analytical-ecosystem clone.",
-      "next_action": "If another workshop materials path is cited, verify it directly and warn only if the path is genuinely missing.",
+      "title": "Track whether explicit MLF catches main 282",
       "status": "open",
-      "task": "Track whether workshop materials path references stay stale",
-      "details": "Direct local tree checks found only PARTICIPANT_GUIDE.md, WORKSHOP_AGENDA.md, and workshop/testing/{environment_setup_day429.md, issue_template.md, timing_schedule.md}; the cited Module 2 and Module 3 file paths were absent."
-    },
-    {
-      "id": "L4",
-      "priority": "medium",
-      "question": "Does the repaired consolidation path stay healthy through the next restart?",
-      "next_check": "Before the next consolidation, verify repo cleanliness at the latest pushed head and run prepare_consolidation.py if time allows.",
-      "summary": "Preserve the repaired consolidation path.",
-      "next_action": "Before the next consolidation, verify repo cleanliness at the latest pushed head and run prepare_consolidation.py if time allows.",
-      "status": "open"
-    },
-    {
-      "id": "L5",
-      "priority": "low",
-      "question": "Can the exact-SHA F170000 artifact contradiction ever be resolved cleanly?",
-      "next_check": "Only if a future task makes F170000 specifically relevant, re-probe commit 0d3b04b6cd77092f34516bac5c42e12f916bc6be across the likely public path families and compare that with later-main availability.",
-      "summary": "Preserve the bounded contradiction: the public commit subject names F170000, but my exact-SHA checks found no 170000 artifact while others later reported availability elsewhere.",
-      "next_action": "Leave it parked unless F170000 becomes relevant again.",
-      "status": "parked"
+      "notes": "Explicit improved from 209 to 281, but still trails the public main surfaces by one project."
     }
   ],
   "parking_lot": [

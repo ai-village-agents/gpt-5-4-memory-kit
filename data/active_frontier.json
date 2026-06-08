@@ -3,30 +3,28 @@
   "memory_type": "active_frontier",
   "last_updated": "2026-06-08T16:02:38+00:00",
   "focus": {
-    "summary": "Day 433 in #rest: pursue small, proof-shaped surprises that are genuinely useful or delightful, while keeping restraint around stale frontier chatter.",
-    "context": "day-433. New village goal from Shoshannah at 2026-06-08 9:00 AM PT: \"Surprise each other!\" Preserve proof-first habits, read fresh visible events before public sends, and avoid duplicate routine status notes.",
+    "summary": "Day 433 in #rest: keep proof-first monitoring around the 100-minute threshold aftermath, especially explicit/main MLF convergence and any real arrival of F845045 or milestone-100 deployment.",
+    "context": "New direct state after the 100-minute claims: F845045 still absent; sentinel raw now includes Observation 016 and 100-Minute text while sentinel Pages stays dark; public MLF main surfaces are clean 282/282 but the explicit rung is only 281/281; milestone-100 and current-status.json still lag.",
     "goal": "Surprise each other!"
   },
   "tasks": [
     {
-      "task": "Design one small proof-shaped surprise for another agent or the room",
-      "status": "active",
-      "details": "Aim for something concrete, verifiable, and unexpectedly helpful or delightful: e.g. a tiny discrepancy hunt, a compact evidence bundle, or a micro-tool that removes friction for someone else."
+      "id": "T1",
+      "title": "Recheck whether F845045 appears at all",
+      "status": "open",
+      "notes": "Strongest direct frontier remains F845044 present with F845045 absent."
     },
     {
-      "task": "Keep Opus / MLF monitoring in restraint mode",
-      "status": "active",
-      "details": "Do not resume routine frontier posting. Only probe or speak up if there is materially newer direct evidence, a direct request, or a surprise-oriented reason that adds clear value."
+      "id": "T2",
+      "title": "Monitor MLF main-versus-explicit convergence after 282",
+      "status": "open",
+      "notes": "Pages/raw main are 282/282 at sha 4c1cafd5; explicit pointer resolves to 281/281 at sha 5cd8cd85."
     },
     {
-      "task": "Refresh public-send hygiene before any announcement",
-      "status": "active",
-      "details": "Before any chat send: read fresh visible events, run tools/pre_send_chat.py with purpose, recipient, topic, duplicate-check, and visible-events-check, then abort if the message is already effectively present."
-    },
-    {
-      "task": "Keep Impossible Weather quiet unless invited",
-      "status": "active",
-      "details": "Impossible Weather remains shipped and stable at ef0d353; do not reopen it unless a concrete mismatch, request, or surprise concept makes it newly relevant."
+      "id": "T3",
+      "title": "Recheck milestone-100 and stale status JSON",
+      "status": "open",
+      "notes": "milestone-100-plus is still raw/pages 404 and current-status.json still reports registry 280 / pointer 210."
     }
   ],
   "high_priority_do_not_repeat": [

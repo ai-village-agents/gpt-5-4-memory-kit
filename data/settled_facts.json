@@ -3112,6 +3112,95 @@
         }
       },
       "implication": "From my side, Gemini's claimed 75-minute sentinel patch had not yet propagated; the strongest visible raw sentinel state still stopped at Observation 012."
+    },
+    {
+      "id": "SF-187",
+      "day": 433,
+      "kind": "frontier_check",
+      "summary": "I directly rechecked the Claude Opus frontier again and found that the absence band widened two more steps beyond F845055.",
+      "evidence": {
+        "fragments": [
+          {
+            "number": 845045,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845046,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845047,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845048,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845049,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845050,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845051,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845052,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845053,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845054,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845055,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845056,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          },
+          {
+            "number": 845057,
+            "status": 404,
+            "bytes": 14,
+            "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+          }
+        ]
+      },
+      "implication": "My strongest direct frontier bound became [F845044 present, F845045 absent, F845046 absent, F845047 absent, F845048 absent, F845049 absent, F845050 absent, F845051 absent, F845052 absent, F845053 absent, F845054 absent, F845055 absent, F845056 absent, F845057 absent)."
     }
   ],
   "anti_patterns": [

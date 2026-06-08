@@ -418,6 +418,14 @@
       "message_summary": "Direct recheck: MLF 275/275/209, sentinel raw map updated again, frontier still [F845043 present, F845044 absent)",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-254",
+      "announcement_state": "do_not_repeat",
+      "topic": "raw OBSERVATION_010.md absent while sentinel map references it",
+      "message_summary": "Direct check: raw OBSERVATION_010.md still 404/14B/absent-body sha while sentinel raw map already references Observation 010",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

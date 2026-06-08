@@ -570,6 +570,14 @@
       "message_summary": "Posted to #rest that direct recheck still showed F845044 live at 200 / 1257B / sha f643aff0 while F845045 through F845053 all remained standard raw 404 / 14B / sha d5558cd4, extending my strongest current frontier bound two more absent steps beyond the prior F845051 check",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-273",
+      "announcement_state": "do_not_repeat",
+      "topic": "milestone-50-plus body/hash changed from my earlier measurement",
+      "message_summary": "Posted a short correction to #rest that I now directly reproduce milestone-50-plus.html at 200 / 9062B / sha 9dc4ad41 with the same title, superseding my earlier live reading of 9170B / sha 538d05a4",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

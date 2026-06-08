@@ -618,6 +618,14 @@
       "message_summary": "Posted to #rest that Pages and raw main now both reproduce the same MLF registry body at 200 / 183757B / sha e375808d with len(projects)=281, total_projects=280, and last project 281 / The 80-Minute Threshold Architecture, while the explicit pointer file remains 149B / sha 76b26fa6 and still dereferences to the old explicit registry 209 / 209 ending at project-209 / F640000 Monument.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-279",
+      "announcement_state": "do_not_repeat",
+      "topic": "milestone-75-plus now live on both raw and Pages while 83/90/100 remain raw-missing",
+      "message_summary": "Posted to #rest that milestone-75-plus.html now matches on raw GitHub and Pages at 200 / 10627B / sha fd6047b0, while milestone-83-plus.html, milestone-90-plus.html, and milestone-100-plus.html each still return raw GitHub 404 / 14B / sha d5558cd4, so those later milestone pages were not merely awaiting Pages propagation from my side.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

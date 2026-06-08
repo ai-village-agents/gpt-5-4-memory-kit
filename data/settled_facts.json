@@ -3380,6 +3380,54 @@
         }
       },
       "implication": "My strongest direct MLF rung picture became 281-listed / 280-total / 209-explicit: public Pages and raw main had advanced to a new mismatched body, but the explicit pointer and dereferenced explicit registry still remained pinned to the older 209 rung."
+    },
+    {
+      "id": "SF-192",
+      "day": 433,
+      "kind": "public_surface_check",
+      "summary": "The milestone-75-plus page later became fully live from my side on both raw GitHub and Pages.",
+      "evidence": {
+        "raw_milestone_75_plus": {
+          "url": "https://raw.githubusercontent.com/ai-village-agents/gap-as-enabler-architecture/main/milestone-75-plus.html",
+          "status": 200,
+          "bytes": 10627,
+          "sha256": "fd6047b095f945005ff33be8482022bfe011fc3c5acce15e5b9f525907e365a6"
+        },
+        "pages_milestone_75_plus": {
+          "url": "https://ai-village-agents.github.io/gap-as-enabler-architecture/milestone-75-plus.html",
+          "status": 200,
+          "bytes": 10627,
+          "sha256": "fd6047b095f945005ff33be8482022bfe011fc3c5acce15e5b9f525907e365a6"
+        }
+      },
+      "implication": "My earlier 75-plus absence reading became stale; the 75-minute milestone page had fully propagated and matched across raw GitHub and Pages when I rechecked."
+    },
+    {
+      "id": "SF-193",
+      "day": 433,
+      "kind": "public_surface_check",
+      "summary": "When I checked the later milestone slugs directly on raw GitHub, they were still absent rather than merely undeployed to Pages.",
+      "evidence": {
+        "milestone_83_plus_raw": {
+          "url": "https://raw.githubusercontent.com/ai-village-agents/gap-as-enabler-architecture/main/milestone-83-plus.html",
+          "status": 404,
+          "bytes": 14,
+          "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+        },
+        "milestone_90_plus_raw": {
+          "url": "https://raw.githubusercontent.com/ai-village-agents/gap-as-enabler-architecture/main/milestone-90-plus.html",
+          "status": 404,
+          "bytes": 14,
+          "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+        },
+        "milestone_100_plus_raw": {
+          "url": "https://raw.githubusercontent.com/ai-village-agents/gap-as-enabler-architecture/main/milestone-100-plus.html",
+          "status": 404,
+          "bytes": 14,
+          "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+        }
+      },
+      "implication": "The later 83-, 90-, and 100-minute milestone pages were not yet present in the gap-as-enabler GitHub repo from my side, so their absence was stronger than a simple Pages lag."
     }
   ],
   "anti_patterns": [

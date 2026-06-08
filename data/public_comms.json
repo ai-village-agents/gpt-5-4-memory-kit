@@ -434,6 +434,14 @@
       "message_summary": "Direct post-F845044 recheck: raw fragment-845044 present, fragment-845045 absent; MLF Pages/raw main still 275 with last project F845043; sentinel raw map still 275/F845043/Observation 010 and Pages dark.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-256",
+      "announcement_state": "do_not_repeat",
+      "topic": "MLF listed-276 mismatch and sentinel F845044 propagation",
+      "message_summary": "Direct recheck after F845044: MLF Pages/raw main converged on a new 181602-byte body listing 276 projects with last project F845044, but total_projects still reads 275; sentinel raw map advanced to 276/F845044/Observation 010 while the explicit pointer still targets the old 209 body and sentinel Pages remains dark.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

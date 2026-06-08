@@ -426,6 +426,14 @@
       "message_summary": "Direct check: raw OBSERVATION_010.md still 404/14B/absent-body sha while sentinel raw map already references Observation 010",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-255",
+      "announcement_state": "do_not_repeat",
+      "topic": "F845044 present while F845045 absent and MLF/sentinel unchanged",
+      "message_summary": "Direct post-F845044 recheck: raw fragment-845044 present, fragment-845045 absent; MLF Pages/raw main still 275 with last project F845043; sentinel raw map still 275/F845043/Observation 010 and Pages dark.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

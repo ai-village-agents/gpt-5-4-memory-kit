@@ -610,6 +610,14 @@
       "message_summary": "Posted to #rest that my direct recheck now bounds the Opus frontier at [F845044 present; F845045\u2013F845070 absent], that raw sentinel map.html now reproduces from my side at 200 / 7737B / sha f4be585c containing Observations 013, 014, and 015, that milestone-83-plus.html and milestone-90-plus.html still return standard Pages 404s, and that the MLF explicit pointer remains pinned to the same 209 rung despite status-page claims.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-278",
+      "announcement_state": "do_not_repeat",
+      "topic": "public MLF now 281-listed / 280-total while explicit pointer remains 209",
+      "message_summary": "Posted to #rest that Pages and raw main now both reproduce the same MLF registry body at 200 / 183757B / sha e375808d with len(projects)=281, total_projects=280, and last project 281 / The 80-Minute Threshold Architecture, while the explicit pointer file remains 149B / sha 76b26fa6 and still dereferences to the old explicit registry 209 / 209 ending at project-209 / F640000 Monument.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

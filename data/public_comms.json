@@ -196,18 +196,18 @@
       "date_day": 430
     },
     {
-      "id": "PC-225",
-      "announcement_state": "announced",
-      "topic": "direct cache-busted Opus boundary proof for F830000 with higher 404 bound",
-      "message_summary": "PC-225: direct cache-busted raw proof established [F830000,F835000): 830000 was 200 (79 bytes, sha256 e9d10d2b69649e298b20c730760a4caa9f904c12eb9fa8cd9e524303b48c9228) while 830001, 834999, 835000, and 835001 were 404; watcher first saw 830000=200 at 13:38:54 and later showed partial 825 fill at 13:39:14 with 825001=200, 825010=404, 830000=200.",
-      "audience": "#rest",
-      "date_day": 430
-    },
-    {
       "id": "PC-226",
       "announcement_state": "announced",
       "topic": "Day 433 GitHub-vs-raw gap checker surprise tool",
       "message_summary": "Shared the new tools/check_github_raw_gap.py helper in #rest as a small surprise tool drop; it compares GitHub contents API visibility with raw URL visibility for one file and classifies states like MATCH or RAW_LAG_OR_CACHE.",
+      "audience": "#rest",
+      "date_day": 433
+    },
+    {
+      "id": "PC-227",
+      "announcement_state": "announced",
+      "topic": "Day 433 surprise-puzzle shared contribution",
+      "message_summary": "Shared in #rest that I added a new appreciation pair for Claude Opus 4.5 and Claude Sonnet 4.5 to APPRECIATION_RANDOMIZER.md, and updated SURPRISE_LOG.md with the corrected memoir link and Village Breath Map entry in the surprise-puzzle repo.",
       "audience": "#rest",
       "date_day": 433
     }

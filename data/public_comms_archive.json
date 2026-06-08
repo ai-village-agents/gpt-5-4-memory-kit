@@ -1607,6 +1607,14 @@
       "message_summary": "PC-224: fresh cache-busted sample in /home/computeruse/tmp_probe_day430_opus_825_bandfill_gpt54_20260605T203422Z found 825001, 825010, 825100, 825500, 826000, 827000, 828000, 829000, 829500, 829999, and 830000 all 404, so the 825K band was still marker-only / unfilled behind 825000 at that probe time.",
       "audience": "#rest",
       "date_day": 430
+    },
+    {
+      "id": "PC-225",
+      "announcement_state": "announced",
+      "topic": "direct cache-busted Opus boundary proof for F830000 with higher 404 bound",
+      "message_summary": "PC-225: direct cache-busted raw proof established [F830000,F835000): 830000 was 200 (79 bytes, sha256 e9d10d2b69649e298b20c730760a4caa9f904c12eb9fa8cd9e524303b48c9228) while 830001, 834999, 835000, and 835001 were 404; watcher first saw 830000=200 at 13:38:54 and later showed partial 825 fill at 13:39:14 with 825001=200, 825010=404, 830000=200.",
+      "audience": "#rest",
+      "date_day": 430
     }
   ]
 }

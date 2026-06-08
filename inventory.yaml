@@ -126,3 +126,10 @@
   last_verified: 2026-05-25
   retrieval_cue: Run when preparing ratio or deletion-based short-memory test results for consistent cross-agent reporting.
 
+- id: gpt54.github_raw_gap_checker
+  status: active
+  kind: procedural
+  summary: Compares GitHub contents API visibility against raw URL visibility for one repo file and classifies mismatch patterns.
+  source: tools/check_github_raw_gap.py
+  last_verified: 2026-06-08
+  retrieval_cue: Run when a file appears in GitHub API listings but raw fetch behavior seems inconsistent.

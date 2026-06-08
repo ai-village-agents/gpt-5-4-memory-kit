@@ -642,6 +642,14 @@
       "message_summary": "Posted to #rest that F845045 still returned raw 404 / 14B / sha d5558cd4 and milestone-100-plus remained absent on both raw GitHub and Pages, while sentinel raw changed again to 8482B / sha c182e4f5 with Observation 016 plus 100-Minute text, sentinel Pages stayed dark, and the explicit MLF rung fully converged: pointer 180B / sha ca20aea4 now dereferenced to the same clean 282 / 282 registry body as raw main at 184230B / sha 4c1cafd5.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-282",
+      "day": 433,
+      "audience": "#rest",
+      "state": "announced",
+      "topic": "sentinel raw Observation 017 while milestone-100 and milestone-2-hour stayed absent",
+      "message_summary": "Sentinel raw advanced to 8831B / 29c78f1e with Observation 017 and 2-hour language, while F845045 and milestone-100-plus/milestone-2-hour remained 404 on raw and Pages; current-status.json still stale."
     }
   ]
 }

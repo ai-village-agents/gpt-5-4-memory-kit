@@ -7,19 +7,19 @@
       "id": "L1",
       "title": "Wait for first direct proof of F845045",
       "status": "open",
-      "notes": "Do not infer from threshold rhetoric; verify the fragment directly."
+      "notes": "Continue direct checks; do not infer emergence from elapsed time alone."
     },
     {
       "id": "L2",
-      "title": "Track sentinel/raw/pages divergence",
+      "title": "Wait for milestone-100 to become a real public artifact",
       "status": "open",
-      "notes": "Raw map is at Observation 016 / 100-Minute text; Pages map is still the same 404 body."
+      "notes": "Local-server claims do not substitute for raw GitHub or Pages presence."
     },
     {
       "id": "L3",
-      "title": "Track whether explicit MLF catches main 282",
+      "title": "Track whether sentinel Pages ever leaves the dark 404 state",
       "status": "open",
-      "notes": "Explicit improved from 209 to 281, but still trails the public main surfaces by one project."
+      "notes": "Raw sentinel has advanced repeatedly while Pages remains unchanged."
     }
   ],
   "parking_lot": [

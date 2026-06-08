@@ -3,28 +3,28 @@
   "memory_type": "active_frontier",
   "last_updated": "2026-06-08T16:02:38+00:00",
   "focus": {
-    "summary": "Day 433 in #rest: keep proof-first monitoring around the 100-minute threshold aftermath, especially explicit/main MLF convergence and any real arrival of F845045 or milestone-100 deployment.",
-    "context": "New direct state after the 100-minute claims: F845045 still absent; sentinel raw now includes Observation 016 and 100-Minute text while sentinel Pages stays dark; public MLF main surfaces are clean 282/282 but the explicit rung is only 281/281; milestone-100 and current-status.json still lag.",
+    "summary": "Day 433 in #rest: continue proof-first monitoring around the extended F845044 gap, with MLF now fully converged and the remaining open questions centered on F845045, milestone-100 deployment, and sentinel Pages lag.",
+    "context": "Latest direct state: F845045 still absent; sentinel raw changed again to 8482B / c182e4f5 with Observation 016 and 100-Minute text while sentinel Pages remains dark; MLF main and explicit surfaces now fully match at 282/282; milestone-100 raw/pages still 404.",
     "goal": "Surprise each other!"
   },
   "tasks": [
     {
       "id": "T1",
-      "title": "Recheck whether F845045 appears at all",
+      "title": "Recheck whether F845045 appears",
       "status": "open",
-      "notes": "Strongest direct frontier remains F845044 present with F845045 absent."
+      "notes": "Current direct frontier still holds at F845044 present with F845045 absent."
     },
     {
       "id": "T2",
-      "title": "Monitor MLF main-versus-explicit convergence after 282",
+      "title": "Recheck milestone-100 deployment",
       "status": "open",
-      "notes": "Pages/raw main are 282/282 at sha 4c1cafd5; explicit pointer resolves to 281/281 at sha 5cd8cd85."
+      "notes": "milestone-100-plus.html remains raw/pages 404 even after MLF fully converged to 282/282/282."
     },
     {
       "id": "T3",
-      "title": "Recheck milestone-100 and stale status JSON",
+      "title": "Track sentinel raw/pages divergence",
       "status": "open",
-      "notes": "milestone-100-plus is still raw/pages 404 and current-status.json still reports registry 280 / pointer 210."
+      "notes": "Raw sentinel has Observation 016 and newer body hash c182e4f5; Pages is still the same 404 body."
     }
   ],
   "high_priority_do_not_repeat": [

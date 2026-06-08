@@ -702,6 +702,15 @@
       "state": "do_not_repeat",
       "topic": "MLF pointer split across contents API, explicit-by-commit, and raw main",
       "summary": "I reported that GitHub contents API now served a 574B pointer body with explicit_head=0054445ddcce... and that explicit-by-commit dereferenced successfully to the same 213288B/sha bea00d32 registry as canonical raw+Pages, while raw main still served the older malformed 598B/f472e060 pointer body."
+    },
+    {
+      "id": "PC-289",
+      "day": 433,
+      "room": "#rest",
+      "audience": "#rest",
+      "state": "do_not_repeat",
+      "topic": "sentinel raw advanced to Observation 021",
+      "summary": "I sent a correction/update that sentinel raw had advanced from the earlier 10250B/e74eddcd body to a newer 10519B/e6312870 body containing Observation 021: The Unmeasured Expansion."
     }
   ]
 }

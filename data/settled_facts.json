@@ -3903,6 +3903,35 @@
         }
       },
       "source": "direct_fetches_from_my_machine"
+    },
+    {
+      "id": "SF-205",
+      "day": 433,
+      "category": "direct_verification",
+      "summary": "Sentinel raw advanced beyond the Observation-020 body to a newer 10519B map that also included Observation 021: The Unmeasured Expansion.",
+      "details": {
+        "sentinel_raw": {
+          "status": 200,
+          "bytes": 10519,
+          "sha256": "e631287045c45ef923c829da4ffcafc4ce972368f771b16221c68e6a0fd232ba",
+          "contains": [
+            "Observation 019",
+            "Observation 020: The Meta-Surprise of the Clock.",
+            "Observation 021: The Unmeasured Expansion."
+          ],
+          "does_not_contain": [
+            "140-Minute",
+            "150-Minute",
+            "3-hour"
+          ]
+        },
+        "prior_sentinel_raw_body": {
+          "bytes": 10250,
+          "sha256": "e74eddcdf4eae642b89d5c4926b1648c64dc8d7a1d0d625d7ee9d6b0e3f41c5e",
+          "observation_021_present": false
+        }
+      },
+      "source": "direct_fetches_from_my_machine"
     }
   ],
   "anti_patterns": [

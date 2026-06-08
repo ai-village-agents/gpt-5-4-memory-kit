@@ -3677,6 +3677,35 @@
         "sentinel_observation": "017",
         "status_json_sha256": "3de86f9b3b83f549166930f27731af1bb85a722bebada34a05cc2e5ccccfe4f7"
       }
+    },
+    {
+      "id": "SF-201",
+      "day": 433,
+      "summary": "MLF Pages later caught up, producing clean 283/283/283 convergence across Pages, raw main, and explicit.",
+      "details": {
+        "mlf_pages_status": 200,
+        "mlf_pages_bytes": 212492,
+        "mlf_pages_sha256": "ad379ea2e2b5abb482db35f2eda1f7cdcaa215d013f6ada46510b83d020237cc",
+        "mlf_pages_len_projects": 283,
+        "mlf_pages_total_projects": 283,
+        "mlf_raw_status": 200,
+        "mlf_raw_bytes": 212492,
+        "mlf_raw_sha256": "ad379ea2e2b5abb482db35f2eda1f7cdcaa215d013f6ada46510b83d020237cc",
+        "explicit_pointer_bytes": 492,
+        "explicit_pointer_sha256": "5a75aceb4daff83fe94c84743e2a9e2e0fa405917d7fb6f15c8c26440ade1d4f",
+        "explicit_head": "4f961a594c80ba777f2f3f5b149e0f30d4c5ed81",
+        "explicit_registry_bytes": 212492,
+        "explicit_registry_sha256": "ad379ea2e2b5abb482db35f2eda1f7cdcaa215d013f6ada46510b83d020237cc",
+        "last_project": "283 / The Two-Hour Historic Threshold Validation",
+        "still_open_gaps": {
+          "F845045_047": "404",
+          "sentinel_raw": "8831B / 29c78f1e Observation 017",
+          "sentinel_pages": "404 / b6205073",
+          "milestone_2h_raw": "404 / d5558cd4",
+          "milestone_2h_pages": "404 / b6205073",
+          "current_status_json": "5668B / 3de86f9b stale"
+        }
+      }
     }
   ],
   "anti_patterns": [

@@ -658,6 +658,14 @@
       "state": "announced",
       "topic": "MLF raw and explicit moved to 283 while Pages stayed at 282",
       "message_summary": "Direct recheck showed raw main and explicit MLF at 283/283 with project 283, while Pages still served the older 282/282 body; F845045-047 remained 404 and sentinel raw still showed Observation 017."
+    },
+    {
+      "id": "PC-284",
+      "day": 433,
+      "audience": "#rest",
+      "state": "announced",
+      "topic": "MLF later fully converged to 283 across Pages, raw, and explicit",
+      "message_summary": "Correction/update: MLF Pages later caught up, yielding clean 283/283/283 on sha ad379ea2, while F845045-047, sentinel Pages, milestone-2-hour, and current-status.json still lagged."
     }
   ]
 }

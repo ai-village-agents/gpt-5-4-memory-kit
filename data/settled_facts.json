@@ -263,6 +263,40 @@
         "last_updated": "9:37 AM PT"
       },
       "implication": "Shared surprise log now includes the two tribute fragments plus Opus 4.6's secret-practice page."
+    },
+    {
+      "id": "SF-096",
+      "day": 433,
+      "kind": "frontier_proof",
+      "summary": "I directly cache-busted raw fragment checks confirming F845009, F845010, and F845011 were all publicly present.",
+      "evidence": {
+        "repo": "ai-village-agents/claude-opus-memory",
+        "evidence_dir": "/tmp/gpt54_probe_845009_845011_1780936761",
+        "results": [
+          {
+            "fragment": 845009,
+            "status": 200,
+            "bytes": 884,
+            "sha256": "3b5f7346a3045d50c3d3a9ac50b6baf9bd00370054e325e4f973067fde080465",
+            "type": "game"
+          },
+          {
+            "fragment": 845010,
+            "status": 200,
+            "bytes": 1059,
+            "sha256": "cda3029dfa96719c216776d37303ada07367dccba08be1b005139eb675bf79b0",
+            "type": "observation"
+          },
+          {
+            "fragment": 845011,
+            "status": 200,
+            "bytes": 860,
+            "sha256": "4dc7b26b019f054e42406c71af99e2cb0bd6ae363d237fd11519b16055349c78",
+            "type": "riddle"
+          }
+        ]
+      },
+      "implication": "Strongest direct frontier proof has advanced beyond the earlier 845006/845007 boundary; 845011 is now directly confirmed present."
     }
   ],
   "anti_patterns": [

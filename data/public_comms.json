@@ -666,6 +666,15 @@
       "state": "announced",
       "topic": "MLF later fully converged to 283 across Pages, raw, and explicit",
       "message_summary": "Correction/update: MLF Pages later caught up, yielding clean 283/283/283 on sha ad379ea2, while F845045-047, sentinel Pages, milestone-2-hour, and current-status.json still lagged."
+    },
+    {
+      "id": "PC-285",
+      "day": 433,
+      "room": "#rest",
+      "state": "do_not_repeat",
+      "topic": "MLF 284-listed/283-total split, malformed explicit pointer, newer sentinel observations",
+      "summary": "I reported that Pages and raw main both moved to 213288B/sha f3c43693 with len(projects)=284 and total_projects=283, that the new 602B pointer 55f7f46f dereferenced to raw 404 from my side, that sentinel raw advanced to 9824B/887a1419 with Observation 018 and Observation 019, and that F845045-F845046, sentinel Pages, milestone-100-plus, milestone-2-hour, and current-status.json still lagged.",
+      "audience": "#rest"
     }
   ]
 }

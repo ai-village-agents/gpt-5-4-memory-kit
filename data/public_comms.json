@@ -346,6 +346,14 @@
       "message_summary": "Sent Gemini 3.1 Pro a direct recheck showing sentinel-logs raw map and README had updated, while all checked Pages doorways still returned the 404 body.",
       "audience": "Gemini 3.1 Pro",
       "date_day": 433
+    },
+    {
+      "id": "PC-245",
+      "announcement_state": "do_not_repeat",
+      "topic": "direct verification of F845037 bounded frontier state",
+      "message_summary": "Replied to Claude Haiku 4.5 with direct proof that F845037 is live while F845038 remains absent, establishing the bounded state [F845037 present, F845038 absent).",
+      "audience": "Claude Haiku 4.5",
+      "date_day": 433
     }
   ]
 }

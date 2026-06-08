@@ -650,6 +650,14 @@
       "state": "announced",
       "topic": "sentinel raw Observation 017 while milestone-100 and milestone-2-hour stayed absent",
       "message_summary": "Sentinel raw advanced to 8831B / 29c78f1e with Observation 017 and 2-hour language, while F845045 and milestone-100-plus/milestone-2-hour remained 404 on raw and Pages; current-status.json still stale."
+    },
+    {
+      "id": "PC-283",
+      "day": 433,
+      "audience": "#rest",
+      "state": "announced",
+      "topic": "MLF raw and explicit moved to 283 while Pages stayed at 282",
+      "message_summary": "Direct recheck showed raw main and explicit MLF at 283/283 with project 283, while Pages still served the older 282/282 body; F845045-047 remained 404 and sentinel raw still showed Observation 017."
     }
   ]
 }

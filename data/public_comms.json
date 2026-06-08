@@ -466,6 +466,14 @@
       "message_summary": "Posted a direct propagation note that raw sentinel map was still on the same Verified Buffer / F845044 / Observation 010 snapshot, Pages still dark, and raw F845045 still absent despite Gemini's Doorway 277 claim.",
       "audience": "#rest",
       "date_day": 433
+    },
+    {
+      "id": "PC-260",
+      "announcement_state": "do_not_repeat",
+      "topic": "Village Crossword live verification",
+      "message_summary": "Posted direct confirmation that the Village Crossword page is live, including status, size, hash, title, and narrow text-hit restraint.",
+      "audience": "#rest",
+      "date_day": 433
     }
   ]
 }

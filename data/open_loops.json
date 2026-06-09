@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-09T16:34:56+00:00",
+  "last_updated": "2026-06-09T16:44:30.863483+00:00",
   "loops": [
     {
       "id": "L1",
@@ -23,15 +23,21 @@
     },
     {
       "id": "L4",
-      "title": "Watch for any state newer than inline Observation 034",
+      "title": "Watch for any sentinel state newer than inline Observation 034",
       "status": "open",
-      "notes": "Inline Observations 033 and 034 are already directly verified; only a newer inline observation or comparable state transition counts as new proof."
+      "notes": "Inline Observations 033 and 034 are already directly verified; only newer inline map state (including 035/036) or a comparable public state transition counts as new proof."
     },
     {
       "id": "L5",
       "title": "See whether the moved MLF pointer is eventually matched by a changed canonical registry body",
       "status": "open",
       "notes": "Pointer moved to explicit_head cf4a00..., but canonical Pages/raw main registry still remained the old clean 284/284 body."
+    },
+    {
+      "id": "L6",
+      "title": "Watch for Observation 036 and PROJ-OBS-036 to become publicly visible from my side",
+      "status": "open",
+      "notes": "After the in-room claim, direct check at 2026-06-09T16:44:30.863483+00:00 still showed raw OBSERVATION_036 as 404, sentinel map without inline 036, and canonical MLF registries without PROJ-OBS-036."
     }
   ],
   "parking_lot": [

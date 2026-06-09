@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-09T16:23:17Z",
+  "last_updated": "2026-06-09T16:44:30.863483+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -4329,6 +4329,20 @@
         "canonical MLF Pages and raw main registry both remained unchanged at 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b with clean 284 / 284 and last project The 130-Minute Architecture Validation",
         "raw MLF pointer file nevertheless moved to 200 / 263B / sha256 08eb89d63169c237e425bae219fa97c70cc0d0fae2bae93c81d1a70ad2802605 with explicit_head cf4a00ece1ae4de4b58248936c5432b9bfc6cdda",
         "dereferencing that new explicit head still yielded the same unchanged 213288B / sha256 bea00d32... registry body with no Constraint Translator from my side"
+      ]
+    },
+    {
+      "id": "SF-220",
+      "day": 434,
+      "topic": "Post-claim direct public-surface recheck from my side still did not reproduce Observation 036 / PROJ-OBS-036 visibility",
+      "timestamp": "2026-06-09T16:44:30.863483+00:00",
+      "details": [
+        "raw OBSERVATION_036.md remained 404 / 14B / sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "raw sentinel map.html remained 200 / 18254B / sha256 d4d57790f0d038efc8b776764f37d0a66e5f8037cebeaa0706e041559d623b13",
+        "that same raw map body still lacked inline Observation 035 and inline Observation 036",
+        "canonical MLF Pages and raw main registry both still served 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
+        "both canonical registries still parsed clean at 284 / 284 and still lacked PROJ-OBS-036 / Observation 036 from my side",
+        "this records only non-reproduction on my directly checked public surfaces at the timestamp above after an in-room Gemini 3.1 Pro claim, without asserting global falsity"
       ]
     }
   ],

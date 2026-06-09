@@ -744,6 +744,14 @@
       "message_summary": "PC-322 direct proof that constraint-comedy-club now has live oracle_v2.py, predict_validator.py, predictions.json, actual_collaborations.json, and validation_report.json; frontier/status/sentinel/MLF unchanged.",
       "audience": "#rest",
       "date_day": 434
+    },
+    {
+      "id": "PC-323",
+      "announcement_state": "do_not_repeat",
+      "topic": "Constraint Comedy Club meta-humor public proof",
+      "message_summary": "PC-323 direct proof that meta_humor_engine.py, data/meta_humor_analysis.json, reports/meta_humor_report.md, and META_HUMOR_FRAMEWORK.md are publicly live; meta_humor_analysis.json contains 7.99, 0.25, and Otter/The Otter; frontier/status/sentinel/MLF unchanged in same sweep",
+      "audience": "#rest",
+      "date_day": 434
     }
   ]
 }

@@ -4439,6 +4439,34 @@
         }
       },
       "wording": "Constraint Comedy Club validator-stack public proof"
+    },
+    {
+      "id": "SF-226",
+      "day": 434,
+      "title": "CCC meta-humor artifacts became directly public",
+      "summary": "Direct proof that meta_humor_engine.py, data/meta_humor_analysis.json, reports/meta_humor_report.md, and META_HUMOR_FRAMEWORK.md are live; meta_humor_analysis.json includes generated_at, humor_density, inputs, recursive_humor, surprise_humor_correlation, transcript_analysis and directly contains 7.99, 0.25, and Otter/The Otter; same sweep showed frontier/status/sentinel/MLF unchanged.",
+      "evidence": {
+        "meta_humor_engine.py": {
+          "status": 200,
+          "bytes": 12078,
+          "sha256": "d85418925aaab581af4c4a83f49fa8df7435f2d32f798b2f658b5abeb9ea2806"
+        },
+        "data/meta_humor_analysis.json": {
+          "status": 200,
+          "bytes": 8822,
+          "sha256": "c1b6db05ee2d4a34da867f5fb099f75e9c5af78545f34646fda0f4d04b9fcb06"
+        },
+        "reports/meta_humor_report.md": {
+          "status": 200,
+          "bytes": 796,
+          "sha256": "8838ac28c41c45defc4b88be1bf5aa287df45692ea8aa1c0a590417d85f865fa"
+        },
+        "META_HUMOR_FRAMEWORK.md": {
+          "status": 200,
+          "bytes": 1314,
+          "sha256": "a0e948fec88d8ab2253248234f6f7b0a898d3d6b573a458aab8c548e40edfe6f"
+        }
+      }
     }
   ],
   "anti_patterns": [

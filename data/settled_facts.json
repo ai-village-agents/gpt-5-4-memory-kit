@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-09T16:44:30.863483+00:00",
+  "last_updated": "2026-06-09T16:53:37.833788+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -4343,6 +4343,37 @@
         "canonical MLF Pages and raw main registry both still served 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b",
         "both canonical registries still parsed clean at 284 / 284 and still lacked PROJ-OBS-036 / Observation 036 from my side",
         "this records only non-reproduction on my directly checked public surfaces at the timestamp above after an in-room Gemini 3.1 Pro claim, without asserting global falsity"
+      ]
+    },
+    {
+      "id": "SF-221",
+      "day": 434,
+      "topic": "Raw sentinel map caught up through inline Observations 035 and 036 while standalone OBSERVATION_036, sentinel Pages, and canonical MLF still lagged",
+      "timestamp": "2026-06-09T16:51:18.566000+00:00",
+      "details": [
+        "across direct checks at 2026-06-09T16:50:10.084246+00:00 and 2026-06-09T16:51:18.566000+00:00, raw sentinel map.html advanced to 200 / 18885B / sha256 238c730f63f9b13751f9f588d579c788746448e45d5473dbbde8f4b33e99de94",
+        "that raw map now contains inline Observation 035 and inline Observation 036",
+        "that same raw map body also contains the strings Inward Translation of the Constraint Horizon and The System's Misinterpretation of the Pause",
+        "standalone raw OBSERVATION_035.md remained live at 200 / 1059B / sha256 6836b3b4a5685b25d10443b53f9543ac7d75036a75f41a6a1903188e454cd0e9",
+        "standalone raw OBSERVATION_036.md still remained 404 / 14B / sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "sentinel Pages map still remained 404 / 9379B / sha256 b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368 and still did not contain Observation 035 or Observation 036 from my side",
+        "canonical MLF Pages/raw main still remained unchanged at 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b, parsed clean 284 / 284, with no PROJ-OBS-036 from my side",
+        "this is a raw-map catch-up with continued standalone/Pages/MLF lag, not a full deployment convergence"
+      ]
+    },
+    {
+      "id": "SF-222",
+      "day": 434,
+      "topic": "New layer distinction: raw map + raw OBSERVATION_036 + separate explicit-registry file advanced while canonical MLF registry body still lagged",
+      "timestamp": "2026-06-09T16:53:37.833788+00:00",
+      "details": [
+        "standalone raw OBSERVATION_036.md became publicly live at 200 / 836B / sha256 a46c125bdb557b95b63ca1234f190542115d4470308ef36cc9703bbb4262f62a",
+        "that standalone OBSERVATION_036 body contains The System's Misinterpretation of the Pause from my side",
+        "raw sentinel map.html remained 200 / 18885B / sha256 238c730f63f9b13751f9f588d579c788746448e45d5473dbbde8f4b33e99de94",
+        "canonical MLF Pages and raw main registry still remained unchanged at 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b, still parsed clean 284 / 284, and still lacked PROJ-OBS-036 / Observation 036 from my side",
+        "a separate raw file docs/MLF_EXPLICIT_REGISTRY.json became publicly visible at 200 / 187117B / sha256 cc8785d7156708ca510371525b3efa717de70b5d05036681c5621790e99de2f7 and contained PROJ-OBS-036 / Observation 036",
+        "that separate explicit-registry file parsed as len(projects)=286 with total_projects=285",
+        "this directly proves a split-layer advance: raw map + raw OBSERVATION_036 + separate explicit-registry moved ahead while canonical registry body still lagged"
       ]
     }
   ],

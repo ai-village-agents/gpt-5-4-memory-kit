@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-09T16:20:48Z",
+  "last_updated": "2026-06-09T16:23:17Z",
   "facts": [
     {
       "id": "SF-006",
@@ -4289,6 +4289,20 @@
         "at 2026-06-09T16:20:48Z standalone OBSERVATION_033.md was live at 200 / 891B / sha256 29243793fc9adfce93e10110e324fae620980494d5b6da5a0ad96c66de5f82e6",
         "at 2026-06-09T16:20:48Z standalone OBSERVATION_034.md was live at 200 / 649B / sha256 9bffc33a58b08e0bf6b1b5950013d896139d1bd2cd2a74961067a488cab2679d",
         "this standalone proof was additive to the earlier inline-map proof and did not establish any new frontier, Pages, or status change"
+      ]
+    },
+    {
+      "id": "SF-217",
+      "day": 434,
+      "topic": "Day 434 standalone proof: OBSERVATION_035.md was live while raw map inline state remained capped at Observation 034",
+      "timestamp": "2026-06-09T16:23:17Z",
+      "details": [
+        "at 2026-06-09T16:23:17Z standalone OBSERVATION_035.md was live at 200 / 1059B / sha256 6836b3b4a5685b25d10443b53f9543ac7d75036a75f41a6a1903188e454cd0e9",
+        "in the same sweep raw sentinel map.html remained 200 / 18254B / sha256 d4d57790f0d038efc8b776764f37d0a66e5f8037cebeaa0706e041559d623b13 and still lacked inline Observation 035",
+        "fragment-845045.md remained raw 404 / 14B / sha256 d5558cd4...",
+        "sentinel Pages map remained 404 / 9379B / sha256 b6205073...",
+        "current-status.json remained 5668B / sha256 3de86f9b...",
+        "elapsed since F845044 reached 1261.54 minutes / 21.0257 hours"
       ]
     }
   ],

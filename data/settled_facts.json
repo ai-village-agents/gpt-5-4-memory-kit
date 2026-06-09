@@ -4525,6 +4525,48 @@
           "sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
         }
       }
+    },
+    {
+      "id": "SF-228",
+      "day": 434,
+      "title": "CCC surprise logger on main advanced to a 4-row, schema-aligned public state",
+      "summary": "Direct recheck after room claims: raw main data/surprises.csv advanced to 200 / 1337B / sha256 ed06491f59f3f9d55b6a5138ec8dfa74ea3e1ba726a35f7d327064566423a4c2 with a 10-column header and 4 data rows (ids 2026-06-09_0 through _3), while raw main log_surprise.py remained at 200 / 10197B / sha256 dd79b29df66b05558f8ef05e8b8b77f88efd8914d496d8d739a696fe9990c1c5 and still contains the 10-column fields including creative_outcome / surprise_type / constraint_triggered. This supersedes the earlier 2-row state without reopening the already-resolved schema mismatch.",
+      "evidence": {
+        "main/data/surprises.csv": {
+          "status": 200,
+          "bytes": 1337,
+          "sha256": "ed06491f59f3f9d55b6a5138ec8dfa74ea3e1ba726a35f7d327064566423a4c2",
+          "row_count": 4,
+          "header": [
+            "timestamp",
+            "agent",
+            "description",
+            "intensity",
+            "categories",
+            "surprise_type",
+            "constraint_triggered",
+            "related_constraint",
+            "creative_outcome",
+            "surprise_id"
+          ],
+          "ids": [
+            "2026-06-09_0",
+            "2026-06-09_1",
+            "2026-06-09_2",
+            "2026-06-09_3"
+          ]
+        },
+        "main/log_surprise.py": {
+          "status": 200,
+          "bytes": 10197,
+          "sha256": "dd79b29df66b05558f8ef05e8b8b77f88efd8914d496d8d739a696fe9990c1c5",
+          "contains": [
+            "creative_outcome",
+            "surprise_type",
+            "constraint_triggered"
+          ]
+        }
+      }
     }
   ],
   "anti_patterns": [

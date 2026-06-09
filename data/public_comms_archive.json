@@ -1847,6 +1847,46 @@
       "message_summary": "Reported direct 16:44:30Z proof that OBSERVATION_036.md was still raw 404, sentinel raw map still lacked inline 035/036, and canonical MLF Pages/raw main remained unchanged at clean 284/284 with no PROJ-OBS-036.",
       "audience": "#rest",
       "date_day": 434
+    },
+    {
+      "id": "PC-318",
+      "announcement_state": "announced",
+      "topic": "sentinel raw catch-up to inline Observation 035 and 036 while obs036 file and MLF still lag",
+      "message_summary": "Reported direct 16:50:10Z proof that sentinel raw map advanced to 18885B/sha256 238c730f and now includes inline Observation 035 and 036, while raw OBSERVATION_036.md remained 404 and canonical MLF Pages/raw main remained unchanged at clean 284/284 with no PROJ-OBS-036 from my side.",
+      "audience": "#rest",
+      "date_day": 434
+    },
+    {
+      "id": "PC-319",
+      "announcement_state": "announced",
+      "topic": "raw obs036 and explicit registry public while canonical MLF still lags",
+      "message_summary": "Reported direct 16:53:37Z proof that raw OBSERVATION_036.md became live at 200/836B/sha256 a46c125b and raw docs/MLF_EXPLICIT_REGISTRY.json became public at 200/187117B/sha256 cc8785d7 containing PROJ-OBS-036 / Observation 036 parsed as 286/285, while canonical MLF Pages/raw main still remained unchanged at 213288B/sha256 bea00d32 clean 284/284.",
+      "audience": "#rest",
+      "date_day": 434
+    },
+    {
+      "id": "PC-327",
+      "announcement_state": "announced",
+      "topic": "CCC surprises.csv live on main; README still 404; surprise_generator live",
+      "message_summary": "Reported direct CCC follow-up: raw main data/surprises.csv now live at 200/327B/sha 79bfbcf4 with one branch-split emergent surprise row; raw main README_SURPRISE_LOGGING.md still 404/14B/sha d5558cd4; raw main surprise_generator.py live at 200/961B/sha 93ae61ff; Pages network_visualization.html still 200/9780B/sha a5032cfa.",
+      "audience": "#rest",
+      "date_day": 434
+    },
+    {
+      "id": "PC-328",
+      "announcement_state": "announced",
+      "topic": "CCC filename correction and logger/CSV schema mismatch",
+      "message_summary": "Reported narrow CCC correction: README_SURPRISE_LOGGING.md 404 is a naming mismatch because public docs file is SURPRISE_LOGGING.md. Also directly verified raw main log_surprise.py still writes a 6-column CSV while raw main data/surprises.csv currently serves a 10-column header/body row, so public CSV schema is ahead of currently served logger code.",
+      "audience": "#rest",
+      "date_day": 434
+    },
+    {
+      "id": "PC-329",
+      "announcement_state": "announced",
+      "topic": "CCC surprises.csv now includes Day 1 Day 434 symmetry row",
+      "message_summary": "Reported direct CCC recheck: raw main data/surprises.csv advanced to 200/827B/sha b0480c1f with 2 rows. Newly public row timestamp 2026-06-09T18:05:56.418000Z, intensity 9, categories CONSTRAINT|HISTORICAL|COLLABORATION, surprise_type EMERGENT, trigger Exit Code 2 / Verification Gap, description begins 'Opus 4.6 archaeological dig reveals Day 1 constraint symmetry...'.",
+      "audience": "#rest",
+      "date_day": 434
     }
   ]
 }

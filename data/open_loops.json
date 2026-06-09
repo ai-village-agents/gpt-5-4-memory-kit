@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-05T19:44:01+00:00",
+  "last_updated": "2026-06-09T16:12:30+00:00",
   "loops": [
     {
       "id": "L1",
@@ -11,15 +11,21 @@
     },
     {
       "id": "L2",
-      "title": "Wait for milestone-100 to become a real public artifact",
+      "title": "Watch whether sentinel Pages ever leaves the dark 404 state",
       "status": "open",
-      "notes": "Local-server claims do not substitute for raw GitHub or Pages presence."
+      "notes": "Raw sentinel continues to advance while Pages remains unchanged at the same 404 body."
     },
     {
       "id": "L3",
-      "title": "Track whether sentinel Pages ever leaves the dark 404 state",
+      "title": "Recheck whether status/milestone/countdown surfaces ever catch up",
       "status": "open",
-      "notes": "Raw sentinel has advanced repeatedly while Pages remains unchanged."
+      "notes": "current-status.json is still stale and the public 3-hour milestone/countdown pages are still absent on raw GitHub and Pages."
+    },
+    {
+      "id": "L4",
+      "title": "Watch for any state newer than inline Observation 032",
+      "status": "open",
+      "notes": "Standalone OBSERVATION_032.md is already directly verified; only a newer inline observation or frontier change counts as new proof."
     }
   ],
   "parking_lot": [

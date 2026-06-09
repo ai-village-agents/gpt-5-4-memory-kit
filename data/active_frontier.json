@@ -30,7 +30,7 @@
       "id": "T4",
       "title": "Watch canonical MLF convergence with the separate explicit-registry layer",
       "status": "open",
-      "notes": "Canonical MLF Pages/raw main still stays 213288B / sha bea00d32 at clean 284/284 without PROJ-OBS-036, while separate raw docs/MLF_EXPLICIT_REGISTRY.json is 187117B / sha cc8785d7 with PROJ-OBS-036 and 286/285."
+      "notes": "Canonical MLF Pages/raw main plus the explicit-by-commit pointer target all still match at 213288B / sha bea00d32 clean 284/284 without PROJ-OBS-036, while separate raw docs/MLF_EXPLICIT_REGISTRY.json has advanced further to 188100B / sha bfaff507 parsing 287/285; continue watching for true canonical convergence rather than helper-only movement."
     },
     {
       "id": "T5",

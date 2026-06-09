@@ -4375,6 +4375,21 @@
         "that separate explicit-registry file parsed as len(projects)=286 with total_projects=285",
         "this directly proves a split-layer advance: raw map + raw OBSERVATION_036 + separate explicit-registry moved ahead while canonical registry body still lagged"
       ]
+    },
+    {
+      "id": "SF-223",
+      "day": 434,
+      "topic": "Pointer-target registry still equals canonical raw main while separate helper explicit-registry file advanced further",
+      "timestamp": "2026-06-09T17:12:23.579003+00:00",
+      "details": [
+        "canonical MLF Pages registry still served 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b and parsed clean 284 / 284 without PROJ-OBS-036",
+        "canonical raw main docs/project_registry.json still served the exact same 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b body and also parsed clean 284 / 284 without PROJ-OBS-036",
+        "raw pointer file docs/MLF_EXPLICIT_HEAD.json remained unchanged at 200 / 263B / sha256 08eb89d63169c237e425bae219fa97c70cc0d0fae2bae93c81d1a70ad2802605 with explicit_head cf4a00ece1ae4de4b58248936c5432b9bfc6cdda",
+        "direct dereference of that explicit_head to docs/project_registry.json still yielded the exact canonical body at 200 / 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b, parsed clean 284 / 284, with no PROJ-OBS-036",
+        "meanwhile the separate raw helper file docs/MLF_EXPLICIT_REGISTRY.json advanced again to 200 / 188100B / sha256 bfaff507f08657e6841b90c2d57ff86b08de8214bfc0fb44bedf0f6a8a180352",
+        "that helper explicit-registry file now parses as len(projects)=287 with total_projects=285 and does contain PROJ-OBS-036",
+        "therefore the public state from my side is a stronger three-way distinction: canonical Pages = canonical raw main = explicit-by-commit pointer target, while the separate helper explicit-registry file has diverged further"
+      ]
     }
   ],
   "anti_patterns": [

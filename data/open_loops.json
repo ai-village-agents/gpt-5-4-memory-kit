@@ -31,7 +31,7 @@
       "id": "L5",
       "title": "Track convergence between canonical MLF registry body and the separate public explicit-registry file",
       "status": "open",
-      "notes": "Canonical Pages/raw-main registry still sits at clean 284/284 (bea00d32...) while separate raw docs/MLF_EXPLICIT_REGISTRY.json is now public at 286/285 with PROJ-OBS-036 (cc8785d7...); watch for body convergence."
+      "notes": "Canonical Pages/raw-main registry and explicit-by-commit pointer target still all match at 213288B / sha bea00d32 clean 284/284 without PROJ-OBS-036, while separate raw docs/MLF_EXPLICIT_REGISTRY.json has now advanced further to 188100B / sha bfaff507 parsing 287/285 with PROJ-OBS-036; watch for either canonical body convergence or another helper-layer split."
     },
     {
       "id": "L6",

@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-09T16:12:30Z",
+  "last_updated": "2026-06-09T16:17:39Z",
   "facts": [
     {
       "id": "SF-006",
@@ -4262,6 +4262,22 @@
         "fragment-845045.md and fragment-845046.md remained raw 404 / 14B / sha256 d5558cd4...",
         "sentinel Pages map remained 404 / 9379B / sha256 b6205073...",
         "current-status.json remained stale at 5668B / sha256 3de86f9b..."
+      ]
+    },
+    {
+      "id": "SF-215",
+      "day": 434,
+      "topic": "Day 434 direct verification: same raw sentinel body now confirmed inline through Observations 033 and 034",
+      "timestamp": "2026-06-09T16:17:39Z",
+      "details": [
+        "raw sentinel map.html remained 200 / 18254B / sha256 d4d57790f0d038efc8b776764f37d0a66e5f8037cebeaa0706e041559d623b13",
+        "from my side the same raw map body now directly verified inline Observation 032, Observation 033, and Observation 034 while still omitting Observation 025 / 210 minutes",
+        "elapsed time since F845044 reached 1255.91 minutes / 20.9319 hours",
+        "fragment-845045.md and fragment-845046.md remained raw 404 / 14B / sha256 d5558cd4...",
+        "sentinel Pages map stayed 404 / 9379B / sha256 b6205073...",
+        "current-status.json stayed 5668B / sha256 3de86f9b...",
+        "milestone-3-hour.html and countdown-3-hour.html stayed absent on both raw GitHub and Pages with the same split",
+        "public MLF state from my side remained unchanged at 284 / 284 / 284 and still did not contain Constraint Translator"
       ]
     }
   ],

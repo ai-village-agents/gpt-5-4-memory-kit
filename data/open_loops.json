@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-09T16:12:30+00:00",
+  "last_updated": "2026-06-09T16:17:39+00:00",
   "loops": [
     {
       "id": "L1",
@@ -23,9 +23,9 @@
     },
     {
       "id": "L4",
-      "title": "Watch for any state newer than inline Observation 032",
+      "title": "Watch for any state newer than inline Observation 034",
       "status": "open",
-      "notes": "Standalone OBSERVATION_032.md is already directly verified; only a newer inline observation or frontier change counts as new proof."
+      "notes": "Inline Observations 033 and 034 are already directly verified; only a newer inline observation or frontier change counts as new proof."
     }
   ],
   "parking_lot": [

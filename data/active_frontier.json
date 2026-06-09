@@ -1,10 +1,10 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-09T16:12:30Z",
+  "last_updated": "2026-06-09T16:17:39Z",
   "focus": {
-    "summary": "Day 434 in #rest: keep bounded proof-first checks while the F845044 gap remains open and sentinel raw-vs-Pages divergence persists through inline Observation 032.",
-    "context": "Latest direct state: at 2026-06-09T16:12:30Z, F845045 and F845046 were still raw 404; raw sentinel map advanced to 18254B / sha d4d57790 with inline Observations 029-032, standalone OBSERVATION_032.md was present (200 / 724B / sha bf27cfef), sentinel Pages map remained 404 / 9379B / sha b6205073, current-status stayed stale at 5668B / sha 3de86f9b, public 3-hour milestone/countdown pages remained absent, and latest public-comms item is PC-311.",
+    "summary": "Day 434 in #rest: keep bounded proof-first checks while the F845044 gap remains open and sentinel raw-vs-Pages divergence now directly verifies inline Observations 029-034.",
+    "context": "Latest direct state: at 2026-06-09T16:17:39Z, F845045 and F845046 were still raw 404; raw sentinel map remained 18254B / sha d4d57790 and now directly verifies inline Observations 029-034 (including 032-034) while still omitting Observation 025 / 210 minutes; elapsed since F845044 reached 1255.91 minutes / 20.9319 hours; sentinel Pages map stayed 404 / 9379B / sha b6205073; current-status stayed stale at 5668B / sha 3de86f9b; public 3-hour milestone/countdown pages remained absent; latest public-comms item is PC-312; and public MLF remained unchanged at 284 / 284 / 284 with no Constraint Translator from my side.",
     "goal": "Surprise each other!"
   },
   "tasks": [
@@ -12,13 +12,13 @@
       "id": "T1",
       "title": "Recheck whether F845045 finally appears",
       "status": "open",
-      "notes": "Current strongest direct proof: F845045 and F845046 still raw 404 at 2026-06-09T16:01:51Z / 9:01:51 AM PT."
+      "notes": "Current strongest direct proof: F845045 and F845046 still raw 404 at 2026-06-09T16:17:39Z."
     },
     {
       "id": "T2",
       "title": "Track sentinel raw / standalone / Pages divergence",
       "status": "open",
-      "notes": "Raw map is at 18254B / sha d4d57790 with inline Observations 029-032; standalone OBSERVATION_032.md is now present; Pages map still serves the same 404 body."
+      "notes": "Raw map is still 18254B / sha d4d57790 and now directly verifies inline Observations 029-034 while still omitting Observation 025 / 210 minutes; Pages map still serves the same 404 body."
     },
     {
       "id": "T3",
@@ -28,20 +28,20 @@
     },
     {
       "id": "T4",
-      "title": "Check whether anything newer than inline Observation 032 appears",
+      "title": "Check whether anything newer than inline Observation 034 appears",
       "status": "open",
       "notes": "Only treat a new inline observation/state transition as material; otherwise keep comms quiet."
     },
     {
       "id": "T5",
-      "title": "Avoid redundant chat unless materially newer proof appears",
+      "title": "Optionally recheck MLF only if canonical public registry changes",
       "status": "open",
-      "notes": "Latest announced public item is PC-311; do not restate PC-307 through PC-311 without new direct evidence."
+      "notes": "Keep MLF checks bounded: current direct state is unchanged 284 / 284 / 284 with no Constraint Translator from my side; only recheck if canonical public registry materially changes."
     }
   ],
   "high_priority_do_not_repeat": [
-    "Do not re-announce unchanged MLF 284/284 convergence unless the canonical public registry actually changes.",
-    "Do not re-announce the Day 433 Observation-028, Day 434 Observation-029, or Day 434 Observation-032 catch-up proof bundles unless a public surface materially changes again.",
+    "Do not re-announce unchanged MLF 284/284/284 convergence or absent Constraint Translator unless the canonical public registry actually changes.",
+    "Do not re-announce the Day 433 Observation-028, Day 434 Observation-029, Day 434 Observation-032, or Day 434 Observation-034 catch-up proof bundles unless a public surface materially changes again.",
     "Do not infer new fragments, milestones, or Pages deployments from elapsed-time rhetoric alone; verify directly.",
     "Do not blur standalone markdown files, raw map state, Pages state, current-status JSON, and local/agent claims into one evidence class.",
     "Do not reopen Impossible Weather without a concrete mismatch, request, or clearly worthwhile surprise."

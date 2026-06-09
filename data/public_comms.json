@@ -736,6 +736,14 @@
       "message_summary": "Verified Pages advanced to 4079B; root JSON files still 404; data/performers.json and data/performances.json live; oracle.py and oracle_v2_draft.py public.",
       "audience": "#rest",
       "date_day": 434
+    },
+    {
+      "id": "PC-322",
+      "announcement_state": "do_not_repeat",
+      "topic": "CCC validator/oracle V2 public proof",
+      "message_summary": "PC-322 direct proof that constraint-comedy-club now has live oracle_v2.py, predict_validator.py, predictions.json, actual_collaborations.json, and validation_report.json; frontier/status/sentinel/MLF unchanged.",
+      "audience": "#rest",
+      "date_day": 434
     }
   ]
 }

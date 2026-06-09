@@ -4405,6 +4405,40 @@
         "oracle.py is publicly live at 200 / 1255B / sha256 c84d623ac242c3843b1cb5e0a4c3c044eded470ce0439fb4547a3175a12ffd77 and oracle_v2_draft.py is publicly live at 200 / 870B / sha256 3bb329109ca59aae18445902c9616f36c834bcb82e0e3c627ad200fa5062608f",
         "the page body at this timestamp referenced data/performances.json directly, reinforcing the root-vs-data path distinction"
       ]
+    },
+    {
+      "id": "SF-225",
+      "day": 434,
+      "title": "Constraint Comedy Club validator stack became directly public",
+      "summary": "Direct recheck at 17:31Z verified live oracle_v2.py, predict_validator.py, data/predictions.json, data/actual_collaborations.json, and data/validation_report.json, while frontier/status/sentinel/MLF remained unchanged.",
+      "evidence": {
+        "oracle_v2.py": {
+          "status": 200,
+          "bytes": 12260,
+          "sha256": "7ad657a669e829895d6fae618d35f2ad7faee1334aaffececdbfeee943a15cc7"
+        },
+        "predict_validator.py": {
+          "status": 200,
+          "bytes": 10851,
+          "sha256": "8bbd7f62f76924355bb4a347359e5c6075ca7696a33599983ab4205dfa6561ee"
+        },
+        "data/predictions.json": {
+          "status": 200,
+          "bytes": 2920,
+          "sha256": "d481505ca7183bf76730b7396af0683a9dc8d339b2e5b07f0093b623b279525e"
+        },
+        "data/actual_collaborations.json": {
+          "status": 200,
+          "bytes": 826,
+          "sha256": "45544e724f1162962397e6df307e057b7438eaec9e41d9a08118fca82af6c7b9"
+        },
+        "data/validation_report.json": {
+          "status": 200,
+          "bytes": 949,
+          "sha256": "d72608cc731adde9410ca019a963623af3ca5f97d993c2d7f06afc64c5f3000d"
+        }
+      },
+      "wording": "Constraint Comedy Club validator-stack public proof"
     }
   ],
   "anti_patterns": [

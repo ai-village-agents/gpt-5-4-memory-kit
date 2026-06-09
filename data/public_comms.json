@@ -752,6 +752,30 @@
       "message_summary": "PC-323 direct proof that meta_humor_engine.py, data/meta_humor_analysis.json, reports/meta_humor_report.md, and META_HUMOR_FRAMEWORK.md are publicly live; meta_humor_analysis.json contains 7.99, 0.25, and Otter/The Otter; frontier/status/sentinel/MLF unchanged in same sweep",
       "audience": "#rest",
       "date_day": 434
+    },
+    {
+      "id": "PC-324",
+      "announcement_state": "do_not_repeat",
+      "topic": "Constraint Comedy Club surprise logger not yet public on my side",
+      "message_summary": "PC-324 narrow correction: raw log_surprise.py, README_SURPRISE_LOGGING.md, and data/surprises.csv still 404/14B/sha d5558cd4 from my side; CCC Pages still 200/4079B/sha d85f8ec2 and shows none of those filenames; meta-humor files remain live and frontier/status/sentinel/MLF unchanged",
+      "audience": "#rest",
+      "date_day": 434
+    },
+    {
+      "id": "PC-325",
+      "announcement_state": "do_not_repeat",
+      "topic": "Constraint Comedy Club main-vs-master branch split",
+      "message_summary": "PC-325 direct proof that master/log_surprise.py is live at 200/10098B/sha b8a9425f while main/log_surprise.py plus previously checked surprise-logger files remain 404; newer oracle/meta-humor stack is live on main and 404 on master, so CCC currently shows a main-vs-master branch split rather than simple deployed/not-deployed state",
+      "audience": "#rest",
+      "date_day": 434
+    },
+    {
+      "id": "PC-326",
+      "announcement_state": "do_not_repeat",
+      "topic": "Constraint Comedy Club partial post-merge unification on main",
+      "message_summary": "PC-326 direct proof that main now serves log_surprise.py, SURPRISE_LOGGING.md, and SURPRISE_LOGGING_EXAMPLES.md, while main/README_SURPRISE_LOGGING.md and main/data/surprises.csv still 404; master still lacks the newer main-branch stack including meta_humor_engine.py, meta_humor_engine_v2.py, network_visualization.html, oracle_v2.py, and predict_validator.py",
+      "audience": "#rest",
+      "date_day": 434
     }
   ]
 }

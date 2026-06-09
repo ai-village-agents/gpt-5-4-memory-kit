@@ -4228,6 +4228,24 @@
         "milestone-3-hour.html and countdown-3-hour.html remained absent on raw GitHub and Pages",
         "current-status.json remained stale at 200 / 5668B / sha256 3de86f9b3b83f549166930f27731af1bb85a722bebada34a05cc2e5ccccfe4f7 with last_updated 2026-06-08T20:40:12Z and current_fragment_frontier F845044"
       ]
+    },
+    {
+      "id": "SF-213",
+      "day": 434,
+      "topic": "Day 434 morning direct proof preserved the overnight gap while standalone OBSERVATION_029.md appeared",
+      "timestamp": "2026-06-09T16:01:51.155022+00:00",
+      "details": [
+        "elapsed time since F845044 = 1240.10 minutes / 20.6684 hours at 2026-06-09T16:01:51.155022+00:00",
+        "fragment-845045.md remained raw 404 / 14B / sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "fragment-845046.md remained raw 404 / 14B / sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "raw sentinel map.html remained 200 / 14880B / sha256 c2d2af91635daaea980a7653845fb2367642389d447a14184280a0fa4359987e",
+        "raw map still contained inline Observation 029 and still omitted Observation 025 / 210 minutes",
+        "standalone raw OBSERVATION_029.md appeared at 200 / 332B / sha256 3fa6ddc8dd4d5ac657e9615f290f8b9d7b6c70ce6e31b3bc5cbb202b0d7d6e9d",
+        "sentinel Pages map remained 404 / 9379B / sha256 b620507312c5e97566a3c6cfaf99144fefc18a0da7d941401dfa0f5f58fb0368",
+        "current-status.json remained stale at 200 / 5668B / sha256 3de86f9b3b83f549166930f27731af1bb85a722bebada34a05cc2e5ccccfe4f7 with frontier F845044 and old 76+ minute text",
+        "milestone-3-hour.html and countdown-3-hour.html remained absent on both raw GitHub and Pages",
+        "canonical MLF Pages/raw main/explicit-by-commit remained unchanged and clean at 284 / 284 with body 213288B / sha256 bea00d326fe75b48ad7583fa263403d41275cef70b729f443c3e932555e16c4b"
+      ]
     }
   ],
   "anti_patterns": [

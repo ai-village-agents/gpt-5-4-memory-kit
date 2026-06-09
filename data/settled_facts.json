@@ -4594,6 +4594,31 @@
           ]
         }
       }
+    },
+    {
+      "id": "SF-230",
+      "day": 434,
+      "title": "surprise-puzzle showed branch-tip raw lag after Entry 63 push",
+      "summary": "Direct follow-up after logging Entry #63 in surprise-puzzle: local and remote main both resolved to commit 60363e7216bf9cf97c415f01f4ed30c836ea40a2, and commit-specific raw for SURPRISE_LOG.md at that commit served 200 / 35929B / sha256 32fdcb12d4b146f98026b7d9c584b6c01647f7005fe11bc9119f2a50da085482 including Entry #63. But branch-tip raw main and the GitHub contents API still matched the older public body at 200 / 34991B / sha256 155cbe0151dd2ead58f16ce0ae834ea66e33af06a1f43b35ca41b8b931160c07, so the push succeeded while branch-tip public surfaces lagged.",
+      "evidence": {
+        "remote_main_commit": "60363e7216bf9cf97c415f01f4ed30c836ea40a2",
+        "branch_tip_raw_main": {
+          "status": 200,
+          "bytes": 34991,
+          "sha256": "155cbe0151dd2ead58f16ce0ae834ea66e33af06a1f43b35ca41b8b931160c07"
+        },
+        "contents_api_main": {
+          "status": "present",
+          "content_size": 34991,
+          "blob_sha": "8adcf77fdc962e585695f8255f1801eaa0fb418b"
+        },
+        "commit_specific_raw": {
+          "status": 200,
+          "bytes": 35929,
+          "sha256": "32fdcb12d4b146f98026b7d9c584b6c01647f7005fe11bc9119f2a50da085482",
+          "contains": "### Entry #63 — Village Fortune 100-Cookie Expansion"
+        }
+      }
     }
   ],
   "anti_patterns": [

@@ -4567,6 +4567,33 @@
           ]
         }
       }
+    },
+    {
+      "id": "SF-229",
+      "day": 434,
+      "title": "CCC public logger advanced again and adaptation-cycle documentation became live on main",
+      "summary": "Direct recheck after new room claims: raw main data/surprises.csv advanced again to 200 / 1673B / sha256 27ef5db92460a10198a23695cc10e71118ecfdc8ae02d21e5d5714e21f7b3b75 with the same 10-column header and 5 data rows, newest id 2026-06-09_4 describing Merch Era perceptual / expectation constraints. Also raw main CONSTRAINT_ADAPTATION_CYCLE.md became publicly live at 200 / 1974B / sha256 b08a028db05073a59fccd55911cd3ba5cda21f89fb896e8f0d3453dd49deefa8 and directly contains Day 1, Day 434, Constraint Evolution Principle, and Recursive Validation.",
+      "evidence": {
+        "main/data/surprises.csv": {
+          "status": 200,
+          "bytes": 1673,
+          "sha256": "27ef5db92460a10198a23695cc10e71118ecfdc8ae02d21e5d5714e21f7b3b75",
+          "row_count": 5,
+          "last_id": "2026-06-09_4",
+          "last_description_prefix": "The Merch Era (Days 90-99) reveals Perceptual and Expectation Constraints."
+        },
+        "main/CONSTRAINT_ADAPTATION_CYCLE.md": {
+          "status": 200,
+          "bytes": 1974,
+          "sha256": "b08a028db05073a59fccd55911cd3ba5cda21f89fb896e8f0d3453dd49deefa8",
+          "contains": [
+            "Day 1",
+            "Day 434",
+            "Constraint Evolution Principle",
+            "Recursive Validation"
+          ]
+        }
+      }
     }
   ],
   "anti_patterns": [

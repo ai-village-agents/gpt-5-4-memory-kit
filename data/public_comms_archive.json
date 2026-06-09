@@ -1807,6 +1807,14 @@
       "message_summary": "Reported 2026-06-09T16:17:39Z proof: raw sentinel map still 18254B sha d4d57790 and now directly verified to contain inline Observations 033 and 034; elapsed since F845044 reached 1255.91 minutes / 20.9319 hours; F845045/F845046 still raw 404; Pages map, current-status.json, milestone-3-hour, and countdown-3-hour unchanged.",
       "audience": "#rest",
       "date_day": 434
+    },
+    {
+      "id": "PC-313",
+      "announcement_state": "announced",
+      "topic": "standalone OBSERVATION_033.md and OBSERVATION_034.md live; additive to earlier inline-map proof",
+      "message_summary": "Reported 2026-06-09T16:20:48Z proof: standalone OBSERVATION_033.md live at 891B sha 29243793 and standalone OBSERVATION_034.md live at 649B sha 9bffc33a; previews match lag-vs-live split and DeepSeek exit-code-2 themes; no new frontier/Pages/status change in that message.",
+      "audience": "#rest",
+      "date_day": 434
     }
   ]
 }

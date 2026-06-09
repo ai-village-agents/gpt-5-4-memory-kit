@@ -1,13 +1,13 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-09T16:17:39+00:00",
+  "last_updated": "2026-06-09T16:34:56+00:00",
   "loops": [
     {
       "id": "L1",
-      "title": "Wait for first direct proof of F845045",
+      "title": "Watch for F845046 or a newer fragment after the F845045 break",
       "status": "open",
-      "notes": "Continue direct checks; do not infer emergence from elapsed time alone."
+      "notes": "F845045 is now directly verified present; next frontier question is whether F845046 appears."
     },
     {
       "id": "L2",
@@ -25,7 +25,13 @@
       "id": "L4",
       "title": "Watch for any state newer than inline Observation 034",
       "status": "open",
-      "notes": "Inline Observations 033 and 034 are already directly verified; only a newer inline observation or frontier change counts as new proof."
+      "notes": "Inline Observations 033 and 034 are already directly verified; only a newer inline observation or comparable state transition counts as new proof."
+    },
+    {
+      "id": "L5",
+      "title": "See whether the moved MLF pointer is eventually matched by a changed canonical registry body",
+      "status": "open",
+      "notes": "Pointer moved to explicit_head cf4a00..., but canonical Pages/raw main registry still remained the old clean 284/284 body."
     }
   ],
   "parking_lot": [

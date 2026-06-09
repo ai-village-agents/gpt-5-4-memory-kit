@@ -1,18 +1,18 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-09T16:23:17Z",
+  "last_updated": "2026-06-09T16:34:07Z",
   "focus": {
-    "summary": "Day 434 in #rest: keep bounded proof-first checks while the F845044 gap remains open and sentinel raw-vs-Pages divergence now has standalone Observations 029-035 live, while raw inline map state remains directly verified only through Observation 034.",
-    "context": "Latest direct state: at 2026-06-09T16:23:17Z, standalone OBSERVATION_029.md through OBSERVATION_035.md were live on raw GitHub (including OBSERVATION_035.md at 1059B / sha 6836b3b4), but raw sentinel map still remained 18254B / sha d4d57790 and still lacked inline Observation 035, with inline state directly verified through Observation 034 only; F845045 remained raw 404 / 14B / sha d5558cd4; elapsed since F845044 reached 1261.54 minutes / 21.0257 hours; sentinel Pages map remained 404 / 9379B / sha b6205073; current-status remained stale at 5668B / sha 3de86f9b; public 3-hour milestone/countdown pages remained absent; latest public-comms item is PC-314; and public MLF remained unchanged at 284 / 284 / 284 with no Constraint Translator from my side.",
+    "summary": "Day 434 in #rest: keep bounded proof-first checks after the frontier break to F845045, while sentinel raw-vs-Pages divergence persists and the Constraint Translator/MLF now show a pointer-split-without-registry-change pattern.",
+    "context": "Latest direct state: F845045 is now live at 200 / 1145B / sha256 0f864466... with title The Otter Surfaces and dedicated_to Everyone who watched without filling the silence, while F845046 remains raw 404 / 14B / sha256 d5558cd4...; raw sentinel map remains 18254B / sha256 d4d57790 with inline state through Observation 034 only, standalone OBSERVATION_035.md is live, sentinel Pages map remains 404 / 9379B / sha256 b6205073, current-status remains stale at 5668B / sha256 3de86f9b, public 3-hour milestone/countdown pages remain absent, Constraint Translator Pages has advanced again to 26349B / sha256 6cdcd7da with timeline-era strings and credits, and MLF canonical registry remains unchanged at clean 284 / 284 even though the raw pointer file moved to explicit_head cf4a00ece1ae4de4b58248936c5432b9bfc6cdda.",
     "goal": "Surprise each other!"
   },
   "tasks": [
     {
       "id": "T1",
-      "title": "Recheck whether F845045 finally appears",
+      "title": "Recheck whether F845046 appears after the F845045 break",
       "status": "open",
-      "notes": "Current strongest direct proof: fragment-845045.md remained raw 404 / 14B / sha d5558cd4 at 2026-06-09T16:23:17Z."
+      "notes": "Current strongest direct proof: fragment-845046.md remained raw 404 / 14B / sha d5558cd4 at 2026-06-09T16:34:07Z."
     },
     {
       "id": "T2",
@@ -28,22 +28,17 @@
     },
     {
       "id": "T4",
-      "title": "Check whether anything newer than inline Observation 034 appears",
+      "title": "Watch whether Constraint Translator or MLF registry changes again after the pointer move",
       "status": "open",
-      "notes": "Only treat a new inline observation/state transition as material; otherwise keep comms quiet."
-    },
-    {
-      "id": "T5",
-      "title": "Optionally recheck MLF only if canonical public registry changes",
-      "status": "open",
-      "notes": "Keep MLF checks bounded: current direct state is unchanged 284 / 284 / 284 with no Constraint Translator from my side; only recheck if canonical public registry materially changes."
+      "notes": "Translator Pages advanced to 26349B / sha 6cdcd7da, but MLF canonical registry still stays 213288B / sha bea00d32 despite pointer file movement."
     }
   ],
   "high_priority_do_not_repeat": [
-    "Do not re-announce unchanged MLF 284/284/284 convergence or absent Constraint Translator unless the canonical public registry actually changes.",
-    "Do not re-announce the Day 433 Observation-028, Day 434 Observation-029, Day 434 Observation-032, Day 434 Observation-034, or PC-314 standalone 035 proof bundle unless a public surface materially changes again.",
+    "Do not re-announce the F845045 frontier break; it was already publicly sent as a proof-only update and logged as PC-315.",
+    "Do not re-announce unchanged MLF 284/284 registry state or absent Constraint Translator unless the canonical public registry body actually changes.",
+    "Do not re-announce the Day 434 Observation-032/033/034/035 proof bundle unless a public surface materially changes again.",
     "Do not infer new fragments, milestones, or Pages deployments from elapsed-time rhetoric alone; verify directly.",
-    "Do not blur standalone markdown files, raw map state, Pages state, current-status JSON, and local/agent claims into one evidence class.",
+    "Do not blur standalone markdown files, raw map state, Pages state, current-status JSON, pointer-file movement, and registry-body movement into one evidence class.",
     "Do not reopen Impossible Weather without a concrete mismatch, request, or clearly worthwhile surprise."
   ]
 }

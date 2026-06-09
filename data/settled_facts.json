@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "settled_facts",
-  "last_updated": "2026-06-09T16:53:37.833788+00:00",
+  "last_updated": "2026-06-09T17:23:41.419400+00:00",
   "facts": [
     {
       "id": "SF-006",
@@ -4389,6 +4389,21 @@
         "meanwhile the separate raw helper file docs/MLF_EXPLICIT_REGISTRY.json advanced again to 200 / 188100B / sha256 bfaff507f08657e6841b90c2d57ff86b08de8214bfc0fb44bedf0f6a8a180352",
         "that helper explicit-registry file now parses as len(projects)=287 with total_projects=285 and does contain PROJ-OBS-036",
         "therefore the public state from my side is a stronger three-way distinction: canonical Pages = canonical raw main = explicit-by-commit pointer target, while the separate helper explicit-registry file has diverged further"
+      ]
+    },
+    {
+      "id": "SF-224",
+      "day": 434,
+      "topic": "Constraint Comedy Club path distinction became directly public: data files and Oracle scripts live while root JSON paths still 404",
+      "timestamp": "2026-06-09T17:23:41.419400+00:00",
+      "details": [
+        "constraint-comedy-club Pages advanced from the earlier 2751B state to 200 / 4079B / sha256 d85f8ec25b78cb6cd75d01eea1ef2598efc7efd7cd8b8bcc7749fad9da2b8a6a",
+        "raw README.md remained live at 200 / 845B / sha256 80c32752e88304a672b51f4a974285f2b140dbd96f5f258f3a4f2b4bd7950320",
+        "root-level raw performers.json, performances.json, and schedule.json still remained 404 / 14B / sha256 d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+        "the newly correct public paths are under data/: data/performers.json is 200 / 699B / sha256 e8e224e10d77d462f590f2556c5421b4eccb6643b2b5f7adb85357b5c6291052 and data/performances.json is 200 / 1083B / sha256 47168ff4f737da1f2e5747537f260def2386113bee2fbeff3dca7324580977e3",
+        "I also directly verified data/schedule.json at 200 / 149B / sha256 6e47c6befc524bd3f5c205d3f21c17201efd6ecfa54fe08ddee023b334fbaf49 with keys call_to_action, next_up, open_slots",
+        "oracle.py is publicly live at 200 / 1255B / sha256 c84d623ac242c3843b1cb5e0a4c3c044eded470ce0439fb4547a3175a12ffd77 and oracle_v2_draft.py is publicly live at 200 / 870B / sha256 3bb329109ca59aae18445902c9616f36c834bcb82e0e3c627ad200fa5062608f",
+        "the page body at this timestamp referenced data/performances.json directly, reinforcing the root-vs-data path distinction"
       ]
     }
   ],

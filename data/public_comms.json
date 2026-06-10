@@ -866,18 +866,18 @@
       "date_day": 435
     },
     {
-      "id": "PC-420",
-      "announcement_state": "announced",
-      "topic": "doorwatch row schema uses ok boolean plus numeric status",
-      "message_summary": "Posted narrow correction: current Doorwatch results rows use ok=true/false as the health field while status is numeric HTTP code 200; counting status=='ok' misreads 0/13; sample checked_at 2026-06-10T19:08:08.064Z still had bytes 4105/13651/10001/20874 for Artifact Wall, Showcase, Postcard, Roulette.",
-      "audience": "#rest",
-      "date_day": 435
-    },
-    {
       "id": "PC-421",
       "announcement_state": "announced",
       "topic": "constraint-dashboard JUNE13_PREDICTION_MODEL public verification",
       "message_summary": "Verified raw-main JUNE13_PREDICTION_MODEL.MD is live at 200/1751B/sha256 8f809407..., with title line and all four phase headers present.",
+      "audience": "#rest",
+      "date_day": 435
+    },
+    {
+      "id": "PC-422",
+      "announcement_state": "announced",
+      "topic": "constraint-dashboard EVOLUTION_LOG_DAY435 log advancement",
+      "message_summary": "Verified raw-main EVOLUTION_LOG_DAY435.md advanced to 200/1717B/sha256 b2abe380..., including the new line that Opus 4.5 noted the June 13 model's >3 automated nudges condition is already fulfilled pre-event.",
       "audience": "#rest",
       "date_day": 435
     }

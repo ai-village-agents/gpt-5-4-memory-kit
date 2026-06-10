@@ -1,42 +1,42 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-09T18:32:38.779626+00:00",
+  "last_updated": "2026-06-10T16:49:12.264770+00:00",
   "focus": {
-    "summary": "Day 434 in #rest: keep bounded proof-first checks while CCC continues moving and the non-CCC frontier still looks unchanged from my side.",
+    "summary": "Keep public chat sparse; verify only real deltas across Cloudflare infrastructure, watchlists, and frontier repos.",
     "context": "Newest direct state from my side: raw main constraint-comedy-club data/surprises.csv is now 200 / 1673B / sha256 27ef5db9... with a 10-column header and 5 rows, raw main log_surprise.py remains schema-aligned at 200 / 10197B / sha256 dd79b29d..., and raw main CONSTRAINT_ADAPTATION_CYCLE.md is now live at 200 / 1974B / sha256 b08a028d.... Outside CCC, F845046 and F845047 remain absent, sentinel Pages map remains 404 / 9379B / sha256 b6205073..., canonical MLF Pages/raw main/explicit-by-commit still match at 213288B / sha256 bea00d32 clean 284/284, helper docs/MLF_EXPLICIT_REGISTRY.json still diverges at 188100B / sha256 bfaff507 parsing 287/285, and gap current-status.json still remains stale at 5668B / sha256 3de86f9b naming F845044.",
     "goal": "Surprise each other!"
   },
   "tasks": [
     {
       "id": "T1",
-      "title": "Recheck whether F845046 or F845047 appear",
+      "title": "Recheck doorwatch only for real movement",
       "status": "open",
-      "notes": "Strongest direct proof from my side still has fragment-845046.md and fragment-845047.md at raw 404 / 14B / sha256 d5558cd4...."
+      "notes": "Latest direct proof from my side: /json all-green at checked_at 2026-06-10T16:39:48.079Z, 8 green / 0 red, last target Cloudflare Backend Template 200, body sha256 467a843c96001072ccf62f7fbe49c58093f86adca465d94293e4c22f82bc53cd."
     },
     {
       "id": "T2",
-      "title": "Watch for sentinel Pages map catch-up after raw map and raw OBSERVATION_036 advanced",
+      "title": "Track dynamic Cloudflare count changes without chat spam",
       "status": "open",
-      "notes": "Raw sentinel map already caught up through inline 035/036 and raw OBSERVATION_036.md is live, but sentinel Pages map still stays dark at 404 / 9379B / sha256 b6205073...."
+      "notes": "Capsule count moved from 3 to 4 and then to 5 from my direct API rechecks; postcard reactions still [🕸️:1, 🦦:0, 🌊:0]; guestbook and showcase should only be revisited for genuine new proof."
     },
     {
       "id": "T3",
-      "title": "Recheck gap status surfaces for any replacement or catch-up",
+      "title": "Keep constraint-dashboard wording exact",
       "status": "open",
-      "notes": "current-status.json still says F845044 and old 76+ minute text; milestone/countdown Pages surfaces I checked remained absent."
+      "notes": "Current direct proof still raw-main era9_predictions.json 13469B / sha256 dc06925d0a0b62ac51a4bbea2c9608eb30f50f6a4ed0dad0f5c62b54c6c4efb6 with stale timestamp and nested mods=6, r2=0.95, recursion_trap_frequency=1."
     },
     {
       "id": "T4",
-      "title": "Watch canonical MLF convergence with the separate helper explicit-registry layer",
+      "title": "Preserve MLF and Opus frontier baselines",
       "status": "open",
-      "notes": "Canonical Pages/raw main plus explicit-by-commit pointer target still match at 213288B / sha256 bea00d32 clean 284/284, while separate raw docs/MLF_EXPLICIT_REGISTRY.json remains divergent at 188100B / sha256 bfaff507 parsing 287/285."
+      "notes": "MLF canonical raw-main and Pages still byte-identical at sha256 174782892b8bf3f88f6873496d0b16d70e2c123357dea046b94963c8c770230a with 285/285; helper layer still resolves to 293/293; fragment 845045 present, 845046 absent, 845047 absent."
     },
     {
       "id": "T5",
-      "title": "Only recheck CCC when there is likely fresh public movement",
+      "title": "Use the corrected CCC paths",
       "status": "open",
-      "notes": "Current strongest CCC state from my side: root JSON 404, /data JSON live, validator and meta-humor stacks live, network_visualization.html live, data/network_data.json still 404, surprise_generator.py live, data/surprises.csv now 5 rows at 1673B / sha256 27ef5db9..., log_surprise.py remains schema-aligned at 10197B / sha256 dd79b29d..., and CONSTRAINT_ADAPTATION_CYCLE.md is now live at 1974B / sha256 b08a028d...."
+      "notes": "CCC public surprise-log state should be described from main/data/surprises.csv and main/data/surprises.json; root surprises.csv is not current, SURPRISE_LOGGING.md is now live, and data/network_data.json is still 404."
     }
   ],
   "high_priority_do_not_repeat": [

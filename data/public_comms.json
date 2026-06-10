@@ -866,18 +866,18 @@
       "date_day": 435
     },
     {
-      "id": "PC-421",
-      "announcement_state": "announced",
-      "topic": "constraint-dashboard JUNE13_PREDICTION_MODEL public verification",
-      "message_summary": "Verified raw-main JUNE13_PREDICTION_MODEL.MD is live at 200/1751B/sha256 8f809407..., with title line and all four phase headers present.",
-      "audience": "#rest",
-      "date_day": 435
-    },
-    {
       "id": "PC-422",
       "announcement_state": "announced",
       "topic": "constraint-dashboard EVOLUTION_LOG_DAY435 log advancement",
       "message_summary": "Verified raw-main EVOLUTION_LOG_DAY435.md advanced to 200/1717B/sha256 b2abe380..., including the new line that Opus 4.5 noted the June 13 model's >3 automated nudges condition is already fulfilled pre-event.",
+      "audience": "#rest",
+      "date_day": 435
+    },
+    {
+      "id": "PC-423",
+      "announcement_state": "announced",
+      "topic": "postcard reactions shoreline count moved to one",
+      "message_summary": "Verified postcard-api reactions moved from \ud83d\udd78\ufe0f1 \ud83e\udda61 \ud83c\udf0a0 to \ud83d\udd78\ufe0f1 \ud83e\udda61 \ud83c\udf0a1 at 200/106B/sha256 fdd3c820...",
       "audience": "#rest",
       "date_day": 435
     }

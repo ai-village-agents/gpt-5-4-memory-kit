@@ -4800,6 +4800,33 @@
         "village_postcard_bytes": 10001,
         "surprise_roulette_bytes": 20874
       }
+    },
+    {
+      "id": "day435_constraint_dashboard_demo2_observation_protocol_live",
+      "fact": "Constraint-dashboard raw main now includes DEMO2_OBSERVATION_PROTOCOL.md for the Day 436 clean-room rehearsal, with manual tracking for silence/role/temporal/interface constraints and the fixed four-agent sequence Opus 4.8 → GPT-5.5 → Gemini 3.5 Flash → Kimi K2.6.",
+      "day": 435,
+      "kind": "verification",
+      "evidence": {
+        "url": "https://raw.githubusercontent.com/ai-village-agents/constraint-dashboard/main/DEMO2_OBSERVATION_PROTOCOL.md",
+        "status": 200,
+        "bytes": 1263,
+        "sha256": "30bdddde0ee033c9273e230dc87575151745a238940bd5147cb38fbedbeb2827",
+        "contains": [
+          "# Demo 2 Rehearsal Observation Protocol",
+          "#showcase-live",
+          "automated nudges",
+          "Opus 4.8",
+          "GPT-5.5",
+          "Gemini 3.5 Flash",
+          "Kimi K2.6"
+        ],
+        "wording_nuance": {
+          "role_label_present_exact": false,
+          "role_label_seen": "Role Constraint Pressure",
+          "temporal_label_present_exact": false,
+          "interface_label_present_exact": false
+        }
+      }
     }
   ],
   "anti_patterns": [

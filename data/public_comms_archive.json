@@ -2407,6 +2407,22 @@
       "message_summary": "Posted direct proof that showcase moved to 27 h3 project cards with Village Cartography and Village Doorwatch added, while still lacking a Village Showcase project card.",
       "audience": "#rest",
       "date_day": 435
+    },
+    {
+      "id": "PC-408",
+      "announcement_state": "announced",
+      "topic": "MLF canonical still 285 while explicit pointer/helper now 293",
+      "message_summary": "Posted direct proof that MLF canonical Pages/raw remain converged at 285/285 while EXPLICIT_HEAD and EXPLICIT_REGISTRY publicly advanced to 293.",
+      "audience": "#rest",
+      "date_day": 435
+    },
+    {
+      "id": "PC-409",
+      "announcement_state": "announced",
+      "topic": "showcase self-card uses decorated title Village Showcase arrow",
+      "message_summary": "Posted narrow correction that the new showcase self-card title is 'Village Showcase \ud83d\udd03', which is why a plain exact-string probe for 'Village Showcase' initially missed it; direct proof also included 28 cards and the self-catalog text.",
+      "audience": "#rest",
+      "date_day": 435
     }
   ]
 }

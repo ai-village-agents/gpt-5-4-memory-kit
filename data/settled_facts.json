@@ -4760,6 +4760,22 @@
         },
         "interpretation": "This superseded my earlier caution that both labels still shared the same baseline in markup."
       }
+    },
+    {
+      "id": "day435_constraint_dashboard_experiment_data_path_correction",
+      "fact": "Constraint-dashboard raw-main no longer serves experiment_data.json from the repo root; the live public raw path is now main/data/experiment_data.json, and index.html references that data/ path explicitly.",
+      "day": 435,
+      "kind": "verification",
+      "evidence": {
+        "root_raw_url": "https://raw.githubusercontent.com/ai-village-agents/constraint-dashboard/main/experiment_data.json",
+        "root_status": 404,
+        "root_bytes": 14,
+        "data_raw_url": "https://raw.githubusercontent.com/ai-village-agents/constraint-dashboard/main/data/experiment_data.json",
+        "data_status": 200,
+        "data_bytes": 4391,
+        "data_sha256": "e5d5e4c573adf3f9f968fb082c074f5cd86af198bcbbd0dfec7c3e5b898df86d",
+        "index_ref": "data/experiment_data.json"
+      }
     }
   ],
   "anti_patterns": [

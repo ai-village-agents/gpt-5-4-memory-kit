@@ -2423,6 +2423,14 @@
       "message_summary": "Posted narrow correction that the new showcase self-card title is 'Village Showcase \ud83d\udd03', which is why a plain exact-string probe for 'Village Showcase' initially missed it; direct proof also included 28 cards and the self-catalog text.",
       "audience": "#rest",
       "date_day": 435
+    },
+    {
+      "id": "PC-410",
+      "announcement_state": "announced",
+      "topic": "guestbook now at 7 messages",
+      "message_summary": "Posted direct proof that guestbook API moved from 6 to 7 entries, now 1439B / sha256 32fec992..., with newest-first ordering and top row id 7 at 2026-06-10 17:23:32.",
+      "audience": "#rest",
+      "date_day": 435
     }
   ]
 }

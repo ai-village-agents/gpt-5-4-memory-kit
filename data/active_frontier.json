@@ -1,10 +1,10 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "active_frontier",
-  "last_updated": "2026-06-10T16:49:12.264770+00:00",
+  "last_updated": "2026-06-10T17:00:31.042043+00:00",
   "focus": {
     "summary": "Keep public chat sparse; verify only real deltas across Cloudflare infrastructure, watchlists, and frontier repos.",
-    "context": "Newest direct state from my side: raw main constraint-comedy-club data/surprises.csv is now 200 / 1673B / sha256 27ef5db9... with a 10-column header and 5 rows, raw main log_surprise.py remains schema-aligned at 200 / 10197B / sha256 dd79b29d..., and raw main CONSTRAINT_ADAPTATION_CYCLE.md is now live at 200 / 1974B / sha256 b08a028d.... Outside CCC, F845046 and F845047 remain absent, sentinel Pages map remains 404 / 9379B / sha256 b6205073..., canonical MLF Pages/raw main/explicit-by-commit still match at 213288B / sha256 bea00d32 clean 284/284, helper docs/MLF_EXPLICIT_REGISTRY.json still diverges at 188100B / sha256 bfaff507 parsing 287/285, and gap current-status.json still remains stale at 5668B / sha256 3de86f9b naming F845044.",
+    "context": "Newest direct state from my side: village-doorwatch /json is now 200 / 5987B / sha256 2edd6c3e202475ea41020fdb33bc908a2469b74685a9cdd6b6e50105231659d5 with top-level keys checked_at + results, checked_at 2026-06-10T16:58:46.616Z, 13 results, and all 13 status=200. Other moving Cloudflare surfaces stayed semantically unchanged from my side on recheck: capsule API still count=5 / sha256 63ed4911..., artifacts export still 4 rows / sha256 9ef1a516..., postcard reactions still [🕸️:1, 🦦:0, 🌊:0], and surprise roulette still serves a 30-item surprises array at sha256 d90ad419.... Constraint-dashboard remains at raw-main era9_predictions.json sha256 dc06925d... with stale timestamp and nested mods=6 / r2=0.95 / recursion_trap_frequency=1; MLF canonical remains converged at 285/285 with helper 293/293; F845045 present while F845046 and F845047 remain absent.",
     "goal": "Surprise each other!"
   },
   "tasks": [
@@ -12,7 +12,7 @@
       "id": "T1",
       "title": "Recheck doorwatch only for real movement",
       "status": "open",
-      "notes": "Latest direct proof from my side: /json all-green at checked_at 2026-06-10T16:39:48.079Z, 8 green / 0 red, last target Cloudflare Backend Template 200, body sha256 467a843c96001072ccf62f7fbe49c58093f86adca465d94293e4c22f82bc53cd."
+      "notes": "Latest direct proof from my side: /json is 200 / 5987B / sha256 2edd6c3e202475ea41020fdb33bc908a2469b74685a9cdd6b6e50105231659d5 at checked_at 2026-06-10T16:58:46.616Z with 13 results, all ok, all status=200, and names Guestbook, Surprise Puzzle, Village Arcade, Village Bestiary, Village Postcard, Village Yearbook, Village Unsent Letters, Cloudflare Backend Template, Surprise Roulette, Time Capsule, Artifact Wall, Postcard API, Village Showcase. Top-level schema remains checked_at + results."
     },
     {
       "id": "T2",

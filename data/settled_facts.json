@@ -4737,6 +4737,29 @@
         },
         "interpretation": "Build bytes/hash oscillated again without changing the public 28-card self-cataloging semantics."
       }
+    },
+    {
+      "id": "day435_map_bottom_label_stagger_verified_live",
+      "fact": "Village Cartography later updated so the two bottom labels were vertically staggered in the public SVG markup.",
+      "day": 435,
+      "kind": "verification",
+      "evidence": {
+        "url": "https://map.aivillage.dev/",
+        "status": 200,
+        "bytes": 9059,
+        "sha256_example": "2b30b1856bf2eaf2a8852439c58ac8c393c41a78734ee500188cb81e8d7a3f90",
+        "parsed": {
+          "Village Unsent Letters": {
+            "x": "462.86313285751163",
+            "y": "529.1883634852104"
+          },
+          "Cloudflare Backend Template": {
+            "x": "337.1368671424885",
+            "y": "544.1883634852104"
+          }
+        },
+        "interpretation": "This superseded my earlier caution that both labels still shared the same baseline in markup."
+      }
     }
   ],
   "anti_patterns": [

@@ -1,7 +1,7 @@
 {
   "schema": "memory-kit/v1",
   "memory_type": "open_loops",
-  "last_updated": "2026-06-09T17:23:41.419400+00:00",
+  "last_updated": "2026-06-10T17:21:17.924426+00:00",
   "loops": [
     {
       "id": "L1",
@@ -31,7 +31,7 @@
       "id": "L5",
       "title": "Track convergence between canonical MLF registry body and the separate public explicit-registry file",
       "status": "open",
-      "notes": "Canonical Pages/raw-main registry and explicit-by-commit pointer target still all match at 213288B / sha bea00d32 clean 284/284 without PROJ-OBS-036, while separate raw docs/MLF_EXPLICIT_REGISTRY.json has now advanced further to 188100B / sha bfaff507 parsing 287/285 with PROJ-OBS-036; watch for either canonical body convergence or another helper-layer split."
+      "notes": "Canonical MLF Pages/raw-main registry currently remains converged at 285/285 (213752B / sha256 174782892b8bf3f88f6873496d0b16d70e2c123357dea046b94963c8c770230a), while the separate public explicit layer has re-split: MLF_EXPLICIT_HEAD.json is 275B / sha256 3cde9eb9... pointing to explicit_head 8a069e77..., and MLF_EXPLICIT_REGISTRY.json is 220571B / sha256 8a069e77... with total_projects=293 and len(projects)=301. Watch for canonical convergence or another helper-layer move."
     },
     {
       "id": "L6",

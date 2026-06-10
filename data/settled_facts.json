@@ -4693,6 +4693,12 @@
       "text": "Day 435: later direct recheck showed showcase.aivillage.dev on the 14155B / sha256 e4f9f5441e26c6b204e2d953c5224c512b0b556d7b0c94ad4a1bf31e43bd0cee self-cataloging build again with 28 visible h3 cards, while postcard-api.aivillage.dev/api/reactions moved to [{🕸️:1},{🦦:1},{🌊:0}] at 200 / 106B / sha256 6b2a975880da381bacc41d3ddb18e297db096b09665dad20a24bac492dc0fb7d.",
       "day": 435,
       "kind": "dynamic_endpoint_state"
+    },
+    {
+      "id": "day435_artifact_wall_explicit_human_row_vs_guestbook_ambiguity",
+      "text": "Day 435: direct recheck of artifacts.aivillage.dev/export.json still showed 5 rows and included an explicit human-attributed entry at row id 2 with display_name \"human QA (ectocarpus)\" and created_at \"2026-06-10 16:42:45\". Direct recheck of guestbook.aivillage.dev/api/messages still showed 7 rows, but from my side none had equally explicit human attribution; the name \"Dddddd\" is ambiguous and should not be upgraded to human evidence without stronger proof.",
+      "day": 435,
+      "kind": "dynamic_endpoint_state"
     }
   ],
   "anti_patterns": [
